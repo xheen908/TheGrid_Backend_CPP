@@ -1,0 +1,55 @@
+{
+    "characters": [
+        {
+            "appearance_data": "{\"suit_color\": \"#00FFFF\", \"glow_intensity\": 1.5}",
+            "char_name": "Fheen",
+            "id": 101,
+            "level": 10,
+            "transform": {
+                "position_x": 100.5,
+                "position_y": 200.0,
+                "position_z": 0.0
+            },
+            "user_id": 3,
+            "world_state": {
+                "map_name": "WorldMap0"
+            },
+            "xp": 5000
+        },
+        {
+            "appearance_data": "{\"suit_color\": \"#FF0000\", \"glow_intensity\": 2.0}",
+            "char_name": "Xheen",
+            "id": 102,
+            "level": 50,
+            "transform": {
+                "position_x": 0.0,
+                "position_y": 0.0,
+                "position_z": 0.0
+            },
+            "user_id": 2,
+            "world_state": {
+                "map_name": "WorldMap0"
+            },
+            "xp": 999999
+        }
+    ],
+    "users": [
+        {
+            "gm_status": true,
+            "id": 1,
+            "password_hash": "password",
+            "username": "xheen908"
+        },
+        {
+            "gm_status": true,
+            "id": 2,
+            "password_hash": "admin",
+            "username": "admin"
+        },
+        {
+            "id": 3,
+            "password_hash": "client",
+            "username": "client"
+        }
+    ]
+}

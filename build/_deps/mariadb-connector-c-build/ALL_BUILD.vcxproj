@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{24E78894-5BF4-3198-9344-D78CE8EAA611}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\include;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\compress;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\include;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\compress;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\include;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\compress;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\include;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\compress;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/xheen908/Documents/thegrid_backend_c -BC:/Users/xheen908/Documents/thegrid_backend_c/build --check-stamp-file C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\ConnectorName.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\FindZStd.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\SearchLibrary.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_functions.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_include_files.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_types.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\install.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\install_plugins.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\misc.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\plugins.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\sign.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\version_info.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include\ma_config.h.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include\mariadb_version.h.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\compress\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\connection\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\io\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/xheen908/Documents/thegrid_backend_c -BC:/Users/xheen908/Documents/thegrid_backend_c/build --check-stamp-file C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\ConnectorName.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\FindZStd.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\SearchLibrary.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_functions.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_include_files.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_types.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\install.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\install_plugins.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\misc.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\plugins.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\sign.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\version_info.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include\ma_config.h.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include\mariadb_version.h.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\compress\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\connection\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\io\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/xheen908/Documents/thegrid_backend_c -BC:/Users/xheen908/Documents/thegrid_backend_c/build --check-stamp-file C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\ConnectorName.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\FindZStd.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\SearchLibrary.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_functions.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_include_files.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_types.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\install.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\install_plugins.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\misc.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\plugins.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\sign.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\version_info.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include\ma_config.h.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include\mariadb_version.h.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\compress\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\connection\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\io\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/xheen908/Documents/thegrid_backend_c -BC:/Users/xheen908/Documents/thegrid_backend_c/build --check-stamp-file C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindCURL.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-4.2\Templates\CPackConfig.cmake.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\ConnectorName.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\FindZStd.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\SearchLibrary.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_functions.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_include_files.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\check_types.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\install.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\install_plugins.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\misc.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\plugins.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\sign.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\cmake\version_info.cmake;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include\ma_config.h.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\include\mariadb_version.h.in;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\compress\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\connection\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\io\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio\CMakeLists.txt;C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\ZERO_CHECK.vcxproj">
+      <Project>{FC12B6EC-73DD-3091-9E87-0067178384D3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\caching_sha2_password.vcxproj">
+      <Project>{836BE778-461D-3E56-A42B-1DCE7944B3FF}</Project>
+      <Name>caching_sha2_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\client_ed25519.vcxproj">
+      <Project>{3C630BA0-EB19-3538-9AA3-12FAAD12C1CB}</Project>
+      <Name>client_ed25519</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\dialog.vcxproj">
+      <Project>{7886677C-B5BC-3F23-BFE4-197FD0973DBB}</Project>
+      <Name>dialog</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\libmariadb\libmariadb.vcxproj">
+      <Project>{22657B4D-15D5-3CE2-9826-3828994C56BB}</Project>
+      <Name>libmariadb</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\libmariadb\mariadb_obj.vcxproj">
+      <Project>{BEB878BE-0433-3392-85A3-7420D4909819}</Project>
+      <Name>mariadb_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\libmariadb\mariadbclient.vcxproj">
+      <Project>{5799D6C5-9713-31E8-9977-258E5E49D6A8}</Project>
+      <Name>mariadbclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\mysql_clear_password.vcxproj">
+      <Project>{89F6A519-4202-3D8B-B80D-754523CBE5F3}</Project>
+      <Name>mysql_clear_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\pvio_shmem.vcxproj">
+      <Project>{421C2ACA-28ED-3B5A-B66F-D5976573930E}</Project>
+      <Name>pvio_shmem</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\sha256_password.vcxproj">
+      <Project>{45A581F1-D1F0-3AA7-8D5B-6B89825CB7B2}</Project>
+      <Name>sha256_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\external\zlib\zlib.vcxproj">
+      <Project>{CE5C00DA-FFC8-3061-ACB8-DBC8673768DB}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\external\zlib\zlibstatic.vcxproj">
+      <Project>{BB5D2FE3-1985-3A17-A893-F049EEF2AA38}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

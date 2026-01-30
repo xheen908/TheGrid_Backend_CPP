@@ -1,0 +1,406 @@
+[2026-01-30 15:53:32.135] =========================================
+[2026-01-30 15:53:32.138] Starting The Grid AUTH SERVER...
+[2026-01-30 15:53:32.138] =========================================
+[2026-01-30 15:53:32.138] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 15:53:32.201] [DB] ERROR: Connection failed - Plugin caching_sha2_password could not be loaded: Das angegebene Modul wurde nicht gefunden. Library path is 'caching_sha2_password.dll'
+[2026-01-30 15:53:32.204] [FATAL] Could not connect to MySQL.
+[2026-01-30 15:56:22.818] =========================================
+[2026-01-30 15:56:22.821] Starting The Grid AUTH SERVER...
+[2026-01-30 15:56:22.822] =========================================
+[2026-01-30 15:56:22.822] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 15:56:23.005] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 15:56:54.273] [DB] Auth Query Error: SELECT command denied to user 'user_name'@'172.18.0.1' for table 'users'
+[2026-01-30 15:56:56.159] [DB] Auth Query Error: SELECT command denied to user 'user_name'@'172.18.0.1' for table 'users'
+[2026-01-30 15:56:56.671] [DB] Auth Query Error: SELECT command denied to user 'user_name'@'172.18.0.1' for table 'users'
+[2026-01-30 15:56:56.871] [DB] Auth Query Error: SELECT command denied to user 'user_name'@'172.18.0.1' for table 'users'
+[2026-01-30 15:56:57.090] [DB] Auth Query Error: SELECT command denied to user 'user_name'@'172.18.0.1' for table 'users'
+[2026-01-30 15:59:00.280] =========================================
+[2026-01-30 15:59:00.301] Starting The Grid AUTH SERVER...
+[2026-01-30 15:59:00.302] =========================================
+[2026-01-30 15:59:00.304] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 15:59:00.865] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 15:59:01.403] [DB] Auth Query Error: Unknown database 'auth_db'
+[2026-01-30 15:59:07.048] [DB] Auth Query Error: Unknown database 'auth_db'
+[2026-01-30 16:00:04.624] [AUTH] Login Success: client
+[2026-01-30 16:00:05.180] [DEBUG] /api/characters Auth Header: Bearer session_client
+[2026-01-30 16:00:05.181] [AUTH] Fetching characters for user: client
+[2026-01-30 16:00:05.188] [DB] Chars Query Error: Unknown database 'charakter_db'
+[2026-01-30 16:00:05.188] [DEBUG] Sending characters: []
+[2026-01-30 16:11:16.513] =========================================
+[2026-01-30 16:11:16.532] Starting The Grid AUTH SERVER...
+[2026-01-30 16:11:16.534] =========================================
+[2026-01-30 16:11:16.535] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 16:11:17.148] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 16:11:31.326] [AUTH] Login Success: client
+[2026-01-30 16:11:31.430] [DEBUG] /api/characters Auth Header: Bearer session_client
+[2026-01-30 16:11:31.432] [AUTH] Fetching characters for user: client
+[2026-01-30 16:11:31.480] [DB] Chars Query Error: Unknown database 'charakter_db'
+[2026-01-30 16:11:31.481] [DEBUG] Sending characters: []
+[2026-01-30 16:17:21.555] [AUTH] Login Success: client
+[2026-01-30 16:17:21.767] [DEBUG] /api/characters Auth Header: Bearer session_client
+[2026-01-30 16:17:21.779] [AUTH] Fetching characters for user: client
+[2026-01-30 16:17:21.954] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Wheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":101,"level":10,"position":{"x":-5.789999961853027,"y":0.0,"z":5.46999979019165},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Fheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":102,"level":6,"position":{"x":21.760000228881836,"y":0.0,"z":-2.7799999713897705},"world_state":{"map_name":"WorldMap0"}}]
+[2026-01-30 16:21:54.070] =========================================
+[2026-01-30 16:21:54.077] Starting The Grid AUTH SERVER...
+[2026-01-30 16:21:54.078] =========================================
+[2026-01-30 16:21:54.078] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 16:21:54.518] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 16:25:17.707] =========================================
+[2026-01-30 16:25:17.714] Starting The Grid AUTH SERVER...
+[2026-01-30 16:25:17.714] =========================================
+[2026-01-30 16:25:17.715] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 16:25:18.496] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 16:25:46.467] [AUTH] Login Success: client
+[2026-01-30 16:25:46.686] [DEBUG] /api/characters Auth Header: Bearer session_client
+[2026-01-30 16:25:46.714] [AUTH] Fetching characters for user: client
+[2026-01-30 16:25:48.022] [DEBUG] Sending characters: []
+[2026-01-30 16:26:15.755] [AUTH] Login Success: client
+[2026-01-30 16:26:15.997] [DEBUG] /api/characters Auth Header: Bearer session_client
+[2026-01-30 16:26:16.029] [AUTH] Fetching characters for user: client
+[2026-01-30 16:26:16.035] [DEBUG] Sending characters: []
+[2026-01-30 16:40:24.333] =========================================
+[2026-01-30 16:40:24.372] Starting The Grid AUTH SERVER...
+[2026-01-30 16:40:24.380] =========================================
+[2026-01-30 16:40:24.381] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 16:40:24.837] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 16:40:59.438] [AUTH] Login Success: client
+[2026-01-30 16:40:59.689] [DEBUG] /api/characters Auth Header: Bearer session_client
+[2026-01-30 16:40:59.709] [AUTH] Fetching characters for user: client
+[2026-01-30 16:41:01.065] [DEBUG] Sending characters: []
+[2026-01-30 16:41:09.504] [AUTH] Login Success: admin
+[2026-01-30 16:41:09.688] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 16:41:09.698] [AUTH] Fetching characters for user: admin
+[2026-01-30 16:41:09.711] [DEBUG] Sending characters: []
+[2026-01-30 16:46:42.956] =========================================
+[2026-01-30 16:46:43.161] Starting The Grid AUTH SERVER...
+[2026-01-30 16:46:43.164] =========================================
+[2026-01-30 16:46:43.164] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 16:46:43.394] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 16:47:00.346] [AUTH] Login Success: admin
+[2026-01-30 16:47:00.549] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 16:47:00.582] [AUTH] Fetching characters for user: admin
+[2026-01-30 16:47:00.610] [DB] Running Query: SELECT c.id, c.char_name, c.level, c.map_name, c.pos_x, c.pos_y, c.pos_z, c.appearance_data FROM characters c JOIN users u ON c.user_id = u.id WHERE u.username = 'admin'
+[2026-01-30 16:47:00.630] [DB] Found 0 characters for admin
+[2026-01-30 16:47:00.648] [DEBUG] Sending characters: []
+[2026-01-30 16:47:47.277] =========================================
+[2026-01-30 16:47:47.279] Starting The Grid AUTH SERVER...
+[2026-01-30 16:47:47.279] =========================================
+[2026-01-30 16:47:47.280] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 16:47:47.407] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 16:48:02.197] [AUTH] Login Success: admin
+[2026-01-30 16:48:02.344] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 16:48:02.346] [AUTH] Fetching characters for user: admin
+[2026-01-30 16:48:02.346] [DB] Running Query: SELECT c.id, c.char_name, c.level, c.map_name, c.pos_x, c.pos_y, c.pos_z, c.appearance_data FROM characters c JOIN users u ON c.user_id = u.id WHERE u.username = 'admin'
+[2026-01-30 16:48:02.372] [DB] Found 0 characters for admin
+[2026-01-30 16:48:02.373] [DEBUG] Sending characters: []
+[2026-01-30 16:48:27.069] [AUTH] Login Success: client
+[2026-01-30 16:48:27.166] [DEBUG] /api/characters Auth Header: Bearer session_client
+[2026-01-30 16:48:27.167] [AUTH] Fetching characters for user: client
+[2026-01-30 16:48:27.167] [DB] Running Query: SELECT c.id, c.char_name, c.level, c.map_name, c.pos_x, c.pos_y, c.pos_z, c.appearance_data FROM characters c JOIN users u ON c.user_id = u.id WHERE u.username = 'client'
+[2026-01-30 16:48:27.175] [DB] Found 2 characters for client
+[2026-01-30 16:48:27.177] [DEBUG] Sending characters: [{"appearance_data":{},"char_name":"Wheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":101,"level":10,"transform":{"position_x":0.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{},"char_name":"Fheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":102,"level":6,"transform":{"position_x":0.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"WorldMap0"}}]
+[2026-01-30 16:55:47.647] =========================================
+[2026-01-30 16:55:47.652] Starting The Grid AUTH SERVER...
+[2026-01-30 16:55:47.652] =========================================
+[2026-01-30 16:55:47.652] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 16:55:47.994] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 16:56:05.420] [AUTH] Login Success: client
+[2026-01-30 16:56:05.569] [DEBUG] /api/characters Auth Header: Bearer session_client
+[2026-01-30 16:56:05.572] [AUTH] Fetching characters for user: client
+[2026-01-30 16:56:05.572] [DB] Fetching chars for client
+[2026-01-30 16:56:05.608] [DB] Found 2 chars.
+[2026-01-30 16:56:05.608] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Wheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":101,"level":10,"transform":{"position_x":-5.789999961853027,"position_y":0.0,"position_z":5.46999979019165},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Fheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":102,"level":6,"transform":{"position_x":21.760000228881836,"position_y":0.0,"position_z":-2.7799999713897705},"world_state":{"map_name":"WorldMap0"}}]
+[2026-01-30 16:57:09.922] [AUTH] Login Success: admin
+[2026-01-30 16:57:10.196] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 16:57:10.200] [AUTH] Fetching characters for user: admin
+[2026-01-30 16:57:10.201] [DB] Fetching chars for admin
+[2026-01-30 16:57:10.226] [DB] Found 2 chars.
+[2026-01-30 16:57:10.227] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":0.0,"position_z":-4.099999904632568},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 16:58:02.267] [AUTH] Login Success: admin
+[2026-01-30 16:58:02.386] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 16:58:02.390] [AUTH] Fetching characters for user: admin
+[2026-01-30 16:58:02.391] [DB] Fetching chars for admin
+[2026-01-30 16:58:02.406] [DB] Found 2 chars.
+[2026-01-30 16:58:02.406] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":0.0,"position_z":-4.099999904632568},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 16:59:08.551] [AUTH] Login Success: admin
+[2026-01-30 16:59:08.767] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 16:59:08.787] [AUTH] Fetching characters for user: admin
+[2026-01-30 16:59:08.788] [DB] Fetching chars for admin
+[2026-01-30 16:59:08.833] [DB] Found 2 chars.
+[2026-01-30 16:59:08.847] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 17:00:05.591] [AUTH] Login Success: admin
+[2026-01-30 17:00:05.722] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 17:00:05.723] [AUTH] Fetching characters for user: admin
+[2026-01-30 17:00:05.723] [DB] Fetching chars for admin
+[2026-01-30 17:00:05.728] [DB] Found 2 chars.
+[2026-01-30 17:00:05.730] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 17:14:48.924] =========================================
+[2026-01-30 17:14:48.931] Starting The Grid AUTH SERVER...
+[2026-01-30 17:14:48.932] =========================================
+[2026-01-30 17:14:48.932] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 17:14:49.663] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 17:15:30.250] [AUTH] Login Success: admin
+[2026-01-30 17:15:30.542] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 17:15:30.546] [AUTH] Fetching characters for user: admin
+[2026-01-30 17:15:30.554] [DB] Fetching chars for admin
+[2026-01-30 17:15:30.662] [DB] Found 2 chars.
+[2026-01-30 17:15:30.671] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 17:17:20.904] [AUTH] Login Success: admin
+[2026-01-30 17:17:21.101] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 17:17:21.102] [AUTH] Fetching characters for user: admin
+[2026-01-30 17:17:21.102] [DB] Fetching chars for admin
+[2026-01-30 17:17:21.130] [DB] Found 2 chars.
+[2026-01-30 17:17:21.131] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 17:24:37.517] [AUTH] Login Success: client
+[2026-01-30 17:24:38.645] [DEBUG] /api/characters Auth Header: Bearer session_client
+[2026-01-30 17:24:38.658] [AUTH] Fetching characters for user: client
+[2026-01-30 17:24:38.659] [DB] Fetching chars for client
+[2026-01-30 17:24:38.985] [DB] Found 2 chars.
+[2026-01-30 17:24:38.995] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Wheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":101,"level":10,"transform":{"position_x":-5.789999961853027,"position_y":0.0,"position_z":5.46999979019165},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Fheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":102,"level":6,"transform":{"position_x":21.760000228881836,"position_y":0.0,"position_z":-2.7799999713897705},"world_state":{"map_name":"WorldMap0"}}]
+[2026-01-30 17:25:58.368] [AUTH] Login Success: admin
+[2026-01-30 17:25:58.512] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 17:25:58.519] [AUTH] Fetching characters for user: admin
+[2026-01-30 17:25:58.526] [DB] Fetching chars for admin
+[2026-01-30 17:25:58.566] [DB] Found 2 chars.
+[2026-01-30 17:25:58.569] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 17:26:44.125] [AUTH] Login Success: admin
+[2026-01-30 17:26:44.326] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 17:26:44.337] [AUTH] Fetching characters for user: admin
+[2026-01-30 17:26:44.341] [DB] Fetching chars for admin
+[2026-01-30 17:26:44.377] [DB] Found 2 chars.
+[2026-01-30 17:26:44.379] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 17:27:25.375] [AUTH] Login Success: admin
+[2026-01-30 17:27:25.611] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 17:27:25.614] [AUTH] Fetching characters for user: admin
+[2026-01-30 17:27:25.614] [DB] Fetching chars for admin
+[2026-01-30 17:27:25.665] [DB] Found 2 chars.
+[2026-01-30 17:27:25.665] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 17:28:26.616] [AUTH] Login Success: admin
+[2026-01-30 17:28:26.832] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 17:28:26.836] [AUTH] Fetching characters for user: admin
+[2026-01-30 17:28:26.838] [DB] Fetching chars for admin
+[2026-01-30 17:28:26.910] [DB] Found 2 chars.
+[2026-01-30 17:28:26.916] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 17:29:42.477] =========================================
+[2026-01-30 17:29:42.503] Starting The Grid AUTH SERVER...
+[2026-01-30 17:29:42.504] =========================================
+[2026-01-30 17:29:42.504] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 17:29:44.277] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 17:30:37.689] [AUTH] Login Success: admin
+[2026-01-30 17:30:37.896] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 17:30:37.912] [AUTH] Fetching characters for user: admin
+[2026-01-30 17:30:37.922] [DB] Fetching chars for admin
+[2026-01-30 17:30:38.060] [DB] Found 2 chars.
+[2026-01-30 17:30:38.073] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 17:32:17.950] [AUTH] Login Success: admin
+[2026-01-30 17:32:18.350] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 17:32:18.358] [AUTH] Fetching characters for user: admin
+[2026-01-30 17:32:18.359] [DB] Fetching chars for admin
+[2026-01-30 17:32:18.500] [DB] Found 2 chars.
+[2026-01-30 17:32:18.517] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 19:35:15.332] =========================================
+[2026-01-30 19:35:15.531] Starting The Grid AUTH SERVER...
+[2026-01-30 19:35:15.534] =========================================
+[2026-01-30 19:35:15.544] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 19:35:16.166] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 19:36:02.132] [AUTH] Login Success: admin
+[2026-01-30 19:36:02.388] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 19:36:02.389] [AUTH] Fetching characters for user: admin
+[2026-01-30 19:36:02.395] [DB] Fetching chars for admin
+[2026-01-30 19:36:02.489] [DB] Found 2 chars.
+[2026-01-30 19:36:02.493] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 19:36:49.969] [AUTH] Login Success: admin
+[2026-01-30 19:36:50.154] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 19:36:50.164] [AUTH] Fetching characters for user: admin
+[2026-01-30 19:36:50.165] [DB] Fetching chars for admin
+[2026-01-30 19:36:50.179] [DB] Found 2 chars.
+[2026-01-30 19:36:50.182] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 19:37:41.191] [AUTH] Login Success: admin
+[2026-01-30 19:37:41.399] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 19:37:41.403] [AUTH] Fetching characters for user: admin
+[2026-01-30 19:37:41.403] [DB] Fetching chars for admin
+[2026-01-30 19:37:41.409] [DB] Found 2 chars.
+[2026-01-30 19:37:41.410] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 19:38:16.448] [AUTH] Login Success: admin
+[2026-01-30 19:38:16.654] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 19:38:16.655] [AUTH] Fetching characters for user: admin
+[2026-01-30 19:38:16.656] [DB] Fetching chars for admin
+[2026-01-30 19:38:16.661] [DB] Found 2 chars.
+[2026-01-30 19:38:16.662] [DEBUG] Sending characters: [{"appearance_data":{"suit_color":"#00FFFF"},"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":103,"level":1,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":{"suit_color":"#FF0000"},"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"id":104,"level":60,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 19:56:47.130] =========================================
+[2026-01-30 19:56:47.157] Starting The Grid AUTH SERVER...
+[2026-01-30 19:56:47.157] =========================================
+[2026-01-30 19:56:47.158] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 19:56:48.100] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 19:57:01.754] =========================================
+[2026-01-30 19:57:01.773] Starting The Grid AUTH SERVER...
+[2026-01-30 19:57:01.775] =========================================
+[2026-01-30 19:57:01.789] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 19:57:02.610] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 19:57:41.350] =========================================
+[2026-01-30 19:57:41.358] Starting The Grid AUTH SERVER...
+[2026-01-30 19:57:41.358] =========================================
+[2026-01-30 19:57:41.358] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 19:57:41.699] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 20:01:20.227] =========================================
+[2026-01-30 20:01:20.258] Starting The Grid AUTH SERVER...
+[2026-01-30 20:01:20.324] =========================================
+[2026-01-30 20:01:20.364] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 20:01:20.817] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 20:01:43.419] [AUTH] Login Success: admin
+[2026-01-30 20:01:43.643] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 20:01:43.644] [AUTH] Fetching characters for user: admin
+[2026-01-30 20:01:43.645] [DB] Fetching chars for admin
+[2026-01-30 20:01:43.721] [DB] Found 2 chars.
+[2026-01-30 20:01:43.724] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":125,"id":103,"level":1,"max_hp":125,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 20:15:46.696] =========================================
+[2026-01-30 20:15:46.702] Starting The Grid AUTH SERVER...
+[2026-01-30 20:15:46.703] =========================================
+[2026-01-30 20:15:46.703] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 20:15:47.160] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 20:16:02.345] [AUTH] Login Success: admin
+[2026-01-30 20:16:02.518] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 20:16:02.519] [AUTH] Fetching characters for user: admin
+[2026-01-30 20:16:02.522] [DB] Fetching chars for admin
+[2026-01-30 20:16:02.562] [DB] Found 2 chars.
+[2026-01-30 20:16:02.562] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":125,"id":103,"level":1,"max_hp":125,"transform":{"position_x":-5.070000171661377,"position_y":0.0,"position_z":-0.30000001192092896},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 20:28:22.640] [AUTH] Login Success: admin
+[2026-01-30 20:28:22.801] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 20:28:22.803] [AUTH] Fetching characters for user: admin
+[2026-01-30 20:28:22.803] [DB] Fetching chars for admin
+[2026-01-30 20:28:22.854] [DB] Found 2 chars.
+[2026-01-30 20:28:22.856] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":127,"id":103,"level":1,"max_hp":127,"transform":{"position_x":-2.8803200721740723,"position_y":0.0,"position_z":15.961299896240234},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 20:44:31.009] [AUTH] Login Success: admin
+[2026-01-30 20:44:31.954] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 20:44:34.405] [AUTH] Fetching characters for user: admin
+[2026-01-30 20:44:34.409] [DB] Fetching chars for admin
+[2026-01-30 20:44:34.510] [DB] Found 2 chars.
+[2026-01-30 20:44:34.520] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":15.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 20:45:10.256] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 20:45:11.506] [AUTH] Fetching characters for user: admin
+[2026-01-30 20:45:11.569] [DB] Fetching chars for admin
+[2026-01-30 20:45:11.881] [DB] Found 2 chars.
+[2026-01-30 20:45:11.884] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":15.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 20:45:47.926] [AUTH] Login Success: admin
+[2026-01-30 20:45:48.181] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 20:45:48.189] [AUTH] Fetching characters for user: admin
+[2026-01-30 20:45:48.190] [DB] Fetching chars for admin
+[2026-01-30 20:45:48.234] [DB] Found 2 chars.
+[2026-01-30 20:45:48.245] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":15.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 20:46:27.714] [AUTH] Login Success: admin
+[2026-01-30 20:46:27.981] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 20:46:27.982] [AUTH] Fetching characters for user: admin
+[2026-01-30 20:46:27.983] [DB] Fetching chars for admin
+[2026-01-30 20:46:28.000] [DB] Found 2 chars.
+[2026-01-30 20:46:28.002] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":11.78499984741211,"position_y":0.0,"position_z":-5.5831098556518555},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 20:52:44.785] =========================================
+[2026-01-30 20:52:44.788] Starting The Grid AUTH SERVER...
+[2026-01-30 20:52:44.788] =========================================
+[2026-01-30 20:52:44.789] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 20:52:45.144] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 20:53:00.304] [AUTH] Login Success: admin
+[2026-01-30 20:53:00.491] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 20:53:00.493] [AUTH] Fetching characters for user: admin
+[2026-01-30 20:53:00.494] [DB] Fetching chars for admin
+[2026-01-30 20:53:00.536] [DB] Found 2 chars.
+[2026-01-30 20:53:00.537] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":25.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"Arena0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 20:56:34.862] [AUTH] Login Success: admin
+[2026-01-30 20:56:35.062] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 20:56:35.067] [AUTH] Fetching characters for user: admin
+[2026-01-30 20:56:35.069] [DB] Fetching chars for admin
+[2026-01-30 20:56:35.128] [DB] Found 2 chars.
+[2026-01-30 20:56:35.130] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":15.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 21:00:03.972] =========================================
+[2026-01-30 21:00:03.977] Starting The Grid AUTH SERVER...
+[2026-01-30 21:00:03.978] =========================================
+[2026-01-30 21:00:03.978] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 21:00:04.087] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 21:00:12.009] [AUTH] Login Success: admin
+[2026-01-30 21:00:12.177] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 21:00:12.177] [AUTH] Fetching characters for user: admin
+[2026-01-30 21:00:12.177] [DB] Fetching chars for admin
+[2026-01-30 21:00:12.193] [DB] Found 2 chars.
+[2026-01-30 21:00:12.193] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":15.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 21:08:59.597] =========================================
+[2026-01-30 21:08:59.618] Starting The Grid AUTH SERVER...
+[2026-01-30 21:08:59.618] =========================================
+[2026-01-30 21:08:59.618] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 21:09:03.497] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 21:09:20.778] [AUTH] Login Success: admin
+[2026-01-30 21:09:21.016] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 21:09:21.017] [AUTH] Fetching characters for user: admin
+[2026-01-30 21:09:21.017] [DB] Fetching chars for admin
+[2026-01-30 21:09:21.061] [DB] Found 2 chars.
+[2026-01-30 21:09:21.062] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":15.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 21:23:07.376] [AUTH] Login Success: admin
+[2026-01-30 21:23:07.494] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 21:23:07.495] [AUTH] Fetching characters for user: admin
+[2026-01-30 21:23:07.495] [DB] Fetching chars for admin
+[2026-01-30 21:23:07.532] [DB] Found 2 chars.
+[2026-01-30 21:23:07.532] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":15.0,"position_y":0.0,"position_z":0.0},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 21:23:26.775] [AUTH] Login Success: admin
+[2026-01-30 21:23:26.877] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 21:23:26.881] [AUTH] Fetching characters for user: admin
+[2026-01-30 21:23:26.883] [DB] Fetching chars for admin
+[2026-01-30 21:23:26.897] [DB] Found 2 chars.
+[2026-01-30 21:23:26.904] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":21.818300247192383,"position_y":0.0,"position_z":0.13235899806022644},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 21:24:18.915] [AUTH] Login Success: admin
+[2026-01-30 21:24:19.032] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 21:24:19.034] [AUTH] Fetching characters for user: admin
+[2026-01-30 21:24:19.035] [DB] Fetching chars for admin
+[2026-01-30 21:24:19.040] [DB] Found 2 chars.
+[2026-01-30 21:24:19.044] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":21.818300247192383,"position_y":0.0,"position_z":0.13235899806022644},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 21:40:47.440] [AUTH] Login Success: admin
+[2026-01-30 21:40:47.606] [DEBUG] /api/characters Auth Header: Bearer session_admin
+[2026-01-30 21:40:47.614] [AUTH] Fetching characters for user: admin
+[2026-01-30 21:40:47.615] [DB] Fetching chars for admin
+[2026-01-30 21:40:47.716] [DB] Found 2 chars.
+[2026-01-30 21:40:47.724] [DEBUG] Sending characters: [{"appearance_data":0,"char_name":"Yheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":232,"id":103,"level":4,"max_hp":232,"transform":{"position_x":21.818300247192383,"position_y":0.0,"position_z":0.13235899806022644},"world_state":{"map_name":"WorldMap0"}},{"appearance_data":10,"char_name":"Xheen","class_info":{"class_color":"#00FF00","class_name":"Developer"},"hp":1500,"id":104,"level":60,"max_hp":1500,"transform":{"position_x":3.440000057220459,"position_y":10.0,"position_z":0.0},"world_state":{"map_name":"Arena2"}}]
+[2026-01-30 22:09:34.685] =========================================
+[2026-01-30 22:09:34.688] Starting The Grid AUTH SERVER (Embedded)...
+[2026-01-30 22:09:34.688] =========================================
+[2026-01-30 22:09:34.826] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 22:09:42.628] [DB] Fetching chars for admin
+[2026-01-30 22:09:43.330] [DB] Found 2 chars.
+[2026-01-30 22:10:27.725] [DB] Fetching chars for admin
+[2026-01-30 22:10:27.924] [DB] Found 2 chars.
+[2026-01-30 22:10:44.177] [DB] Fetching chars for admin
+[2026-01-30 22:10:44.184] [DB] Found 2 chars.
+[2026-01-30 22:10:59.636] [DB] Fetching chars for admin
+[2026-01-30 22:10:59.641] [DB] Found 2 chars.
+[2026-01-30 22:24:37.085] [DB] Fetching chars for admin
+[2026-01-30 22:24:37.118] [DB] Found 2 chars.
+[2026-01-30 22:27:15.623] [DB] Fetching chars for admin
+[2026-01-30 22:27:16.022] [DB] Found 2 chars.
+[2026-01-30 22:41:31.910] =========================================
+[2026-01-30 22:41:31.914] Starting The Grid AUTH SERVER (Embedded)...
+[2026-01-30 22:41:31.914] =========================================
+[2026-01-30 22:41:32.236] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 22:41:57.018] [DB] Fetching chars for admin
+[2026-01-30 22:41:57.051] [DB] Found 2 chars.
+[2026-01-30 22:52:39.387] [DB] Fetching chars for admin
+[2026-01-30 22:52:42.130] [DB] Found 2 chars.
+[2026-01-30 23:21:20.241] =========================================
+[2026-01-30 23:21:20.258] Starting The Grid AUTH SERVER (Embedded)...
+[2026-01-30 23:21:20.265] =========================================
+[2026-01-30 23:21:20.641] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 23:21:29.479] [DB] Fetching chars for admin
+[2026-01-30 23:21:29.506] [DB] Found 2 chars.
+[2026-01-30 23:22:05.457] [DB] Fetching chars for admin
+[2026-01-30 23:22:05.462] [DB] Found 2 chars.
+[2026-01-30 23:25:06.504] [DB] Fetching chars for admin
+[2026-01-30 23:25:06.568] [DB] Found 2 chars.
+[2026-01-30 23:31:20.416] [DB] Fetching chars for admin
+[2026-01-30 23:31:20.436] [DB] Found 2 chars.
+[2026-01-30 23:31:47.490] [DB] Fetching chars for admin
+[2026-01-30 23:31:47.497] [DB] Found 2 chars.
+[2026-01-30 23:54:41.094] [DB] Fetching chars for admin
+[2026-01-30 23:54:41.457] [DB] Found 2 chars.
+[2026-01-30 23:55:44.357] [DB] Fetching chars for admin
+[2026-01-30 23:55:44.364] [DB] Found 2 chars.
+[2026-01-30 23:55:52.357] [DB] Fetching chars for admin
+[2026-01-30 23:55:52.362] [DB] Found 2 chars.
+[2026-01-30 23:57:05.896] [DB] Fetching chars for admin
+[2026-01-30 23:57:05.917] [DB] Found 2 chars.
+[2026-01-30 23:57:21.272] [DB] Fetching chars for client
+[2026-01-30 23:57:21.281] [DB] Found 2 chars.

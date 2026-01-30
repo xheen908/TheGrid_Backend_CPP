@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth\my_auth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth\auth_gssapi_client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth\sspi_client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth\sspi_errmsg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\auth\old_password.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\compress\c_zlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio\pvio_socket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\plugins\pvio\pvio_npipe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_charset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_decimal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_hashtbl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_net.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\mariadb_charset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_errmsg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\mariadb_lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_pvio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_tls.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_password.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_ll2str.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\mariadb_stmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_loaddata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_stmt_codec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_dtoa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\mariadb_rpl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\libmariadb\ma_client_plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\win-iconv\win_iconv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\win32_errmsg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\gzclose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\gzlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\gzread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\gzwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\external\zlib\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\mariadb_async.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\ma_context.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\win32_errmsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-src\libmariadb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{95B2EA3B-B499-391B-B86D-EFC50E41F953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{57C8F458-D868-3D8B-B785-ECC0A1EC6598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

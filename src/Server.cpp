@@ -1,0 +1,280 @@
+#include "Server.hpp"
+#include "GameLogic.hpp"
+#include "Database.hpp"
+#include "SocketHandlers.hpp"
+#include "ChatHandlers.hpp"
+#include "GMCommands.hpp"
+#include "Logger.hpp"
+#include "abilities/AbilityManager.hpp"
+#include <iostream>
+#include <chrono>
+#include <cmath>
+#include <thread>
+#include <algorithm>
+#include <functional>
+
+static uWS::Loop* worldLoop = nullptr;
+
+static long long currentTimeMillis() {
+    return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+}
+
+// ==========================================
+// WORLD SERVER IMPLEMENTATION
+// ==========================================
+WorldServer::WorldServer() : running(false) {}
+
+void WorldServer::start(int port) {
+    running = true;
+    uWS::App app;
+    worldLoop = (uWS::Loop*)uWS::Loop::get();
+
+    app.ws<PerSocketData>("/ws", {
+        .compression = uWS::SHARED_COMPRESSOR,
+        .maxPayloadLength = 16 * 1024 * 1024,
+        .idleTimeout = 60,
+        .open = [](auto *ws) {
+            Logger::log("[WS] Client connected to WorldServer.");
+        },
+        .message = [this](auto *ws, std::string_view message, uWS::OpCode opCode) {
+            try {
+                auto j = json::parse(message);
+                std::string type = j.value("type", "");
+                auto data = ws->getUserData();
+
+                if (type == "authenticate") {
+                    std::string token = j.value("token", "");
+                    int characterId = j.value("character_id", -1);
+                    std::string username = token.starts_with("session_") ? token.substr(8) : "UnknownPlayer";
+                    
+                    data->username = username;
+                    data->isAuthenticated = true;
+
+                    auto player = std::make_shared<Player>();
+                    if (Database::getInstance().loadCharacter(characterId, *player)) {
+                        data->charName = player->charName;
+                        data->isGM = player->isGM;
+                    } else {
+                        // Fallback
+                        player->charName = username;
+                        player->username = username;
+                        player->level = 1;
+                        player->mapName = "WorldMap0";
+                        player->lastPos = {0, 0, 0};
+                        data->charName = username;
+                    }
+                    
+                    player->ws = ws;
+                    GameState::getInstance().addPlayer(data->username, player);
+
+                    data->mapName = player->mapName; 
+
+                    ws->send(json{
+                        {"type", "authenticated"}, 
+                        {"char_name", player->charName},
+                        {"map_name", player->mapName},
+                        {"position", {{"x", player->lastPos.x}, {"y", player->lastPos.y}, {"z", player->lastPos.z}}}
+                    }.dump(), uWS::OpCode::TEXT);
+                    
+                    Logger::log("[WS] User Authenticated & Loaded: " + data->username + " on " + player->mapName);
+                } else if (data->isAuthenticated) {
+                    auto player = GameState::getInstance().getPlayer(data->username);
+                    if (!player) return;
+
+                    if (type == "player_update") {
+                        {
+                            std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+                            if (j.contains("position")) {
+                                auto pos = j["position"];
+                                player->lastPos = {pos.value("x", 0.0f), pos.value("y", 0.0f), pos.value("z", 0.0f)};
+                            }
+                            if (j.contains("rotation")) {
+                                auto rot = j["rotation"];
+                                player->rotation = {rot.value("x", 0.0f), rot.value("y", 0.0f), rot.value("z", 0.0f)};
+                            }
+                        }
+                        json moveMsg = {{"type", "player_moved"}, {"username", player->charName}, {"position", j.value("position", json::object())}, {"rotation", j.value("rotation", json::object())}};
+                        SocketHandlers::broadcastToMap(player->mapName, moveMsg.dump(), ws);
+                    } else if (type == "cast_spell") {
+                        SocketHandlers::handleSpellCast(ws, j);
+                    } else if (type == "chat_message") {
+                        ChatHandlers::handleChatMessage(ws, j);
+                    } else if (type == "target_update") {
+                        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+                        player->currentTargetId = j.value("target_id", "");
+                    } else if (type == "logout_request") {
+                        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+                        player->logoutTimer = currentTimeMillis() + 10000; // 10 seconds logout timer
+                        json s = {{"type", "logout_timer_started"}, {"seconds", 10}};
+                        ws->send(s.dump(), uWS::OpCode::TEXT);
+                        Logger::log("[WS] Logout timer started for " + data->username);
+                    } else if (type == "map_change_request") {
+                        SocketHandlers::handleMapChange(ws, j);
+                    }
+                }
+            } catch (const std::exception& e) {
+                Logger::log("[WS] Error: " + std::string(e.what()));
+            }
+        },
+        .close = [](auto *ws, int code, std::string_view message) {
+            auto data = ws->getUserData();
+            if (data->isAuthenticated) {
+                auto player = GameState::getInstance().getPlayer(data->username);
+                if (player) {
+                    {
+                        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+                        player->isDisconnected = true;
+                        player->ws = nullptr; // CRITICAL: Stop using this pointer immediately
+                    }
+                    // Save to DB before removal
+                    Database::getInstance().savePlayer(*player);
+                }
+                GameState::getInstance().removePlayer(data->username);
+                Logger::log("[WS] Player disconnected & saved: " + data->username);
+            }
+        }
+    });
+
+    app.listen(port, [port](auto *listen_socket) {
+        if (listen_socket) {
+            std::cout << "World Server listening on port " << port << std::endl;
+        }
+    });
+
+    // Game Loop Thread
+    std::thread tickThread([this]() {
+        while (this->running) {
+            this->tick();
+            std::this_thread::sleep_for(std::chrono::milliseconds(100)); // 10Hz
+        }
+    });
+
+    app.run();
+    running = false;
+    if (tickThread.joinable()) tickThread.join();
+}
+
+void WorldServer::tick() {
+    auto nowMs = currentTimeMillis();
+    auto players = GameState::getInstance().getPlayersSnapshot();
+
+    // --- Collect Map Stats for Scaling ---
+    std::map<std::string, float> mapMaxLevels; 
+    std::map<std::string, int> mapMaxPartySize;
+
+    for (auto const& p : players) {
+        if (p->isDisconnected) continue;
+        
+        std::string currentMap;
+        int pLevel;
+        int pSize = 1;
+        {
+            std::lock_guard<std::recursive_mutex> pLock(p->pMtx);
+            currentMap = p->mapName;
+            pLevel = p->level;
+            if (!p->partyId.empty()) {
+                auto party = GameState::getInstance().getParty(p->partyId);
+                if (party) pSize = (int)party->members.size();
+            }
+        }
+        
+        if (mapMaxLevels.find(currentMap) == mapMaxLevels.end()) {
+            mapMaxLevels[currentMap] = (float)pLevel;
+        } else {
+            mapMaxLevels[currentMap] = std::max(mapMaxLevels[currentMap], (float)pLevel);
+        }
+        mapMaxPartySize[currentMap] = std::max(mapMaxPartySize[currentMap], pSize);
+    }
+    
+    // --- Mob Logic ---
+    {
+        std::lock_guard<std::recursive_mutex> mobLock(GameState::getInstance().getMtx());
+        auto& mobs = GameState::getInstance().getMobs();
+        for (auto& m : mobs) {
+            // Apply Dynamic Scaling
+            GameLogic::scaleMobToMap(m, mapMaxLevels, mapMaxPartySize);
+
+            if (m.hp <= 0) {
+                if (m.respawnAt > 0 && nowMs > m.respawnAt) { m.hp = m.maxHp; m.respawnAt = 0; m.target = ""; }
+                else if (m.respawnAt == 0) m.respawnAt = nowMs + 30000;
+                continue;
+            }
+
+            if (!m.target.empty() && nowMs - m.lastAttack > 2000) {
+                auto pTarget = GameState::getInstance().getPlayer(m.target);
+                if (pTarget && !pTarget->isDisconnected) {
+                    std::lock_guard<std::recursive_mutex> pLock(pTarget->pMtx);
+                    if (pTarget->mapName == m.mapName) {
+                        float distSq = std::pow(m.transform.x - pTarget->lastPos.x, 2) + std::pow(m.transform.z - pTarget->lastPos.z, 2);
+                        if (distSq < 25.0f) {
+                            m.lastAttack = nowMs;
+                            int dmg = GameLogic::getMobDamage(m.level);
+                            pTarget->hp = std::max(0, pTarget->hp - dmg);
+                            json hitMsg = {{"type", "combat_text"}, {"target_id", "player"}, {"value", dmg}, {"color", "#FF2222"}};
+                            SocketHandlers::sendToPlayer(pTarget->username, hitMsg.dump());
+                        }
+                    }
+                } else {
+                    m.target = "";
+                }
+            }
+
+            // Simple AI: Move home if no target
+            if (m.target.empty()) {
+                m.rotation += 0.05f;
+            }
+        }
+    }
+
+    // --- Player Periodic Sync ---
+    for (auto const& p : players) {
+        if (p->isDisconnected) continue;
+        
+        AbilityManager::getInstance().update(*p);
+
+            // Periodic Status Sync
+            {
+                std::lock_guard<std::recursive_mutex> pLock(p->pMtx);
+                
+                // Logout Check
+                if (p->logoutTimer > 0 && nowMs >= p->logoutTimer) {
+                    p->logoutTimer = 0;
+                    json lc = {{"type", "logout_complete"}};
+                    SocketHandlers::sendToPlayer(p->username, lc.dump());
+                    Logger::log("[WS] Logout complete for " + p->username);
+                }
+
+                if (nowMs - p->lastStatusSync > 1000) {
+                    p->lastStatusSync = nowMs;
+                    json buffList = json::array();
+                    for (auto const& b : p->buffs) {
+                        buffList.push_back({{"type", b.type}, {"remaining", (int)((b.endTime - nowMs) / 1000)}});
+                    }
+                    json s = {{"type", "player_status"}, {"username", p->charName}, {"hp", p->hp}, {"max_hp", p->maxHp}, {"level", p->level}, {"shield", p->shield}, {"buffs", buffList}};
+                    SocketHandlers::sendToPlayer(p->username, s.dump());
+                }
+            }
+
+            // Mob Sync (within map)
+            json mobList = json::array();
+            {
+                std::lock_guard<std::recursive_mutex> mobLock(GameState::getInstance().getMtx());
+                for (auto const& m : GameState::getInstance().getMobs()) {
+                    if (m.mapName == p->mapName && m.hp > 0) {
+                        mobList.push_back({{"id", m.id}, {"name", m.name}, {"hp", m.hp}, {"maxHp", m.maxHp}, {"transform", {{"x", m.transform.x}, {"y", m.transform.y}, {"z", m.transform.z}, {"rot", m.rotation}}}});
+                    }
+                }
+            }
+            if (!mobList.empty()) {
+                SocketHandlers::sendToPlayer(p->username, json{{"type", "mob_sync"}, {"mobs", mobList}}.dump());
+            }
+    }
+}
+
+void WorldServer::stop() { running = false; }
+
+void WorldServer::defer(std::function<void()> cb) {
+    if (worldLoop) {
+        worldLoop->defer(cb);
+    }
+}

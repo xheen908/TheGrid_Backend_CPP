@@ -1,0 +1,6 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The update step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+command=powershell;-Command;Get-ChildItem -Recurse CMakeLists.txt | ForEach-Object { (Get-Content $_.FullName) -replace 'VERSION 2.8', 'VERSION 3.5' -replace 'VERSION 2.4', 'VERSION 3.5' | Set-Content $_.FullName }
+work_dir=C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src

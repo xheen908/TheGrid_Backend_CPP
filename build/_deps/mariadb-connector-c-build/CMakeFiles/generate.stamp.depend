@@ -1,0 +1,39 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindCURL.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files/CMake/share/cmake-4.2/Templates/CPackConfig.cmake.in
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/CMakeLists.txt
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/ConnectorName.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/FindZStd.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/SearchLibrary.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/check_functions.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/check_include_files.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/check_types.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/install.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/install_plugins.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/misc.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/plugins.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/sign.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/version_info.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/include/ma_config.h.in
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/include/mariadb_version.h.in
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/plugins/CMakeLists.txt
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/plugins/auth/CMakeLists.txt
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/plugins/compress/CMakeLists.txt
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/plugins/connection/CMakeLists.txt
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/plugins/io/CMakeLists.txt
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/plugins/pvio/CMakeLists.txt
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/win/resource.rc.in

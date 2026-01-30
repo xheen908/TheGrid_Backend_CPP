@@ -1,0 +1,804 @@
+[2026-01-30 21:09:08.678] =========================================
+[2026-01-30 21:09:08.681] Starting The Grid WORLD SERVER...
+[2026-01-30 21:09:08.681] =========================================
+[2026-01-30 21:09:08.682] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 21:09:08.870] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 21:09:23.775] [WS] Client connected to WorldServer.
+[2026-01-30 21:09:24.932] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 21:09:27.937] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 21:09:30.018] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 21:09:30.019] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:09:30.019] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:09:30.022] [Ability] Frostblitz damage applied: 300 to Wander-Bit
+[2026-01-30 21:09:30.022] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:09:30.023] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:09:30.023] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:22:58.228] =========================================
+[2026-01-30 21:22:58.232] Starting The Grid WORLD SERVER...
+[2026-01-30 21:22:58.236] =========================================
+[2026-01-30 21:22:58.236] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 21:22:58.495] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 21:23:09.894] [WS] Client connected to WorldServer.
+[2026-01-30 21:23:10.939] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 21:23:12.606] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 21:23:14.675] [Ability] Frostblitz cast complete by Yheen on 
+[2026-01-30 21:23:14.683] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:23:14.683] [Ability] Frostblitz target not found or dead: 
+[2026-01-30 21:23:16.787] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 21:23:18.805] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 21:23:18.805] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:23:18.806] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:23:18.808] [Ability] Frostblitz damage applied: 545 to Wander-Bit
+[2026-01-30 21:23:18.809] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 21:23:18.809] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:23:18.809] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:23:18.809] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 21:23:18.900] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:23:18.938] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 21:23:20.974] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 21:23:20.974] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:23:20.975] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:23:20.975] [Ability] Frostblitz damage applied: 286 to Wander-Bit
+[2026-01-30 21:23:20.975] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:23:20.975] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:23:20.976] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:23:53.249] =========================================
+[2026-01-30 21:23:53.261] Starting The Grid WORLD SERVER...
+[2026-01-30 21:23:53.262] =========================================
+[2026-01-30 21:23:53.262] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 21:23:53.393] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 21:23:53.658] [WS] Client connected to WorldServer.
+[2026-01-30 21:24:23.713] [WS] Client connected to WorldServer.
+[2026-01-30 21:24:24.575] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 21:24:29.880] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 21:24:31.928] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 21:24:31.928] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:24:31.928] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:24:31.931] [Ability] Frostblitz damage applied: 259 to Wander-Bit
+[2026-01-30 21:24:31.931] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:24:31.931] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:24:31.931] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:40:32.630] =========================================
+[2026-01-30 21:40:32.633] Starting The Grid WORLD SERVER...
+[2026-01-30 21:40:32.633] =========================================
+[2026-01-30 21:40:32.633] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 21:40:32.832] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 21:40:52.291] [WS] Client connected to WorldServer.
+[2026-01-30 21:40:54.197] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 21:40:56.230] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:40:58.223] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 21:40:58.234] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:40:58.244] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:40:58.252] [Ability] Frostblitz damage applied: 274 to Wander-Bit
+[2026-01-30 21:40:58.255] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:40:58.255] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:40:58.256] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:40:58.698] [Ability] Frost Nova cast by Yheen
+[2026-01-30 21:41:00.117] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:02.201] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 21:41:02.206] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:02.209] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:02.211] [Ability] Frostblitz damage applied: 275 to Wander-Bit
+[2026-01-30 21:41:02.215] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 21:41:02.216] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:02.219] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:02.221] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 21:41:02.226] [XP] Yheen erhielt 115 Erfahrung.
+[2026-01-30 21:41:02.513] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:07.008] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:09.060] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 21:41:09.068] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:09.081] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:09.087] [Ability] Frostblitz damage applied: 306 to Wander-Bit
+[2026-01-30 21:41:09.105] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:09.117] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:09.131] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:10.539] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:12.622] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 21:41:12.623] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:12.624] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:12.625] [Ability] Frostblitz damage applied: 532 to Wander-Bit
+[2026-01-30 21:41:12.625] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 21:41:12.626] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:12.626] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:12.626] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 21:41:12.627] [XP] Yheen erhielt 115 Erfahrung.
+[2026-01-30 21:41:12.685] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:19.671] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:21.763] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 21:41:21.785] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:21.814] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:21.825] [Ability] Frostblitz damage applied: 256 to Wander-Bit
+[2026-01-30 21:41:21.832] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:21.836] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:21.840] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:23.819] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:25.862] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 21:41:25.877] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:25.889] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:25.902] [Ability] Frostblitz damage applied: 267 to Wander-Bit
+[2026-01-30 21:41:25.925] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 21:41:25.937] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:25.955] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:25.974] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 21:41:25.999] [XP] Yheen erhielt 115 Erfahrung.
+[2026-01-30 21:41:26.078] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:31.424] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:33.469] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 21:41:33.480] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:33.496] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:33.517] [Ability] Frostblitz damage applied: 266 to Wander-Bit
+[2026-01-30 21:41:33.533] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:33.542] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:33.551] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:34.738] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:36.840] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 21:41:36.862] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:36.894] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:36.921] [Ability] Frostblitz damage applied: 274 to Wander-Bit
+[2026-01-30 21:41:36.949] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 21:41:36.989] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:37.012] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:37.063] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 21:41:37.089] [XP] Yheen erhielt 115 Erfahrung.
+[2026-01-30 21:41:37.131] [LEVEL] Yheen ist jetzt Level 5!
+[2026-01-30 21:41:37.344] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:38.568] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:40.597] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 21:41:40.610] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:40.614] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:40.615] [Ability] Frostblitz damage applied: 337 to Wander-Bit
+[2026-01-30 21:41:40.619] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:40.621] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:40.625] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:43.009] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:45.023] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 21:41:45.032] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:45.039] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:45.046] [Ability] Frostblitz damage applied: 334 to Wander-Bit
+[2026-01-30 21:41:45.054] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 21:41:45.061] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:45.072] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:45.076] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 21:41:45.097] [XP] Yheen erhielt 138 Erfahrung.
+[2026-01-30 21:41:45.150] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:46.143] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:48.192] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 21:41:48.195] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:48.197] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:48.198] [Ability] Frostblitz damage applied: 325 to Wander-Bit
+[2026-01-30 21:41:48.201] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:48.203] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:48.205] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:50.391] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:52.438] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 21:41:52.442] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:52.443] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 21:41:52.443] [Ability] Frostblitz damage applied: 335 to Wander-Bit
+[2026-01-30 21:41:52.443] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 21:41:52.444] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 21:41:52.445] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 21:41:52.445] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 21:41:52.447] [XP] Yheen erhielt 138 Erfahrung.
+[2026-01-30 21:41:52.471] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 21:41:53.793] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 21:41:55.833] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 21:41:55.839] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 21:41:55.846] [Ability] Frostblitz target not found or dead: world_01
+[2026-01-30 22:09:05.488] =========================================
+[2026-01-30 22:09:05.490] Starting The Grid WORLD SERVER...
+[2026-01-30 22:09:05.491] =========================================
+[2026-01-30 22:09:05.491] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 22:09:05.742] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 22:11:02.080] [WS] Client connected to WorldServer.
+[2026-01-30 22:11:03.138] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 22:11:05.246] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:07.238] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:11:07.239] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:07.239] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:11:07.242] [Ability] Frostblitz damage applied: 631 to Wander-Bit
+[2026-01-30 22:11:07.243] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:11:07.244] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:11:07.244] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:11:07.244] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:11:07.245] [XP] Yheen erhielt 138 Erfahrung.
+[2026-01-30 22:11:07.343] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:11:07.962] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:09.984] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:11:09.984] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:09.984] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:11:09.985] [Ability] Frostblitz damage applied: 325 to Wander-Bit
+[2026-01-30 22:11:09.985] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:11:09.985] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:11:09.985] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:11:10.447] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:12.499] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:11:12.500] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:12.500] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:11:12.500] [Ability] Frostblitz damage applied: 327 to Wander-Bit
+[2026-01-30 22:11:12.500] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:11:12.501] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:11:12.501] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:11:12.501] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:11:12.501] [XP] Yheen erhielt 138 Erfahrung.
+[2026-01-30 22:11:12.520] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:11:12.661] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:14.704] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:11:14.704] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:14.704] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:11:14.705] [Ability] Frostblitz damage applied: 330 to Wander-Bit
+[2026-01-30 22:11:14.705] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:11:14.705] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:11:14.705] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:11:15.098] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:17.117] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:11:17.118] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:17.118] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:11:17.118] [Ability] Frostblitz damage applied: 335 to Wander-Bit
+[2026-01-30 22:11:17.119] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:11:17.119] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:11:17.119] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:11:17.119] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:11:17.119] [XP] Yheen erhielt 138 Erfahrung.
+[2026-01-30 22:11:17.139] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:11:17.164] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:19.214] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:11:19.215] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:19.215] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:11:19.215] [Ability] Frostblitz damage applied: 349 to Wander-Bit
+[2026-01-30 22:11:19.215] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:11:19.215] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:11:19.216] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:11:19.271] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:21.286] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:11:21.287] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:21.287] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:11:21.287] [Ability] Frostblitz damage applied: 644 to Wander-Bit
+[2026-01-30 22:11:21.288] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:11:21.288] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:11:21.288] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:11:21.288] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:11:21.288] [XP] Yheen erhielt 138 Erfahrung.
+[2026-01-30 22:11:21.315] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:11:23.634] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:25.707] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:11:25.707] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:25.707] [Ability] Frostblitz target not found or dead: world_04
+[2026-01-30 22:11:27.836] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:29.879] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:11:29.880] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:29.881] [Ability] Frostblitz target not found or dead: world_04
+[2026-01-30 22:11:35.499] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:11:37.538] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:11:37.538] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:11:37.538] [Ability] Frostblitz target not found or dead: world_04
+[2026-01-30 22:19:35.475] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:19:37.504] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:19:37.517] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:19:37.535] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:19:37.545] [Ability] Frostblitz damage applied: 332 to Wander-Bit
+[2026-01-30 22:19:37.561] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:19:37.598] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:19:37.610] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:19:38.603] [WS] Error: device or resource busy: device or resource busy
+[2026-01-30 22:19:40.654] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:19:40.671] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:19:40.691] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:19:40.732] [Ability] Frostblitz damage applied: 630 to Wander-Bit
+[2026-01-30 22:19:40.806] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:19:40.831] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:19:40.853] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:19:40.861] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:19:40.894] [XP] Yheen erhielt 138 Erfahrung.
+[2026-01-30 22:19:42.261] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:24:25.972] =========================================
+[2026-01-30 22:24:25.977] Starting The Grid WORLD SERVER...
+[2026-01-30 22:24:25.977] =========================================
+[2026-01-30 22:24:25.978] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 22:24:26.304] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 22:24:39.333] [WS] Client connected to WorldServer.
+[2026-01-30 22:24:40.313] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 22:24:42.229] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:24:44.326] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:24:44.326] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:24:44.326] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:24:44.329] [Ability] Frostblitz damage applied: 321 to Wander-Bit
+[2026-01-30 22:24:44.329] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:24:44.329] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:24:44.329] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:24:44.444] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:24:46.512] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:24:46.513] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:24:46.513] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:24:46.513] [Ability] Frostblitz damage applied: 362 to Wander-Bit
+[2026-01-30 22:24:46.514] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:24:46.514] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:24:46.514] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:24:46.514] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:24:46.515] [XP] Yheen erhielt 138 Erfahrung.
+[2026-01-30 22:24:46.651] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:24:46.686] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:24:48.725] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:24:48.726] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:24:48.726] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:24:48.726] [Ability] Frostblitz damage applied: 327 to Wander-Bit
+[2026-01-30 22:24:48.727] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:24:48.727] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:24:48.727] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:24:52.488] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 22:24:54.531] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:24:54.532] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:24:54.532] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:24:54.532] [Ability] Frostblitz damage applied: 323 to Wander-Bit
+[2026-01-30 22:24:54.532] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:24:54.533] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:24:54.533] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:24:54.533] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:24:54.533] [XP] Yheen erhielt 138 Erfahrung.
+[2026-01-30 22:24:54.533] [LEVEL] Yheen ist jetzt Level 6!
+[2026-01-30 22:24:54.548] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:24:54.663] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:24:56.729] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:24:56.730] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:24:56.730] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:24:56.730] [Ability] Frostblitz damage applied: 419 to Wander-Bit
+[2026-01-30 22:24:56.731] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:24:56.731] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:24:56.731] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:25:23.748] [DEBUG] GM Yheen using /level. Current targetId in state: world_04
+[2026-01-30 22:25:23.749] [GM] Mob Wander-Bit (world_04) level set to 60 by Yheen
+[2026-01-30 22:25:31.198] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:25:33.205] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:25:33.206] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:25:33.206] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:25:33.207] [Ability] Frostblitz damage applied: 416 to Wander-Bit
+[2026-01-30 22:25:33.207] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:25:33.207] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:25:33.207] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:25:35.623] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:25:37.669] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:25:37.670] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:25:37.670] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:25:37.670] [Ability] Frostblitz damage applied: 440 to Wander-Bit
+[2026-01-30 22:25:37.670] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:25:37.670] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:25:37.671] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:25:37.918] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:25:39.974] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:25:39.974] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:25:39.974] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:25:39.975] [Ability] Frostblitz damage applied: 434 to Wander-Bit
+[2026-01-30 22:25:39.975] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:25:39.975] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:25:39.975] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:25:39.976] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:25:39.976] [XP] Yheen erhielt 164 Erfahrung.
+[2026-01-30 22:25:39.991] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:25:40.010] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:25:42.073] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:25:42.074] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:25:42.074] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:25:42.074] [Ability] Frostblitz damage applied: 397 to Wander-Bit
+[2026-01-30 22:25:42.074] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:25:42.074] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:25:42.074] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:25:42.075] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:25:42.075] [XP] Yheen erhielt 164 Erfahrung.
+[2026-01-30 22:25:42.097] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:25:42.146] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 22:25:44.189] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:25:44.189] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:25:44.189] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:25:44.190] [Ability] Frostblitz damage applied: 423 to Wander-Bit
+[2026-01-30 22:25:44.190] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:25:44.190] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:25:44.190] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:25:44.191] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:25:44.191] [XP] Yheen erhielt 164 Erfahrung.
+[2026-01-30 22:25:44.206] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:25:44.499] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:25:46.507] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:25:46.507] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:25:46.507] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:25:46.508] [Ability] Frostblitz damage applied: 433 to Wander-Bit
+[2026-01-30 22:25:46.508] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:25:46.508] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:25:46.508] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:25:46.776] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:25:48.806] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:25:48.807] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:25:48.807] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:25:48.807] [Ability] Frostblitz damage applied: 425 to Wander-Bit
+[2026-01-30 22:25:48.807] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:25:48.808] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:25:48.808] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:25:48.808] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:25:48.808] [XP] Yheen erhielt 164 Erfahrung.
+[2026-01-30 22:25:48.822] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:25:54.815] [Ability] Ice Barrier cast by Yheen
+[2026-01-30 22:25:57.306] [Ability] Frost Nova cast by Yheen
+[2026-01-30 22:27:33.366] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:27:35.449] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:27:35.458] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:27:35.463] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:27:35.468] [Ability] Frostblitz damage applied: 394 to Wander-Bit
+[2026-01-30 22:27:35.476] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:27:35.482] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:27:35.491] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:27:35.679] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:27:37.743] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:27:37.823] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:27:37.917] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:27:38.027] [Ability] Frostblitz damage applied: 745 to Wander-Bit
+[2026-01-30 22:27:38.064] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:27:38.134] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:27:38.248] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:27:38.339] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:27:38.465] [XP] Yheen erhielt 164 Erfahrung.
+[2026-01-30 22:27:39.788] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:27:44.697] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:27:46.826] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:27:46.968] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:27:47.070] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:27:47.226] [Ability] Frostblitz damage applied: 392 to Wander-Bit
+[2026-01-30 22:27:47.362] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:27:47.482] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:27:47.636] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:27:50.517] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:27:52.617] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:27:52.621] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:27:52.624] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:27:52.630] [Ability] Frostblitz damage applied: 440 to Wander-Bit
+[2026-01-30 22:27:52.637] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:27:52.639] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:27:52.645] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:27:52.655] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:27:52.663] [XP] Yheen erhielt 164 Erfahrung.
+[2026-01-30 22:27:52.926] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:27:52.990] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:27:55.088] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:27:55.092] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:27:55.094] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:27:55.097] [Ability] Frostblitz damage applied: 423 to Wander-Bit
+[2026-01-30 22:27:55.100] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:27:55.104] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:27:55.109] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:27:57.537] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 22:27:59.636] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:27:59.641] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:27:59.646] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:27:59.654] [Ability] Frostblitz damage applied: 396 to Wander-Bit
+[2026-01-30 22:27:59.663] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:27:59.666] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:27:59.671] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:27:59.677] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:27:59.683] [XP] Yheen erhielt 164 Erfahrung.
+[2026-01-30 22:27:59.716] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:27:59.975] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:28:02.080] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:28:02.087] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:02.093] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:28:02.102] [Ability] Frostblitz damage applied: 416 to Wander-Bit
+[2026-01-30 22:28:02.107] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:28:02.115] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:28:02.131] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:28:02.202] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:28:04.294] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:28:04.311] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:04.322] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:28:04.335] [Ability] Frostblitz damage applied: 392 to Wander-Bit
+[2026-01-30 22:28:04.346] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:28:04.353] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:28:04.375] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:28:04.391] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:28:04.425] [XP] Yheen erhielt 164 Erfahrung.
+[2026-01-30 22:28:04.525] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:28:04.557] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:28:06.592] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:28:06.615] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:06.627] [Ability] Frostblitz target not found or dead: world_04
+[2026-01-30 22:28:06.814] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:28:08.894] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:28:08.897] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:08.899] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:28:08.901] [Ability] Frostblitz damage applied: 770 to Wander-Bit
+[2026-01-30 22:28:08.904] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:28:08.906] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:28:08.908] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:28:08.911] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:28:08.913] [XP] Yheen erhielt 164 Erfahrung.
+[2026-01-30 22:28:08.914] [LEVEL] Yheen ist jetzt Level 7!
+[2026-01-30 22:28:08.955] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:28:09.103] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:28:11.211] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:28:11.215] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:11.224] [Ability] Frostblitz target not found or dead: world_03
+[2026-01-30 22:28:11.393] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:28:13.408] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:28:13.413] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:13.413] [Ability] Frostblitz target not found or dead: world_03
+[2026-01-30 22:28:13.622] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:28:15.725] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:28:15.732] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:15.741] [Ability] Frostblitz target not found or dead: world_03
+[2026-01-30 22:28:15.831] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:28:17.831] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:28:17.833] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:17.834] [Ability] Frostblitz target not found or dead: world_03
+[2026-01-30 22:28:22.031] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-01-30 22:28:22.191] [MAP] Change success: admin
+[2026-01-30 22:28:27.202] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-01-30 22:28:27.243] [MAP] Change success: admin
+[2026-01-30 22:28:33.311] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-01-30 22:28:33.365] [MAP] Change success: admin
+[2026-01-30 22:28:38.944] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-01-30 22:28:40.980] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-01-30 22:28:40.987] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:40.989] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:28:40.990] [Ability] Frostblitz damage applied: 511 to System-Kernel
+[2026-01-30 22:28:40.990] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:28:40.997] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:28:41.007] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:28:41.064] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-01-30 22:28:43.089] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-01-30 22:28:43.131] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:43.142] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:28:43.156] [Ability] Frostblitz damage applied: 486 to System-Kernel
+[2026-01-30 22:28:43.173] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:28:43.193] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:28:43.202] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:28:43.470] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-01-30 22:28:45.535] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-01-30 22:28:45.539] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:45.543] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:28:45.552] [Ability] Frostblitz damage applied: 513 to System-Kernel
+[2026-01-30 22:28:45.563] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:28:45.569] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:28:45.577] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:28:45.774] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-01-30 22:28:47.872] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-01-30 22:28:47.889] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:47.894] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:28:47.901] [Ability] Frostblitz damage applied: 510 to System-Kernel
+[2026-01-30 22:28:47.908] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:28:47.920] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:28:47.942] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:28:48.008] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-01-30 22:28:50.012] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-01-30 22:28:50.017] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:50.024] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:28:50.027] [Ability] Frostblitz damage applied: 520 to System-Kernel
+[2026-01-30 22:28:50.030] [Ability] Frostblitz target died: System-Kernel
+[2026-01-30 22:28:50.030] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:28:50.033] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:28:50.035] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:28:50.038] [XP] Yheen erhielt 315 Erfahrung.
+[2026-01-30 22:28:50.189] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:28:50.301] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-01-30 22:28:52.341] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-01-30 22:28:52.361] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:52.363] [Ability] Frostblitz target not found or dead: mob_boss
+[2026-01-30 22:28:52.560] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-01-30 22:28:54.567] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-01-30 22:28:54.570] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:54.570] [Ability] Frostblitz target not found or dead: mob_boss
+[2026-01-30 22:28:55.597] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-01-30 22:28:57.634] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-01-30 22:28:57.639] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:28:57.645] [Ability] Frostblitz target not found or dead: mob_boss
+[2026-01-30 22:28:58.165] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-01-30 22:29:00.236] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-01-30 22:29:00.245] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:29:00.262] [Ability] Frostblitz target not found or dead: mob_boss
+[2026-01-30 22:29:26.041] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-01-30 22:29:27.410] [MAP] Change success: admin
+[2026-01-30 22:41:45.269] =========================================
+[2026-01-30 22:41:45.308] Starting The Grid WORLD SERVER...
+[2026-01-30 22:41:45.313] =========================================
+[2026-01-30 22:41:45.314] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 22:41:45.438] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 22:42:04.812] [WS] Client connected to WorldServer.
+[2026-01-30 22:42:05.863] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 22:42:08.209] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 22:42:10.300] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:42:10.312] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:10.315] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:10.323] [Ability] Frostblitz damage applied: 519 to Wander-Bit
+[2026-01-30 22:42:10.326] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:10.328] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:10.329] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:10.487] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 22:42:12.567] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:42:12.579] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:12.585] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:12.618] [Ability] Frostblitz damage applied: 492 to Wander-Bit
+[2026-01-30 22:42:12.659] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:42:12.706] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:12.767] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:12.770] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:42:12.773] [XP] Yheen erhielt 191 Erfahrung.
+[2026-01-30 22:42:12.971] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:13.144] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:42:15.153] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:42:15.160] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:15.167] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:15.171] [Ability] Frostblitz damage applied: 493 to Wander-Bit
+[2026-01-30 22:42:15.174] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:15.176] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:15.177] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:17.054] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:42:19.132] [Ability] Frostblitz cast complete by Yheen on 
+[2026-01-30 22:42:19.134] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:19.138] [Ability] Frostblitz target not found or dead: 
+[2026-01-30 22:42:19.452] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:42:21.532] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:42:21.534] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:21.534] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:21.534] [Ability] Frostblitz damage applied: 487 to Wander-Bit
+[2026-01-30 22:42:21.535] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:21.536] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:21.536] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:22.889] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:42:24.919] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:42:24.921] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:24.921] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:24.921] [Ability] Frostblitz damage applied: 481 to Wander-Bit
+[2026-01-30 22:42:24.921] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:24.922] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:24.922] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:26.094] [Ability] Frostblitz cast start by Yheen on world_01
+[2026-01-30 22:42:28.183] [Ability] Frostblitz cast complete by Yheen on world_01
+[2026-01-30 22:42:28.195] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:28.202] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:28.209] [Ability] Frostblitz damage applied: 479 to Wander-Bit
+[2026-01-30 22:42:28.217] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:42:28.224] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:28.231] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:28.239] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:42:28.247] [XP] Yheen erhielt 191 Erfahrung.
+[2026-01-30 22:42:28.302] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:32.464] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:42:34.541] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:42:34.542] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:34.542] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:34.543] [Ability] Frostblitz damage applied: 501 to Wander-Bit
+[2026-01-30 22:42:34.544] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:34.544] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:34.545] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:34.951] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:42:37.052] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:42:37.052] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:37.052] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:37.053] [Ability] Frostblitz damage applied: 492 to Wander-Bit
+[2026-01-30 22:42:37.053] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:37.053] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:37.054] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:37.241] [Ability] Frostblitz cast start by Yheen on world_03
+[2026-01-30 22:42:39.345] [Ability] Frostblitz cast complete by Yheen on world_03
+[2026-01-30 22:42:39.346] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:39.346] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:39.346] [Ability] Frostblitz damage applied: 509 to Wander-Bit
+[2026-01-30 22:42:39.347] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:42:39.348] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:39.350] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:39.351] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:42:39.352] [XP] Yheen erhielt 191 Erfahrung.
+[2026-01-30 22:42:39.374] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:42.200] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:42:44.305] [Ability] Frostblitz cast complete by Yheen on 
+[2026-01-30 22:42:44.306] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:44.307] [Ability] Frostblitz target not found or dead: 
+[2026-01-30 22:42:45.169] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:42:47.232] [Ability] Frostblitz cast complete by Yheen on world_04
+[2026-01-30 22:42:47.233] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:47.233] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:47.233] [Ability] Frostblitz damage applied: 496 to Wander-Bit
+[2026-01-30 22:42:47.234] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:47.234] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:47.235] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:47.349] [Ability] Frostblitz cast start by Yheen on world_04
+[2026-01-30 22:42:49.403] [Ability] Frostblitz cast complete by Yheen on 
+[2026-01-30 22:42:49.413] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:49.420] [Ability] Frostblitz target not found or dead: 
+[2026-01-30 22:42:52.273] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 22:42:54.335] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:42:54.335] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:54.335] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:54.335] [Ability] Frostblitz damage applied: 484 to Wander-Bit
+[2026-01-30 22:42:54.335] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:54.336] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:54.336] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:54.739] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 22:42:56.739] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:42:56.739] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:56.740] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:56.740] [Ability] Frostblitz damage applied: 488 to Wander-Bit
+[2026-01-30 22:42:56.740] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:56.740] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:56.741] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 22:42:56.976] [Ability] Frostblitz cast start by Yheen on world_02
+[2026-01-30 22:42:59.039] [Ability] Frostblitz cast complete by Yheen on world_02
+[2026-01-30 22:42:59.040] [Ability] Frostblitz entering lock for Yheen
+[2026-01-30 22:42:59.040] [Ability] Frostblitz calculating damage for Yheen
+[2026-01-30 22:42:59.041] [Ability] Frostblitz damage applied: 489 to Wander-Bit
+[2026-01-30 22:42:59.041] [Ability] Frostblitz target died: Wander-Bit
+[2026-01-30 22:42:59.042] [Ability] Frostblitz lock released for Yheen
+[2026-01-30 22:42:59.042] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-01-30 22:42:59.043] [Ability] Frostblitz awarding XP for Yheen
+[2026-01-30 22:42:59.043] [XP] Yheen erhielt 191 Erfahrung.
+[2026-01-30 22:42:59.065] [Ability] Frostblitz processing finished for Yheen
+[2026-01-30 23:21:25.100] =========================================
+[2026-01-30 23:21:25.108] Starting The Grid WORLD SERVER...
+[2026-01-30 23:21:25.117] =========================================
+[2026-01-30 23:21:25.118] [DB] Config: Host=localhost, User=user_name
+[2026-01-30 23:21:25.225] [DB] Connected to MySQL successfully at localhost
+[2026-01-30 23:21:25.444] [DB] LoadMobs Error: Table 'world_db.mobs' doesn't exist
+[2026-01-30 23:21:32.182] [WS] Client connected to WorldServer.
+[2026-01-30 23:21:33.102] [WS] User Authenticated & Loaded: admin on Arena2
+[2026-01-30 23:21:46.872] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-01-30 23:21:46.977] [MAP] Change success: admin
+[2026-01-30 23:21:55.205] [WS] Logout timer started for admin
+[2026-01-30 23:22:05.214] [WS] Logout complete for admin
+[2026-01-30 23:22:11.510] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 23:22:16.772] [Ability] Ice Barrier cast by Xheen
+[2026-01-30 23:22:27.513] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-01-30 23:22:27.543] [MAP] Change success: admin
+[2026-01-30 23:24:47.321] [WS] Player disconnected & saved: admin
+[2026-01-30 23:25:13.802] [WS] Client connected to WorldServer.
+[2026-01-30 23:25:16.232] [WS] User Authenticated & Loaded: admin on Dungeon0
+[2026-01-30 23:27:31.139] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-01-30 23:27:31.263] [MAP] Change success: admin
+[2026-01-30 23:27:34.600] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-01-30 23:27:34.626] [MAP] Change success: admin
+[2026-01-30 23:27:40.345] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-01-30 23:27:40.375] [MAP] Change success: admin
+[2026-01-30 23:28:33.699] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-01-30 23:28:33.716] [MAP] Change success: admin
+[2026-01-30 23:28:37.896] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-01-30 23:28:37.935] [MAP] Change success: admin
+[2026-01-30 23:28:50.264] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-01-30 23:28:50.294] [MAP] Change success: admin
+[2026-01-30 23:29:12.606] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-01-30 23:29:12.625] [MAP] Change success: admin
+[2026-01-30 23:29:21.530] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-01-30 23:29:21.547] [MAP] Change success: admin
+[2026-01-30 23:29:36.333] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-01-30 23:29:36.351] [MAP] Change success: admin
+[2026-01-30 23:29:45.909] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-01-30 23:29:45.930] [MAP] Change success: admin
+[2026-01-30 23:30:05.309] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-01-30 23:30:05.325] [MAP] Change success: admin
+[2026-01-30 23:30:14.565] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-01-30 23:30:14.587] [MAP] Change success: admin
+[2026-01-30 23:30:49.805] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-01-30 23:30:49.830] [MAP] Change success: admin
+[2026-01-30 23:30:58.618] [WS] Player disconnected & saved: admin
+[2026-01-30 23:31:24.005] [WS] Client connected to WorldServer.
+[2026-01-30 23:31:25.019] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 23:31:37.285] [WS] Logout timer started for admin
+[2026-01-30 23:31:47.289] [WS] Logout complete for admin
+[2026-01-30 23:31:53.608] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 23:32:01.931] [Ability] Ice Barrier cast by Xheen
+[2026-01-30 23:50:05.535] [Ability] Frost Nova cast by Xheen
+[2026-01-30 23:50:09.360] [Ability] Ice Barrier cast by Xheen
+[2026-01-30 23:54:30.334] [WS] Logout timer started for admin
+[2026-01-30 23:54:40.380] [WS] Logout complete for admin
+[2026-01-30 23:55:08.934] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 23:55:34.001] [WS] Logout timer started for admin
+[2026-01-30 23:55:44.008] [WS] Logout complete for admin
+[2026-01-30 23:56:44.114] [WS] Player disconnected & saved: admin
+[2026-01-30 23:57:12.957] [WS] Client connected to WorldServer.
+[2026-01-30 23:57:14.267] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-01-30 23:57:29.012] [WS] Client connected to WorldServer.
+[2026-01-30 23:57:30.125] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-01-30 23:58:06.258] [DEBUG] GM Xheen using /level. Current targetId in state: Fheen
+[2026-01-30 23:58:06.431] [GM] Player Fheen level set to 60 by Xheen
+[2026-01-30 23:58:16.675] [DEBUG] GM Xheen using /level. Current targetId in state: Fheen
+[2026-01-30 23:58:16.769] [GM] Player Fheen level set to 1 by Xheen
+[2026-01-30 23:58:29.327] [Ability] Ice Barrier cast by Fheen
+[2026-01-31 00:02:12.616] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-01-31 00:02:12.888] [MAP] Change success: admin
+[2026-01-31 00:03:10.080] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-01-31 00:03:10.118] [MAP] Change success: admin
+[2026-01-31 00:04:00.182] [WS] Player disconnected & saved: client
+[2026-01-31 00:04:03.762] [WS] Player disconnected & saved: admin

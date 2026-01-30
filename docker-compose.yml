@@ -1,0 +1,59 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: thegrid_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "${MYSQL_PORT}:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./createDB.sql:/docker-entrypoint-initdb.d/createDB.sql
+    networks:
+      - thegrid_network
+
+  auth_server:
+    build:
+      context: .
+      dockerfile: Dockerfile.auth
+    container_name: thegrid_auth
+    restart: always
+    environment:
+      DB_HOST: db
+      DB_USER: ${MYSQL_USER}
+      DB_PASS: ${MYSQL_PASSWORD}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    networks:
+      - thegrid_network
+
+  world_server:
+    build:
+      context: .
+      dockerfile: Dockerfile.world
+    container_name: thegrid_world
+    restart: always
+    environment:
+      DB_HOST: db
+      DB_USER: ${MYSQL_USER}
+      DB_PASS: ${MYSQL_PASSWORD}
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db
+    networks:
+      - thegrid_network
+
+volumes:
+  db_data:
+    driver: local
+
+networks:
+  thegrid_network:
+    driver: bridge

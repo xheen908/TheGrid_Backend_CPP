@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\CMakeFiles\65045d4d7b004770ca5bc181a8771834\NightlyMemoryCheck.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\libuv-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\libuv-build\CMakeFiles\NightlyMemoryCheck" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B60C171D-B784-331E-A643-D1A078A7165D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

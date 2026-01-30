@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/export.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/sign.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/cmake/symlink.cmake
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/libmariadb/CMakeLists.txt
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/libmariadb/ma_client_plugin.c.in
+C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-src/win/resource.rc.in

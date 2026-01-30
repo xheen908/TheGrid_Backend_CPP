@@ -1,0 +1,236 @@
+#ifdef WIN32
+    #include <winsock2.h>
+#endif
+#include <mysql.h>
+#include "Database.hpp"
+#include "GameState.hpp"
+#include "Logger.hpp"
+#include <iostream>
+#include <vector>
+
+Database::Database() : conn(nullptr) {}
+
+Database& Database::getInstance() {
+    static Database instance;
+    return instance;
+}
+
+bool Database::connect(const Config& config) {
+    std::lock_guard lock(mtx);
+    currentConfig = config;
+    
+    if (conn) {
+        mysql_close(conn);
+    }
+    
+    conn = mysql_init(NULL);
+    if (conn == NULL) return false;
+
+    if (mysql_real_connect(conn, config.host.c_str(), config.user.c_str(), config.pass.c_str(), 
+                           NULL, 3306, NULL, 0) == NULL) {
+        Logger::log("[DB] ERROR: Connection failed - " + std::string(mysql_error(conn)));
+        mysql_close(conn);
+        conn = nullptr;
+        return false;
+    }
+
+    Logger::log("[DB] Connected to MySQL successfully at " + config.host);
+    return true; 
+}
+
+json Database::authenticate(const std::string& username, const std::string& password) {
+    std::lock_guard lock(mtx);
+    if (!conn) return nullptr;
+
+    // Use absolute DB reference: auth_db.users
+    std::string query = "SELECT id, gm_status FROM auth_db.users WHERE username='" + username + "' AND password_hash='" + password + "'";
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] Auth Error: " + std::string(mysql_error(conn)));
+        return nullptr;
+    }
+
+    MYSQL_RES *result = mysql_store_result(conn);
+    if (result == NULL) return nullptr;
+
+    MYSQL_ROW row = mysql_fetch_row(result);
+    json response = nullptr;
+    if (row) {
+        response = {
+            {"token", "session_" + username},
+            {"username", username},
+            {"userId", std::stoi(row[0])},
+            {"isGM", std::stoi(row[1]) != 0}
+        };
+    }
+    mysql_free_result(result);
+    return response;
+}
+
+bool Database::registerUser(const std::string& username, const std::string& password) {
+    std::lock_guard lock(mtx);
+    if (!conn) return false;
+    std::string query = "INSERT INTO auth_db.users (username, password_hash) VALUES ('" + username + "', '" + password + "')";
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] Register Error: " + std::string(mysql_error(conn)));
+        return false;
+    }
+    return true;
+}
+
+bool Database::checkGMStatus(const std::string& username) {
+    std::lock_guard lock(mtx);
+    if (!conn) return false;
+    std::string query = "SELECT gm_status FROM auth_db.users WHERE username='" + username + "'";
+    if (mysql_query(conn, query.c_str())) return false;
+    MYSQL_RES *result = mysql_store_result(conn);
+    if (!result) return false;
+    MYSQL_ROW row = mysql_fetch_row(result);
+    bool status = false;
+    if (row) status = std::stoi(row[0]) != 0;
+    mysql_free_result(result);
+    return status;
+}
+
+json Database::getCharactersForUser(const std::string& username) {
+    std::lock_guard lock(mtx);
+    if (!conn) return json::array();
+
+    // Characters are in charakter_db, Users are in auth_db
+    std::string query = "SELECT c.id, c.char_name, c.level, c.map_name, c.hp, c.max_hp, c.pos_x, c.pos_y, c.pos_z, c.appearance_data "
+                        "FROM charakter_db.characters c "
+                        "JOIN auth_db.users u ON c.user_id = u.id WHERE u.username = '" + username + "'";
+    
+    Logger::log("[DB] Fetching chars for " + username);
+
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] Fetch Chars Error: " + std::string(mysql_error(conn)));
+        return json::array();
+    }
+
+    MYSQL_RES *result = mysql_store_result(conn);
+    if (result == NULL) return json::array();
+
+    json chars = json::array();
+    MYSQL_ROW row;
+    while ((row = mysql_fetch_row(result))) {
+        json appearance = json::object();
+        if (row[7]) {
+            try { appearance = json::parse(row[7]); } catch(...) {}
+        }
+
+        chars.push_back({
+            {"id", std::stoi(row[0])},
+            {"char_name", row[1]},
+            {"level", std::stoi(row[2])},
+            {"hp", std::stoi(row[4])},
+            {"max_hp", std::stoi(row[5])},
+            {"world_state", {{"map_name", row[3]}}},
+            {"transform", {{"position_x", std::stof(row[6])}, {"position_y", std::stof(row[7])}, {"position_z", std::stof(row[8])}}},
+            {"class_info", {{"class_name", "Developer"}, {"class_color", "#00FF00"}}},
+            {"appearance_data", appearance}
+        });
+    }
+    
+    Logger::log("[DB] Found " + std::to_string(chars.size()) + " chars.");
+    mysql_free_result(result);
+    return chars;
+}
+
+bool Database::savePlayer(Player& player) {
+    std::lock_guard lock(mtx);
+    std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
+    if (!conn) return false;
+
+    std::string query = "UPDATE charakter_db.characters SET "
+                        "level=" + std::to_string(player.level) + ", "
+                        "xp=" + std::to_string(player.xp) + ", "
+                        "hp=" + std::to_string(player.hp) + ", "
+                        "max_hp=" + std::to_string(player.maxHp) + ", "
+                        "mana=" + std::to_string(player.mana) + ", "
+                        "max_mana=" + std::to_string(player.maxMana) + ", "
+                        "pos_x=" + std::to_string(player.lastPos.x) + ", "
+                        "pos_y=" + std::to_string(player.lastPos.y) + ", "
+                        "pos_z=" + std::to_string(player.lastPos.z) + ", "
+                        "map_name='" + player.mapName + "' "
+                        "WHERE id=" + std::to_string(player.dbId);
+
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] Save Error: " + std::string(mysql_error(conn)));
+        return false;
+    }
+    return true;
+}
+
+bool Database::loadCharacter(int charId, Player& player) {
+    std::lock_guard lock(mtx);
+    std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
+    if (!conn) return false;
+
+    std::string query = "SELECT c.id, c.char_name, c.level, c.xp, c.hp, c.max_hp, c.mana, c.max_mana, c.map_name, c.pos_x, c.pos_y, c.pos_z, u.gm_status, u.username "
+                        "FROM charakter_db.characters c "
+                        "JOIN auth_db.users u ON c.user_id = u.id "
+                        "WHERE c.id = " + std::to_string(charId);
+
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] Load Char Error: " + std::string(mysql_error(conn)));
+        return false;
+    }
+
+    MYSQL_RES *result = mysql_store_result(conn);
+    if (result == NULL) return false;
+
+    MYSQL_ROW row = mysql_fetch_row(result);
+    if (row) {
+        player.dbId = std::stoi(row[0]);
+        player.charName = row[1];
+        player.level = std::stoi(row[2]);
+        player.xp = std::stoi(row[3]);
+        player.hp = std::stoi(row[4]);
+        player.maxHp = std::stoi(row[5]);
+        player.mana = std::stoi(row[6]);
+        player.maxMana = std::stoi(row[7]);
+        player.mapName = row[8];
+        player.lastPos = {std::stof(row[9]), std::stof(row[10]), std::stof(row[11])};
+        player.isGM = std::stoi(row[12]) != 0;
+        player.username = row[13];
+    }
+    mysql_free_result(result);
+    return row != nullptr;
+}
+
+json Database::getWorlds() {
+    return json::array();
+}
+
+std::vector<Mob> Database::loadMobs() {
+    std::lock_guard lock(mtx);
+    std::vector<Mob> mobList;
+    if (!conn) return mobList;
+
+    std::string query = "SELECT mob_id, map_name, level, hp, name, pos_x, pos_y, pos_z FROM world_db.mobs";
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] LoadMobs Error: " + std::string(mysql_error(conn)));
+        return mobList;
+    }
+
+    MYSQL_RES *result = mysql_store_result(conn);
+    if (!result) return mobList;
+
+    MYSQL_ROW row;
+    while ((row = mysql_fetch_row(result))) {
+        Mob m;
+        m.id = row[0];
+        m.mapName = row[1];
+        m.level = std::stoi(row[2]);
+        m.maxHp = std::stoi(row[3]);
+        m.hp = m.maxHp;
+        m.name = row[4];
+        m.transform = {std::stof(row[5]), std::stof(row[6]), std::stof(row[7])};
+        m.home = m.transform;
+        m.rotation = 0.0f;
+        mobList.push_back(m);
+    }
+    mysql_free_result(result);
+    Logger::log("[DB] Loaded " + std::to_string(mobList.size()) + " mobs from database.");
+    return mobList;
+}

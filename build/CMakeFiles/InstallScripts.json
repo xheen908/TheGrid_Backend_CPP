@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/xheen908/Documents/thegrid_backend_c/build/cmake_install.cmake",
+		"C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/json-build/cmake_install.cmake",
+		"C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-build/cmake_install.cmake",
+		"C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-build/external/zlib/cmake_install.cmake",
+		"C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-build/include/cmake_install.cmake",
+		"C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/mariadb-connector-c-build/libmariadb/cmake_install.cmake",
+		"C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/libuv-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

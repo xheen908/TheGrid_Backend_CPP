@@ -1,0 +1,1 @@
+C:\Users\xheen908\Documents\thegrid_backend_c\build\_deps\mariadb-connector-c-build\libmariadb\mariadb_obj.dir\Release\mariadb_obj.lib

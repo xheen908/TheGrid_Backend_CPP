@@ -1,0 +1,10 @@
+^C:\USERS\XHEEN908\DOCUMENTS\THEGRID_BACKEND_C\BUILD\_DEPS\LIBUV-SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/xheen908/Documents/thegrid_backend_c -BC:/Users/xheen908/Documents/thegrid_backend_c/build --check-stamp-file C:/Users/xheen908/Documents/thegrid_backend_c/build/_deps/libuv-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
