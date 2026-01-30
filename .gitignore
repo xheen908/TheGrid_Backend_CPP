@@ -23,6 +23,13 @@
 *.i
 *.s
 
+# --- Project Specific Custom Folders ---
+build/
+
+out/
+bin/
+lib/
+
 # --- CMake ---
 CMakeCache.txt
 CMakeFiles/
@@ -34,13 +41,6 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps/
-
-# --- Build Directories ---
-# Standard Ordner für Build-Artefakte
-[Bb]uild/
-out/
-bin/
-lib/
 
 # --- Visual Studio ---
 .vs/
