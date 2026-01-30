@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE GRID | Account Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER / NAVIGATION -->
+        <nav>
+            <h1 onclick="location.href='/'" style="cursor:pointer">THE GRID</h1>
+            <div class="nav-links">
+                <a href="/" class="nav-btn">Zurück zum Dash</a>
+            </div>
+        </nav>
+
+        <div style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
+            <div class="auth-card">
+                <h2 id="auth-title" style="text-align: center; margin-bottom: 30px;">Simulation Login</h2>
+                <form id="auth-form">
+                    <div class="input-group">
+                        <label>User Ident</label>
+                        <input type="text" id="username" required autocomplete="username">
+                    </div>
+                    <div class="input-group">
+                        <label>Security Code</label>
+                        <input type="password" id="password" required autocomplete="current-password">
+                    </div>
+                    <button type="submit" id="submit-btn" class="glow-button">Initialisieren</button>
+                    <div id="auth-error"
+                        style="color: var(--neon-red); margin-top: 15px; text-align: center; font-size: 0.8em;"></div>
+                </form>
+                <div style="text-align: center; margin-top: 20px; font-size: 0.85em;">
+                    <span id="toggle-text">Neu im System?</span>
+                    <span style="color: var(--neon-blue); cursor: pointer;" onclick="toggleAuth()">Registrieren</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isLogin = true;
+
+        async function init() {
+            if (localStorage.getItem('token')) {
+                location.href = '/';
+            }
+        }
+
+        function toggleAuth() {
+            isLogin = !isLogin;
+            document.getElementById('auth-title').innerText = isLogin ? 'Simulation Login' : 'System Registrierung';
+            document.getElementById('submit-btn').innerText = isLogin ? 'Initialisieren' : 'Zugang Erstellen';
+            document.getElementById('toggle-text').innerText = isLogin ? 'Neu im System?' : 'Bereits registriert?';
+        }
+
+        document.getElementById('auth-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const statusDiv = document.getElementById('auth-error');
+            statusDiv.innerText = '';
+
+            try {
+                const response = await fetch(isLogin ? '/api/login' : '/api/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, password })
+                });
+                const data = await response.json();
+
+                if (response.ok) {
+                    if (isLogin) {
+                        localStorage.setItem('token', data.token);
+                        localStorage.setItem('username', username);
+                        location.href = '/';
+                    } else {
+                        alert('Registrierung erfolgreich! Bitte einloggen.');
+                        toggleAuth();
+                    }
+                } else {
+                    statusDiv.innerText = data.error;
+                }
+            } catch (err) { statusDiv.innerText = 'Server Error'; }
+        });
+
+        init();
+    </script>
+</body>
+
+</html>
