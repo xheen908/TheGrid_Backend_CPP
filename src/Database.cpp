@@ -114,8 +114,8 @@ json Database::getCharactersForUser(const std::string& username) {
     MYSQL_ROW row;
     while ((row = mysql_fetch_row(result))) {
         json appearance = json::object();
-        if (row[7]) {
-            try { appearance = json::parse(row[7]); } catch(...) {}
+        if (row[9]) {
+            try { appearance = json::parse(row[9]); } catch(...) {}
         }
 
         chars.push_back({
@@ -126,7 +126,7 @@ json Database::getCharactersForUser(const std::string& username) {
             {"max_hp", std::stoi(row[5])},
             {"world_state", {{"map_name", row[3]}}},
             {"transform", {{"position_x", std::stof(row[6])}, {"position_y", std::stof(row[7])}, {"position_z", std::stof(row[8])}}},
-            {"class_info", {{"class_name", "Developer"}, {"class_color", "#00FF00"}}},
+            {"class_info", {{"class_name", "Developer"}, {"class_color", "#00FF00"}, {"role", "Admin"}}},
             {"appearance_data", appearance}
         });
     }
@@ -134,6 +134,36 @@ json Database::getCharactersForUser(const std::string& username) {
     Logger::log("[DB] Found " + std::to_string(chars.size()) + " chars.");
     mysql_free_result(result);
     return chars;
+}
+
+bool Database::createCharacter(const std::string& username, const std::string& charName) {
+    std::lock_guard lock(mtx);
+    if (!conn) return false;
+
+    // 1. Get user_id
+    std::string userQuery = "SELECT id FROM auth_db.users WHERE username='" + username + "'";
+    if (mysql_query(conn, userQuery.c_str())) return false;
+    MYSQL_RES* res = mysql_store_result(conn);
+    if (!res) return false;
+    MYSQL_ROW row = mysql_fetch_row(res);
+    if (!row) {
+        mysql_free_result(res);
+        return false;
+    }
+    int userId = std::stoi(row[0]);
+    mysql_free_result(res);
+
+    // 2. Insert character
+    // We'll use default values for most columns as defined in createDB.sql
+    // appearance_data: {"suit_color": "#00FFFF"} (Developer default)
+    std::string insertQuery = "INSERT INTO charakter_db.characters (user_id, char_name, appearance_data) VALUES (" + 
+                             std::to_string(userId) + ", '" + charName + "', '{\"suit_color\": \"#00FFFF\"}')";
+    
+    if (mysql_query(conn, insertQuery.c_str())) {
+        Logger::log("[DB] Create Character Error: " + std::string(mysql_error(conn)));
+        return false;
+    }
+    return true;
 }
 
 bool Database::savePlayer(Player& player) {

@@ -31,6 +31,7 @@ public:
 
     // --- Charakter DB Operations ---
     json getCharactersForUser(const std::string& username);
+    bool createCharacter(const std::string& username, const std::string& charName);
     bool savePlayer(struct Player& player);
     bool loadCharacter(int charId, struct Player& player);
 

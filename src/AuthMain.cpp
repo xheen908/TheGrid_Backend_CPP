@@ -312,6 +312,41 @@ int main() {
         res->writeHeader("Content-Type", "application/json")->end(chars.dump());
     });
 
+    app.post("/api/characters", [](auto *res, auto *req) {
+        std::string auth = std::string(req->getHeader("authorization"));
+        std::string user = "";
+        if (auth.starts_with("Bearer ")) {
+            std::string token = auth.substr(7);
+            if (token.starts_with("session_")) user = token.substr(8);
+        }
+        if (user.empty()) {
+            res->writeStatus("401 Unauthorized")->end("{\"error\":\"Invalid or missing token\"}");
+            return;
+        }
+
+        res->onAborted([]() {});
+        res->onData([res, user](std::string_view data, bool isLast) {
+            static std::string buffer;
+            buffer.append(data.data(), data.length());
+            if (isLast) {
+                try {
+                    auto j = json::parse(buffer);
+                    buffer.clear();
+                    std::string charName = j.value("name", "");
+                    if (charName.empty()) {
+                        res->writeStatus("400 Bad Request")->end("{\"error\":\"Name is required\"}");
+                        return;
+                    }
+                    if (Database::getInstance().createCharacter(user, charName)) {
+                        res->writeHeader("Content-Type", "application/json")->end("{\"success\":true}");
+                    } else {
+                        res->writeStatus("400 Bad Request")->end("{\"error\":\"Character creation failed\"}");
+                    }
+                } catch (...) { res->writeStatus("400")->end(); }
+            }
+        });
+    });
+
     app.get("/api/admin/stats", [](auto *res, auto *req) {
         res->writeHeader("Content-Type", "application/json")->end("{\"players\": []}");
     });
