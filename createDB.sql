@@ -80,7 +80,32 @@ INSERT INTO `maps` (`map_name`, `display_name`) VALUES
 ('Arena2', 'Vulkanische Arena');
 
 -- --------------------------------------------------------
--- 4. USER CREATION & PRIVILEGES
+-- 4. SETUP MOBS (NPC Enemy Data)
+-- --------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mobs` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `mob_id` VARCHAR(50) NOT NULL UNIQUE,
+  `map_name` VARCHAR(100) NOT NULL,
+  `name` VARCHAR(100) NOT NULL,
+  `level` INT DEFAULT 1,
+  `hp` INT DEFAULT 100,
+  `pos_x` FLOAT DEFAULT 0.0,
+  `pos_y` FLOAT DEFAULT 0.0,
+  `pos_z` FLOAT DEFAULT 0.0,
+  `respawn_time` INT DEFAULT 30
+) ENGINE=InnoDB;
+
+TRUNCATE TABLE `mobs`;
+INSERT INTO `mobs` (`id`, `mob_id`, `map_name`, `name`, `level`, `hp`, `pos_x`, `pos_y`, `pos_z`, `respawn_time`) VALUES
+	(1, 'arena_01', 'Arena0', 'Bit-Wächter', 1, 100, 0, 0, -10, 30),
+	(2, 'arena_02', 'Arena0', 'Bit-Wächter', 1, 100, 20, 0, 0, 30),
+	(3, 'arena_03', 'Arena0', 'Bit-Veteran', 3, 450, -5, 0, -20, 30),
+	(4, 'arena_g2_1', 'Arena0', 'Duo-Bit A', 2, 200, -10, 0, -5, 30),
+	(5, 'arena_g2_2', 'Arena0', 'Duo-Bit B', 2, 200, -11, 0, -6, 30),
+	(6, 'mob_boss', 'Dungeon0', 'System-Kernel', 16, 15000, 3.75083, 3.75083, 0.433696, 30);
+
+-- --------------------------------------------------------
+-- 5. USER CREATION & PRIVILEGES
 -- --------------------------------------------------------
 CREATE USER IF NOT EXISTS 'user_name'@'%' IDENTIFIED WITH mysql_native_password BY 'user_passwort';
 GRANT ALL PRIVILEGES ON `auth_db`.* TO 'user_name'@'%';

@@ -223,6 +223,11 @@ void WorldServer::tick() {
             if (m.target.empty()) {
                 m.rotation += 0.05f;
             }
+
+            // --- Debuff Cleanup ---
+            m.debuffs.erase(std::remove_if(m.debuffs.begin(), m.debuffs.end(),
+                [nowMs](const Debuff& d) { return nowMs >= d.endTime; }),
+                m.debuffs.end());
         }
     }
 
@@ -244,6 +249,22 @@ void WorldServer::tick() {
                     Logger::log("[WS] Logout complete for " + p->username);
                 }
 
+                // --- Buff Cleanup ---
+                bool hadIceBarrier = false;
+                for (const auto& b : p->buffs) if (b.type == "Eisbarriere") hadIceBarrier = true;
+
+                p->buffs.erase(std::remove_if(p->buffs.begin(), p->buffs.end(),
+                    [nowMs](const Debuff& b) { return nowMs >= b.endTime; }),
+                    p->buffs.end());
+
+                bool hasIceBarrier = false;
+                for (const auto& b : p->buffs) if (b.type == "Eisbarriere") hasIceBarrier = true;
+
+                if (hadIceBarrier && !hasIceBarrier) {
+                    p->shield = 0;
+                    Logger::log("[WS] Ice Barrier expired for " + p->username);
+                }
+
                 if (nowMs - p->lastStatusSync > 1000) {
                     p->lastStatusSync = nowMs;
                     json buffList = json::array();
@@ -260,8 +281,17 @@ void WorldServer::tick() {
             {
                 std::lock_guard<std::recursive_mutex> mobLock(GameState::getInstance().getMtx());
                 for (auto const& m : GameState::getInstance().getMobs()) {
-                    if (m.mapName == p->mapName && m.hp > 0) {
-                        mobList.push_back({{"id", m.id}, {"name", m.name}, {"hp", m.hp}, {"maxHp", m.maxHp}, {"transform", {{"x", m.transform.x}, {"y", m.transform.y}, {"z", m.transform.z}, {"rot", m.rotation}}}});
+                    if (m.mapName == p->mapName) {
+                        // Sync if alive OR died recently (within 5 seconds)
+                        bool recentlyDied = (m.hp <= 0 && m.respawnAt > 0 && (nowMs < (m.respawnAt - (GameState::getInstance().getRespawnRate(m.mapName) - 5) * 1000)));
+                        
+                        if (m.hp > 0 || recentlyDied) {
+                            json dList = json::array();
+                            for (auto const& db : m.debuffs) {
+                                dList.push_back({{"type", db.type}, {"remaining", (int)((db.endTime - nowMs) / 1000)}});
+                            }
+                            mobList.push_back({{"id", m.id}, {"name", m.name}, {"hp", m.hp}, {"maxHp", m.maxHp}, {"debuffs", dList}, {"transform", {{"x", m.transform.x}, {"y", m.transform.y}, {"z", m.transform.z}, {"rot", m.rotation}}}});
+                        }
                     }
                 }
             }
