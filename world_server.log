@@ -1,0 +1,2123 @@
+[2026-02-01 00:44:37.394] =========================================
+[2026-02-01 00:44:37.395] Starting The Grid WORLD SERVER...
+[2026-02-01 00:44:37.396] =========================================
+[2026-02-01 00:44:37.397] [DB] Using Config: Host=127.0.0.1:3312, User=user_name
+[2026-02-01 00:44:37.417] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 00:44:37.434] [DB] Loaded 6 mobs from database.
+[2026-02-01 00:50:18.808] [WS] Client connected to WorldServer.
+[2026-02-01 00:50:19.543] [WS] User Authenticated & Loaded: admin on Arena2
+[2026-02-01 00:50:27.358] [WS] Player disconnected & saved: admin
+[2026-02-01 00:51:23.403] [WS] Client connected to WorldServer.
+[2026-02-01 00:51:24.141] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 00:51:44.154] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 00:51:44.165] [MAP] Change success: admin
+[2026-02-01 00:51:54.971] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 00:51:54.980] [MAP] Change success: admin
+[2026-02-01 00:52:01.021] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 00:52:01.031] [MAP] Change success: admin
+[2026-02-01 00:52:04.056] [Ability] Frostblitz cast start by Xheen on arena_02
+[2026-02-01 00:52:06.163] [Ability] Frostblitz cast complete by Xheen on arena_02
+[2026-02-01 00:52:06.163] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 00:52:06.163] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 00:52:06.165] [Ability] Frostblitz damage applied: 20922 to Bit-Wächter
+[2026-02-01 00:52:06.165] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 00:52:06.166] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 00:52:06.166] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 00:52:08.137] [Ability] Frost Nova cast by Xheen
+[2026-02-01 00:52:09.953] [Ability] Frostblitz cast start by Xheen on arena_02
+[2026-02-01 00:52:12.019] [Ability] Frostblitz cast complete by Xheen on arena_02
+[2026-02-01 00:52:12.020] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 00:52:12.020] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 00:52:12.021] [Ability] Frostblitz damage applied: 20910 to Bit-Wächter
+[2026-02-01 00:52:12.021] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 00:52:12.021] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 00:52:12.021] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 00:52:12.203] [Ability] Frostblitz cast start by Xheen on arena_02
+[2026-02-01 00:52:14.306] [Ability] Frostblitz cast complete by Xheen on arena_02
+[2026-02-01 00:52:14.306] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 00:52:14.306] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 00:52:14.306] [Ability] Frostblitz damage applied: 20937 to Bit-Wächter
+[2026-02-01 00:52:14.307] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 00:52:14.307] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 00:52:14.307] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 00:52:14.403] [Ability] Frostblitz cast start by Xheen on arena_02
+[2026-02-01 00:52:16.478] [Ability] Frostblitz cast complete by Xheen on arena_02
+[2026-02-01 00:52:16.478] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 00:52:16.479] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 00:52:16.479] [Ability] Frostblitz damage applied: 20918 to Bit-Wächter
+[2026-02-01 00:52:16.479] [Ability] Frostblitz target died: Bit-Wächter
+[2026-02-01 00:52:16.479] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 00:52:16.480] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 00:52:16.480] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 00:52:16.480] [XP] Xheen erhielt 3911 Erfahrung.
+[2026-02-01 00:52:16.490] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 00:52:16.620] [Ability] Frostblitz cast start by Xheen on arena_g2_1
+[2026-02-01 00:52:18.665] [Ability] Frostblitz cast complete by Xheen on arena_g2_1
+[2026-02-01 00:52:18.665] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 00:52:18.666] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 00:52:18.666] [Ability] Frostblitz damage applied: 20927 to Duo-Bit A
+[2026-02-01 00:52:18.666] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 00:52:18.667] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 00:52:18.667] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 00:52:18.920] [Ability] Frostblitz cast start by Xheen on arena_g2_1
+[2026-02-01 00:52:20.950] [Ability] Frostblitz cast complete by Xheen on arena_g2_1
+[2026-02-01 00:52:20.951] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 00:52:20.951] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 00:52:20.951] [Ability] Frostblitz damage applied: 20936 to Duo-Bit A
+[2026-02-01 00:52:20.951] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 00:52:20.952] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 00:52:20.952] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 00:52:22.036] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 00:52:22.046] [MAP] Change success: admin
+[2026-02-01 00:52:25.010] [WS] Player disconnected & saved: admin
+[2026-02-01 01:00:46.899] =========================================
+[2026-02-01 01:00:46.901] Starting The Grid WORLD SERVER...
+[2026-02-01 01:00:46.902] =========================================
+[2026-02-01 01:00:46.902] [DB] Using Config: Host=127.0.0.1:3312, User=user_name
+[2026-02-01 01:00:46.917] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 01:00:46.920] [DB] Loaded 13 mobs from database.
+[2026-02-01 01:06:40.190] =========================================
+[2026-02-01 01:06:40.192] Starting The Grid WORLD SERVER...
+[2026-02-01 01:06:40.192] =========================================
+[2026-02-01 01:06:40.192] [DB] Using Config: Host=127.0.0.1:3312, User=user_name
+[2026-02-01 01:06:40.206] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 01:06:40.208] [DB] Loaded 13 mobs from database.
+[2026-02-01 01:07:44.043] =========================================
+[2026-02-01 01:07:44.044] Starting The Grid WORLD SERVER...
+[2026-02-01 01:07:44.044] =========================================
+[2026-02-01 01:07:44.045] [DB] Using Config: Host=127.0.0.1:3312, User=user_name
+[2026-02-01 01:07:44.058] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 01:07:44.060] [DB] Loaded 13 mobs from database.
+[2026-02-01 01:39:09.783] =========================================
+[2026-02-01 01:39:09.785] Starting The Grid WORLD SERVER...
+[2026-02-01 01:39:09.785] =========================================
+[2026-02-01 01:39:09.786] [DB] Config: Host=localhost, User=user_name
+[2026-02-01 01:39:09.815] [DB] ERROR: Connection failed - Access denied for user 'user_name'@'172.18.0.1' (using password: YES)
+[2026-02-01 01:39:09.816] [FATAL] Could not connect to MySQL.
+[2026-02-01 02:08:25.329] =========================================
+[2026-02-01 02:08:25.330] Starting The Grid WORLD SERVER...
+[2026-02-01 02:08:25.330] =========================================
+[2026-02-01 02:08:25.331] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 02:08:25.350] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 02:08:25.374] [DB] Loaded 13 mobs from database.
+[2026-02-01 02:08:37.538] [WS] Client connected to WorldServer.
+[2026-02-01 02:08:37.556] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 02:08:40.005] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 02:08:44.219] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 02:08:44.251] [MAP] Change success: admin
+[2026-02-01 02:08:44.284] [AI] Mob arena_01 aggroed on admin
+[2026-02-01 02:08:45.535] [Ability] Frostblitz cast start by Xheen on arena_01
+[2026-02-01 02:08:47.540] [Ability] Frostblitz cast complete by Xheen on arena_01
+[2026-02-01 02:08:47.541] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 02:08:47.541] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 02:08:47.542] [Ability] Frostblitz damage applied: 27381 to Bit-Wächter
+[2026-02-01 02:08:47.543] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 02:08:47.543] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 02:08:47.543] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 02:08:47.619] [Ability] Frostblitz cast start by Xheen on arena_01
+[2026-02-01 02:08:49.714] [Ability] Frostblitz cast complete by Xheen on arena_01
+[2026-02-01 02:08:49.714] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 02:08:49.715] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 02:08:49.715] [Ability] Frostblitz damage applied: 27382 to Bit-Wächter
+[2026-02-01 02:08:49.716] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 02:08:49.716] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 02:08:49.717] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 02:08:50.102] [Ability] Frost Nova cast by Xheen
+[2026-02-01 02:08:51.452] [Ability] Frostblitz cast start by Xheen on arena_01
+[2026-02-01 02:08:53.504] [Ability] Frostblitz cast complete by Xheen on arena_01
+[2026-02-01 02:08:53.504] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 02:08:53.505] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 02:08:53.506] [Ability] Frostblitz damage applied: 27379 to Bit-Wächter
+[2026-02-01 02:08:53.506] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 02:08:53.507] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 02:08:53.507] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 02:08:54.752] [Ability] Frostblitz cast start by Xheen on arena_01
+[2026-02-01 02:08:56.759] [Ability] Frostblitz cast complete by Xheen on arena_01
+[2026-02-01 02:08:56.760] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 02:08:56.761] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 02:08:56.761] [Ability] Frostblitz damage applied: 27406 to Bit-Wächter
+[2026-02-01 02:08:56.762] [Ability] Frostblitz target died: Bit-Wächter
+[2026-02-01 02:08:56.762] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 02:08:56.763] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 02:08:56.764] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 02:08:56.764] [XP] Xheen erhielt 4863 Erfahrung.
+[2026-02-01 02:08:56.765] [LEVEL] Xheen ist jetzt Level 69!
+[2026-02-01 02:08:56.778] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 02:09:00.885] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 02:09:00.894] [MAP] Change success: admin
+[2026-02-01 02:09:09.035] [Ability] Ice Barrier cast by Xheen
+[2026-02-01 02:09:39.084] [WS] Ice Barrier expired for admin
+[2026-02-01 13:29:38.113] =========================================
+[2026-02-01 13:29:38.116] Starting The Grid WORLD SERVER...
+[2026-02-01 13:29:38.116] =========================================
+[2026-02-01 13:29:38.116] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 13:29:38.140] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 13:29:38.143] [DB] Loaded 13 mobs from database.
+[2026-02-01 13:30:23.142] [WS] Client connected to WorldServer.
+[2026-02-01 13:30:23.161] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 13:30:24.178] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 13:33:01.746] [WS] Client connected to WorldServer.
+[2026-02-01 13:33:01.765] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 13:33:04.051] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 13:33:41.459] [MAP] Player client requesting map change: WorldMap0 -> Arena2
+[2026-02-01 13:33:41.470] [MAP] Change success: client
+[2026-02-01 13:33:41.471] [AI] Mob poly_cube_1 aggroed on client
+[2026-02-01 13:33:41.471] [AI] Mob poly_cone_1 aggroed on client
+[2026-02-01 13:33:41.471] [AI] Mob poly_pyramid_1 aggroed on client
+[2026-02-01 13:33:41.471] [AI] Mob poly_sphere_1 aggroed on client
+[2026-02-01 13:33:41.472] [AI] Mob poly_torus_1 aggroed on client
+[2026-02-01 13:33:41.472] [AI] Mob poly_capsule_1 aggroed on client
+[2026-02-01 13:33:41.472] [AI] Mob poly_ring_big aggroed on client
+[2026-02-01 13:33:43.920] [Ability] Ice Barrier cast by Mage
+[2026-02-01 13:33:54.835] [Ability] Frost Nova cast by Mage
+[2026-02-01 13:34:13.976] [WS] Ice Barrier expired for client
+[2026-02-01 13:34:14.180] [MAP] Player client requesting map change: Arena2 -> WorldMap0
+[2026-02-01 13:34:14.191] [MAP] Change success: client
+[2026-02-01 13:34:19.135] [MAP] Player client requesting map change: WorldMap0 -> Arena1
+[2026-02-01 13:34:19.144] [MAP] Change success: client
+[2026-02-01 13:34:28.434] [MAP] Player client requesting map change: Arena1 -> WorldMap0
+[2026-02-01 13:34:28.449] [MAP] Change success: client
+[2026-02-01 14:00:35.185] [WS] Player disconnected & saved: client
+[2026-02-01 14:10:05.526] [WS] Client connected to WorldServer.
+[2026-02-01 14:10:05.544] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 14:10:07.215] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 14:10:17.081] [WS] Player disconnected & saved: client
+[2026-02-01 14:11:36.683] [WS] Client connected to WorldServer.
+[2026-02-01 14:11:36.720] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 14:11:39.597] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 14:12:02.697] [MAP] Player client requesting map change: WorldMap0 -> Arena2
+[2026-02-01 14:12:02.710] [MAP] Change success: client
+[2026-02-01 14:12:45.104] [Ability] Frostblitz cast start by Mage on poly_cone_1
+[2026-02-01 14:12:47.122] [Ability] Frostblitz cast complete by Mage on poly_cone_1
+[2026-02-01 14:12:47.123] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 14:12:47.123] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 14:12:47.123] [Ability] Frostblitz damage applied: 2637 to Neon-Kegel
+[2026-02-01 14:12:47.123] [Ability] Frostblitz lock released for Mage
+[2026-02-01 14:12:47.124] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 14:12:47.124] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 14:13:11.674] [Ability] Frostblitz cast start by Mage on poly_cone_1
+[2026-02-01 14:13:13.741] [Ability] Frostblitz cast complete by Mage on poly_cone_1
+[2026-02-01 14:13:13.741] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 14:13:13.742] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 14:13:13.742] [Ability] Frostblitz damage applied: 1427 to Neon-Kegel
+[2026-02-01 14:13:13.743] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-01 14:13:13.744] [Ability] Frostblitz lock released for Mage
+[2026-02-01 14:13:13.744] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 14:13:13.754] [Ability] Frostblitz awarding XP for Mage
+[2026-02-01 14:13:13.754] [XP] Mage erhielt 464 Erfahrung.
+[2026-02-01 14:13:13.766] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 14:13:14.612] [Ability] Frostblitz cast start by Mage on poly_cube_1
+[2026-02-01 14:13:25.032] [MAP] Player client requesting map change: Arena2 -> WorldMap0
+[2026-02-01 14:13:25.042] [MAP] Change success: client
+[2026-02-01 16:07:54.500] [MAP] Player client requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 16:07:54.558] [MAP] Change success: client
+[2026-02-01 16:07:54.558] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:08.635] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:08.746] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:08.746] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:08.854] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:08.960] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:09.068] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:09.176] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:09.285] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:09.394] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:09.503] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:09.613] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:09.721] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:09.721] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:09.830] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:09.940] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:10.049] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:10.157] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:10.266] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:10.375] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:10.482] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:10.591] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:10.701] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:10.702] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:10.809] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:10.917] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:11.026] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:11.134] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:11.243] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:11.351] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:11.458] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:11.459] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:11.565] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:11.674] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:11.782] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:11.891] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:11.999] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:12.106] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:12.215] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:12.216] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:12.324] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:12.433] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:12.542] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:12.652] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:12.761] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:12.869] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:12.977] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:13.085] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:13.194] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:13.195] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:13.302] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:13.411] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:13.519] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:13.627] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:13.735] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:13.843] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:13.951] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:13.952] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:14.061] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:14.171] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:14.180] [Ability] Frostblitz cast start by Mage on mob_boss
+[2026-02-01 16:08:14.281] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:14.390] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:14.498] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:14.608] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:14.715] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:14.715] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:14.824] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:14.932] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:15.041] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:15.150] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:15.257] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:15.367] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:15.477] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:15.477] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:15.584] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:15.693] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:15.800] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:15.911] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:16.019] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:16.126] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:16.235] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:16.236] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:16.237] [Ability] Frostblitz cast complete by Mage on mob_boss
+[2026-02-01 16:08:16.246] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:08:16.247] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:08:16.247] [Ability] Frostblitz damage applied: 1455 to System-Kernel
+[2026-02-01 16:08:16.248] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:08:16.249] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:08:16.249] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:08:16.463] [Ability] Frostblitz cast start by Mage on mob_boss
+[2026-02-01 16:08:16.577] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:16.686] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:16.796] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:16.905] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:16.905] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:17.013] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:17.122] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:17.230] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:17.339] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:17.446] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:17.447] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:17.555] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:17.662] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:17.770] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:17.879] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:17.987] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:17.987] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:18.094] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:18.203] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:18.310] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:18.420] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:18.530] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:18.530] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:18.531] [Ability] Frostblitz cast complete by Mage on mob_boss
+[2026-02-01 16:08:18.532] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:08:18.533] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:08:18.533] [Ability] Frostblitz damage applied: 1464 to System-Kernel
+[2026-02-01 16:08:18.534] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:08:18.534] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:08:18.535] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:08:18.549] [Ability] Frostblitz cast start by Mage on mob_boss
+[2026-02-01 16:08:18.749] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:18.858] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:18.967] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:19.076] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:19.077] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:19.186] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:19.294] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:19.403] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:19.511] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:19.620] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:19.620] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:19.729] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:19.839] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:19.948] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:20.057] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:20.165] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:20.166] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:20.276] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:20.384] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:20.492] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:20.599] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:20.600] [Ability] Frostblitz cast complete by Mage on mob_boss
+[2026-02-01 16:08:20.601] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:08:20.601] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:08:20.602] [Ability] Frostblitz damage applied: 1440 to System-Kernel
+[2026-02-01 16:08:20.603] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:08:20.604] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:08:20.613] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:08:20.723] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:20.831] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:20.939] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:21.048] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:21.155] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:21.264] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:21.265] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:21.373] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:21.482] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:21.591] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:21.701] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:21.810] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:21.810] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:21.919] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:08:22.027] [AI] Mob mob_boss leashed.
+[2026-02-01 16:08:22.069] [Ability] Frost Nova cast by Mage
+[2026-02-01 16:08:23.579] [Ability] Frostblitz cast start by Mage on mob_boss
+[2026-02-01 16:08:25.599] [Ability] Frostblitz cast complete by Mage on mob_boss
+[2026-02-01 16:08:25.599] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:08:25.600] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:08:25.600] [Ability] Frostblitz damage applied: 2566 to System-Kernel
+[2026-02-01 16:08:25.601] [Ability] Frostblitz target died: System-Kernel
+[2026-02-01 16:08:25.602] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:08:25.603] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:08:25.604] [Ability] Frostblitz awarding XP for Mage
+[2026-02-01 16:08:25.604] [XP] Mage erhielt 640 Erfahrung.
+[2026-02-01 16:08:25.626] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:08:25.645] [Ability] Frostblitz cast start by Mage on mob_boss
+[2026-02-01 16:08:27.676] [Ability] Frostblitz cast complete by Mage on 
+[2026-02-01 16:08:27.677] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:08:27.677] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 16:08:34.305] [MAP] Player client requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 16:08:34.316] [MAP] Change success: client
+[2026-02-01 16:36:50.411] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 16:36:50.429] [MAP] Change success: admin
+[2026-02-01 16:36:52.325] [MAP] Player client requesting map change: WorldMap0 -> Arena2
+[2026-02-01 16:36:52.336] [MAP] Change success: client
+[2026-02-01 16:37:14.693] [Ability] Frostblitz cast start by Xheen on poly_torus_1
+[2026-02-01 16:37:16.790] [Ability] Frostblitz cast complete by Xheen on poly_torus_1
+[2026-02-01 16:37:16.791] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:16.792] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:16.793] [Ability] Frostblitz damage applied: 1133 to Neon-Torus
+[2026-02-01 16:37:16.802] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:16.803] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:16.803] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:16.926] [Ability] Frostblitz cast start by Xheen on poly_torus_1
+[2026-02-01 16:37:18.971] [Ability] Frostblitz cast complete by Xheen on poly_torus_1
+[2026-02-01 16:37:18.971] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:18.972] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:18.973] [Ability] Frostblitz damage applied: 1138 to Neon-Torus
+[2026-02-01 16:37:18.973] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:18.974] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:18.975] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:19.110] [Ability] Frostblitz cast start by Xheen on poly_torus_1
+[2026-02-01 16:37:21.139] [Ability] Frostblitz cast complete by Xheen on poly_torus_1
+[2026-02-01 16:37:21.140] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:21.141] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:21.142] [Ability] Frostblitz damage applied: 1152 to Neon-Torus
+[2026-02-01 16:37:21.143] [Ability] Frostblitz target died: Neon-Torus
+[2026-02-01 16:37:21.152] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:21.153] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:21.154] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 16:37:21.154] [XP] Xheen erhielt 464 Erfahrung.
+[2026-02-01 16:37:21.166] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:21.177] [Ability] Frostblitz cast start by Xheen on poly_torus_1
+[2026-02-01 16:37:23.226] [Ability] Frostblitz cast complete by Xheen on poly_sphere_1
+[2026-02-01 16:37:23.227] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:23.228] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:23.234] [Ability] Frostblitz damage applied: 2068 to Neon-Sphäre
+[2026-02-01 16:37:23.235] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:23.236] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:23.236] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:23.326] [Ability] Frostblitz cast start by Xheen on poly_sphere_1
+[2026-02-01 16:37:25.417] [Ability] Frostblitz cast complete by Xheen on poly_sphere_1
+[2026-02-01 16:37:25.418] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:25.419] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:25.419] [Ability] Frostblitz damage applied: 1161 to Neon-Sphäre
+[2026-02-01 16:37:25.420] [Ability] Frostblitz target died: Neon-Sphäre
+[2026-02-01 16:37:25.421] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:25.421] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:25.422] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 16:37:25.422] [XP] Xheen erhielt 464 Erfahrung.
+[2026-02-01 16:37:25.434] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:25.609] [Ability] Frostblitz cast start by Xheen on poly_ring_big
+[2026-02-01 16:37:27.707] [Ability] Frostblitz cast complete by Xheen on poly_ring_big
+[2026-02-01 16:37:27.708] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:27.709] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:27.718] [Ability] Frostblitz damage applied: 1134 to Gigantischer Neon-Ring
+[2026-02-01 16:37:27.719] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:27.720] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:27.720] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:27.744] [Ability] Frostblitz cast start by Xheen on poly_ring_big
+[2026-02-01 16:37:28.070] [Ability] Frostblitz cast start by Mage on poly_ring_big
+[2026-02-01 16:37:29.781] [Ability] Frostblitz cast complete by Xheen on poly_ring_big
+[2026-02-01 16:37:29.782] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:29.783] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:29.785] [Ability] Frostblitz damage applied: 1151 to Gigantischer Neon-Ring
+[2026-02-01 16:37:29.785] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:29.786] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:29.786] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:29.842] [Ability] Frostblitz cast start by Xheen on poly_ring_big
+[2026-02-01 16:37:30.108] [Ability] Frostblitz cast complete by Mage on poly_ring_big
+[2026-02-01 16:37:30.109] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:37:30.110] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:37:30.119] [Ability] Frostblitz damage applied: 1454 to Gigantischer Neon-Ring
+[2026-02-01 16:37:30.119] [Ability] Frostblitz target died: Gigantischer Neon-Ring
+[2026-02-01 16:37:30.120] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:37:30.120] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:37:30.121] [Ability] Frostblitz awarding XP for Mage
+[2026-02-01 16:37:30.122] [XP] Mage erhielt 464 Erfahrung.
+[2026-02-01 16:37:30.122] [LEVEL] Mage ist jetzt Level 16!
+[2026-02-01 16:37:30.138] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:37:31.866] [Ability] Frostblitz cast complete by Xheen on poly_capsule_1
+[2026-02-01 16:37:31.867] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:31.868] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:31.868] [Ability] Frostblitz damage applied: 1129 to Neon-Kapsel
+[2026-02-01 16:37:31.869] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:31.869] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:31.870] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:31.943] [Ability] Frostblitz cast start by Xheen on poly_capsule_1
+[2026-02-01 16:37:34.027] [Ability] Frostblitz cast complete by Xheen on poly_capsule_1
+[2026-02-01 16:37:34.027] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:34.028] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:34.034] [Ability] Frostblitz damage applied: 2034 to Neon-Kapsel
+[2026-02-01 16:37:34.035] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:34.036] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:34.036] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:34.093] [Ability] Frostblitz cast start by Xheen on poly_capsule_1
+[2026-02-01 16:37:35.098] [Ability] Frostblitz cast start by Mage on poly_capsule_1
+[2026-02-01 16:37:36.099] [Ability] Frostblitz cast complete by Xheen on poly_capsule_1
+[2026-02-01 16:37:36.100] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:36.100] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:36.101] [Ability] Frostblitz damage applied: 1142 to Neon-Kapsel
+[2026-02-01 16:37:36.102] [Ability] Frostblitz target died: Neon-Kapsel
+[2026-02-01 16:37:36.102] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:36.103] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:36.104] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 16:37:36.104] [XP] Xheen erhielt 506 Erfahrung.
+[2026-02-01 16:37:36.118] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:36.492] [Ability] Frostblitz cast start by Xheen on poly_cone_1
+[2026-02-01 16:37:37.200] [Ability] Frostblitz cast complete by Mage on 
+[2026-02-01 16:37:37.201] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:37:37.202] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 16:37:38.502] [Ability] Frostblitz cast complete by Xheen on poly_cone_1
+[2026-02-01 16:37:38.503] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:38.503] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:38.504] [Ability] Frostblitz damage applied: 2070 to Neon-Kegel
+[2026-02-01 16:37:38.505] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:38.505] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:38.506] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:38.543] [Ability] Frostblitz cast start by Xheen on poly_cone_1
+[2026-02-01 16:37:40.561] [Ability] Frostblitz cast complete by Xheen on poly_cone_1
+[2026-02-01 16:37:40.561] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:40.562] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:40.568] [Ability] Frostblitz damage applied: 1135 to Neon-Kegel
+[2026-02-01 16:37:40.568] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:40.569] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:40.569] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:40.692] [Ability] Frostblitz cast start by Xheen on poly_cone_1
+[2026-02-01 16:37:40.985] [Ability] Frostblitz cast start by Mage on poly_cone_1
+[2026-02-01 16:37:42.747] [Ability] Frostblitz cast complete by Xheen on poly_cone_1
+[2026-02-01 16:37:42.747] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:42.748] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:42.751] [Ability] Frostblitz damage applied: 1176 to Neon-Kegel
+[2026-02-01 16:37:42.751] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:42.752] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:42.753] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:42.860] [Ability] Frostblitz cast start by Xheen on poly_cone_1
+[2026-02-01 16:37:43.072] [Ability] Frostblitz cast complete by Mage on poly_cone_1
+[2026-02-01 16:37:43.072] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:37:43.073] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:37:43.073] [Ability] Frostblitz damage applied: 1626 to Neon-Kegel
+[2026-02-01 16:37:43.074] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-01 16:37:43.075] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:37:43.076] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:37:43.085] [Ability] Frostblitz awarding XP for Mage
+[2026-02-01 16:37:43.086] [XP] Mage erhielt 506 Erfahrung.
+[2026-02-01 16:37:43.097] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:37:44.440] [Ability] Frostblitz cast start by Mage on poly_cube_1
+[2026-02-01 16:37:44.944] [Ability] Frostblitz cast complete by Xheen on poly_cube_1
+[2026-02-01 16:37:44.945] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:44.946] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:44.951] [Ability] Frostblitz damage applied: 2116 to Neon-Würfel
+[2026-02-01 16:37:44.951] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:44.952] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:44.953] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:45.093] [Ability] Frostblitz cast start by Xheen on poly_cube_1
+[2026-02-01 16:37:46.476] [Ability] Frostblitz cast complete by Mage on poly_cube_1
+[2026-02-01 16:37:46.477] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:37:46.477] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:37:46.484] [Ability] Frostblitz damage applied: 1628 to Neon-Würfel
+[2026-02-01 16:37:46.485] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-01 16:37:46.485] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:37:46.486] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:37:46.487] [Ability] Frostblitz awarding XP for Mage
+[2026-02-01 16:37:46.487] [XP] Mage erhielt 506 Erfahrung.
+[2026-02-01 16:37:46.497] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:37:46.611] [Ability] Frostblitz cast start by Mage on poly_cube_1
+[2026-02-01 16:37:47.141] [Ability] Frostblitz cast complete by Xheen on poly_pyramid_1
+[2026-02-01 16:37:47.142] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:47.143] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:47.151] [Ability] Frostblitz damage applied: 1169 to Neon-Pyramide
+[2026-02-01 16:37:47.152] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:47.153] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:47.153] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:48.325] [Ability] Frostblitz cast start by Xheen on poly_pyramid_1
+[2026-02-01 16:37:48.675] [Ability] Frostblitz cast complete by Mage on poly_pyramid_1
+[2026-02-01 16:37:48.676] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:37:48.676] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:37:48.684] [Ability] Frostblitz damage applied: 1604 to Neon-Pyramide
+[2026-02-01 16:37:48.684] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:37:48.685] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:37:48.686] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:37:48.925] [Ability] Frostblitz cast start by Mage on poly_pyramid_1
+[2026-02-01 16:37:50.326] [Ability] Frostblitz cast complete by Xheen on poly_pyramid_1
+[2026-02-01 16:37:50.326] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:37:50.327] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:37:50.334] [Ability] Frostblitz damage applied: 1165 to Neon-Pyramide
+[2026-02-01 16:37:50.335] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-01 16:37:50.335] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:37:50.336] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:37:50.337] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 16:37:50.337] [XP] Xheen erhielt 506 Erfahrung.
+[2026-02-01 16:37:50.347] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:37:50.995] [Ability] Frostblitz cast complete by Mage on 
+[2026-02-01 16:37:50.996] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:37:50.996] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 16:37:52.994] [Ability] Frost Nova cast by Xheen
+[2026-02-01 16:37:55.202] [AI] Mob poly_torus_1 aggroed on client
+[2026-02-01 16:37:55.276] [Ability] Ice Barrier cast by Xheen
+[2026-02-01 16:37:55.961] [AI] Mob poly_sphere_1 aggroed on client
+[2026-02-01 16:37:57.107] [Ability] Frostblitz cast start by Mage on 
+[2026-02-01 16:37:59.208] [Ability] Frostblitz cast complete by Mage on 
+[2026-02-01 16:37:59.209] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:37:59.210] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 16:37:59.442] [Ability] Frostblitz cast start by Xheen on poly_sphere_1
+[2026-02-01 16:37:59.448] [Ability] Frostblitz cast start by Mage on 
+[2026-02-01 16:38:00.308] [AI] Mob poly_ring_big aggroed on admin
+[2026-02-01 16:38:01.496] [Ability] Frostblitz cast complete by Xheen on Mage
+[2026-02-01 16:38:01.496] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:38:01.497] [Ability] Frostblitz target not found or dead: Mage
+[2026-02-01 16:38:01.501] [Ability] Frostblitz cast complete by Mage on 
+[2026-02-01 16:38:01.501] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:38:01.502] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 16:38:01.747] [Ability] Frostblitz cast start by Mage on 
+[2026-02-01 16:38:03.708] [Ability] Frostblitz cast start by Xheen on poly_sphere_1
+[2026-02-01 16:38:03.767] [Ability] Frostblitz cast complete by Mage on 
+[2026-02-01 16:38:03.768] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:38:03.769] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 16:38:03.900] [Ability] Frostblitz cast start by Mage on 
+[2026-02-01 16:38:05.717] [Ability] Frostblitz cast complete by Xheen on poly_sphere_1
+[2026-02-01 16:38:05.717] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:38:05.718] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:38:05.719] [Ability] Frostblitz damage applied: 1127 to Neon-Sphäre
+[2026-02-01 16:38:05.719] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:38:05.720] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:38:05.721] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:38:05.842] [Ability] Frostblitz cast start by Xheen on poly_sphere_1
+[2026-02-01 16:38:05.934] [Ability] Frostblitz cast complete by Mage on 
+[2026-02-01 16:38:05.934] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:38:05.935] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 16:38:06.503] [Ability] Frost Nova cast by Mage
+[2026-02-01 16:38:12.492] [Ability] Frostblitz cast start by Xheen on poly_capsule_1
+[2026-02-01 16:38:14.587] [Ability] Frostblitz cast complete by Xheen on poly_ring_big
+[2026-02-01 16:38:14.588] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:38:14.589] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:38:14.590] [Ability] Frostblitz damage applied: 2080 to Gigantischer Neon-Ring
+[2026-02-01 16:38:14.591] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:38:14.591] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:38:14.592] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:38:14.758] [Ability] Frostblitz cast start by Xheen on poly_ring_big
+[2026-02-01 16:38:16.750] [Ability] Frostblitz cast start by Mage on poly_sphere_1
+[2026-02-01 16:38:16.771] [Ability] Frostblitz cast complete by Xheen on poly_ring_big
+[2026-02-01 16:38:16.772] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:38:16.773] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:38:16.774] [Ability] Frostblitz damage applied: 1154 to Gigantischer Neon-Ring
+[2026-02-01 16:38:16.775] [Ability] Frostblitz target died: Gigantischer Neon-Ring
+[2026-02-01 16:38:16.784] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:38:16.785] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:38:16.786] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 16:38:16.787] [XP] Xheen erhielt 506 Erfahrung.
+[2026-02-01 16:38:16.798] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:38:16.958] [Ability] Frostblitz cast start by Xheen on poly_cone_1
+[2026-02-01 16:38:18.756] [Ability] Frostblitz cast complete by Mage on poly_sphere_1
+[2026-02-01 16:38:18.756] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:38:18.758] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:38:18.767] [Ability] Frostblitz damage applied: 1591 to Neon-Sphäre
+[2026-02-01 16:38:18.768] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:38:18.769] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:38:18.769] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:38:18.988] [Ability] Frostblitz cast complete by Xheen on poly_sphere_1
+[2026-02-01 16:38:18.989] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:38:18.989] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:38:18.991] [Ability] Frostblitz damage applied: 2111 to Neon-Sphäre
+[2026-02-01 16:38:18.991] [Ability] Frostblitz target died: Neon-Sphäre
+[2026-02-01 16:38:19.000] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:38:19.001] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:38:19.002] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 16:38:19.003] [XP] Xheen erhielt 506 Erfahrung.
+[2026-02-01 16:38:19.014] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:38:19.208] [Ability] Frostblitz cast start by Xheen on poly_torus_1
+[2026-02-01 16:38:21.290] [Ability] Frostblitz cast complete by Xheen on poly_torus_1
+[2026-02-01 16:38:21.290] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:38:21.291] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:38:21.301] [Ability] Frostblitz damage applied: 1145 to Neon-Torus
+[2026-02-01 16:38:21.301] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:38:21.302] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:38:21.302] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:38:21.458] [Ability] Frostblitz cast start by Xheen on poly_torus_1
+[2026-02-01 16:38:23.470] [Ability] Frostblitz cast complete by Xheen on poly_torus_1
+[2026-02-01 16:38:23.471] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:38:23.471] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:38:23.472] [Ability] Frostblitz damage applied: 2113 to Neon-Torus
+[2026-02-01 16:38:23.473] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:38:23.473] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:38:23.474] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:38:23.642] [Ability] Frostblitz cast start by Xheen on poly_torus_1
+[2026-02-01 16:38:24.938] [Ability] Frostblitz cast start by Mage on poly_torus_1
+[2026-02-01 16:38:25.307] [WS] Ice Barrier expired for admin
+[2026-02-01 16:38:25.739] [Ability] Frostblitz cast complete by Xheen on poly_torus_1
+[2026-02-01 16:38:25.740] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:38:25.741] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:38:25.750] [Ability] Frostblitz damage applied: 2079 to Neon-Torus
+[2026-02-01 16:38:25.751] [Ability] Frostblitz target died: Neon-Torus
+[2026-02-01 16:38:25.752] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:38:25.752] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:38:25.753] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 16:38:25.754] [XP] Xheen erhielt 506 Erfahrung.
+[2026-02-01 16:38:25.765] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:38:26.956] [Ability] Frostblitz cast complete by Mage on 
+[2026-02-01 16:38:26.957] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:38:26.958] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 16:38:29.616] [Ability] Frostblitz cast start by Mage on poly_cone_1
+[2026-02-01 16:38:31.629] [Ability] Frostblitz cast complete by Mage on poly_cone_1
+[2026-02-01 16:38:31.629] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:38:31.630] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:38:31.633] [Ability] Frostblitz damage applied: 1587 to Neon-Kegel
+[2026-02-01 16:38:31.633] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:38:31.634] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:38:31.634] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:38:35.797] [Ability] Frostblitz cast start by Mage on poly_cone_1
+[2026-02-01 16:38:37.896] [Ability] Frostblitz cast complete by Mage on poly_cone_1
+[2026-02-01 16:38:37.897] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:38:37.897] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:38:37.899] [Ability] Frostblitz damage applied: 1605 to Neon-Kegel
+[2026-02-01 16:38:37.900] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:38:37.900] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:38:37.901] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:38:38.019] [Ability] Frostblitz cast start by Mage on poly_cone_1
+[2026-02-01 16:38:40.064] [Ability] Frostblitz cast complete by Mage on poly_cone_1
+[2026-02-01 16:38:40.064] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:38:40.065] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:38:40.066] [Ability] Frostblitz damage applied: 1625 to Neon-Kegel
+[2026-02-01 16:38:40.066] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:38:40.067] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:38:40.067] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:38:40.163] [Ability] Frostblitz cast start by Mage on poly_cone_1
+[2026-02-01 16:38:42.230] [Ability] Frostblitz cast complete by Mage on poly_cone_1
+[2026-02-01 16:38:42.231] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:38:42.231] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:38:42.232] [Ability] Frostblitz damage applied: 1613 to Neon-Kegel
+[2026-02-01 16:38:42.233] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-01 16:38:42.233] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:38:42.234] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:38:42.234] [Ability] Frostblitz awarding XP for Mage
+[2026-02-01 16:38:42.235] [XP] Mage erhielt 506 Erfahrung.
+[2026-02-01 16:38:42.245] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:39:01.274] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 16:39:01.285] [MAP] Change success: admin
+[2026-02-01 16:39:03.673] [MAP] Player client requesting map change: Arena2 -> WorldMap0
+[2026-02-01 16:39:03.684] [MAP] Change success: client
+[2026-02-01 16:39:35.439] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 16:39:35.449] [MAP] Change success: admin
+[2026-02-01 16:39:36.792] [MAP] Player client requesting map change: WorldMap0 -> Arena1
+[2026-02-01 16:39:36.802] [MAP] Change success: client
+[2026-02-01 16:39:50.538] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 16:39:50.549] [MAP] Change success: admin
+[2026-02-01 16:39:53.716] [MAP] Player client requesting map change: Arena1 -> WorldMap0
+[2026-02-01 16:39:53.730] [MAP] Change success: client
+[2026-02-01 16:40:12.577] [MAP] Player client requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 16:40:12.587] [MAP] Change success: client
+[2026-02-01 16:40:12.758] [AI] Mob mob_boss aggroed on client
+[2026-02-01 16:40:15.155] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 16:40:15.166] [MAP] Change success: admin
+[2026-02-01 16:40:27.371] [Ability] Frost Nova cast by Xheen
+[2026-02-01 16:40:28.721] [Ability] Frostblitz cast start by Xheen on mob_boss
+[2026-02-01 16:40:30.733] [Ability] Frostblitz cast complete by Xheen on mob_boss
+[2026-02-01 16:40:30.734] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:40:30.735] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:40:30.736] [Ability] Frostblitz damage applied: 1176 to System-Kernel
+[2026-02-01 16:40:30.736] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:40:30.737] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:40:30.738] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:40:30.905] [Ability] Frostblitz cast start by Xheen on mob_boss
+[2026-02-01 16:40:32.608] [Ability] Frostblitz cast start by Mage on mob_boss
+[2026-02-01 16:40:32.918] [Ability] Frostblitz cast complete by Xheen on mob_boss
+[2026-02-01 16:40:32.918] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:40:32.919] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:40:32.920] [Ability] Frostblitz damage applied: 1157 to System-Kernel
+[2026-02-01 16:40:32.921] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:40:32.922] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:40:32.931] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:40:33.005] [Ability] Frostblitz cast start by Xheen on mob_boss
+[2026-02-01 16:40:34.666] [Ability] Frostblitz cast complete by Mage on mob_boss
+[2026-02-01 16:40:34.666] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:40:34.667] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:40:34.668] [Ability] Frostblitz damage applied: 1584 to System-Kernel
+[2026-02-01 16:40:34.668] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:40:34.669] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:40:34.669] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:40:34.738] [Ability] Frostblitz cast start by Mage on mob_boss
+[2026-02-01 16:40:35.099] [Ability] Frostblitz cast complete by Xheen on mob_boss
+[2026-02-01 16:40:35.100] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:40:35.101] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:40:35.101] [Ability] Frostblitz damage applied: 1175 to System-Kernel
+[2026-02-01 16:40:35.102] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:40:35.102] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:40:35.103] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:40:35.271] [Ability] Frostblitz cast start by Xheen on mob_boss
+[2026-02-01 16:40:36.839] [Ability] Frostblitz cast complete by Mage on mob_boss
+[2026-02-01 16:40:36.840] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:40:36.840] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:40:36.847] [Ability] Frostblitz damage applied: 1627 to System-Kernel
+[2026-02-01 16:40:36.848] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:40:36.848] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:40:36.849] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:40:36.988] [Ability] Frostblitz cast start by Mage on mob_boss
+[2026-02-01 16:40:37.286] [Ability] Frostblitz cast complete by Xheen on mob_boss
+[2026-02-01 16:40:37.287] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:40:37.288] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:40:37.298] [Ability] Frostblitz damage applied: 1166 to System-Kernel
+[2026-02-01 16:40:37.298] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:40:37.299] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:40:37.299] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:40:37.355] [Ability] Frostblitz cast start by Xheen on mob_boss
+[2026-02-01 16:40:39.035] [Ability] Frostblitz cast complete by Mage on mob_boss
+[2026-02-01 16:40:39.036] [Ability] Frostblitz entering lock for Mage
+[2026-02-01 16:40:39.037] [Ability] Frostblitz calculating damage for Mage
+[2026-02-01 16:40:39.038] [Ability] Frostblitz damage applied: 1617 to System-Kernel
+[2026-02-01 16:40:39.047] [Ability] Frostblitz lock released for Mage
+[2026-02-01 16:40:39.048] [Ability] Frostblitz broadcasting combat text for Mage
+[2026-02-01 16:40:39.048] [Ability] Frostblitz processing finished for Mage
+[2026-02-01 16:40:39.377] [Ability] Frostblitz cast complete by Xheen on mob_boss
+[2026-02-01 16:40:39.377] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:40:39.378] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 16:40:39.381] [Ability] Frostblitz damage applied: 1135 to System-Kernel
+[2026-02-01 16:40:39.381] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 16:40:39.382] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 16:40:39.383] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 16:40:39.405] [Ability] Frostblitz cast start by Xheen on mob_boss
+[2026-02-01 16:40:40.231] [Ability] Frost Nova cast by Mage
+[2026-02-01 16:40:40.232] [XP] Mage erhielt 687 Erfahrung.
+[2026-02-01 16:40:41.432] [Ability] Frostblitz cast complete by Xheen on 
+[2026-02-01 16:40:41.432] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 16:40:41.433] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 16:42:26.802] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 16:42:26.815] [MAP] Change success: admin
+[2026-02-01 16:42:33.988] [WS] Logout timer started for client
+[2026-02-01 16:42:44.059] [WS] Logout complete for client
+[2026-02-01 16:42:47.839] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 16:42:49.099] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 16:43:03.254] [WS] Logout timer started for client
+[2026-02-01 16:43:13.351] [WS] Logout complete for client
+[2026-02-01 16:43:26.645] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 16:43:28.185] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 17:14:38.656] [AI] Mob arena_01 aggroed on admin
+[2026-02-01 17:14:38.657] [AI] Mob arena_02 aggroed on admin
+[2026-02-01 17:14:38.658] [AI] Mob arena_g2_1 aggroed on admin
+[2026-02-01 17:14:38.659] [AI] Mob arena_g2_2 aggroed on admin
+[2026-02-01 17:14:40.670] [Ability] Frost Nova cast by Xheen
+[2026-02-01 17:14:42.970] [Ability] Frostblitz cast start by Xheen on arena_01
+[2026-02-01 17:14:45.038] [Ability] Frostblitz cast complete by Xheen on arena_01
+[2026-02-01 17:14:45.039] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 17:14:45.039] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 17:14:45.045] [Ability] Frostblitz damage applied: 1172 to Bit-Wächter
+[2026-02-01 17:14:45.045] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 17:14:45.046] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 17:14:45.047] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 17:14:45.087] [Ability] Frostblitz cast start by Xheen on arena_01
+[2026-02-01 17:14:47.117] [Ability] Frostblitz cast complete by Xheen on arena_01
+[2026-02-01 17:14:47.118] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 17:14:47.119] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 17:14:47.128] [Ability] Frostblitz damage applied: 2109 to Bit-Wächter
+[2026-02-01 17:14:47.129] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 17:14:47.130] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 17:14:47.130] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 17:14:47.236] [Ability] Frostblitz cast start by Xheen on arena_01
+[2026-02-01 17:14:49.301] [Ability] Frostblitz cast complete by Xheen on arena_01
+[2026-02-01 17:14:49.302] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 17:14:49.303] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 17:14:49.311] [Ability] Frostblitz damage applied: 1128 to Bit-Wächter
+[2026-02-01 17:14:49.312] [Ability] Frostblitz target died: Bit-Wächter
+[2026-02-01 17:14:49.313] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 17:14:49.313] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 17:14:49.314] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 17:14:49.315] [XP] Xheen erhielt 386 Erfahrung.
+[2026-02-01 17:14:49.315] [LEVEL] Xheen ist jetzt Level 14!
+[2026-02-01 17:14:49.333] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 17:15:06.369] [DEBUG] GM Xheen using /level. Current targetId in state: None
+[2026-02-01 17:15:06.383] [GM] Xheen set own level to 10000
+[2026-02-01 17:15:34.518] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 17:15:34.532] [MAP] Change success: admin
+[2026-02-01 17:15:34.591] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 17:15:37.885] [Ability] Frostblitz cast start by Xheen on mob_boss
+[2026-02-01 17:15:39.898] [Ability] Frostblitz cast complete by Xheen on mob_boss
+[2026-02-01 17:15:39.899] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 17:15:39.900] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 17:15:39.901] [Ability] Frostblitz damage applied: -2147483648 to System-Kernel
+[2026-02-01 17:15:39.910] [Ability] Frostblitz target died: System-Kernel
+[2026-02-01 17:15:39.910] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 17:15:39.911] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 17:15:39.912] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 17:15:39.912] [XP] Xheen erhielt 80230115 Erfahrung.
+[2026-02-01 17:15:39.923] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 17:16:02.834] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 17:16:02.845] [MAP] Change success: admin
+[2026-02-01 17:16:08.851] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 17:16:08.862] [MAP] Change success: admin
+[2026-02-01 17:16:29.183] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 17:16:29.196] [MAP] Change success: admin
+[2026-02-01 17:17:10.282] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 17:17:10.292] [MAP] Change success: admin
+[2026-02-01 17:44:34.074] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 17:44:34.086] [MAP] Change success: admin
+[2026-02-01 17:46:22.252] [WS] Player disconnected & saved: admin
+[2026-02-01 17:49:26.917] [WS] Client connected to WorldServer.
+[2026-02-01 17:49:26.937] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 17:49:28.585] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 17:50:05.232] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 17:50:05.245] [MAP] Change success: admin
+[2026-02-01 17:50:30.466] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 17:50:30.480] [MAP] Change success: admin
+[2026-02-01 17:50:57.708] [WS] Player disconnected & saved: client
+[2026-02-01 17:51:40.051] [WS] Client connected to WorldServer.
+[2026-02-01 17:51:40.070] [WS] User Authenticated & Loaded: client on Dungeon0
+[2026-02-01 17:51:41.727] [WS] User Authenticated & Loaded: client on Dungeon0
+[2026-02-01 17:52:00.932] [MAP] Player client requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 17:52:00.942] [MAP] Change success: client
+[2026-02-01 17:52:24.785] [WS] Player disconnected & saved: client
+[2026-02-01 17:54:01.202] [WS] Client connected to WorldServer.
+[2026-02-01 17:54:01.224] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 17:54:03.673] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 18:14:46.535] [WS] Player disconnected & saved: admin
+[2026-02-01 18:17:00.778] [MAP] Player client requesting map change: WorldMap0 -> Arena2
+[2026-02-01 18:17:00.789] [MAP] Change success: client
+[2026-02-01 18:17:28.846] [MAP] Player client requesting map change: Arena2 -> WorldMap0
+[2026-02-01 18:17:28.857] [MAP] Change success: client
+[2026-02-01 18:22:47.485] [WS] Player disconnected & saved: client
+[2026-02-01 18:28:21.855] [WS] Client connected to WorldServer.
+[2026-02-01 18:28:21.872] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 18:28:25.158] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 18:28:50.994] [MAP] Player client requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 18:28:51.005] [MAP] Change success: client
+[2026-02-01 18:28:51.319] [AI] Mob mob_boss aggroed on client
+[2026-02-01 18:29:03.042] [MAP] Player client requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 18:29:03.051] [MAP] Change success: client
+[2026-02-01 18:29:27.631] [MAP] Player client requesting map change: WorldMap0 -> Arena1
+[2026-02-01 18:29:27.643] [MAP] Change success: client
+[2026-02-01 18:29:36.109] [MAP] Player client requesting map change: Arena1 -> WorldMap0
+[2026-02-01 18:29:36.120] [MAP] Change success: client
+[2026-02-01 18:30:05.770] [WS] Player disconnected & saved: client
+[2026-02-01 18:37:46.173] [WS] Client connected to WorldServer.
+[2026-02-01 18:37:46.191] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 18:37:47.924] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 18:38:31.344] [WS] Player disconnected & saved: admin
+[2026-02-01 18:40:59.535] [WS] Client connected to WorldServer.
+[2026-02-01 18:40:59.552] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 18:41:01.238] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 18:43:57.360] [WS] Client connected to WorldServer.
+[2026-02-01 18:43:57.374] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 18:43:59.898] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 18:44:44.559] [WS] Player disconnected & saved: admin
+[2026-02-01 18:46:25.805] [WS] Player disconnected & saved: client
+[2026-02-01 18:55:07.896] [WS] Client connected to WorldServer.
+[2026-02-01 18:55:07.914] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 18:55:09.563] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 18:55:34.651] [WS] Client connected to WorldServer.
+[2026-02-01 18:55:34.688] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 18:55:39.935] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-01 18:56:03.826] [MAP] Player client requesting map change: WorldMap0 -> Arena1
+[2026-02-01 18:56:03.838] [MAP] Change success: client
+[2026-02-01 18:56:10.959] [MAP] Player client requesting map change: Arena1 -> WorldMap0
+[2026-02-01 18:56:10.969] [MAP] Change success: client
+[2026-02-01 18:57:00.892] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 18:57:00.901] [MAP] Change success: admin
+[2026-02-01 18:57:01.070] [AI] Mob arena_01 aggroed on admin
+[2026-02-01 18:57:01.070] [AI] Mob arena_02 aggroed on admin
+[2026-02-01 18:57:01.071] [AI] Mob arena_g2_1 aggroed on admin
+[2026-02-01 18:57:01.071] [AI] Mob arena_g2_2 aggroed on admin
+[2026-02-01 18:57:01.506] [AI] Mob arena_03 aggroed on admin
+[2026-02-01 18:57:03.342] [Ability] Frost Nova cast by Xheen
+[2026-02-01 18:57:03.343] [XP] Xheen erhielt 80166035 Erfahrung.
+[2026-02-01 18:57:03.352] [XP] Xheen erhielt 80166035 Erfahrung.
+[2026-02-01 18:57:03.362] [XP] Xheen erhielt 80166035 Erfahrung.
+[2026-02-01 18:57:04.959] [Ability] Frostblitz cast start by Xheen on arena_03
+[2026-02-01 18:57:07.037] [Ability] Frostblitz cast complete by Xheen on arena_03
+[2026-02-01 18:57:07.037] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 18:57:07.038] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 18:57:07.038] [Ability] Frostblitz damage applied: -2147483648 to Bit-Veteran
+[2026-02-01 18:57:07.038] [Ability] Frostblitz target died: Bit-Veteran
+[2026-02-01 18:57:07.039] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 18:57:07.039] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 18:57:07.039] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 18:57:07.040] [XP] Xheen erhielt 80166035 Erfahrung.
+[2026-02-01 18:57:07.050] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 18:57:07.176] [Ability] Ice Barrier cast by Xheen
+[2026-02-01 18:57:15.775] [Ability] Frostblitz cast start by Xheen on arena_02
+[2026-02-01 18:57:17.791] [Ability] Frostblitz cast complete by Xheen on arena_02
+[2026-02-01 18:57:17.792] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 18:57:17.792] [Ability] Frostblitz calculating damage for Xheen
+[2026-02-01 18:57:17.793] [Ability] Frostblitz damage applied: -2147483648 to Bit-Wächter
+[2026-02-01 18:57:17.793] [Ability] Frostblitz target died: Bit-Wächter
+[2026-02-01 18:57:17.793] [Ability] Frostblitz lock released for Xheen
+[2026-02-01 18:57:17.794] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-01 18:57:17.794] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-01 18:57:17.794] [XP] Xheen erhielt 80166035 Erfahrung.
+[2026-02-01 18:57:17.804] [Ability] Frostblitz processing finished for Xheen
+[2026-02-01 18:57:17.809] [Ability] Frostblitz cast start by Xheen on arena_02
+[2026-02-01 18:57:19.866] [Ability] Frostblitz cast complete by Xheen on 
+[2026-02-01 18:57:19.866] [Ability] Frostblitz entering lock for Xheen
+[2026-02-01 18:57:19.867] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 18:57:30.092] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 18:57:30.103] [MAP] Change success: admin
+[2026-02-01 18:57:34.542] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 18:57:34.551] [MAP] Change success: admin
+[2026-02-01 18:57:37.228] [WS] Ice Barrier expired for admin
+[2026-02-01 18:57:46.257] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 18:57:46.268] [MAP] Change success: admin
+[2026-02-01 18:59:40.095] [DEBUG] GM Mage using /level. Current targetId in state: Xheen
+[2026-02-01 18:59:40.106] [GM] Player Xheen level set to 60 by Mage
+[2026-02-01 19:00:06.733] [DEBUG] GM Mage using /level. Current targetId in state: None
+[2026-02-01 19:00:06.745] [GM] Mage set own level to 60
+[2026-02-01 19:02:51.053] [WS] Client connected to WorldServer.
+[2026-02-01 19:02:51.140] [WS] User Authenticated & Loaded: xheen908 on WorldMap0
+[2026-02-01 19:02:56.434] [WS] User Authenticated & Loaded: xheen908 on WorldMap0
+[2026-02-01 19:05:25.576] [WS] Player disconnected & saved: client
+[2026-02-01 19:05:25.838] [WS] Player disconnected & saved: xheen908
+[2026-02-01 19:09:57.594] [WS] Player disconnected & saved: admin
+[2026-02-01 19:13:22.768] [WS] Client connected to WorldServer.
+[2026-02-01 19:13:22.786] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 19:13:24.454] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 19:14:44.199] [WS] Logout timer started for admin
+[2026-02-01 19:14:54.235] [WS] Logout complete for admin
+[2026-02-01 19:15:43.132] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 19:15:44.150] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 19:17:21.445] [WS] Logout timer started for admin
+[2026-02-01 19:17:31.505] [WS] Logout complete for admin
+[2026-02-01 19:17:41.780] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 19:17:42.780] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 19:20:38.351] =========================================
+[2026-02-01 19:20:38.353] Starting The Grid WORLD SERVER...
+[2026-02-01 19:20:38.353] =========================================
+[2026-02-01 19:20:38.354] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 19:20:38.390] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 19:20:38.395] [DB] Loaded 13 mobs from database.
+[2026-02-01 19:20:51.791] [WS] Client connected to WorldServer.
+[2026-02-01 19:20:51.808] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 19:20:52.841] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 19:25:40.248] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 19:25:40.260] [MAP] Change success: admin
+[2026-02-01 19:25:47.548] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 19:25:47.559] [MAP] Change success: admin
+[2026-02-01 19:26:38.530] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 19:26:38.541] [MAP] Change success: admin
+[2026-02-01 19:27:00.233] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 19:27:00.243] [MAP] Change success: admin
+[2026-02-01 19:28:00.712] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 19:28:00.721] [MAP] Change success: admin
+[2026-02-01 19:28:00.876] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:28:11.263] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 19:28:11.273] [MAP] Change success: admin
+[2026-02-01 19:29:12.293] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 19:29:12.304] [MAP] Change success: admin
+[2026-02-01 19:31:50.656] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 19:31:50.666] [MAP] Change success: admin
+[2026-02-01 19:32:17.005] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 19:32:17.015] [MAP] Change success: admin
+[2026-02-01 19:32:43.188] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 19:32:43.199] [MAP] Change success: admin
+[2026-02-01 19:32:43.296] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:56.922] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-02-01 19:32:56.934] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:57.043] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:57.151] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:57.259] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:57.368] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:57.477] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:57.586] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:57.694] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:57.801] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:57.909] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:57.909] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:58.016] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:58.125] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:58.234] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:58.342] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:58.451] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:58.558] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:58.666] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:58.776] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:58.885] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:58.886] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:58.992] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:58.993] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-02-01 19:32:58.993] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 19:32:58.994] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 19:32:58.997] [Ability] Frostblitz damage applied: 499 to System-Kernel
+[2026-02-01 19:32:58.997] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 19:32:58.997] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 19:32:58.998] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 19:32:59.102] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:59.154] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-02-01 19:32:59.209] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:59.319] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:59.429] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:59.430] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:59.538] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:59.646] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:59.755] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:59.862] [AI] Mob mob_boss leashed.
+[2026-02-01 19:32:59.971] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:32:59.972] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:00.079] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:00.187] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:00.294] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:00.401] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:00.511] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:00.511] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:00.619] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:00.727] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:00.837] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:00.948] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:01.056] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:01.165] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:01.165] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-02-01 19:33:01.166] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 19:33:01.166] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 19:33:01.167] [Ability] Frostblitz damage applied: 481 to System-Kernel
+[2026-02-01 19:33:01.168] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 19:33:01.168] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 19:33:01.169] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 19:33:01.188] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-02-01 19:33:01.274] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:01.381] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:01.489] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:01.597] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:01.705] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:01.813] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:01.814] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:01.922] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:02.030] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:02.154] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:02.263] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:02.373] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:02.374] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:02.482] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:02.589] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:02.698] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:02.806] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:02.914] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:02.915] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:03.022] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:03.133] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:03.241] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:03.241] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-02-01 19:33:03.242] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 19:33:03.243] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 19:33:03.243] [Ability] Frostblitz damage applied: 871 to System-Kernel
+[2026-02-01 19:33:03.244] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 19:33:03.245] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 19:33:03.245] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 19:33:03.349] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:03.454] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-02-01 19:33:03.458] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:03.458] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:03.567] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:03.675] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:03.782] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:03.892] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:04.000] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:04.110] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:04.219] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:04.220] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:04.329] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:04.439] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:04.548] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:04.658] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:04.765] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:04.766] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:04.874] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:04.982] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:05.092] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:05.200] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:05.308] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:05.309] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:05.419] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:05.527] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:05.528] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-02-01 19:33:05.529] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 19:33:05.529] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 19:33:05.530] [Ability] Frostblitz damage applied: 490 to System-Kernel
+[2026-02-01 19:33:05.530] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 19:33:05.531] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 19:33:05.532] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 19:33:05.687] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-02-01 19:33:05.742] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:05.851] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:05.851] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:05.959] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:06.067] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:06.176] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:06.285] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:06.393] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:06.393] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:06.500] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:06.608] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:06.716] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:06.824] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:06.932] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:06.933] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:07.042] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:07.149] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:07.259] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:07.367] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:07.476] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:07.477] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:07.583] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:07.692] [AI] Mob mob_boss leashed.
+[2026-02-01 19:33:07.692] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-02-01 19:33:07.693] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 19:33:07.694] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 19:33:07.694] [Ability] Frostblitz damage applied: 490 to System-Kernel
+[2026-02-01 19:33:07.695] [Ability] Frostblitz target died: System-Kernel
+[2026-02-01 19:33:07.695] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 19:33:07.696] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 19:33:07.696] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 19:33:07.697] [XP] Yheen erhielt 315 Erfahrung.
+[2026-02-01 19:33:07.707] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 19:33:37.990] [AI] Mob mob_boss aggroed on admin
+[2026-02-01 19:33:40.570] [Ability] Frost Nova cast by Yheen
+[2026-02-01 19:33:45.787] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-02-01 19:33:47.872] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-02-01 19:33:47.872] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 19:33:47.873] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 19:33:47.874] [Ability] Frostblitz damage applied: 492 to System-Kernel
+[2026-02-01 19:33:47.874] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 19:33:47.875] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 19:33:47.875] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 19:33:47.921] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-02-01 19:33:49.935] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-02-01 19:33:49.936] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 19:33:49.938] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 19:33:49.938] [Ability] Frostblitz damage applied: 472 to System-Kernel
+[2026-02-01 19:33:49.939] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 19:33:49.939] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 19:33:49.940] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 19:33:50.086] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-02-01 19:33:52.100] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-02-01 19:33:52.100] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 19:33:52.101] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 19:33:52.102] [Ability] Frostblitz damage applied: 496 to System-Kernel
+[2026-02-01 19:33:52.103] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 19:33:52.104] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 19:33:52.104] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 19:33:52.187] [Ability] Frostblitz cast start by Yheen on mob_boss
+[2026-02-01 19:33:54.275] [Ability] Frostblitz cast complete by Yheen on mob_boss
+[2026-02-01 19:33:54.275] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 19:33:54.276] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 19:33:54.277] [Ability] Frostblitz damage applied: 512 to System-Kernel
+[2026-02-01 19:33:54.277] [Ability] Frostblitz target died: System-Kernel
+[2026-02-01 19:33:54.278] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 19:33:54.278] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 19:33:54.279] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 19:33:54.280] [XP] Yheen erhielt 315 Erfahrung.
+[2026-02-01 19:33:54.291] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 19:40:23.326] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 19:40:23.337] [MAP] Change success: admin
+[2026-02-01 19:40:28.992] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 19:40:29.006] [MAP] Change success: admin
+[2026-02-01 19:40:45.725] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 19:40:45.737] [MAP] Change success: admin
+[2026-02-01 19:40:49.359] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 19:40:49.368] [MAP] Change success: admin
+[2026-02-01 19:40:53.492] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 19:40:53.502] [MAP] Change success: admin
+[2026-02-01 19:50:40.231] =========================================
+[2026-02-01 19:50:40.233] Starting The Grid WORLD SERVER...
+[2026-02-01 19:50:40.233] =========================================
+[2026-02-01 19:50:40.234] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 19:50:40.249] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 19:50:40.251] [DB] Loaded 13 mobs from database.
+[2026-02-01 19:50:40.253] [DB] loadGameObjects Error: Unknown column 'rot_x' in 'field list'
+[2026-02-01 19:50:40.254] [DB] loadGameObjects Error: Unknown column 'rot_x' in 'field list'
+[2026-02-01 19:50:40.255] [DB] loadGameObjects Error: Unknown column 'rot_x' in 'field list'
+[2026-02-01 19:50:40.256] [DB] loadGameObjects Error: Unknown column 'rot_x' in 'field list'
+[2026-02-01 19:50:40.257] [DB] loadGameObjects Error: Unknown column 'rot_x' in 'field list'
+[2026-02-01 19:50:48.394] [WS] Client connected to WorldServer.
+[2026-02-01 19:50:48.413] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 19:50:49.430] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 20:06:01.229] =========================================
+[2026-02-01 20:06:01.231] Starting The Grid WORLD SERVER...
+[2026-02-01 20:06:01.231] =========================================
+[2026-02-01 20:06:01.232] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 20:06:01.247] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 20:06:01.250] [DB] Loaded 13 mobs from database.
+[2026-02-01 20:06:01.251] [DB] Loaded 1 game objects for map Arena0
+[2026-02-01 20:06:01.253] [DB] Loaded 1 game objects for map Arena1
+[2026-02-01 20:06:01.254] [DB] Loaded 1 game objects for map Arena2
+[2026-02-01 20:06:01.256] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-01 20:06:01.257] [DB] Loaded 4 game objects for map WorldMap0
+[2026-02-01 20:06:11.005] [WS] Client connected to WorldServer.
+[2026-02-01 20:06:11.023] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 20:06:12.157] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 20:06:50.662] [WS] Player disconnected & saved: admin
+[2026-02-01 20:08:34.435] [WS] Client connected to WorldServer.
+[2026-02-01 20:08:34.452] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 20:08:36.087] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 20:09:50.247] [WS] Player disconnected & saved: admin
+[2026-02-01 20:10:32.632] [WS] Client connected to WorldServer.
+[2026-02-01 20:10:32.651] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 20:10:34.267] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 20:10:40.948] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 20:10:40.957] [MAP] Change success: admin
+[2026-02-01 20:10:43.263] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 20:10:43.273] [MAP] Change success: admin
+[2026-02-01 20:29:10.910] =========================================
+[2026-02-01 20:29:10.911] Starting The Grid WORLD SERVER...
+[2026-02-01 20:29:10.912] =========================================
+[2026-02-01 20:29:10.912] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 20:29:10.931] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 20:29:10.934] [DB] Loaded 13 mobs from database.
+[2026-02-01 20:29:10.937] [DB] Loaded 1 game objects for map Arena0
+[2026-02-01 20:29:10.939] [DB] Loaded 1 game objects for map Arena1
+[2026-02-01 20:29:10.941] [DB] Loaded 1 game objects for map Arena2
+[2026-02-01 20:29:10.943] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-01 20:29:10.944] [DB] Loaded 4 game objects for map WorldMap0
+[2026-02-01 20:29:27.086] [WS] Client connected to WorldServer.
+[2026-02-01 20:29:27.104] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 20:29:28.825] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 20:29:35.518] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 20:29:35.528] [MAP] Change success: admin
+[2026-02-01 20:29:37.635] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 20:29:37.645] [MAP] Change success: admin
+[2026-02-01 20:29:40.151] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 20:29:40.161] [MAP] Change success: admin
+[2026-02-01 20:29:52.434] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 20:29:52.444] [MAP] Change success: admin
+[2026-02-01 20:30:14.084] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 20:30:14.094] [MAP] Change success: admin
+[2026-02-01 20:30:14.155] [AI] Mob arena_01 aggroed on admin
+[2026-02-01 20:30:14.155] [AI] Mob arena_02 aggroed on admin
+[2026-02-01 20:30:14.156] [AI] Mob arena_g2_1 aggroed on admin
+[2026-02-01 20:30:14.156] [AI] Mob arena_g2_2 aggroed on admin
+[2026-02-01 20:30:19.034] [Ability] Frost Nova cast by Yheen
+[2026-02-01 20:30:21.867] [Ability] Frostblitz cast start by Yheen on arena_01
+[2026-02-01 20:30:23.934] [Ability] Frostblitz cast complete by Yheen on arena_01
+[2026-02-01 20:30:23.934] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:23.935] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 20:30:23.936] [Ability] Frostblitz damage applied: 490 to Bit-Wächter
+[2026-02-01 20:30:23.937] [Ability] Frostblitz target died: Bit-Wächter
+[2026-02-01 20:30:23.938] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 20:30:23.939] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 20:30:23.939] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 20:30:23.940] [XP] Yheen erhielt 191 Erfahrung.
+[2026-02-01 20:30:23.941] [LEVEL] Yheen ist jetzt Level 8!
+[2026-02-01 20:30:23.951] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 20:30:24.006] [Ability] Frostblitz cast start by Yheen on arena_01
+[2026-02-01 20:30:26.016] [Ability] Frostblitz cast complete by Yheen on arena_g2_1
+[2026-02-01 20:30:26.017] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:26.018] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 20:30:26.018] [Ability] Frostblitz damage applied: 604 to Duo-Bit A
+[2026-02-01 20:30:26.020] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 20:30:26.020] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 20:30:26.021] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 20:30:26.101] [Ability] Frostblitz cast start by Yheen on arena_g2_1
+[2026-02-01 20:30:28.191] [Ability] Frostblitz cast complete by Yheen on arena_g2_1
+[2026-02-01 20:30:28.191] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:28.192] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 20:30:28.193] [Ability] Frostblitz damage applied: 1069 to Duo-Bit A
+[2026-02-01 20:30:28.193] [Ability] Frostblitz target died: Duo-Bit A
+[2026-02-01 20:30:28.194] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 20:30:28.194] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 20:30:28.195] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 20:30:28.196] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 20:30:28.206] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 20:30:28.317] [Ability] Frostblitz cast start by Yheen on arena_g2_2
+[2026-02-01 20:30:30.377] [Ability] Frostblitz cast complete by Yheen on arena_g2_2
+[2026-02-01 20:30:30.377] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:30.378] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 20:30:30.379] [Ability] Frostblitz damage applied: 604 to Duo-Bit B
+[2026-02-01 20:30:30.379] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 20:30:30.380] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 20:30:30.380] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 20:30:30.434] [Ability] Frostblitz cast start by Yheen on arena_g2_2
+[2026-02-01 20:30:32.443] [Ability] Frostblitz cast complete by Yheen on arena_g2_2
+[2026-02-01 20:30:32.444] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:32.444] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 20:30:32.445] [Ability] Frostblitz damage applied: 563 to Duo-Bit B
+[2026-02-01 20:30:32.446] [Ability] Frostblitz target died: Duo-Bit B
+[2026-02-01 20:30:32.446] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 20:30:32.447] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 20:30:32.447] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 20:30:32.448] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 20:30:32.458] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 20:30:32.551] [Ability] Frostblitz cast start by Yheen on arena_02
+[2026-02-01 20:30:34.631] [Ability] Frostblitz cast complete by Yheen on arena_02
+[2026-02-01 20:30:34.631] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:34.632] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 20:30:34.634] [Ability] Frostblitz damage applied: 567 to Bit-Wächter
+[2026-02-01 20:30:34.635] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 20:30:34.636] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 20:30:34.636] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 20:30:34.850] [Ability] Frostblitz cast start by Yheen on arena_02
+[2026-02-01 20:30:36.925] [Ability] Frostblitz cast complete by Yheen on arena_02
+[2026-02-01 20:30:36.926] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:36.927] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 20:30:36.927] [Ability] Frostblitz damage applied: 575 to Bit-Wächter
+[2026-02-01 20:30:36.928] [Ability] Frostblitz target died: Bit-Wächter
+[2026-02-01 20:30:36.929] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 20:30:36.929] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 20:30:36.930] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 20:30:36.930] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 20:30:36.940] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 20:30:36.951] [Ability] Frostblitz cast start by Yheen on arena_02
+[2026-02-01 20:30:39.007] [Ability] Frostblitz cast complete by Yheen on arena_03
+[2026-02-01 20:30:39.008] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:39.009] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 20:30:39.009] [Ability] Frostblitz damage applied: 583 to Bit-Veteran
+[2026-02-01 20:30:39.010] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 20:30:39.010] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 20:30:39.011] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 20:30:39.117] [Ability] Frostblitz cast start by Yheen on arena_03
+[2026-02-01 20:30:41.178] [Ability] Frostblitz cast complete by Yheen on arena_03
+[2026-02-01 20:30:41.178] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:41.179] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 20:30:41.180] [Ability] Frostblitz damage applied: 1026 to Bit-Veteran
+[2026-02-01 20:30:41.180] [Ability] Frostblitz target died: Bit-Veteran
+[2026-02-01 20:30:41.181] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 20:30:41.181] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 20:30:41.182] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 20:30:41.183] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 20:30:41.193] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 20:30:41.218] [Ability] Frostblitz cast start by Yheen on arena_03
+[2026-02-01 20:30:43.256] [Ability] Frostblitz cast complete by Yheen on 
+[2026-02-01 20:30:43.257] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 20:30:43.258] [Ability] Frostblitz target not found or dead: 
+[2026-02-01 20:30:47.384] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 20:30:47.394] [MAP] Change success: admin
+[2026-02-01 20:31:31.799] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 20:31:31.808] [MAP] Change success: admin
+[2026-02-01 20:31:42.532] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 20:31:42.543] [MAP] Change success: admin
+[2026-02-01 20:33:05.446] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 20:33:05.457] [MAP] Change success: admin
+[2026-02-01 20:33:24.381] [WS] Player disconnected & saved: admin
+[2026-02-01 20:40:03.021] [WS] Client connected to WorldServer.
+[2026-02-01 20:40:03.038] [WS] User Authenticated & Loaded: admin on Arena2
+[2026-02-01 20:40:05.242] [WS] User Authenticated & Loaded: admin on Arena2
+[2026-02-01 20:40:33.418] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 20:40:33.429] [MAP] Change success: admin
+[2026-02-01 20:40:36.701] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 20:40:36.711] [MAP] Change success: admin
+[2026-02-01 20:40:41.768] [Ability] Ice Barrier cast by Yheen
+[2026-02-01 20:40:59.784] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 20:40:59.794] [MAP] Change success: admin
+[2026-02-01 20:41:11.853] [WS] Ice Barrier expired for admin
+[2026-02-01 20:41:23.334] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 20:41:23.344] [MAP] Change success: admin
+[2026-02-01 20:41:23.469] [AI] Mob arena_01 aggroed on admin
+[2026-02-01 20:41:23.469] [AI] Mob arena_02 aggroed on admin
+[2026-02-01 20:41:23.470] [AI] Mob arena_g2_1 aggroed on admin
+[2026-02-01 20:41:23.471] [AI] Mob arena_g2_2 aggroed on admin
+[2026-02-01 20:41:30.768] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 20:41:30.785] [MAP] Change success: admin
+[2026-02-01 20:41:49.816] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 20:41:49.826] [MAP] Change success: admin
+[2026-02-01 20:41:56.917] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 20:41:56.926] [MAP] Change success: admin
+[2026-02-01 20:42:32.832] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 20:42:32.843] [MAP] Change success: admin
+[2026-02-01 20:42:37.349] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 20:42:37.359] [MAP] Change success: admin
+[2026-02-01 20:42:39.550] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 20:42:39.560] [MAP] Change success: admin
+[2026-02-01 20:42:44.615] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 20:42:44.626] [MAP] Change success: admin
+[2026-02-01 20:42:46.865] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 20:42:46.887] [MAP] Change success: admin
+[2026-02-01 20:42:49.565] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 20:42:49.575] [MAP] Change success: admin
+[2026-02-01 20:42:52.099] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-01 20:42:52.108] [MAP] Change success: admin
+[2026-02-01 20:42:55.282] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-01 20:42:55.293] [MAP] Change success: admin
+[2026-02-01 20:45:59.877] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 20:45:59.887] [MAP] Change success: admin
+[2026-02-01 20:46:38.476] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 20:46:38.486] [MAP] Change success: admin
+[2026-02-01 20:47:55.441] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 20:47:55.451] [MAP] Change success: admin
+[2026-02-01 20:48:21.340] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 20:48:21.350] [MAP] Change success: admin
+[2026-02-01 20:48:26.756] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 20:48:26.766] [MAP] Change success: admin
+[2026-02-01 20:59:41.910] =========================================
+[2026-02-01 20:59:41.916] Starting The Grid WORLD SERVER...
+[2026-02-01 20:59:41.920] =========================================
+[2026-02-01 20:59:41.921] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 20:59:41.950] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 20:59:41.953] [DB] Loaded 13 mobs from database.
+[2026-02-01 20:59:41.955] [DB] Loaded 1 game objects for map Arena0
+[2026-02-01 20:59:41.957] [DB] Loaded 1 game objects for map Arena1
+[2026-02-01 20:59:41.959] [DB] Loaded 1 game objects for map Arena2
+[2026-02-01 20:59:41.961] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-01 20:59:41.963] [DB] Loaded 4 game objects for map WorldMap0
+[2026-02-01 20:59:49.290] [WS] Client connected to WorldServer.
+[2026-02-01 20:59:49.309] [WS] User Authenticated & Loaded: admin on Arena2
+[2026-02-01 20:59:50.325] [WS] User Authenticated & Loaded: admin on Arena2
+[2026-02-01 21:00:22.939] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 21:00:22.948] [MAP] Change success: admin
+[2026-02-01 21:00:45.238] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 21:00:45.248] [MAP] Change success: admin
+[2026-02-01 21:01:37.019] =========================================
+[2026-02-01 21:01:37.023] Starting The Grid WORLD SERVER...
+[2026-02-01 21:01:37.023] =========================================
+[2026-02-01 21:01:37.023] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 21:01:37.039] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 21:01:37.041] [DB] Loaded 13 mobs from database.
+[2026-02-01 21:01:37.043] [DB] Loaded 1 game objects for map Arena0
+[2026-02-01 21:01:37.045] [DB] Loaded 1 game objects for map Arena1
+[2026-02-01 21:01:37.046] [DB] Loaded 1 game objects for map Arena2
+[2026-02-01 21:01:37.047] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-01 21:01:37.049] [DB] Loaded 4 game objects for map WorldMap0
+[2026-02-01 21:01:42.254] [WS] Client connected to WorldServer.
+[2026-02-01 21:01:42.273] [WS] User Authenticated & Loaded: admin on Arena1
+[2026-02-01 21:01:43.289] [WS] User Authenticated & Loaded: admin on Arena1
+[2026-02-01 21:02:02.571] [WS] Player disconnected & saved: admin
+[2026-02-01 21:02:12.487] [WS] Client connected to WorldServer.
+[2026-02-01 21:02:12.505] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 21:02:14.205] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 21:02:32.552] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 21:02:32.564] [MAP] Change success: admin
+[2026-02-01 21:04:44.340] =========================================
+[2026-02-01 21:04:44.342] Starting The Grid WORLD SERVER...
+[2026-02-01 21:04:44.343] =========================================
+[2026-02-01 21:04:44.343] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 21:04:44.358] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 21:04:44.360] [DB] Loaded 13 mobs from database.
+[2026-02-01 21:04:44.362] [DB] Loaded 1 game objects for map Arena0
+[2026-02-01 21:04:44.363] [DB] Loaded 1 game objects for map Arena1
+[2026-02-01 21:04:44.365] [DB] Loaded 1 game objects for map Arena2
+[2026-02-01 21:04:44.366] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-01 21:04:44.368] [DB] Loaded 4 game objects for map WorldMap0
+[2026-02-01 21:04:54.367] [WS] Client connected to WorldServer.
+[2026-02-01 21:04:54.384] [WS] User Authenticated & Loaded: admin on Arena1
+[2026-02-01 21:04:56.117] [WS] User Authenticated & Loaded: admin on Arena1
+[2026-02-01 21:05:06.865] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 21:05:06.874] [MAP] Change success: admin
+[2026-02-01 21:05:14.447] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 21:05:14.457] [MAP] Change success: admin
+[2026-02-01 21:05:16.714] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 21:05:16.723] [MAP] Change success: admin
+[2026-02-01 21:05:19.214] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 21:05:19.226] [MAP] Change success: admin
+[2026-02-01 21:05:21.598] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 21:05:21.609] [MAP] Change success: admin
+[2026-02-01 21:05:23.615] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 21:05:23.628] [MAP] Change success: admin
+[2026-02-01 21:05:33.347] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 21:05:33.357] [MAP] Change success: admin
+[2026-02-01 21:06:17.597] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 21:06:17.607] [MAP] Change success: admin
+[2026-02-01 21:06:17.719] [AI] Mob arena_01 aggroed on admin
+[2026-02-01 21:06:17.720] [AI] Mob arena_02 aggroed on admin
+[2026-02-01 21:06:17.721] [AI] Mob arena_g2_1 aggroed on admin
+[2026-02-01 21:06:17.724] [AI] Mob arena_g2_2 aggroed on admin
+[2026-02-01 21:06:20.651] [AI] Mob arena_03 aggroed on admin
+[2026-02-01 21:06:24.396] [Ability] Frost Nova cast by Yheen
+[2026-02-01 21:06:30.181] [Ability] Frostblitz cast start by Yheen on arena_02
+[2026-02-01 21:06:32.202] [Ability] Frostblitz cast complete by Yheen on arena_g2_1
+[2026-02-01 21:06:32.202] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:06:32.203] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:06:32.204] [Ability] Frostblitz damage applied: 587 to Duo-Bit A
+[2026-02-01 21:06:32.204] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:06:32.205] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:06:32.205] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:06:32.329] [Ability] Frostblitz cast start by Yheen on arena_g2_1
+[2026-02-01 21:06:34.378] [Ability] Frostblitz cast complete by Yheen on arena_g2_1
+[2026-02-01 21:06:34.379] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:06:34.380] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:06:34.381] [Ability] Frostblitz damage applied: 591 to Duo-Bit A
+[2026-02-01 21:06:34.381] [Ability] Frostblitz target died: Duo-Bit A
+[2026-02-01 21:06:34.382] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:06:34.383] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:06:34.383] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:06:34.384] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 21:06:34.393] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:06:39.479] [Ability] Ice Barrier cast by Yheen
+[2026-02-01 21:06:43.564] [Ability] Frostblitz cast start by Yheen on arena_02
+[2026-02-01 21:06:45.597] [Ability] Frostblitz cast complete by Yheen on arena_02
+[2026-02-01 21:06:45.597] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:06:45.598] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:06:45.598] [Ability] Frostblitz damage applied: 570 to Bit-Wächter
+[2026-02-01 21:06:45.599] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:06:45.599] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:06:45.600] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:06:45.896] [Ability] Frostblitz cast start by Yheen on arena_02
+[2026-02-01 21:06:47.991] [Ability] Frostblitz cast complete by Yheen on arena_02
+[2026-02-01 21:06:47.992] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:06:47.992] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:06:47.993] [Ability] Frostblitz damage applied: 1022 to Bit-Wächter
+[2026-02-01 21:06:47.993] [Ability] Frostblitz target died: Bit-Wächter
+[2026-02-01 21:06:47.994] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:06:47.995] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:06:47.996] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:06:47.996] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 21:06:48.006] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:06:48.046] [Ability] Frostblitz cast start by Yheen on arena_01
+[2026-02-01 21:06:50.067] [Ability] Frostblitz cast complete by Yheen on arena_01
+[2026-02-01 21:06:50.068] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:06:50.068] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:06:50.069] [Ability] Frostblitz damage applied: 589 to Bit-Wächter
+[2026-02-01 21:06:50.069] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:06:50.070] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:06:50.070] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:06:50.179] [Ability] Frostblitz cast start by Yheen on arena_01
+[2026-02-01 21:06:52.245] [Ability] Frostblitz cast complete by Yheen on arena_01
+[2026-02-01 21:06:52.246] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:06:52.247] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:06:52.247] [Ability] Frostblitz damage applied: 571 to Bit-Wächter
+[2026-02-01 21:06:52.248] [Ability] Frostblitz target died: Bit-Wächter
+[2026-02-01 21:06:52.249] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:06:52.249] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:06:52.250] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:06:52.250] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 21:06:52.260] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:06:52.312] [Ability] Frostblitz cast start by Yheen on arena_03
+[2026-02-01 21:06:54.330] [Ability] Frostblitz cast complete by Yheen on arena_03
+[2026-02-01 21:06:54.331] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:06:54.331] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:06:54.332] [Ability] Frostblitz damage applied: 591 to Bit-Veteran
+[2026-02-01 21:06:54.332] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:06:54.333] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:06:54.333] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:06:54.446] [Ability] Frostblitz cast start by Yheen on arena_03
+[2026-02-01 21:06:56.514] [Ability] Frostblitz cast complete by Yheen on arena_03
+[2026-02-01 21:06:56.514] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:06:56.515] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:06:56.515] [Ability] Frostblitz damage applied: 1040 to Bit-Veteran
+[2026-02-01 21:06:56.516] [Ability] Frostblitz target died: Bit-Veteran
+[2026-02-01 21:06:56.517] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:06:56.517] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:06:56.518] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:06:56.518] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 21:06:56.529] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:06:56.562] [Ability] Frostblitz cast start by Yheen on arena_03
+[2026-02-01 21:06:58.591] [Ability] Frostblitz cast complete by Yheen on arena_g2_2
+[2026-02-01 21:06:58.591] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:06:58.592] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:06:58.593] [Ability] Frostblitz damage applied: 580 to Duo-Bit B
+[2026-02-01 21:06:58.593] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:06:58.595] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:06:58.595] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:06:58.613] [Ability] Frostblitz cast start by Yheen on arena_g2_2
+[2026-02-01 21:07:00.657] [Ability] Frostblitz cast complete by Yheen on arena_g2_2
+[2026-02-01 21:07:00.658] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:07:00.658] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:07:00.659] [Ability] Frostblitz damage applied: 568 to Duo-Bit B
+[2026-02-01 21:07:00.660] [Ability] Frostblitz target died: Duo-Bit B
+[2026-02-01 21:07:00.661] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:07:00.661] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:07:00.662] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:07:00.663] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 21:07:00.673] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:07:09.497] [WS] Ice Barrier expired for admin
+[2026-02-01 21:10:02.340] =========================================
+[2026-02-01 21:10:02.342] Starting The Grid WORLD SERVER...
+[2026-02-01 21:10:02.343] =========================================
+[2026-02-01 21:10:02.343] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 21:10:02.359] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 21:10:02.362] [DB] Loaded 13 mobs from database.
+[2026-02-01 21:10:02.364] [DB] Loaded 1 game objects for map Arena0
+[2026-02-01 21:10:02.366] [DB] Loaded 1 game objects for map Arena1
+[2026-02-01 21:10:02.367] [DB] Loaded 1 game objects for map Arena2
+[2026-02-01 21:10:02.368] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-01 21:10:02.369] [DB] Loaded 4 game objects for map WorldMap0
+[2026-02-01 21:10:04.141] [WS] Client connected to WorldServer.
+[2026-02-01 21:10:04.160] [WS] User Authenticated & Loaded: admin on Arena0
+[2026-02-01 21:10:05.229] [WS] User Authenticated & Loaded: admin on Arena0
+[2026-02-01 21:10:08.657] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 21:10:08.667] [MAP] Change success: admin
+[2026-02-01 21:10:10.841] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 21:10:10.851] [MAP] Change success: admin
+[2026-02-01 21:10:13.307] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 21:10:13.316] [MAP] Change success: admin
+[2026-02-01 21:10:26.140] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 21:10:26.150] [MAP] Change success: admin
+[2026-02-01 21:10:28.740] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 21:10:28.750] [MAP] Change success: admin
+[2026-02-01 21:10:31.124] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 21:10:31.135] [MAP] Change success: admin
+[2026-02-01 21:10:34.473] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 21:10:34.482] [MAP] Change success: admin
+[2026-02-01 21:10:36.456] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 21:10:36.465] [MAP] Change success: admin
+[2026-02-01 21:10:38.559] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 21:10:38.579] [MAP] Change success: admin
+[2026-02-01 21:10:59.755] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 21:10:59.765] [MAP] Change success: admin
+[2026-02-01 21:15:33.914] =========================================
+[2026-02-01 21:15:33.916] Starting The Grid WORLD SERVER...
+[2026-02-01 21:15:33.916] =========================================
+[2026-02-01 21:15:33.916] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 21:15:33.934] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 21:15:33.937] [DB] Loaded 13 mobs from database.
+[2026-02-01 21:15:33.939] [DB] Loaded 1 game objects for map Arena0
+[2026-02-01 21:15:33.940] [DB] Loaded 1 game objects for map Arena1
+[2026-02-01 21:15:33.941] [DB] Loaded 1 game objects for map Arena2
+[2026-02-01 21:15:33.943] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-01 21:15:33.944] [DB] Loaded 4 game objects for map WorldMap0
+[2026-02-01 21:15:35.700] [WS] Client connected to WorldServer.
+[2026-02-01 21:15:35.718] [WS] User Authenticated & Loaded: admin on Arena2
+[2026-02-01 21:15:37.335] [WS] User Authenticated & Loaded: admin on Arena2
+[2026-02-01 21:16:00.198] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 21:16:00.209] [MAP] Change success: admin
+[2026-02-01 21:16:02.581] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 21:16:02.592] [MAP] Change success: admin
+[2026-02-01 21:16:05.315] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 21:16:05.325] [MAP] Change success: admin
+[2026-02-01 21:16:50.147] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 21:16:50.156] [MAP] Change success: admin
+[2026-02-01 21:16:52.697] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 21:16:52.707] [MAP] Change success: admin
+[2026-02-01 21:17:02.697] =========================================
+[2026-02-01 21:17:02.698] Starting The Grid WORLD SERVER...
+[2026-02-01 21:17:02.699] =========================================
+[2026-02-01 21:17:02.699] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-01 21:17:02.714] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 21:17:02.717] [DB] Loaded 13 mobs from database.
+[2026-02-01 21:17:02.718] [DB] Loaded 1 game objects for map Arena0
+[2026-02-01 21:17:02.720] [DB] Loaded 1 game objects for map Arena1
+[2026-02-01 21:17:02.721] [DB] Loaded 1 game objects for map Arena2
+[2026-02-01 21:17:02.722] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-01 21:17:02.723] [DB] Loaded 4 game objects for map WorldMap0
+[2026-02-01 21:17:07.664] [WS] Client connected to WorldServer.
+[2026-02-01 21:17:07.683] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 21:17:09.398] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-01 21:17:11.196] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 21:17:11.206] [MAP] Change success: admin
+[2026-02-01 21:17:13.613] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 21:17:13.622] [MAP] Change success: admin
+[2026-02-01 21:17:36.862] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-01 21:17:36.872] [MAP] Change success: admin
+[2026-02-01 21:17:53.012] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-01 21:17:53.022] [MAP] Change success: admin
+[2026-02-01 21:18:11.295] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-01 21:18:11.443] [MAP] Change success: admin
+[2026-02-01 21:18:13.662] [Ability] Frostblitz cast start by Yheen on poly_cube_1
+[2026-02-01 21:18:15.763] [Ability] Frostblitz cast complete by Yheen on poly_cube_1
+[2026-02-01 21:18:15.763] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:15.764] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:15.765] [Ability] Frostblitz damage applied: 561 to Neon-Würfel
+[2026-02-01 21:18:15.765] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:15.766] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:15.766] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:15.945] [Ability] Frostblitz cast start by Yheen on poly_cube_1
+[2026-02-01 21:18:18.043] [Ability] Frostblitz cast complete by Yheen on poly_cube_1
+[2026-02-01 21:18:18.044] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:18.044] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:18.045] [Ability] Frostblitz damage applied: 579 to Neon-Würfel
+[2026-02-01 21:18:18.045] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:18.046] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:18.046] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:18.228] [Ability] Frostblitz cast start by Yheen on poly_cube_1
+[2026-02-01 21:18:20.329] [Ability] Frostblitz cast complete by Yheen on poly_cube_1
+[2026-02-01 21:18:20.330] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:20.331] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:20.331] [Ability] Frostblitz damage applied: 1069 to Neon-Würfel
+[2026-02-01 21:18:20.332] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-01 21:18:20.332] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:20.333] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:20.333] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:18:20.334] [XP] Yheen erhielt 219 Erfahrung.
+[2026-02-01 21:18:20.334] [LEVEL] Yheen ist jetzt Level 9!
+[2026-02-01 21:18:20.344] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:20.522] [Ability] Frostblitz cast start by Yheen on poly_pyramid_1
+[2026-02-01 21:18:22.625] [Ability] Frostblitz cast complete by Yheen on poly_pyramid_1
+[2026-02-01 21:18:22.626] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:22.627] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:22.628] [Ability] Frostblitz damage applied: 661 to Neon-Pyramide
+[2026-02-01 21:18:22.629] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:22.629] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:22.630] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:22.878] [Ability] Frostblitz cast start by Yheen on poly_pyramid_1
+[2026-02-01 21:18:24.905] [Ability] Frostblitz cast complete by Yheen on poly_pyramid_1
+[2026-02-01 21:18:24.906] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:24.907] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:24.907] [Ability] Frostblitz damage applied: 676 to Neon-Pyramide
+[2026-02-01 21:18:24.908] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:24.909] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:24.909] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:24.961] [Ability] Frostblitz cast start by Yheen on poly_pyramid_1
+[2026-02-01 21:18:26.972] [Ability] Frostblitz cast complete by Yheen on poly_pyramid_1
+[2026-02-01 21:18:26.973] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:26.973] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:26.974] [Ability] Frostblitz damage applied: 1240 to Neon-Pyramide
+[2026-02-01 21:18:26.975] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-01 21:18:26.975] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:26.976] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:26.977] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:18:26.978] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:18:26.988] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:27.162] [Ability] Frostblitz cast start by Yheen on poly_cone_1
+[2026-02-01 21:18:29.267] [Ability] Frostblitz cast complete by Yheen on poly_cone_1
+[2026-02-01 21:18:29.268] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:29.269] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:29.269] [Ability] Frostblitz damage applied: 664 to Neon-Kegel
+[2026-02-01 21:18:29.270] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:29.270] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:29.271] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:29.278] [Ability] Frostblitz cast start by Yheen on poly_cone_1
+[2026-02-01 21:18:31.323] [Ability] Frostblitz cast complete by Yheen on poly_cone_1
+[2026-02-01 21:18:31.324] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:31.325] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:31.325] [Ability] Frostblitz damage applied: 667 to Neon-Kegel
+[2026-02-01 21:18:31.326] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:31.327] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:31.328] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:31.511] [Ability] Frostblitz cast start by Yheen on poly_cone_1
+[2026-02-01 21:18:33.596] [Ability] Frostblitz cast complete by Yheen on poly_cone_1
+[2026-02-01 21:18:33.596] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:33.597] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:33.598] [Ability] Frostblitz damage applied: 670 to Neon-Kegel
+[2026-02-01 21:18:33.598] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-01 21:18:33.599] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:33.600] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:33.600] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:18:33.601] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:18:33.611] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:33.645] [Ability] Frostblitz cast start by Yheen on poly_cone_1
+[2026-02-01 21:18:35.665] [Ability] Frostblitz cast complete by Yheen on poly_ring_big
+[2026-02-01 21:18:35.666] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:35.666] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:35.667] [Ability] Frostblitz damage applied: 689 to Gigantischer Neon-Ring
+[2026-02-01 21:18:35.668] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:35.668] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:35.669] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:35.761] [Ability] Frostblitz cast start by Yheen on poly_ring_big
+[2026-02-01 21:18:37.836] [Ability] Frostblitz cast complete by Yheen on poly_ring_big
+[2026-02-01 21:18:37.836] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:37.837] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:37.837] [Ability] Frostblitz damage applied: 681 to Gigantischer Neon-Ring
+[2026-02-01 21:18:37.838] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:37.838] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:37.839] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:38.044] [Ability] Frostblitz cast start by Yheen on poly_ring_big
+[2026-02-01 21:18:40.113] [Ability] Frostblitz cast complete by Yheen on poly_ring_big
+[2026-02-01 21:18:40.114] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:40.115] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:40.115] [Ability] Frostblitz damage applied: 703 to Gigantischer Neon-Ring
+[2026-02-01 21:18:40.116] [Ability] Frostblitz target died: Gigantischer Neon-Ring
+[2026-02-01 21:18:40.116] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:40.117] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:40.117] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:18:40.118] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:18:40.127] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:40.194] [Ability] Frostblitz cast start by Yheen on poly_sphere_1
+[2026-02-01 21:18:42.295] [Ability] Frostblitz cast complete by Yheen on poly_sphere_1
+[2026-02-01 21:18:42.295] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:42.296] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:42.297] [Ability] Frostblitz damage applied: 667 to Neon-Sphäre
+[2026-02-01 21:18:42.297] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:42.298] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:42.298] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:42.344] [Ability] Frostblitz cast start by Yheen on poly_sphere_1
+[2026-02-01 21:18:44.360] [Ability] Frostblitz cast complete by Yheen on poly_sphere_1
+[2026-02-01 21:18:44.361] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:44.362] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:44.362] [Ability] Frostblitz damage applied: 698 to Neon-Sphäre
+[2026-02-01 21:18:44.363] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:44.363] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:44.364] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:44.561] [Ability] Frostblitz cast start by Yheen on poly_sphere_1
+[2026-02-01 21:18:46.639] [Ability] Frostblitz cast complete by Yheen on poly_sphere_1
+[2026-02-01 21:18:46.640] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:46.640] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:46.641] [Ability] Frostblitz damage applied: 1220 to Neon-Sphäre
+[2026-02-01 21:18:46.642] [Ability] Frostblitz target died: Neon-Sphäre
+[2026-02-01 21:18:46.642] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:46.643] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:46.644] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:18:46.644] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:18:46.654] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:46.861] [Ability] Frostblitz cast start by Yheen on poly_capsule_1
+[2026-02-01 21:18:48.936] [Ability] Frostblitz cast complete by Yheen on poly_capsule_1
+[2026-02-01 21:18:48.936] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:48.937] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:48.938] [Ability] Frostblitz damage applied: 674 to Neon-Kapsel
+[2026-02-01 21:18:48.938] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:48.939] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:48.940] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:49.127] [Ability] Frostblitz cast start by Yheen on poly_capsule_1
+[2026-02-01 21:18:51.202] [Ability] Frostblitz cast complete by Yheen on poly_capsule_1
+[2026-02-01 21:18:51.203] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:51.203] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:51.204] [Ability] Frostblitz damage applied: 667 to Neon-Kapsel
+[2026-02-01 21:18:51.205] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:51.205] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:51.206] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:51.277] [Ability] Frostblitz cast start by Yheen on poly_capsule_1
+[2026-02-01 21:18:53.368] [Ability] Frostblitz cast complete by Yheen on poly_capsule_1
+[2026-02-01 21:18:53.369] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:53.370] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:53.370] [Ability] Frostblitz damage applied: 1184 to Neon-Kapsel
+[2026-02-01 21:18:53.371] [Ability] Frostblitz target died: Neon-Kapsel
+[2026-02-01 21:18:53.372] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:53.372] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:53.373] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:18:53.373] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:18:53.383] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:53.511] [Ability] Frostblitz cast start by Yheen on poly_cube_1
+[2026-02-01 21:18:55.550] [Ability] Frostblitz cast complete by Yheen on poly_cube_1
+[2026-02-01 21:18:55.551] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:55.552] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:55.552] [Ability] Frostblitz damage applied: 657 to Neon-Würfel
+[2026-02-01 21:18:55.553] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:55.553] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:55.554] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:55.644] [Ability] Frostblitz cast start by Yheen on poly_cube_1
+[2026-02-01 21:18:57.720] [Ability] Frostblitz cast complete by Yheen on poly_cube_1
+[2026-02-01 21:18:57.720] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:18:57.721] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:18:57.722] [Ability] Frostblitz damage applied: 662 to Neon-Würfel
+[2026-02-01 21:18:57.722] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:18:57.723] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:18:57.723] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:18:57.943] [Ability] Frostblitz cast start by Yheen on poly_cube_1
+[2026-02-01 21:19:00.005] [Ability] Frostblitz cast complete by Yheen on poly_cube_1
+[2026-02-01 21:19:00.005] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:00.006] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:00.007] [Ability] Frostblitz damage applied: 704 to Neon-Würfel
+[2026-02-01 21:19:00.007] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-01 21:19:00.008] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:00.008] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:00.009] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:19:00.010] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:19:00.022] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:00.095] [Ability] Frostblitz cast start by Yheen on poly_pyramid_1
+[2026-02-01 21:19:02.183] [Ability] Frostblitz cast complete by Yheen on poly_pyramid_1
+[2026-02-01 21:19:02.184] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:02.185] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:02.186] [Ability] Frostblitz damage applied: 675 to Neon-Pyramide
+[2026-02-01 21:19:02.186] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:02.187] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:02.187] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:02.210] [Ability] Frostblitz cast start by Yheen on poly_pyramid_1
+[2026-02-01 21:19:04.248] [Ability] Frostblitz cast complete by Yheen on poly_pyramid_1
+[2026-02-01 21:19:04.249] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:04.249] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:04.250] [Ability] Frostblitz damage applied: 672 to Neon-Pyramide
+[2026-02-01 21:19:04.251] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:04.251] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:04.252] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:04.444] [Ability] Frostblitz cast start by Yheen on poly_pyramid_1
+[2026-02-01 21:19:06.533] [Ability] Frostblitz cast complete by Yheen on poly_pyramid_1
+[2026-02-01 21:19:06.533] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:06.534] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:06.535] [Ability] Frostblitz damage applied: 664 to Neon-Pyramide
+[2026-02-01 21:19:06.535] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-01 21:19:06.536] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:06.536] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:06.537] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:19:06.538] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:19:06.547] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:06.794] [Ability] Frostblitz cast start by Yheen on poly_cone_1
+[2026-02-01 21:19:08.829] [Ability] Frostblitz cast complete by Yheen on poly_cone_1
+[2026-02-01 21:19:08.830] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:08.831] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:08.832] [Ability] Frostblitz damage applied: 672 to Neon-Kegel
+[2026-02-01 21:19:08.833] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:08.833] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:08.834] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:08.843] [Ability] Frostblitz cast start by Yheen on poly_cone_1
+[2026-02-01 21:19:10.897] [Ability] Frostblitz cast complete by Yheen on poly_cone_1
+[2026-02-01 21:19:10.897] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:10.898] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:10.899] [Ability] Frostblitz damage applied: 1218 to Neon-Kegel
+[2026-02-01 21:19:10.899] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-01 21:19:10.900] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:10.901] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:10.901] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:19:10.902] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:19:10.920] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:10.944] [Ability] Frostblitz cast start by Yheen on poly_cone_1
+[2026-02-01 21:19:12.972] [Ability] Frostblitz cast complete by Yheen on poly_ring_big
+[2026-02-01 21:19:12.973] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:12.973] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:12.974] [Ability] Frostblitz damage applied: 688 to Gigantischer Neon-Ring
+[2026-02-01 21:19:12.974] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:12.975] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:12.976] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:13.144] [Ability] Frostblitz cast start by Yheen on poly_ring_big
+[2026-02-01 21:19:15.238] [Ability] Frostblitz cast complete by Yheen on poly_ring_big
+[2026-02-01 21:19:15.239] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:15.240] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:15.240] [Ability] Frostblitz damage applied: 683 to Gigantischer Neon-Ring
+[2026-02-01 21:19:15.241] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:15.242] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:15.243] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:15.293] [Ability] Frostblitz cast start by Yheen on poly_ring_big
+[2026-02-01 21:19:17.293] [Ability] Frostblitz cast complete by Yheen on poly_ring_big
+[2026-02-01 21:19:17.294] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:17.294] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:17.295] [Ability] Frostblitz damage applied: 667 to Gigantischer Neon-Ring
+[2026-02-01 21:19:17.295] [Ability] Frostblitz target died: Gigantischer Neon-Ring
+[2026-02-01 21:19:17.296] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:17.297] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:17.297] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:19:17.298] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:19:17.308] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:17.410] [Ability] Frostblitz cast start by Yheen on poly_sphere_1
+[2026-02-01 21:19:19.483] [Ability] Frostblitz cast complete by Yheen on poly_sphere_1
+[2026-02-01 21:19:19.483] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:19.484] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:19.485] [Ability] Frostblitz damage applied: 700 to Neon-Sphäre
+[2026-02-01 21:19:19.485] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:19.486] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:19.487] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:19.710] [Ability] Frostblitz cast start by Yheen on poly_sphere_1
+[2026-02-01 21:19:21.765] [Ability] Frostblitz cast complete by Yheen on poly_sphere_1
+[2026-02-01 21:19:21.766] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:21.766] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:21.767] [Ability] Frostblitz damage applied: 677 to Neon-Sphäre
+[2026-02-01 21:19:21.768] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:21.768] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:21.769] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:21.977] [Ability] Frostblitz cast start by Yheen on poly_sphere_1
+[2026-02-01 21:19:24.044] [Ability] Frostblitz cast complete by Yheen on poly_sphere_1
+[2026-02-01 21:19:24.044] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:24.045] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:24.046] [Ability] Frostblitz damage applied: 679 to Neon-Sphäre
+[2026-02-01 21:19:24.046] [Ability] Frostblitz target died: Neon-Sphäre
+[2026-02-01 21:19:24.047] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:24.047] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:24.048] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:19:24.049] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:19:24.059] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:27.859] [Ability] Frostblitz cast start by Yheen on poly_capsule_1
+[2026-02-01 21:19:29.929] [Ability] Frostblitz cast complete by Yheen on poly_capsule_1
+[2026-02-01 21:19:29.929] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:29.931] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:29.932] [Ability] Frostblitz damage applied: 654 to Neon-Kapsel
+[2026-02-01 21:19:29.933] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:29.933] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:29.934] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:29.976] [Ability] Frostblitz cast start by Yheen on poly_capsule_1
+[2026-02-01 21:19:30.145] [AI] Mob poly_cube_1 aggroed on admin
+[2026-02-01 21:19:31.989] [Ability] Frostblitz cast complete by Yheen on poly_capsule_1
+[2026-02-01 21:19:31.990] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:31.991] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:31.992] [Ability] Frostblitz damage applied: 696 to Neon-Kapsel
+[2026-02-01 21:19:31.994] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:31.994] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:31.995] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:32.493] [Ability] Frost Nova cast by Yheen
+[2026-02-01 21:19:36.593] [Ability] Frostblitz cast start by Yheen on poly_cube_1
+[2026-02-01 21:19:36.659] [AI] Mob poly_pyramid_1 aggroed on admin
+[2026-02-01 21:19:38.618] [Ability] Frostblitz cast complete by Yheen on poly_cube_1
+[2026-02-01 21:19:38.619] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:38.620] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:38.620] [Ability] Frostblitz damage applied: 680 to Neon-Würfel
+[2026-02-01 21:19:38.621] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:38.621] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:38.622] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:38.776] [Ability] Frostblitz cast start by Yheen on poly_cube_1
+[2026-02-01 21:19:40.789] [Ability] Frostblitz cast complete by Yheen on poly_capsule_1
+[2026-02-01 21:19:40.790] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:40.790] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:40.791] [Ability] Frostblitz damage applied: 676 to Neon-Kapsel
+[2026-02-01 21:19:40.792] [Ability] Frostblitz target died: Neon-Kapsel
+[2026-02-01 21:19:40.793] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:40.793] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:40.794] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:19:40.795] [XP] Yheen erhielt 250 Erfahrung.
+[2026-02-01 21:19:40.795] [LEVEL] Yheen ist jetzt Level 10!
+[2026-02-01 21:19:40.819] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:41.041] [AI] Mob poly_cone_1 aggroed on admin
+[2026-02-01 21:19:41.143] [Ability] Frostblitz cast start by Yheen on poly_pyramid_1
+[2026-02-01 21:19:43.206] [Ability] Frostblitz cast complete by Yheen on poly_pyramid_1
+[2026-02-01 21:19:43.206] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:43.207] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:43.208] [Ability] Frostblitz damage applied: 761 to Neon-Pyramide
+[2026-02-01 21:19:43.209] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:43.210] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:43.210] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:43.359] [Ability] Frostblitz cast start by Yheen on poly_pyramid_1
+[2026-02-01 21:19:45.380] [Ability] Frostblitz cast complete by Yheen on poly_pyramid_1
+[2026-02-01 21:19:45.381] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:45.382] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:45.382] [Ability] Frostblitz damage applied: 1387 to Neon-Pyramide
+[2026-02-01 21:19:45.383] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-01 21:19:45.383] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:45.384] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:45.384] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:19:45.385] [XP] Yheen erhielt 281 Erfahrung.
+[2026-02-01 21:19:45.470] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:45.476] [Ability] Frostblitz cast start by Yheen on poly_pyramid_1
+[2026-02-01 21:19:47.532] [Ability] Frostblitz cast complete by Yheen on poly_cone_1
+[2026-02-01 21:19:47.533] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:47.534] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:47.535] [Ability] Frostblitz damage applied: 764 to Neon-Kegel
+[2026-02-01 21:19:47.535] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:47.536] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:47.536] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:47.576] [Ability] Frostblitz cast start by Yheen on poly_cone_1
+[2026-02-01 21:19:49.597] [Ability] Frostblitz cast complete by Yheen on poly_cone_1
+[2026-02-01 21:19:49.598] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:49.599] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:49.599] [Ability] Frostblitz damage applied: 1375 to Neon-Kegel
+[2026-02-01 21:19:49.600] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-01 21:19:49.600] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:49.601] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:49.601] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:19:49.602] [XP] Yheen erhielt 281 Erfahrung.
+[2026-02-01 21:19:49.690] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:49.843] [Ability] Frostblitz cast start by Yheen on poly_cube_1
+[2026-02-01 21:19:51.854] [Ability] Frostblitz cast complete by Yheen on poly_cube_1
+[2026-02-01 21:19:51.854] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:51.855] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:51.856] [Ability] Frostblitz damage applied: 769 to Neon-Würfel
+[2026-02-01 21:19:51.856] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-01 21:19:51.857] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:51.858] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:51.859] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-01 21:19:51.859] [XP] Yheen erhielt 281 Erfahrung.
+[2026-02-01 21:19:52.051] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:52.225] [Ability] Ice Barrier cast by Yheen
+[2026-02-01 21:19:53.759] [Ability] Frostblitz cast start by Yheen on poly_ring_big
+[2026-02-01 21:19:55.848] [Ability] Frostblitz cast complete by Yheen on poly_ring_big
+[2026-02-01 21:19:55.849] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:55.850] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:55.850] [Ability] Frostblitz damage applied: 795 to Gigantischer Neon-Ring
+[2026-02-01 21:19:55.851] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:55.851] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:55.852] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:19:56.676] [Ability] Frostblitz cast start by Yheen on poly_ring_big
+[2026-02-01 21:19:58.770] [Ability] Frostblitz cast complete by Yheen on poly_ring_big
+[2026-02-01 21:19:58.771] [Ability] Frostblitz entering lock for Yheen
+[2026-02-01 21:19:58.771] [Ability] Frostblitz calculating damage for Yheen
+[2026-02-01 21:19:58.772] [Ability] Frostblitz damage applied: 779 to Gigantischer Neon-Ring
+[2026-02-01 21:19:58.772] [Ability] Frostblitz lock released for Yheen
+[2026-02-01 21:19:58.773] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-01 21:19:58.774] [Ability] Frostblitz processing finished for Yheen
+[2026-02-01 21:20:03.208] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-01 21:20:03.668] [MAP] Change success: admin
+[2026-02-01 21:20:22.305] [WS] Ice Barrier expired for admin
+[2026-02-01 21:20:24.191] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-01 21:20:24.202] [MAP] Change success: admin
+[2026-02-01 21:20:28.541] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-01 21:20:28.551] [MAP] Change success: admin

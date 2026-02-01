@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE GRID | System Interface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER / NAVIGATION -->
+        <nav>
+            <h1 onclick="location.href='/'" style="cursor:pointer">THE GRID</h1>
+            <div class="nav-links">
+                <span id="user-info" class="hidden" style="margin-right: 15px; color: var(--neon-blue);"></span>
+                <a href="/account" class="nav-btn" id="nav-acc-btn">Login / Join</a>
+                <button id="nav-logout-btn" class="nav-btn hidden" onclick="logout()">Logout</button>
+            </div>
+        </nav>
+
+        <!-- DASHBOARD PAGE (Default on /) -->
+        <div id="dashboard-page">
+            <!-- PUBLIC STATUS (Always visible on /) -->
+            <section style="margin-bottom: 50px;">
+                <h2 style="margin-bottom: 25px; letter-spacing: 2px;">LIVE SIMULATION STATUS</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ident</th>
+                            <th>Charakter</th>
+                            <th>Map</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="live-player-table">
+                        <!-- Live Data via JS -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- USER CHARACTERS (Only visible when logged in) -->
+            <section id="user-chars-section" class="hidden">
+                <h2 style="margin-bottom: 25px; letter-spacing: 2px;">DEINE CHARAKTERE</h2>
+                <div id="char-list" class="char-grid">
+                    <!-- User Characters via JS -->
+                </div>
+            </section>
+
+            <div id="auth-notice" class="hidden"
+                style="text-align: center; padding: 40px; border: 1px dashed var(--glass-border); border-radius: 15px; background: rgba(255,255,255,0.02); margin-top: 20px;">
+                <p style="opacity: 0.6;">Logge dich ein, um deine Charaktere zu verwalten.</p>
+                <a href="/account" class="nav-btn" style="display: inline-block; margin-top: 15px;">Jetzt Einloggen</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function init() {
+            const token = localStorage.getItem('token');
+            const username = localStorage.getItem('username');
+
+            fetchLiveStats();
+            setInterval(fetchLiveStats, 3000);
+
+            if (token) {
+                document.getElementById('nav-logout-btn').classList.remove('hidden');
+                document.getElementById('nav-acc-btn').classList.add('hidden');
+                document.getElementById('user-info').innerText = username;
+                document.getElementById('user-info').classList.remove('hidden');
+                document.getElementById('user-chars-section').classList.remove('hidden');
+                loadCharacters();
+            } else {
+                document.getElementById('auth-notice').classList.remove('hidden');
+            }
+        }
+
+        async function fetchLiveStats() {
+            try {
+                const res = await fetch('/api/admin/stats');
+                const data = await res.json();
+                const tableBody = document.getElementById('live-player-table');
+                tableBody.innerHTML = '';
+
+                data.players.forEach(p => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${p.username}</td>
+                        <td style="color: var(--neon-blue)">${p.charName}</td>
+                        <td><span class="badge badge-map">${p.mapName}</span></td>
+                        <td>${p.idle ? '<span class="badge badge-idle">Idle</span>' : '<span style="color: #00FF00">Aktiv</span>'}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+                if (data.players.length === 0) {
+                    tableBody.innerHTML = '<tr><td colspan="4" style="text-align: center; opacity: 0.5;">Momentan keine User aktiv.</td></tr>';
+                }
+            } catch (e) { console.error(e); }
+        }
+
+        async function loadCharacters() {
+            const token = localStorage.getItem('token');
+            try {
+                const res = await fetch('/api/characters', {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                if (res.status === 403) return logout();
+
+                const chars = await res.json();
+                const charList = document.getElementById('char-list');
+                charList.innerHTML = '';
+
+                if (chars.length === 0) {
+                    charList.innerHTML = '<div style="grid-column: 1/-1; text-align: center; opacity: 0.5; padding: 40px;">Keine Charaktere gefunden.</div>';
+                    return;
+                }
+
+                chars.forEach(char => {
+                    const xpGoal = 100 * Math.pow(char.level, 1.5);
+                    const xpPercent = Math.min(100, (char.xp / xpGoal) * 100);
+
+                    const card = document.createElement('div');
+                    card.className = 'char-card';
+                    card.innerHTML = `
+                        <div style="font-size: 1.5em; font-weight: bold; color: ${char.class_info.class_color}">${char.char_name}</div>
+                        <div style="opacity: 0.7; font-size: 0.9em;">${char.class_info.class_name} | ${char.class_info.role}</div>
+                        <div style="color: var(--neon-blue); font-size: 0.8em; margin-top: 10px;">LEVEL ${char.level}</div>
+                        <div class="xp-bar"><div class="xp-fill" style="width: ${xpPercent}%"></div></div>
+                        <div style="font-size: 0.75em; opacity: 0.5; margin-top: 5px;">
+                            Simulation: ${char.world_state.map_name}<br>
+                            Status: Online
+                        </div>
+                    `;
+                    charList.appendChild(card);
+                });
+            } catch (err) { console.error(err); }
+        }
+
+        function logout() {
+            localStorage.clear();
+            location.href = '/account';
+        }
+
+        init();
+    </script>
+</body>
+
+</html>

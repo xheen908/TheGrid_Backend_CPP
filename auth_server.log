@@ -1,0 +1,50 @@
+[2026-02-01 01:57:58.853] =========================================
+[2026-02-01 01:57:58.854] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-01 01:57:58.855] =========================================
+[2026-02-01 01:57:58.888] [DB] ERROR: Connection failed - Access denied for user 'user_name'@'172.18.0.1' (using password: YES) (Host: localhost:3306)
+[2026-02-01 01:57:58.889] [FATAL] Could not connect to MySQL.
+[2026-02-01 02:04:58.148] =========================================
+[2026-02-01 02:04:58.149] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-01 02:04:58.150] =========================================
+[2026-02-01 02:04:58.179] [DB] ERROR: Connection failed - Access denied for user 'user_name'@'172.18.0.1' (using password: YES) (Host: localhost:3306)
+[2026-02-01 02:04:58.180] [FATAL] Could not connect to MySQL.
+[2026-02-01 02:08:15.962] =========================================
+[2026-02-01 02:08:15.963] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-01 02:08:15.963] =========================================
+[2026-02-01 02:08:15.994] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 02:08:35.782] [DB] Fetching chars for admin
+[2026-02-01 02:08:35.788] [DB] Found 2 chars.
+[2026-02-01 19:50:39.173] =========================================
+[2026-02-01 19:50:39.175] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-01 19:50:39.176] =========================================
+[2026-02-01 19:50:39.200] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-01 19:50:46.876] [DB] Fetching chars for admin
+[2026-02-01 19:50:46.879] [DB] Found 3 chars.
+[2026-02-01 20:06:09.003] [DB] Fetching chars for admin
+[2026-02-01 20:06:09.006] [DB] Found 3 chars.
+[2026-02-01 20:08:32.916] [DB] Fetching chars for admin
+[2026-02-01 20:08:32.918] [DB] Found 3 chars.
+[2026-02-01 20:10:31.017] [DB] Fetching chars for admin
+[2026-02-01 20:10:31.020] [DB] Found 3 chars.
+[2026-02-01 20:29:25.306] [DB] Fetching chars for admin
+[2026-02-01 20:29:25.308] [DB] Found 3 chars.
+[2026-02-01 20:36:02.128] [DB] Fetching chars for admin
+[2026-02-01 20:36:02.131] [DB] Found 3 chars.
+[2026-02-01 20:40:01.641] [DB] Fetching chars for admin
+[2026-02-01 20:40:01.644] [DB] Found 3 chars.
+[2026-02-01 20:59:47.188] [DB] Fetching chars for admin
+[2026-02-01 20:59:47.191] [DB] Found 3 chars.
+[2026-02-01 21:01:40.719] [DB] Fetching chars for admin
+[2026-02-01 21:01:40.721] [DB] Found 3 chars.
+[2026-02-01 21:02:11.048] [DB] Fetching chars for admin
+[2026-02-01 21:02:11.050] [DB] Found 3 chars.
+[2026-02-01 21:04:36.748] [DB] Fetching chars for admin
+[2026-02-01 21:04:36.750] [DB] Found 3 chars.
+[2026-02-01 21:04:52.986] [DB] Fetching chars for admin
+[2026-02-01 21:04:52.989] [DB] Found 3 chars.
+[2026-02-01 21:09:51.273] [DB] Fetching chars for admin
+[2026-02-01 21:09:51.276] [DB] Found 3 chars.
+[2026-02-01 21:15:23.653] [DB] Fetching chars for admin
+[2026-02-01 21:15:23.655] [DB] Found 3 chars.
+[2026-02-01 21:17:06.194] [DB] Fetching chars for admin
+[2026-02-01 21:17:06.197] [DB] Found 3 chars.
