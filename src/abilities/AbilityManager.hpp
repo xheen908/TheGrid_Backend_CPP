@@ -8,6 +8,7 @@
 #include "Frostblitz.hpp"
 #include "IceBarrier.hpp"
 #include "FrostNova.hpp"
+#include "ConeOfCold.hpp"
 
 class AbilityManager {
 public:
@@ -112,6 +113,7 @@ private:
         registerAbility(std::make_unique<Frostblitz>());
         registerAbility(std::make_unique<IceBarrier>());
         registerAbility(std::make_unique<FrostNova>());
+        registerAbility(std::make_unique<ConeOfCold>());
     }
 
     std::map<std::string, std::unique_ptr<Ability>> abilities;

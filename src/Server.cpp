@@ -73,7 +73,11 @@ void WorldServer::start(int port) {
                         {"type", "authenticated"}, 
                         {"char_name", player->charName},
                         {"char_class", player->characterClass},
+                        {"level", player->level},
+                        {"xp", player->xp},
+                        {"max_xp", GameLogic::getLevelData(player->level).xpToNextLevel},
                         {"map_name", player->mapName},
+                        {"is_gm", player->isGM},
                         {"position", {{"x", player->lastPos.x}, {"y", player->lastPos.y}, {"z", player->lastPos.z}}}
                     }.dump(), uWS::OpCode::TEXT);
 
@@ -359,6 +363,9 @@ void WorldServer::tick() {
                     json lc = {{"type", "logout_complete"}};
                     SocketHandlers::sendToPlayer(p->username, lc.dump());
                     Logger::log("[WS] Logout complete for " + p->username);
+                    
+                    // CRITICAL: Save player stats to DB when logout timer completes
+                    Database::getInstance().savePlayer(*p);
                 }
 
                 // --- Buff Cleanup ---
@@ -383,7 +390,21 @@ void WorldServer::tick() {
                     for (auto const& b : p->buffs) {
                         buffList.push_back({{"type", b.type}, {"remaining", (int)((b.endTime - nowMs) / 1000)}});
                     }
-                    json s = {{"type", "player_status"}, {"username", p->charName}, {"char_class", p->characterClass}, {"hp", p->hp}, {"max_hp", p->maxHp}, {"level", p->level}, {"shield", p->shield}, {"buffs", buffList}};
+                    json s = {
+                        {"type", "player_status"}, 
+                        {"username", p->charName}, 
+                        {"char_class", p->characterClass}, 
+                        {"hp", p->hp}, 
+                        {"max_hp", p->maxHp}, 
+                        {"level", p->level}, 
+                        {"xp", p->xp},
+                        {"max_xp", GameLogic::getLevelData(p->level).xpToNextLevel},
+                        {"shield", p->shield}, 
+                        {"buffs", buffList},
+                        {"gravity_enabled", p->gravityEnabled},
+                        {"speed_multiplier", p->speedMultiplier},
+                        {"is_gm", p->isGMFlagged}
+                    };
                     SocketHandlers::broadcastToMap(p->mapName, s.dump());
                 }
             }

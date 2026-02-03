@@ -9,6 +9,7 @@ GameState::GameState() {
     mapSettings["Arena1"] = {{"respawnRate", 30}};
     mapSettings["Arena2"] = {{"respawnRate", 30}};
     mapSettings["Dungeon0"] = {{"respawnRate", 30}};
+    mapSettings["TestMap0"] = {{"respawnRate", 30}};
 }
 
 void GameState::loadWorldData() {

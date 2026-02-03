@@ -48,6 +48,8 @@ struct Player {
     bool isGM = false;
     bool isGMFlagged = false;
     bool isInvisible = false;
+    bool gravityEnabled = true;
+    float speedMultiplier = 1.0f;
     bool isDisconnected = false;
     void* ws = nullptr; 
 
@@ -85,6 +87,9 @@ struct Mob {
     int level;
     int hp;
     int maxHp;
+    int dbLevel; // Original Level from DB
+    int dbMaxHp; // Original HP from DB for scaling
+    std::string mobType; // Normal, Elite, Rare, Boss
     std::string mapName;
     Vector3 transform;
     float rotation;

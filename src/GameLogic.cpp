@@ -3,29 +3,55 @@
 #include <random>
 
 LevelData GameLogic::getLevelData(int level) {
+    // Mob XP Base (Zero-diff reward)
+    int mxp = 45 + (5 * level);
+    
+    // Diff(L) logic
+    int diff = 0;
+    if (level >= 60) diff = 25;
+    else if (level >= 12) diff = 13 + (int)std::floor((level - 12) / 4);
+    else if (level == 11) diff = 12;
+    else if (level == 10) diff = 11;
+    else if (level == 9) diff = 9;
+    else if (level == 8) diff = 5;
+    else diff = 0;
+
+    int xpRequired = (8 * level + diff) * mxp;
+    
+    // Nearest 100 rounding (standard for this formula)
+    xpRequired = ((xpRequired + 50) / 100) * 100;
+
     return {
-        100 + (level * 25) + (level * level * 2),
-        100 + (level * 20),
-        (int)std::floor(100 * std::pow(level, 1.5))
+        100 + (level * 25) + (level * level * 2), // HP
+        100 + (level * 20),                       // Mana
+        xpRequired                                // XP to Next Level
     };
 }
 
 int GameLogic::getMobMaxHp(int level) {
-    // f(2) approx 76, f(61) approx 84k
-    return 30 + (int)(10.0 * std::pow(level, 2.2));
+    // Balanced to die in ~5 spells: Average Damage * 5
+    // Average base damage at L1 is 30 (midpoint of 20-40)
+    double base = 30.0;
+    double avgDmg;
+    if (level <= 30) {
+        avgDmg = base + (level - 1) * 7.0 + std::pow((double)level, 2.45) * 0.2;
+    } else {
+        avgDmg = 1100 + (level - 30) * 35.0;
+    }
+    return (int)(avgDmg * 5);
 }
 
 int GameLogic::getMobDamage(int level) {
-    // f(2) approx 8, f(61) approx 1300
-    return 4 + (int)(1.2 * std::pow(level, 1.7));
+    // Soft scale to player HP (L1: ~10, L60: ~500)
+    return (int)(10 + (level * 2.0) + (std::pow((double)level, 1.8) * 0.5));
 }
 
 int GameLogic::getMobXPReward(int level) {
-    return (int)std::floor(20 + (level * 15) + (level * level * 0.8));
+    // Standard Mob XP Reward for equal level
+    return 45 + (5 * level);
 }
 
-DamageResult GameLogic::getSpellDamage(const Player& player, int baseMin, int baseMax) {
-    std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
+DamageResult GameLogic::getSpellDamage(int playerLevel, int baseMin, int baseMax) {
     static std::mt19937 gen(std::random_device{}());
     static std::mutex genMtx;
     std::lock_guard<std::mutex> lock(genMtx);
@@ -34,12 +60,33 @@ DamageResult GameLogic::getSpellDamage(const Player& player, int baseMin, int ba
     std::uniform_int_distribution<> baseDis(baseMin, baseMax);
     
     int chosenBase = baseDis(gen);
-    bool isCrit = critDis(gen) < 0.15;
     
-    int damage = (int)std::floor(chosenBase + (player.level * 40) + (std::pow(player.level, 2.3) * 1.5));
-    if (isCrit) damage = (int)std::floor(damage * 1.8);
+    // Calculate dynamic crit chance: 15% base + level-based growth
+    // At level 1: ~15%, Level 60: ~43%
+    double critChance = 0.15 + (playerLevel - 1) * 0.0048; // Scaliert gegen 43% auf L60
+    if (critChance > 0.75) critChance = 0.75; // Cap at 75%
     
-    return { damage, isCrit };
+    bool isCrit = (critDis(gen) < critChance);
+    
+    // 1. Calculate the target average for this level
+    double avgDmg = 0;
+    if (playerLevel <= 30) {
+        avgDmg = 30.0 + (playerLevel - 1) * 7.0 + std::pow((double)playerLevel, 2.45) * 0.2;
+    } else {
+        avgDmg = 1100 + (playerLevel - 30) * 35.0;
+    }
+
+    // 2. Calculate variance Multiplier
+    double varMult = 1.0 + (playerLevel - 1) * 0.33; 
+    
+    // 3. Apply variance
+    double finalDmg = avgDmg + (chosenBase - 30) * varMult;
+
+    if (isCrit) finalDmg *= 1.8; // Crit multiplier 1.8x
+
+    int finalDamageInt = (int)std::floor(finalDmg);
+    
+    return { finalDamageInt, isCrit };
 }
 
 void GameLogic::scaleMobToMap(Mob& mob, const std::map<std::string, float>& mapLevelMap, const std::map<std::string, int>& mapPartySizeMap) {
@@ -52,14 +99,22 @@ void GameLogic::scaleMobToMap(Mob& mob, const std::map<std::string, float>& mapL
     if (itLevel == mapLevelMap.end()) return;
 
     int maxPlayerLevel = (int)std::floor(itLevel->second);
-    int targetLevel = maxPlayerLevel + 1;
-    if (mob.id == "mob_boss") targetLevel = maxPlayerLevel + 5;
+    int targetLevel = maxPlayerLevel; 
+    
+    // Explicit Multipliers based on Mob Type
+    float typeMultiplier = 1.0f;
+    if (mob.mobType == "Rare") typeMultiplier = 2.0f;
+    else if (mob.mobType == "Elite") typeMultiplier = 4.0f;
+    else if (mob.mobType == "Boss") typeMultiplier = 10.0f;
 
     int maxParty = (itParty != mapPartySizeMap.end()) ? itParty->second : 1;
     float partyMultiplier = 1.0f + (maxParty - 1) * 0.5f;
 
-    // Only update if stats would actually change significantly
-    int targetMaxHp = (int)(getMobMaxHp(targetLevel) * partyMultiplier);
+    // Dynamic Ratio Scaling:
+    // Scale DB_HP based on the ratio of Power(TargetLevel) / Power(DB_Level)
+    double baseScale = (double)getMobMaxHp(mob.dbLevel);
+    double targetScale = (double)getMobMaxHp(targetLevel);
+    int targetMaxHp = (int)((double)mob.dbMaxHp * (targetScale / baseScale) * typeMultiplier * partyMultiplier);
 
     if (mob.level != targetLevel || mob.maxHp != targetMaxHp) {
         float ratio = (mob.maxHp > 0) ? (float)mob.hp / mob.maxHp : 1.0f;
@@ -82,6 +137,16 @@ void GameLogic::awardXP(Player& player, int amount) {
         std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
         player.xp += amount;
         Logger::log("[XP] " + player.charName + " erhielt " + std::to_string(amount) + " Erfahrung.");
+        
+        // Show floating XP text on player
+        json ctMsg = {
+            {"type", "combat_text"},
+            {"target_id", "player"},
+            {"value", "+" + std::to_string(amount) + " XP"},
+            {"is_crit", false},
+            {"color", "#32CD32"} // LimeGreen for XP
+        };
+        SocketHandlers::sendToPlayer(player.username, ctMsg.dump());
     }
 
     auto levelData = getLevelData(player.level);

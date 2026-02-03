@@ -30,7 +30,18 @@ public:
         };
         SocketHandlers::sendToPlayer(player.username, debugMsg.dump());
 
-        Logger::log("[Ability] " + getName() + " cast start by " + pName + " on " + targetId);
+        std::string targetDetails = targetId;
+        {
+            std::lock_guard<std::recursive_mutex> lock(GameState::getInstance().getMtx());
+            for (auto const& m : GameState::getInstance().getMobs()) {
+                if (m.id == targetId) {
+                    targetDetails = m.name + "(" + targetId + ") [" + m.mobType + "]";
+                    break;
+                }
+            }
+        }
+
+        Logger::log("[Ability] " + getName() + " cast start by " + pName + " @ " + targetDetails + " on " + pMap);
         json startMsg = {
             {"type", "spell_cast_start"},
             {"caster", pName},
@@ -42,23 +53,24 @@ public:
 
     void onCastComplete(Player& player, const std::string& targetId) const override {
         std::string pName, pMap, pUsername;
+        int pLevel = 1;
         {
             std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
             pName = player.charName;
             pMap = player.mapName;
             pUsername = player.username;
+            pLevel = player.level;
         }
 
-        Logger::log("[Ability] Frostblitz cast complete by " + pName + " on " + targetId);
         int damage = 0;
         bool isCrit = false;
         std::string mobName = "Unknown";
+        std::string mobType = "Normal";
         int mobLevel = 0;
         bool mobDied = false;
         int xpReward = 0;
         
         {
-            Logger::log("[Ability] Frostblitz entering lock for " + pName);
             std::lock_guard<std::recursive_mutex> lock(GameState::getInstance().getMtx());
             auto& mobs = GameState::getInstance().getMobs();
             
@@ -75,8 +87,13 @@ public:
                 goto interrupted_label;
             }
 
-            Logger::log("[Ability] Frostblitz calculating damage for " + pName);
-            auto result = GameLogic::getSpellDamage(player, 60, 110);
+            mobName = targetMob->name;
+            mobType = targetMob->mobType;
+            mobLevel = targetMob->level;
+
+            Logger::log("[Ability] Frostblitz cast complete by " + pName + " @ " + mobName + "(" + targetId + ") [" + mobType + "] on " + pMap);
+            
+            auto result = GameLogic::getSpellDamage(pLevel, 20, 40);
             damage = result.damage;
             isCrit = result.isCrit;
             targetMob->hp = std::max(0, targetMob->hp - damage);

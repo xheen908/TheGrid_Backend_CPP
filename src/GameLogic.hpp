@@ -21,7 +21,7 @@ public:
     static int getMobMaxHp(int level);
     static int getMobDamage(int level);
     static int getMobXPReward(int level);
-    static DamageResult getSpellDamage(const Player& player, int baseMin, int baseMax);
+    static DamageResult getSpellDamage(int playerLevel, int baseMin, int baseMax);
     static void scaleMobToMap(Mob& mob, const std::map<std::string, float>& mapLevelMap, const std::map<std::string, int>& mapPartySizeMap);
     static void awardXP(Player& player, int amount);
 };

@@ -20,12 +20,14 @@ public:
         float range = 10.0f;
         std::string pName, pMap, pUsername;
         Vector3 pPos;
+        int pLevel = 1;
         {
             std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
             pName = player.charName;
             pMap = player.mapName;
             pUsername = player.username;
             pPos = player.lastPos;
+            pLevel = player.level;
             player.cooldowns[getName()] = currentTimeMillis() + (long long)(getCooldown() * 1000);
             player.gcdUntil = currentTimeMillis() + 1500;
         }
@@ -60,7 +62,7 @@ public:
                     float dist = std::sqrt(std::pow(m.transform.x - pPos.x, 2) + 
                                           std::pow(m.transform.z - pPos.z, 2));
                     if (dist <= range) {
-                        auto result = GameLogic::getSpellDamage(player, 40, 70);
+                        auto result = GameLogic::getSpellDamage(pLevel, 15, 25);
                         m.hp = std::max(0, m.hp - result.damage);
                         m.target = pUsername;
 

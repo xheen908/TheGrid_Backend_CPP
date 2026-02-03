@@ -192,10 +192,17 @@ bool GMCommands::handleCommand(uWS::WebSocket<false, true, PerSocketData>* ws, c
                 else if (mapTarget == "arena2") mapTarget = "Arena2";
                 else if (mapTarget == "worldmap0") mapTarget = "WorldMap0";
                 else if (mapTarget == "dungeon0") mapTarget = "Dungeon0";
+                else if (mapTarget == "testmap0") mapTarget = "TestMap0";
 
                 std::string oldMap = player->mapName;
                 player->mapName = mapTarget;
-                player->lastPos = {0, 5, 0};
+                
+                Vector3 telePos = {0.0f, 5.0f, 0.0f};
+                if (mapTarget == "TestMap0") {
+                    telePos = {0.0f, 10.0f, 0.0f};
+                }
+                
+                player->lastPos = telePos;
                 player->rotation = {0, 0, 0};
                 data->mapName = mapTarget;
 
@@ -205,7 +212,7 @@ bool GMCommands::handleCommand(uWS::WebSocket<false, true, PerSocketData>* ws, c
                 json mapMsg = {
                     {"type", "map_changed"},
                     {"map_name", mapTarget},
-                    {"position", {{"x", 0}, {"y", 5}, {"z", 0}}},
+                    {"position", {{"x", telePos.x}, {"y", telePos.y}, {"z", telePos.z}}},
                     {"rotation_y", 0}
                 };
                 ws->send(mapMsg.dump(), uWS::OpCode::TEXT);
@@ -421,8 +428,34 @@ bool GMCommands::handleCommand(uWS::WebSocket<false, true, PerSocketData>* ws, c
         ws->send(json{{"type", "chat_receive"}, {"mode", "system"}, {"message", "Aktuelles Server-Ziel: " + (targetId.empty() ? "KEINS" : targetId)}}.dump(), uWS::OpCode::TEXT);
         return true;
     }
+    else if (cmd == "gravity") {
+        if (args.size() >= 1) {
+            std::string sub = args[0];
+            std::transform(sub.begin(), sub.end(), sub.begin(), ::tolower);
+            if (sub == "off") {
+                player->gravityEnabled = false;
+                ws->send(json{{"type", "chat_receive"}, {"mode", "system"}, {"message", "Gravitation deaktiviert (Fly-Mode AN)."}}.dump(), uWS::OpCode::TEXT);
+            } else if (sub == "on") {
+                player->gravityEnabled = true;
+                ws->send(json{{"type", "chat_receive"}, {"mode", "system"}, {"message", "Gravitation aktiviert."}}.dump(), uWS::OpCode::TEXT);
+            }
+        }
+        return true;
+    }
+    else if (cmd == "speed") {
+        if (args.size() >= 1) {
+            try {
+                float val = std::stof(args[0]);
+                if (val > 0) {
+                    player->speedMultiplier = val;
+                    ws->send(json{{"type", "chat_receive"}, {"mode", "system"}, {"message", "Geschwindigkeit auf " + std::to_string(val) + " gesetzt."}}.dump(), uWS::OpCode::TEXT);
+                }
+            } catch (...) {}
+        }
+        return true;
+    }
     else if (cmd == "help") {
-        ws->send(json{{"type", "chat_receive"}, {"mode", "system"}, {"message", "/w, /level, /tele, /invisible, /gm, /tp, /kick, /move, /info, /target, /pos"}}.dump(), uWS::OpCode::TEXT);
+        ws->send(json{{"type", "chat_receive"}, {"mode", "system"}, {"message", "/w, /level, /tele, /invisible, /gm, /tp, /kick, /move, /info, /target, /pos, /gravity, /speed"}}.dump(), uWS::OpCode::TEXT);
         return true;
     }
 

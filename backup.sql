@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Server-Version:               8.0.45 - MySQL Community Server - GPL
+-- Server-Version:               8.0.44 - MySQL Community Server - GPL
 -- Server-Betriebssystem:        Linux
--- HeidiSQL Version:             12.14.0.7165
+-- HeidiSQL Version:             12.11.0.7065
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -61,22 +61,52 @@ CREATE TABLE IF NOT EXISTS `characters` (
   `last_login` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `char_name` (`char_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=124 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=126 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportiere Daten aus Tabelle charakter_db.characters: ~7 rows (ungefähr)
+-- Exportiere Daten aus Tabelle charakter_db.characters: ~8 rows (ungefähr)
 INSERT INTO `characters` (`id`, `user_id`, `char_name`, `character_class`, `map_name`, `pos_x`, `pos_y`, `pos_z`, `rotation`, `level`, `xp`, `hp`, `max_hp`, `mana`, `max_mana`, `last_login`) VALUES
-	(103, 2, 'Yheen', 'Mage', 'WorldMap0', -13.3121, 0, 6.65896, 2.75, 7, 1220, 373, 373, 240, 240, '2026-01-30 22:56:43'),
-	(104, 2, 'Xheen', 'Mage', 'WorldMap0', 0, 0, 0, 0.24, 68, 54186, 0, 11048, 1460, 1460, '2026-01-31 19:06:05'),
+	(103, 2, 'Yheen', 'Mage', 'Arena2', 10.5394, 2.50015, 32.8622, 2.75, 15, 4070, 651, 925, 400, 400, '2026-02-03 15:24:12'),
+	(104, 2, 'Xheen', 'Mage', 'WorldMap0', -37.1, 0, -37, 0.24, 79, 5614, 14557, 14557, 1680, 1680, '2026-02-03 02:00:59'),
 	(118, 3, 'Mage', 'Mage', 'WorldMap0', -0.138051, 0.000154, -7.23019, 0, 15, 4304, 0, 925, 400, 400, '2026-01-31 19:07:10'),
 	(119, 3, 'Barbar', 'Barbarian', 'WorldMap0', 0, 0, 0, 0, 1, 0, 125, 125, 120, 120, '2026-01-31 17:04:24'),
 	(121, 3, 'Ranger', 'Ranger', 'WorldMap0', 0, 0, 0, 0, 1, 0, 125, 125, 120, 120, '2026-01-31 17:04:53'),
 	(122, 3, 'Knight', 'Knight', 'WorldMap0', 0, 0, 0, 0, 1, 0, 125, 125, 120, 120, '2026-01-31 17:05:06'),
-	(123, 3, 'Rogue', 'Rogue', 'WorldMap0', -20.0564, 0, 8.42799, 0, 3, 295, 193, 193, 160, 160, '2026-01-31 17:21:29');
+	(123, 3, 'Rogue', 'Rogue', 'WorldMap0', -20.0564, 0, 8.42799, 0, 3, 295, 193, 193, 160, 160, '2026-01-31 17:21:29'),
+	(124, 2, 'Theen', 'Knight', 'Arena2', 0.357657, 2.50015, 35.5458, 0, 8, 3176, 266, 428, 260, 260, '2026-02-03 15:18:37'),
+	(125, 2, '123', 'Ranger', 'Dungeon0', -38.0083, 0, 0.036614, 0, 1, 165, 125, 125, 120, 120, '2026-02-03 15:27:59');
 
 
 -- Exportiere Datenbank-Struktur für world_db
 CREATE DATABASE IF NOT EXISTS `world_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `world_db`;
+
+-- Exportiere Struktur von Tabelle world_db.game_objects
+CREATE TABLE IF NOT EXISTS `game_objects` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `map_name` varchar(100) NOT NULL,
+  `type` varchar(50) NOT NULL,
+  `pos_x` float DEFAULT '0',
+  `pos_y` float DEFAULT '0',
+  `pos_z` float DEFAULT '0',
+  `rot_x` float DEFAULT '0',
+  `rot_y` float DEFAULT '0',
+  `rot_z` float DEFAULT '0',
+  `extra_data` json DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Exportiere Daten aus Tabelle world_db.game_objects: ~10 rows (ungefähr)
+INSERT INTO `game_objects` (`id`, `map_name`, `type`, `pos_x`, `pos_y`, `pos_z`, `rot_x`, `rot_y`, `rot_z`, `extra_data`) VALUES
+	(1, 'WorldMap0', 'portal', -40.9, 0, -41, 0, 0.7858, 0, '{"color": "#DB00DB", "spawn_pos": {"x": -42.5, "y": 0, "z": 0.05}, "target_map": "Dungeon0", "spawn_rot_y": -1.57}'),
+	(2, 'WorldMap0', 'portal', 40.8, 0, -41.3, 0, 2.3558, 0, '{"color": "#B25405", "spawn_pos": {"x": 27.904615, "y": 0, "z": 0.036237}, "target_map": "Arena0", "spawn_rot_y": 1.593585}'),
+	(3, 'WorldMap0', 'portal', 41.2, 0, 41.7, 0, 3.9208, 0, '{"color": "#00CCFF", "spawn_pos": {"x": 0.036129, "y": 0.000835, "z": -26.506031}, "target_map": "Arena1", "spawn_rot_y": -3.105295}'),
+	(4, 'WorldMap0', 'portal', -41.7, 0, 41.4, 0, -0.7792, 0, '{"color": "#00FF00", "spawn_pos": {"x": -0.072281, "y": 2.500153, "z": 36.145241}, "target_map": "Arena2", "spawn_rot_y": 0.013375}'),
+	(5, 'Arena0', 'portal', 35, 0, 0, 0, 1.57, 0, '{"color": "#FFFF00", "spawn_pos": {"x": 37.13, "y": 0, "z": -37.64}, "target_map": "WorldMap0", "spawn_rot_y": 2.35}'),
+	(6, 'Arena1', 'portal', 0, 0, -32, 0, 0, 0, '{"color": "#FFFF00", "spawn_pos": {"x": 37.32, "y": 0, "z": 36.72}, "target_map": "WorldMap0", "spawn_rot_y": 0.75}'),
+	(7, 'Arena2', 'portal', 0, 0, 45, 0, 0, 0, '{"color": "#FFFF00", "spawn_pos": {"x": -37.57, "y": 0, "z": 36.8}, "target_map": "WorldMap0", "spawn_rot_y": -0.796839}'),
+	(8, 'Dungeon0', 'portal', -46.3, 0, 0, 0, 1.57, 0, '{"color": "#FFFF00", "spawn_pos": {"x": -37.1, "y": 0, "z": -37}, "target_map": "WorldMap0", "spawn_rot_y": -2.31}'),
+	(9, 'TestMap0', 'portal', 5.06597, 6.43977, 30.7688, 0, -2.13045, 0, '{"color": "#072cfa", "spawn_pos": {"x": -6.52, "y": 2.37, "z": -1.15}, "target_map": "WorldMap0", "spawn_rot_y": 1.63}'),
+	(10, 'WorldMap0', 'portal', 0.018641, 2.37008, -0.938741, 0, -1.57429, 0, '{"color": "#072cfa", "spawn_pos": {"x": 5.991358, "y": 6.377525, "z": 35.780994}, "target_map": "TestMap0", "spawn_rot_y": -2.91}');
 
 -- Exportiere Struktur von Tabelle world_db.maps
 CREATE TABLE IF NOT EXISTS `maps` (
@@ -109,17 +139,12 @@ CREATE TABLE IF NOT EXISTS `mobs` (
   `respawn_time` int DEFAULT '30',
   PRIMARY KEY (`id`),
   UNIQUE KEY `mob_id` (`mob_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportiere Daten aus Tabelle world_db.mobs: ~13 rows (ungefähr)
+-- Exportiere Daten aus Tabelle world_db.mobs: ~8 rows (ungefähr)
 INSERT INTO `mobs` (`id`, `mob_id`, `map_name`, `name`, `level`, `hp`, `pos_x`, `pos_y`, `pos_z`, `respawn_time`) VALUES
-	(5, 'arena_01', 'Arena0', 'Bit-Wächter', 1, 100, 0, 0, -10, 30),
-	(6, 'arena_02', 'Arena0', 'Bit-Wächter', 1, 100, -8, 0, 14, 30),
-	(7, 'arena_03', 'Arena0', 'Bit-Veteran', 3, 450, -5, 0, -20, 30),
-	(8, 'arena_g2_1', 'Arena0', 'Duo-Bit A', 2, 200, -10, 0, -5, 30),
-	(9, 'arena_g2_2', 'Arena0', 'Duo-Bit B', 2, 200, -11, 0, -6, 30),
-	(10, 'mob_boss', 'Dungeon0', 'System-Kernel', 16, 15000, 17.5038, 5.10011, 0.152788, 30),
-	(11, 'poly_cube_1', 'Arena2', 'Neon-Würfel', 5, 500, 0, 2, 5, 15),
+	(10, 'mob_boss', 'Dungeon0', 'Neon-Pyramide', 1, 1, 17.5038, 5.10011, 0.152788, 30),
+	(11, 'poly_cube_1', 'Arena2', 'Neon-Würfel', 5, 1, 0, 2, 5, 15),
 	(12, 'poly_cone_1', 'Arena2', 'Neon-Kegel', 7, 750, 5, 2, 5, 15),
 	(13, 'poly_pyramid_1', 'Arena2', 'Neon-Pyramide', 10, 1000, -5, 2, 5, 20),
 	(14, 'poly_sphere_1', 'Arena2', 'Neon-Sphäre', 12, 1500, 0, 2, -5, 30),
