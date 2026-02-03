@@ -21521,3 +21521,331 @@
 [2026-02-03 18:19:39.017] [WS] Logout complete for admin
 [2026-02-03 18:19:46.770] [WS] User Authenticated & Loaded: admin on WorldMap0
 [2026-02-03 18:19:47.837] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 18:21:26.099] =========================================
+[2026-02-03 18:21:26.101] Starting The Grid WORLD SERVER...
+[2026-02-03 18:21:26.101] =========================================
+[2026-02-03 18:21:26.101] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 18:21:26.122] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 18:21:26.125] [DB] Loaded 8 mobs from database.
+[2026-02-03 18:21:26.127] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 18:21:26.128] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 18:21:26.129] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 18:21:26.130] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 18:21:26.132] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 18:21:26.133] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 18:21:47.349] [WS] Client connected to WorldServer.
+[2026-02-03 18:21:47.367] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 18:21:48.434] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 18:21:58.048] [WS] Logout timer started for admin
+[2026-02-03 18:22:08.115] [WS] Logout complete for admin
+[2026-02-03 18:22:22.032] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 18:22:23.050] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 18:22:26.414] [MAP] Player admin requesting map change: WorldMap0 -> TestMap0
+[2026-02-03 18:22:26.423] [MAP] Change success: admin
+[2026-02-03 18:22:29.164] [WS] Logout timer started for admin
+[2026-02-03 18:22:39.244] [WS] Logout complete for admin
+[2026-02-03 18:22:54.510] [WS] Player disconnected & saved: admin
+[2026-02-03 18:23:10.546] [WS] Client connected to WorldServer.
+[2026-02-03 18:23:10.564] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 18:23:12.616] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 18:23:25.446] [DEBUG] GM Xheen using /level. Current targetId in state: None
+[2026-02-03 18:23:25.455] [GM] Xheen set own level to 60
+[2026-02-03 18:41:45.544] =========================================
+[2026-02-03 18:41:45.545] Starting The Grid WORLD SERVER...
+[2026-02-03 18:41:45.545] =========================================
+[2026-02-03 18:41:45.545] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 18:41:45.564] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 18:41:45.567] [DB] Loaded 8 mobs from database.
+[2026-02-03 18:41:45.569] [DB] Loaded 3 item templates.
+[2026-02-03 18:41:45.572] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 18:41:45.573] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 18:41:45.574] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 18:41:45.575] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 18:41:45.576] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 18:41:45.578] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 18:42:39.001] [WS] Client connected to WorldServer.
+[2026-02-03 18:42:39.035] [WS] User Authenticated & Loaded: admin on TestMap0
+[2026-02-03 18:42:40.670] [WS] User Authenticated & Loaded: admin on TestMap0
+[2026-02-03 18:42:58.166] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-03 18:42:58.182] [MAP] Change success: admin
+[2026-02-03 18:43:01.982] [MAP] Player admin requesting map change: WorldMap0 -> TestMap0
+[2026-02-03 18:43:01.995] [MAP] Change success: admin
+[2026-02-03 18:43:05.216] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-03 18:43:05.231] [MAP] Change success: admin
+[2026-02-03 18:43:12.066] [WS] Player disconnected & saved: admin
+[2026-02-03 18:46:03.195] [WS] Client connected to WorldServer.
+[2026-02-03 18:46:03.216] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 18:46:05.382] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:05:46.106] =========================================
+[2026-02-03 19:05:46.107] Starting The Grid WORLD SERVER...
+[2026-02-03 19:05:46.107] =========================================
+[2026-02-03 19:05:46.107] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 19:05:46.123] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 19:05:46.126] [DB] Loaded 8 mobs from database.
+[2026-02-03 19:05:46.128] [DB] Loaded 3 item templates.
+[2026-02-03 19:05:46.130] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 19:05:46.132] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 19:05:46.134] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 19:05:46.135] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 19:05:46.137] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 19:05:46.138] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 19:06:03.482] [WS] Client connected to WorldServer.
+[2026-02-03 19:06:03.502] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:06:50.401] [WS] Player disconnected & saved: admin
+[2026-02-03 19:06:55.182] [WS] Client connected to WorldServer.
+[2026-02-03 19:06:55.200] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:06:57.367] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:29:20.192] [WS] Player disconnected & saved: admin
+[2026-02-03 19:29:39.464] [WS] Client connected to WorldServer.
+[2026-02-03 19:29:39.483] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:29:41.633] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:35:19.960] =========================================
+[2026-02-03 19:35:19.962] Starting The Grid WORLD SERVER...
+[2026-02-03 19:35:19.962] =========================================
+[2026-02-03 19:35:19.962] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 19:35:19.980] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 19:35:19.983] [DB] Loaded 8 mobs from database.
+[2026-02-03 19:35:19.984] [DB] Loaded 3 item templates.
+[2026-02-03 19:35:19.986] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 19:35:19.988] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 19:35:19.990] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 19:35:19.991] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 19:35:19.993] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 19:35:19.994] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 19:35:26.238] [WS] Client connected to WorldServer.
+[2026-02-03 19:35:26.258] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:35:27.274] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:35:30.963] [WS] Player disconnected & saved: admin
+[2026-02-03 19:35:41.855] [WS] Client connected to WorldServer.
+[2026-02-03 19:35:41.873] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:35:44.006] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:37:12.217] [WS] Player disconnected & saved: admin
+[2026-02-03 19:37:20.452] [WS] Client connected to WorldServer.
+[2026-02-03 19:37:20.471] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:37:22.588] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:39:31.534] [WS] Player disconnected & saved: admin
+[2026-02-03 19:39:39.482] [WS] Client connected to WorldServer.
+[2026-02-03 19:39:39.501] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:39:41.684] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:40:08.001] [WS] Player disconnected & saved: admin
+[2026-02-03 19:40:36.481] [WS] Client connected to WorldServer.
+[2026-02-03 19:40:36.500] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:40:38.767] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:41:31.358] [WS] Player disconnected & saved: admin
+[2026-02-03 19:41:38.529] [WS] Client connected to WorldServer.
+[2026-02-03 19:41:38.547] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:42:36.875] [WS] Player disconnected & saved: admin
+[2026-02-03 19:44:35.908] [WS] Client connected to WorldServer.
+[2026-02-03 19:44:35.927] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:44:38.178] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:45:03.806] [WS] Player disconnected & saved: admin
+[2026-02-03 19:45:09.940] [WS] Client connected to WorldServer.
+[2026-02-03 19:45:09.959] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:45:12.192] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:45:28.639] =========================================
+[2026-02-03 19:45:28.641] Starting The Grid WORLD SERVER...
+[2026-02-03 19:45:28.641] =========================================
+[2026-02-03 19:45:28.642] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 19:45:28.662] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 19:45:28.666] [DB] Loaded 8 mobs from database.
+[2026-02-03 19:45:28.669] [DB] Loaded 3 item templates.
+[2026-02-03 19:45:28.671] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 19:45:28.674] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 19:45:28.675] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 19:45:28.678] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 19:45:28.680] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 19:45:28.686] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 19:45:38.456] [WS] Client connected to WorldServer.
+[2026-02-03 19:45:38.476] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:45:39.542] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:48:44.415] =========================================
+[2026-02-03 19:48:44.417] Starting The Grid WORLD SERVER...
+[2026-02-03 19:48:44.417] =========================================
+[2026-02-03 19:48:44.417] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 19:48:44.433] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 19:48:44.435] [DB] Loaded 8 mobs from database.
+[2026-02-03 19:48:44.437] [DB] Loaded 3 item templates.
+[2026-02-03 19:48:44.438] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 19:48:44.439] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 19:48:44.441] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 19:48:44.442] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 19:48:44.443] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 19:48:44.444] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 19:48:56.402] [WS] Client connected to WorldServer.
+[2026-02-03 19:48:56.420] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:48:58.654] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:49:01.951] [INV] player Yheen moved item from 0 to 14
+[2026-02-03 19:49:03.868] [INV] player Yheen moved item from 14 to 36
+[2026-02-03 19:49:06.984] [INV] player Yheen moved item from 36 to 0
+[2026-02-03 19:49:59.051] [WS] Player disconnected & saved: admin
+[2026-02-03 19:50:05.966] [WS] Client connected to WorldServer.
+[2026-02-03 19:50:05.985] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:50:08.219] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:50:12.683] [INV] player Yheen moved item from 0 to 6
+[2026-02-03 19:50:13.899] [INV] player Yheen moved item from 6 to 7
+[2026-02-03 19:50:15.166] [INV] player Yheen moved item from 7 to 8
+[2026-02-03 19:50:16.366] [INV] player Yheen moved item from 8 to 9
+[2026-02-03 19:50:19.116] [INV] player Yheen moved item from 9 to 6
+[2026-02-03 19:50:35.967] [INV] player Yheen moved item from 6 to 7
+[2026-02-03 19:50:36.965] [INV] player Yheen moved item from 7 to 0
+[2026-02-03 19:50:37.966] [INV] player Yheen moved item from 0 to 6
+[2026-02-03 19:51:10.668] [WS] Player disconnected & saved: admin
+[2026-02-03 19:51:19.475] =========================================
+[2026-02-03 19:51:19.477] Starting The Grid WORLD SERVER...
+[2026-02-03 19:51:19.477] =========================================
+[2026-02-03 19:51:19.477] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 19:51:19.494] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 19:51:19.497] [DB] Loaded 8 mobs from database.
+[2026-02-03 19:51:19.499] [DB] Loaded 3 item templates.
+[2026-02-03 19:51:19.501] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 19:51:19.502] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 19:51:19.504] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 19:51:19.505] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 19:51:19.506] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 19:51:19.507] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 19:51:26.764] [WS] Client connected to WorldServer.
+[2026-02-03 19:51:26.784] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:51:29.034] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:52:45.063] [WS] Player disconnected & saved: admin
+[2026-02-03 19:52:52.745] [WS] Client connected to WorldServer.
+[2026-02-03 19:52:52.764] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:52:55.047] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 19:53:16.762] [INV] player Yheen moved item from 6 to 7
+[2026-02-03 20:07:08.224] [DEBUG] GM Yheen using /level. Current targetId in state: None
+[2026-02-03 20:07:08.237] [GM] Yheen set own level to 60
+[2026-02-03 20:07:20.023] [DEBUG] GM Yheen using /level. Current targetId in state: None
+[2026-02-03 20:07:20.035] [GM] Yheen set own level to 1
+[2026-02-03 20:10:18.620] [INV] player Yheen moved item from 7 to 0
+[2026-02-03 20:10:22.620] [INV] player Yheen moved item from 0 to 14
+[2026-02-03 20:10:24.436] [INV] player Yheen moved item from 14 to 21
+[2026-02-03 20:10:26.136] [INV] player Yheen moved item from 21 to 24
+[2026-02-03 20:10:27.436] [INV] player Yheen moved item from 24 to 18
+[2026-02-03 20:10:29.886] [INV] player Yheen moved item from 18 to 6
+[2026-02-03 20:10:31.837] [INV] player Yheen moved item from 6 to 13
+[2026-02-03 20:10:33.336] [INV] player Yheen moved item from 13 to 20
+[2026-02-03 20:10:34.553] [INV] player Yheen moved item from 20 to 18
+[2026-02-03 20:10:35.937] [INV] player Yheen moved item from 18 to 0
+[2026-02-03 20:10:37.220] [INV] player Yheen moved item from 0 to 6
+[2026-02-03 20:10:38.769] [INV] player Yheen moved item from 6 to 7
+[2026-02-03 20:10:45.702] [INV] player Yheen moved item from 7 to 0
+[2026-02-03 20:52:01.474] [MAP] Player admin requesting map change: WorldMap0 -> TestMap0
+[2026-02-03 20:52:01.545] [MAP] Change success: admin
+[2026-02-03 20:57:26.783] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-03 20:57:26.800] [MAP] Change success: admin
+[2026-02-03 21:02:23.411] [WS] Player disconnected & saved: admin
+[2026-02-03 21:02:26.793] [WS] Client connected to WorldServer.
+[2026-02-03 21:02:26.812] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:02:29.079] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:03:20.485] [WS] Player disconnected & saved: admin
+[2026-02-03 21:03:28.149] =========================================
+[2026-02-03 21:03:28.151] Starting The Grid WORLD SERVER...
+[2026-02-03 21:03:28.151] =========================================
+[2026-02-03 21:03:28.154] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 21:03:28.185] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 21:03:28.190] [DB] Loaded 8 mobs from database.
+[2026-02-03 21:03:28.193] [DB] Loaded 4 item templates.
+[2026-02-03 21:03:28.196] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 21:03:28.197] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 21:03:28.199] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 21:03:28.200] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 21:03:28.202] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 21:03:28.204] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 21:03:44.441] [WS] Client connected to WorldServer.
+[2026-02-03 21:03:44.462] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:03:46.743] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:05:27.921] [WS] Player disconnected & saved: admin
+[2026-02-03 21:06:04.403] [WS] Client connected to WorldServer.
+[2026-02-03 21:06:04.422] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:06:06.774] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:06:57.808] =========================================
+[2026-02-03 21:06:57.809] Starting The Grid WORLD SERVER...
+[2026-02-03 21:06:57.809] =========================================
+[2026-02-03 21:06:57.809] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 21:06:57.829] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 21:06:57.832] [DB] Loaded 8 mobs from database.
+[2026-02-03 21:06:57.835] [DB] Loaded 4 item templates.
+[2026-02-03 21:06:57.837] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 21:06:57.839] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 21:06:57.841] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 21:06:57.842] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 21:06:57.843] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 21:06:57.844] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 21:07:05.802] [WS] Client connected to WorldServer.
+[2026-02-03 21:07:05.821] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:07:06.838] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:09:24.776] =========================================
+[2026-02-03 21:09:24.781] Starting The Grid WORLD SERVER...
+[2026-02-03 21:09:24.781] =========================================
+[2026-02-03 21:09:24.781] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 21:09:24.798] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 21:09:24.801] [DB] Loaded 8 mobs from database.
+[2026-02-03 21:09:24.803] [DB] Loaded 4 item templates.
+[2026-02-03 21:09:24.804] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 21:09:24.805] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 21:09:24.807] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 21:09:24.808] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 21:09:24.809] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 21:09:24.810] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 21:09:41.849] [WS] Client connected to WorldServer.
+[2026-02-03 21:09:41.869] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:09:44.317] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:12:18.273] [WS] Player disconnected & saved: admin
+[2026-02-03 21:12:23.761] [WS] Client connected to WorldServer.
+[2026-02-03 21:12:23.780] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:12:26.113] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:14:22.584] [WS] Player disconnected & saved: admin
+[2026-02-03 21:17:06.253] [WS] Client connected to WorldServer.
+[2026-02-03 21:17:06.273] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:17:08.573] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:17:47.045] [WS] Player disconnected & saved: admin
+[2026-02-03 21:17:58.746] =========================================
+[2026-02-03 21:17:58.747] Starting The Grid WORLD SERVER...
+[2026-02-03 21:17:58.747] =========================================
+[2026-02-03 21:17:58.748] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 21:17:58.765] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 21:17:58.768] [DB] Loaded 8 mobs from database.
+[2026-02-03 21:17:58.770] [DB] Loaded 4 item templates.
+[2026-02-03 21:17:58.772] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 21:17:58.773] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 21:17:58.774] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 21:17:58.776] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 21:17:58.777] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 21:17:58.778] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 21:18:11.418] [WS] Client connected to WorldServer.
+[2026-02-03 21:18:11.438] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:18:13.738] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:18:31.944] [WS] Player disconnected & saved: admin
+[2026-02-03 21:19:23.946] =========================================
+[2026-02-03 21:19:23.948] Starting The Grid WORLD SERVER...
+[2026-02-03 21:19:23.948] =========================================
+[2026-02-03 21:19:23.948] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 21:19:23.965] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 21:19:23.967] [DB] Loaded 8 mobs from database.
+[2026-02-03 21:19:23.969] [DB] Loaded 4 item templates.
+[2026-02-03 21:19:23.971] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 21:19:23.972] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 21:19:23.973] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 21:19:23.974] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 21:19:23.975] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 21:19:23.977] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 21:19:37.850] [WS] Client connected to WorldServer.
+[2026-02-03 21:19:37.868] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:19:40.202] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:19:53.665] [INV] player Yheen moved item from 0 to 14
+[2026-02-03 21:20:35.429] [WS] Player disconnected & saved: admin
+[2026-02-03 21:20:41.815] [WS] Client connected to WorldServer.
+[2026-02-03 21:20:41.834] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:20:44.384] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:23:23.384] [WS] Player disconnected & saved: admin
+[2026-02-03 21:23:32.427] [WS] Client connected to WorldServer.
+[2026-02-03 21:23:32.447] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:23:34.796] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:24:03.960] [WS] Player disconnected & saved: admin
+[2026-02-03 21:24:37.792] [WS] Client connected to WorldServer.
+[2026-02-03 21:24:37.811] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:24:40.111] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:24:43.108] [INV] player Yheen moved item from 14 to 0
+[2026-02-03 21:26:17.104] [WS] Player disconnected & saved: admin
+[2026-02-03 21:26:32.156] [WS] Client connected to WorldServer.
+[2026-02-03 21:26:32.175] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 21:26:34.475] [WS] User Authenticated & Loaded: admin on WorldMap0

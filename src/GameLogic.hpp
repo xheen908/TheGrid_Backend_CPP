@@ -24,6 +24,7 @@ public:
     static DamageResult getSpellDamage(int playerLevel, int baseMin, int baseMax);
     static void scaleMobToMap(Mob& mob, const std::map<std::string, float>& mapLevelMap, const std::map<std::string, int>& mapPartySizeMap);
     static void awardXP(Player& player, int amount);
+    static int getInventorySize(int level);
 };
 
 #endif

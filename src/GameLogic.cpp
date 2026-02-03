@@ -211,3 +211,11 @@ void GameLogic::awardXP(Player& player, int amount) {
     // Immer speichern bei XP-Erhalt (inkl. Level-Up)
     Database::getInstance().savePlayer(player);
 }
+
+int GameLogic::getInventorySize(int level) {
+    if (level <= 10) return 30;
+    if (level <= 20) return 40;
+    if (level <= 30) return 60;
+    if (level <= 40) return 80;
+    return 100;
+}

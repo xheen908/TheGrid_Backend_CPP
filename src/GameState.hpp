@@ -23,6 +23,23 @@ struct Debuff {
     long long endTime;
 };
 
+struct ItemTemplate {
+    std::string slug;
+    std::string name;
+    std::string description;
+    std::string type; // Weapon, Armor, Consumable, etc.
+    std::string rarity;
+    json componentData;
+};
+
+struct ItemInstance {
+    std::string itemSlug;
+    int slotIndex;
+    int quantity;
+    bool isEquipped;
+    // Helper to get template data if needed
+};
+
 struct Party {
     std::string id;
     std::string leaderName;
@@ -67,6 +84,8 @@ struct Player {
     long long lastPartySync = 0;
     std::string partyId = "";
     long long disconnectTime = 0;
+    
+    std::vector<ItemInstance> inventory;
 
     mutable std::recursive_mutex pMtx; // Protects strings and vectors in this struct
 };
@@ -131,6 +150,7 @@ private:
     GameState();
     std::map<std::string, std::shared_ptr<Player>> activePlayers;
     std::vector<Mob> mobs;
+    std::map<std::string, ItemTemplate> itemTemplates;
     std::map<std::string, std::vector<GameObject>> gameObjects; // map_name -> current objects
     std::map<std::string, std::shared_ptr<Party>> parties;
     std::recursive_mutex mtx;

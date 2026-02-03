@@ -69,6 +69,8 @@ void WorldServer::start(int port) {
 
                     data->mapName = player->mapName; 
 
+                    Database::getInstance().loadInventory(*player);
+
                     ws->send(json{
                         {"type", "authenticated"}, 
                         {"char_name", player->charName},
@@ -78,8 +80,24 @@ void WorldServer::start(int port) {
                         {"max_xp", GameLogic::getLevelData(player->level).xpToNextLevel},
                         {"map_name", player->mapName},
                         {"is_gm", player->isGM},
-                        {"position", {{"x", player->lastPos.x}, {"y", player->lastPos.y}, {"z", player->lastPos.z}}}
+                        {"position", {{"x", player->lastPos.x}, {"y", player->lastPos.y}, {"z", player->lastPos.z}}},
+                        {"inventory_size", GameLogic::getInventorySize(player->level)}
                     }.dump(), uWS::OpCode::TEXT);
+
+                    // Sync initial inventory
+                    json invMsg = {{"type", "inventory_sync"}, {"items", json::array()}};
+                    {
+                        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+                        for (const auto& item : player->inventory) {
+                            invMsg["items"].push_back({
+                                {"slug", item.itemSlug},
+                                {"slot", item.slotIndex},
+                                {"quantity", item.quantity},
+                                {"equipped", item.isEquipped}
+                            });
+                        }
+                    }
+                    ws->send(invMsg.dump(), uWS::OpCode::TEXT);
 
                     // Send game objects for current map
                     auto objects = GameState::getInstance().getGameObjects(player->mapName);
@@ -163,6 +181,8 @@ void WorldServer::start(int port) {
                         SocketHandlers::handlePartyLeave(ws, j);
                     } else if (type == "party_kick") {
                         SocketHandlers::handlePartyKick(ws, j);
+                    } else if (type == "move_item") {
+                        SocketHandlers::handleMoveItem(ws, j);
                     }
                 }
             } catch (const std::exception& e) {
@@ -181,6 +201,7 @@ void WorldServer::start(int port) {
                     }
                     // Save to DB before removal
                     Database::getInstance().savePlayer(*player);
+                    Database::getInstance().saveInventory(*player);
                 }
                 GameState::getInstance().removePlayer(data->username);
                 Logger::log("[WS] Player disconnected & saved: " + data->username);
@@ -366,6 +387,7 @@ void WorldServer::tick() {
                     
                     // CRITICAL: Save player stats to DB when logout timer completes
                     Database::getInstance().savePlayer(*p);
+                    Database::getInstance().saveInventory(*p);
                 }
 
                 // --- Buff Cleanup ---
@@ -403,7 +425,8 @@ void WorldServer::tick() {
                         {"buffs", buffList},
                         {"gravity_enabled", p->gravityEnabled},
                         {"speed_multiplier", p->speedMultiplier},
-                        {"is_gm", p->isGMFlagged}
+                        {"is_gm", p->isGMFlagged},
+                        {"inventory_size", GameLogic::getInventorySize(p->level)}
                     };
                     SocketHandlers::broadcastToMap(p->mapName, s.dump());
                 }

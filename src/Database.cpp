@@ -343,3 +343,91 @@ std::vector<GameObject> Database::loadGameObjects(const std::string& mapName) {
     Logger::log("[DB] Loaded " + std::to_string(objects.size()) + " game objects for map " + mapName);
     return objects;
 }
+
+std::map<std::string, ItemTemplate> Database::loadItemTemplates() {
+    std::lock_guard lock(mtx);
+    std::map<std::string, ItemTemplate> templates;
+    if (!conn) return templates;
+
+    std::string query = "SELECT slug, name, description, type, rarity, component_data FROM world_db.item_templates";
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] loadItemTemplates Error: " + std::string(mysql_error(conn)));
+        return templates;
+    }
+
+    MYSQL_RES *result = mysql_store_result(conn);
+    if (!result) return templates;
+
+    MYSQL_ROW row;
+    while ((row = mysql_fetch_row(result))) {
+        ItemTemplate t;
+        t.slug = row[0];
+        t.name = row[1];
+        t.description = row[2] ? row[2] : "";
+        t.type = row[3];
+        t.rarity = row[4];
+        if (row[5]) {
+            try { t.componentData = json::parse(row[5]); } 
+            catch (...) { t.componentData = json::object(); }
+        } else {
+            t.componentData = json::object();
+        }
+        templates[t.slug] = t;
+    }
+    mysql_free_result(result);
+    Logger::log("[DB] Loaded " + std::to_string(templates.size()) + " item templates.");
+    return templates;
+}
+
+bool Database::loadInventory(Player& player) {
+    std::lock_guard lock(mtx);
+    std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
+    if (!conn) return false;
+
+    player.inventory.clear();
+    std::string query = "SELECT item_slug, slot_index, quantity, is_equipped FROM charakter_db.character_inventory WHERE character_id = " + std::to_string(player.dbId);
+    
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] loadInventory Error: " + std::string(mysql_error(conn)));
+        return false;
+    }
+
+    MYSQL_RES *result = mysql_store_result(conn);
+    if (!result) return false;
+
+    MYSQL_ROW row;
+    while ((row = mysql_fetch_row(result))) {
+        ItemInstance item;
+        item.itemSlug = row[0];
+        item.slotIndex = std::stoi(row[1]);
+        item.quantity = std::stoi(row[2]);
+        item.isEquipped = std::stoi(row[3]) != 0;
+        player.inventory.push_back(item);
+    }
+    mysql_free_result(result);
+    return true;
+}
+
+bool Database::saveInventory(Player& player) {
+    std::lock_guard lock(mtx);
+    std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
+    if (!conn) return false;
+
+    // Direct approach: delete existing and re-insert
+    std::string delQuery = "DELETE FROM charakter_db.character_inventory WHERE character_id = " + std::to_string(player.dbId);
+    mysql_query(conn, delQuery.c_str());
+
+    for (const auto& item : player.inventory) {
+        std::string insQuery = "INSERT INTO charakter_db.character_inventory (character_id, item_slug, slot_index, quantity, is_equipped) VALUES (" +
+            std::to_string(player.dbId) + ", '" +
+            item.itemSlug + "', " +
+            std::to_string(item.slotIndex) + ", " +
+            std::to_string(item.quantity) + ", " +
+            (item.isEquipped ? "1" : "0") + ")";
+        
+        if (mysql_query(conn, insQuery.c_str())) {
+            Logger::log("[DB] saveInventory Item Error: " + std::string(mysql_error(conn)));
+        }
+    }
+    return true;
+}

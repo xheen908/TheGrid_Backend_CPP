@@ -47,18 +47,7 @@ void SocketHandlers::handleMapChange(uWS::WebSocket<false, true, PerSocketData>*
         ws->send(response.dump(), uWS::OpCode::TEXT);
 
         // 3b. Send game objects to player
-        auto objects = GameState::getInstance().getGameObjects(newMap);
-        json objectsMsg = {{"type", "game_objects_init"}, {"objects", json::array()}};
-        for (auto const& obj : objects) {
-            objectsMsg["objects"].push_back({
-                {"id", obj.id},
-                {"type", obj.type},
-                {"position", {{"x", obj.position.x}, {"y", obj.position.y}, {"z", obj.position.z}}},
-                {"rotation", {{"x", obj.rotation.x}, {"y", obj.rotation.y}, {"z", obj.rotation.z}}},
-                {"extra_data", obj.extraData}
-            });
-        }
-        ws->send(objectsMsg.dump(), uWS::OpCode::TEXT);
+        syncGameObjects(ws, newMap);
         
         // 4. Save to DB
         Database::getInstance().savePlayer(*player);
@@ -361,6 +350,68 @@ void SocketHandlers::broadcastToMap(const std::string& mapName, const std::strin
             }
         }
     });
+}
+
+void SocketHandlers::handleMoveItem(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    if (!data) return;
+
+    auto player = GameState::getInstance().getPlayer(data->username);
+    if (!player) return;
+
+    int fromSlot = j.value("from_slot", -1);
+    int toSlot = j.value("to_slot", -1);
+
+    if (fromSlot < 0 || toSlot < 0) return;
+
+    {
+        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+        
+        ItemInstance* fromItem = nullptr;
+        ItemInstance* toItem = nullptr;
+
+        for (auto& item : player->inventory) {
+            if (item.slotIndex == fromSlot) fromItem = &item;
+            if (item.slotIndex == toSlot) toItem = &item;
+        }
+
+        if (fromItem) {
+            if (toItem) {
+                // Swap slots
+                toItem->slotIndex = fromSlot;
+            }
+            fromItem->slotIndex = toSlot;
+            
+            Logger::log("[INV] player " + player->charName + " moved item from " + std::to_string(fromSlot) + " to " + std::to_string(toSlot));
+            
+            // Sync inventory back
+            json invMsg = {{"type", "inventory_sync"}, {"items", json::array()}};
+            for (const auto& item : player->inventory) {
+                invMsg["items"].push_back({
+                    {"slug", item.itemSlug},
+                    {"slot", item.slotIndex},
+                    {"quantity", item.quantity},
+                    {"equipped", item.isEquipped}
+                });
+            }
+            ws->send(invMsg.dump(), uWS::OpCode::TEXT);
+        }
+    }
+}
+
+void SocketHandlers::syncGameObjects(uWS::WebSocket<false, true, PerSocketData>* ws, const std::string& mapName) {
+    auto objects = GameState::getInstance().getGameObjects(mapName);
+    json objectsMsg = {{"type", "game_objects_init"}, {"objects", json::array()}};
+    for (auto const& obj : objects) {
+        objectsMsg["objects"].push_back({
+            {"id", obj.id},
+            {"type", obj.type},
+            {"position", {{"x", obj.position.x}, {"y", obj.position.y}, {"z", obj.position.z}}},
+            {"rotation", {{"x", obj.rotation.x}, {"y", obj.rotation.y}, {"z", obj.rotation.z}}},
+            {"extra_data", obj.extraData}
+        });
+    }
+    ws->send(objectsMsg.dump(), uWS::OpCode::TEXT);
 }
 
 void SocketHandlers::sendSafe(uWS::WebSocket<false, true, PerSocketData>* ws, const std::string& message) {

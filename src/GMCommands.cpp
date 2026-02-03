@@ -177,6 +177,7 @@ bool GMCommands::handleCommand(uWS::WebSocket<false, true, PerSocketData>* ws, c
                         {"rotation_y", player->rotation.y}
                     };
                     ws->send(mapMsg.dump(), uWS::OpCode::TEXT);
+                    SocketHandlers::syncGameObjects(ws, player->mapName);
                     found = true;
                     break;
                 }
@@ -216,6 +217,7 @@ bool GMCommands::handleCommand(uWS::WebSocket<false, true, PerSocketData>* ws, c
                     {"rotation_y", 0}
                 };
                 ws->send(mapMsg.dump(), uWS::OpCode::TEXT);
+                SocketHandlers::syncGameObjects(ws, mapTarget);
                 found = true;
             }
         }
@@ -245,6 +247,7 @@ bool GMCommands::handleCommand(uWS::WebSocket<false, true, PerSocketData>* ws, c
                 {"rotation_y", 0}
             };
             ws->send(mapMsg.dump(), uWS::OpCode::TEXT);
+            SocketHandlers::syncGameObjects(ws, mapName);
         } else {
             ws->send(json{{"type", "chat_receive"}, {"mode", "system"}, {"message", "Benutzung: /goto MapName (z.B. Arena0)"}}.dump(), uWS::OpCode::TEXT);
         }
@@ -280,6 +283,7 @@ bool GMCommands::handleCommand(uWS::WebSocket<false, true, PerSocketData>* ws, c
                     {"rotation_y", player->rotation.y}
                 };
                 ws->send(mapMsg.dump(), uWS::OpCode::TEXT);
+                SocketHandlers::syncGameObjects(ws, player->mapName);
             } catch (...) {}
         }
         return true;

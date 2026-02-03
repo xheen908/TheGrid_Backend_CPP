@@ -15,6 +15,7 @@ GameState::GameState() {
 void GameState::loadWorldData() {
     std::lock_guard<std::recursive_mutex> lock(mtx);
     mobs = Database::getInstance().loadMobs();
+    itemTemplates = Database::getInstance().loadItemTemplates();
     
     // Load objects for known maps
     for (auto const& [mapName, settings] : mapSettings) {
