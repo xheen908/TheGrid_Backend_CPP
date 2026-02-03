@@ -4,6 +4,7 @@
 #include <mysql.h>
 #include "Database.hpp"
 #include "GameState.hpp"
+#include "GameLogic.hpp"
 #include "Logger.hpp"
 #include <iostream>
 #include <vector>
@@ -242,9 +243,18 @@ bool Database::loadCharacter(int charId, Player& player) {
         player.level = std::stoi(row[2]);
         player.xp = std::stoi(row[3]);
         player.hp = std::stoi(row[4]);
-        player.maxHp = std::stoi(row[5]);
+        
+        // Stats immer neu berechnen basierend auf dem Level (Global Scaling)
+        auto levelData = GameLogic::getLevelData(player.level);
+        player.maxHp = levelData.hp;
+        player.maxMana = levelData.mana;
+        
+        // HP Anpassung falls sie durch das neue Scaling über das Limit geht (Initialer Load)
+        if (player.hp > player.maxHp) player.hp = player.maxHp;
+
         player.mana = std::stoi(row[6]);
-        player.maxMana = std::stoi(row[7]);
+        if (player.mana > player.maxMana) player.mana = player.maxMana;
+        
         player.mapName = row[8];
         player.lastPos = {std::stof(row[9]), std::stof(row[10]), std::stof(row[11])};
         player.isGM = std::stoi(row[12]) != 0;

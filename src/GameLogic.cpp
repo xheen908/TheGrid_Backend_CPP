@@ -21,10 +21,25 @@ LevelData GameLogic::getLevelData(int level) {
     // Nearest 100 rounding (standard for this formula)
     xpRequired = ((xpRequired + 50) / 100) * 100;
 
+    // HP & Mana scaling "exactly like spells":
+    // 1. Calculate the target average power for this level (from getSpellDamage)
+    double avgPower;
+    if (level <= 30) {
+        avgPower = 30.0 + (level - 1) * 7.0 + std::pow((double)level, 2.45) * 0.2;
+    } else {
+        avgPower = 1100 + (level - 30) * 35.0;
+    }
+
+    // Baseline at Level 1 is ~30.2
+    // We want 150 HP at L1 -> Factor 5.0
+    // We want 100 Mana at L1 -> Factor 3.3
+    int hp = (int)(avgPower * 5.0);
+    int mana = (int)(avgPower * 3.3);
+
     return {
-        100 + (level * 25) + (level * level * 2), // HP
-        100 + (level * 20),                       // Mana
-        xpRequired                                // XP to Next Level
+        hp,        // Scaled HP (starts at ~150)
+        mana,      // Scaled Mana (starts at ~100)
+        xpRequired // XP to Next Level
     };
 }
 

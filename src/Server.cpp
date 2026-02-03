@@ -232,6 +232,42 @@ void WorldServer::tick() {
     auto nowMs = currentTimeMillis();
     auto players = GameState::getInstance().getPlayersSnapshot();
 
+    // --- Collect Map Data for Scaling ---
+    std::map<std::string, float> mapLevelMap;
+    std::map<std::string, int> mapPartySizeMap;
+    for (auto const& p : players) {
+        if (p->isDisconnected) continue;
+        std::lock_guard<std::recursive_mutex> pLock(p->pMtx);
+        if (p->level > mapLevelMap[p->mapName]) {
+            mapLevelMap[p->mapName] = (float)p->level;
+        }
+        
+        // Party size scaling
+        if (!p->partyId.empty()) {
+            auto party = GameState::getInstance().getParty(p->partyId);
+            if (party && (int)party->members.size() > mapPartySizeMap[p->mapName]) {
+                mapPartySizeMap[p->mapName] = (int)party->members.size();
+            }
+        }
+    }
+
+    // --- Mob Update (Logic & Respawn) ---
+    {
+        std::lock_guard<std::recursive_mutex> lock(GameState::getInstance().getMtx());
+        auto& mobs = GameState::getInstance().getMobs();
+        for (auto& m : mobs) {
+            // Apply Dynamic Level Scaling
+            GameLogic::scaleMobToMap(m, mapLevelMap, mapPartySizeMap);
+
+            if (m.hp <= 0 && m.respawnAt > 0 && nowMs >= m.respawnAt) {
+                m.hp = m.maxHp;
+                m.respawnAt = 0;
+                m.debuffs.clear();
+                Logger::log("[MOB] Respawned: " + m.name + " (" + m.id + ")");
+            }
+        }
+    }
+
     // --- Optimized Mob Sync (Pre-calculate per map once per tick) ---
     static std::map<std::string, std::string> mapMobSync;
     static long long lastMobSyncUpdate = 0;

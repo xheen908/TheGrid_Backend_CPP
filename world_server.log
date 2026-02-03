@@ -23264,3 +23264,802 @@
 [2026-02-03 21:58:33.723] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
 [2026-02-03 21:58:33.732] [MAP] Change success: admin
 [2026-02-03 21:58:36.140] [WS] Player disconnected & saved: admin
+[2026-02-03 22:11:26.003] =========================================
+[2026-02-03 22:11:26.005] Starting The Grid WORLD SERVER...
+[2026-02-03 22:11:26.005] =========================================
+[2026-02-03 22:11:26.005] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 22:11:26.021] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 22:11:26.024] [DB] Loaded 8 mobs from database.
+[2026-02-03 22:11:26.026] [DB] Loaded 4 item templates.
+[2026-02-03 22:11:26.028] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 22:11:26.029] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 22:11:26.030] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 22:11:26.031] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 22:11:26.032] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 22:11:26.033] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 22:11:58.954] [WS] Client connected to WorldServer.
+[2026-02-03 22:11:58.974] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:12:01.293] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:12:03.852] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-03 22:12:03.876] [MAP] Change success: admin
+[2026-02-03 22:12:05.336] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:07.348] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:07.349] [Ability] Frostblitz damage applied: 25 to Neon-Würfel
+[2026-02-03 22:12:07.350] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:07.350] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:07.351] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:07.370] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:09.399] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:09.399] [Ability] Frostblitz damage applied: 39 to Neon-Würfel
+[2026-02-03 22:12:09.400] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:09.401] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:09.402] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:09.436] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:11.460] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:11.461] [Ability] Frostblitz damage applied: 27 to Neon-Würfel
+[2026-02-03 22:12:11.462] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:11.462] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:11.463] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:11.469] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:13.519] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:13.520] [Ability] Frostblitz damage applied: 50 to Neon-Würfel
+[2026-02-03 22:12:13.520] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:13.521] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:13.521] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:13.636] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:15.685] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:15.686] [Ability] Frostblitz damage applied: 25 to Neon-Würfel
+[2026-02-03 22:12:15.687] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-03 22:12:15.688] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:15.688] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:15.689] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:12:15.690] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:12:15.712] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:15.770] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:12:17.773] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:12:17.773] [Ability] Frostblitz damage applied: 31 to Neon-Pyramide
+[2026-02-03 22:12:17.774] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:17.775] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:17.776] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:17.903] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:12:19.946] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:12:19.946] [Ability] Frostblitz damage applied: 36 to Neon-Pyramide
+[2026-02-03 22:12:19.948] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:19.949] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:19.949] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:20.153] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:12:22.226] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:12:22.227] [Ability] Frostblitz damage applied: 22 to Neon-Pyramide
+[2026-02-03 22:12:22.227] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:22.228] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:22.228] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:22.302] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:12:24.400] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:12:24.401] [Ability] Frostblitz damage applied: 22 to Neon-Pyramide
+[2026-02-03 22:12:24.402] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:24.403] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:24.404] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:24.569] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:12:26.672] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:12:26.672] [Ability] Frostblitz damage applied: 57 to Neon-Pyramide
+[2026-02-03 22:12:26.673] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-03 22:12:26.674] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:12:26.674] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:12:26.675] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:12:26.675] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:12:26.710] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:12:26.869] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 22:12:30.902] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-03 22:12:30.922] [MAP] Change success: admin
+[2026-02-03 22:12:42.602] [DEBUG] GM Yheen using /level. Current targetId in state: 12
+[2026-02-03 22:12:42.615] [GM] Yheen set own level to 10
+[2026-02-03 22:17:11.595] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-03 22:17:11.948] [MAP] Change success: admin
+[2026-02-03 22:17:34.729] [Ability] Frost Nova cast by Yheen
+[2026-02-03 22:17:36.394] [Ability] Kältekegel cast by Yheen (Range: 25.000000)
+[2026-02-03 22:17:38.761] [Ability] Ice Barrier cast by Yheen
+[2026-02-03 22:17:54.314] [WS] Player disconnected & saved: admin
+[2026-02-03 22:18:11.528] [WS] Client connected to WorldServer.
+[2026-02-03 22:18:11.547] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:18:37.184] [WS] Player disconnected & saved: admin
+[2026-02-03 22:18:44.444] [WS] Client connected to WorldServer.
+[2026-02-03 22:18:44.464] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:19:42.911] [WS] Player disconnected & saved: admin
+[2026-02-03 22:19:56.909] [WS] Client connected to WorldServer.
+[2026-02-03 22:19:56.928] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:20:55.160] [WS] Player disconnected & saved: admin
+[2026-02-03 22:21:06.323] [WS] Client connected to WorldServer.
+[2026-02-03 22:21:06.342] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:21:28.410] [WS] Player disconnected & saved: admin
+[2026-02-03 22:21:35.239] [WS] Client connected to WorldServer.
+[2026-02-03 22:21:35.258] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:21:37.892] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:22:38.530] [WS] Player disconnected & saved: admin
+[2026-02-03 22:22:40.555] [WS] Client connected to WorldServer.
+[2026-02-03 22:22:40.575] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:22:43.041] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:23:42.319] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-03 22:23:42.335] [MAP] Change success: admin
+[2026-02-03 22:23:57.919] [Ability] Frost Nova cast by Yheen
+[2026-02-03 22:24:00.052] [Ability] Kältekegel cast by Yheen (Range: 25.000000)
+[2026-02-03 22:24:00.052] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:24:01.735] [Ability] Ice Barrier cast by Yheen
+[2026-02-03 22:24:07.886] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-03 22:24:07.898] [MAP] Change success: admin
+[2026-02-03 22:24:30.168] [Ability] Kältekegel cast by Yheen (Range: 25.000000)
+[2026-02-03 22:24:31.782] [WS] Ice Barrier expired for admin
+[2026-02-03 22:24:35.151] [Ability] Ice Barrier cast by Yheen
+[2026-02-03 22:25:05.197] [WS] Ice Barrier expired for admin
+[2026-02-03 22:25:15.566] [Ability] Frost Nova cast by Yheen
+[2026-02-03 22:25:26.133] [Ability] Ice Barrier cast by Yheen
+[2026-02-03 22:25:28.200] [Ability] Kältekegel cast by Yheen (Range: 25.000000)
+[2026-02-03 22:25:56.198] [WS] Ice Barrier expired for admin
+[2026-02-03 22:26:01.162] [WS] Player disconnected & saved: admin
+[2026-02-03 22:26:10.282] [WS] Client connected to WorldServer.
+[2026-02-03 22:26:10.301] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:26:12.619] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:26:15.799] [Ability] Kältekegel cast by Yheen (Range: 25.000000)
+[2026-02-03 22:26:18.765] [Ability] Ice Barrier cast by Yheen
+[2026-02-03 22:26:48.794] [WS] Ice Barrier expired for admin
+[2026-02-03 22:26:52.160] [WS] Player disconnected & saved: admin
+[2026-02-03 22:42:19.842] =========================================
+[2026-02-03 22:42:19.843] Starting The Grid WORLD SERVER...
+[2026-02-03 22:42:19.844] =========================================
+[2026-02-03 22:42:19.844] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 22:42:19.863] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 22:42:19.867] [DB] Loaded 8 mobs from database.
+[2026-02-03 22:42:19.869] [DB] Loaded 4 item templates.
+[2026-02-03 22:42:19.872] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 22:42:19.873] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 22:42:19.875] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 22:42:19.876] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 22:42:19.878] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 22:42:19.880] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 22:42:33.391] [WS] Client connected to WorldServer.
+[2026-02-03 22:42:33.412] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:42:35.777] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:42:40.906] [Ability] Frost Nova cast by Yheen
+[2026-02-03 22:42:43.673] [Ability] Kältekegel cast by Yheen (Range: 25.000000)
+[2026-02-03 22:42:45.806] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-03 22:42:45.817] [MAP] Change success: admin
+[2026-02-03 22:42:50.772] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 22:42:52.772] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 22:42:52.773] [Ability] Frostblitz damage applied: 177 to Neon-Pyramide
+[2026-02-03 22:42:52.774] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-03 22:42:52.774] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:42:52.775] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:42:52.775] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:42:52.776] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:42:52.786] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:42:52.841] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 22:42:54.847] [Ability] Frostblitz target not found or dead: 
+[2026-02-03 22:43:09.538] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-03 22:43:09.569] [MAP] Change success: admin
+[2026-02-03 22:43:27.421] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-03 22:43:27.433] [MAP] Change success: admin
+[2026-02-03 22:43:31.521] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-03 22:43:31.547] [MAP] Change success: admin
+[2026-02-03 22:43:48.605] [MAP] Player admin requesting map change: WorldMap0 -> Arena1
+[2026-02-03 22:43:48.615] [MAP] Change success: admin
+[2026-02-03 22:43:52.887] [MAP] Player admin requesting map change: Arena1 -> WorldMap0
+[2026-02-03 22:43:52.903] [MAP] Change success: admin
+[2026-02-03 22:44:10.320] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-03 22:44:10.332] [MAP] Change success: admin
+[2026-02-03 22:44:12.087] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:44:14.110] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 22:44:14.110] [Ability] Frostblitz damage applied: 311 to Neon-Würfel
+[2026-02-03 22:44:14.111] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-03 22:44:14.111] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:14.112] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:14.113] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:44:14.113] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:44:14.132] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:14.387] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:44:16.411] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:44:16.412] [Ability] Frostblitz damage applied: 133 to Neon-Pyramide
+[2026-02-03 22:44:16.413] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:16.413] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:16.414] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:16.604] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:44:18.690] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:44:18.691] [Ability] Frostblitz damage applied: 113 to Neon-Pyramide
+[2026-02-03 22:44:18.692] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-03 22:44:18.692] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:18.693] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:18.693] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:44:18.694] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:44:18.708] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:18.771] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 22:44:20.860] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 22:44:20.861] [Ability] Frostblitz damage applied: 165 to Neon-Kegel
+[2026-02-03 22:44:20.862] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-03 22:44:20.863] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:20.863] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:20.864] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:44:20.864] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:44:20.882] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:20.904] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 22:44:22.939] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 22:44:22.940] [Ability] Frostblitz damage applied: 157 to Gigantischer Neon-Ring
+[2026-02-03 22:44:22.940] [Ability] Frostblitz target died: Gigantischer Neon-Ring
+[2026-02-03 22:44:22.941] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:22.941] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:22.942] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:44:22.943] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:44:22.953] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:23.054] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 22:44:25.116] [Ability] Frostblitz cast complete by Yheen @ Neon-Sphäre(14) [Normal] on Arena2
+[2026-02-03 22:44:25.117] [Ability] Frostblitz damage applied: 125 to Neon-Sphäre
+[2026-02-03 22:44:25.118] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:25.119] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:25.119] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:25.137] [Ability] Frostblitz cast start by Yheen @ Neon-Sphäre(14) [Normal] on Arena2
+[2026-02-03 22:44:27.174] [Ability] Frostblitz cast complete by Yheen @ Neon-Sphäre(14) [Normal] on Arena2
+[2026-02-03 22:44:27.175] [Ability] Frostblitz damage applied: 133 to Neon-Sphäre
+[2026-02-03 22:44:27.176] [Ability] Frostblitz target died: Neon-Sphäre
+[2026-02-03 22:44:27.176] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:27.177] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:27.177] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:44:27.178] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:44:27.187] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:27.288] [Ability] Frostblitz cast start by Yheen @ Neon-Sphäre(14) [Normal] on Arena2
+[2026-02-03 22:44:29.358] [Ability] Frostblitz cast complete by Yheen @ Neon-Kapsel(16) [Normal] on Arena2
+[2026-02-03 22:44:29.358] [Ability] Frostblitz damage applied: 189 to Neon-Kapsel
+[2026-02-03 22:44:29.359] [Ability] Frostblitz target died: Neon-Kapsel
+[2026-02-03 22:44:29.359] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:29.360] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:29.360] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:44:29.361] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:44:29.371] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:29.537] [Ability] Frostblitz cast start by Yheen @ Neon-Torus(15) [Normal] on Arena2
+[2026-02-03 22:44:31.541] [Ability] Frostblitz cast complete by Yheen @ Neon-Torus(15) [Normal] on Arena2
+[2026-02-03 22:44:31.542] [Ability] Frostblitz damage applied: 141 to Neon-Torus
+[2026-02-03 22:44:31.542] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:31.543] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:31.544] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:31.720] [Ability] Frostblitz cast start by Yheen @ Neon-Torus(15) [Normal] on Arena2
+[2026-02-03 22:44:33.819] [Ability] Frostblitz cast complete by Yheen @ Neon-Torus(15) [Normal] on Arena2
+[2026-02-03 22:44:33.820] [Ability] Frostblitz damage applied: 197 to Neon-Torus
+[2026-02-03 22:44:33.821] [Ability] Frostblitz target died: Neon-Torus
+[2026-02-03 22:44:33.822] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:44:33.822] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:44:33.823] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:44:33.823] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:44:33.834] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:44:38.253] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-03 22:44:38.264] [MAP] Change success: admin
+[2026-02-03 22:45:56.954] [WS] Player disconnected & saved: admin
+[2026-02-03 22:46:06.218] [WS] Client connected to WorldServer.
+[2026-02-03 22:46:06.238] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:46:08.639] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:47:13.445] [WS] Player disconnected & saved: admin
+[2026-02-03 22:47:21.467] [WS] Client connected to WorldServer.
+[2026-02-03 22:47:21.486] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:47:23.920] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:48:17.659] [WS] Player disconnected & saved: admin
+[2026-02-03 22:48:27.682] [WS] Client connected to WorldServer.
+[2026-02-03 22:48:27.702] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:48:30.168] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:50:42.732] [WS] Player disconnected & saved: admin
+[2026-02-03 22:51:01.578] [WS] Client connected to WorldServer.
+[2026-02-03 22:51:01.597] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:51:03.864] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:51:56.555] [WS] Player disconnected & saved: admin
+[2026-02-03 22:52:04.593] [WS] Client connected to WorldServer.
+[2026-02-03 22:52:04.611] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:52:06.946] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:54:31.384] [WS] Player disconnected & saved: admin
+[2026-02-03 22:54:43.822] [WS] Client connected to WorldServer.
+[2026-02-03 22:54:43.841] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:54:46.175] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-03 22:55:30.487] [INV] player Yheen moved item from 0 to 29
+[2026-02-03 22:55:39.770] [Ability] Kältekegel cast by Yheen (Range: 25.000000)
+[2026-02-03 22:55:42.553] [Ability] Ice Barrier cast by Yheen
+[2026-02-03 22:56:12.597] [WS] Ice Barrier expired for admin
+[2026-02-03 22:56:37.619] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-03 22:56:37.629] [MAP] Change success: admin
+[2026-02-03 22:57:03.647] =========================================
+[2026-02-03 22:57:03.648] Starting The Grid WORLD SERVER...
+[2026-02-03 22:57:03.648] =========================================
+[2026-02-03 22:57:03.648] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 22:57:03.669] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 22:57:03.672] [DB] Loaded 8 mobs from database.
+[2026-02-03 22:57:03.674] [DB] Loaded 4 item templates.
+[2026-02-03 22:57:03.676] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 22:57:03.678] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 22:57:03.679] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 22:57:03.680] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 22:57:03.682] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 22:57:03.683] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 22:57:26.401] [WS] Client connected to WorldServer.
+[2026-02-03 22:57:26.421] [WS] User Authenticated & Loaded: admin on Dungeon0
+[2026-02-03 22:57:27.421] [WS] User Authenticated & Loaded: admin on Dungeon0
+[2026-02-03 22:57:31.167] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 22:57:33.268] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 22:57:33.270] [Ability] Frostblitz damage applied: 157 to Neon-Pyramide
+[2026-02-03 22:57:33.270] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-03 22:57:33.270] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 22:57:33.270] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 22:57:33.271] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 22:57:33.272] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 22:57:33.282] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 22:57:33.302] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 22:57:35.343] [Ability] Frostblitz target not found or dead: 
+[2026-02-03 23:04:32.851] =========================================
+[2026-02-03 23:04:32.852] Starting The Grid WORLD SERVER...
+[2026-02-03 23:04:32.852] =========================================
+[2026-02-03 23:04:32.853] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 23:04:32.870] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 23:04:32.873] [DB] Loaded 8 mobs from database.
+[2026-02-03 23:04:32.875] [DB] Loaded 4 item templates.
+[2026-02-03 23:04:32.877] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 23:04:32.878] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 23:04:32.879] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 23:04:32.880] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 23:04:32.882] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 23:04:32.883] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 23:04:40.407] [WS] Client connected to WorldServer.
+[2026-02-03 23:04:40.427] [WS] User Authenticated & Loaded: admin on Dungeon0
+[2026-02-03 23:04:41.411] [WS] User Authenticated & Loaded: admin on Dungeon0
+[2026-02-03 23:04:44.856] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 23:04:46.860] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 23:04:46.862] [Ability] Frostblitz damage applied: 318 to Neon-Pyramide
+[2026-02-03 23:04:46.862] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-03 23:04:46.862] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:04:46.862] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:04:46.863] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:04:46.864] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:04:46.875] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:04:47.006] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 23:06:15.004] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-03 23:06:15.299] [MAP] Change success: admin
+[2026-02-03 23:06:36.770] [Ability] Ice Barrier cast by Yheen
+[2026-02-03 23:06:39.438] [Ability] Kältekegel cast by Yheen (Range: 25.000000)
+[2026-02-03 23:06:39.503] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-03 23:06:39.513] [MAP] Change success: admin
+[2026-02-03 23:06:41.154] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:06:43.164] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:06:43.165] [Ability] Frostblitz damage applied: 197 to Neon-Würfel
+[2026-02-03 23:06:43.166] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-03 23:06:43.166] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:06:43.167] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:06:43.168] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:06:43.168] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:06:43.179] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:06:43.270] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:06:45.273] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:06:45.274] [Ability] Frostblitz damage applied: 169 to Neon-Pyramide
+[2026-02-03 23:06:45.274] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-03 23:06:45.275] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:06:45.275] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:06:45.276] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:06:45.277] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:06:45.286] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:06:45.454] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:06:47.557] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:06:47.557] [Ability] Frostblitz damage applied: 177 to Neon-Kegel
+[2026-02-03 23:06:47.558] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-03 23:06:47.559] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:06:47.559] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:06:47.560] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:06:47.561] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:06:47.571] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:06:47.737] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:06:49.844] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:06:49.845] [Ability] Frostblitz damage applied: 157 to Gigantischer Neon-Ring
+[2026-02-03 23:06:49.846] [Ability] Frostblitz target died: Gigantischer Neon-Ring
+[2026-02-03 23:06:49.846] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:06:49.847] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:06:49.847] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:06:49.848] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:06:49.858] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:06:49.920] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:06:51.922] [Ability] Frostblitz cast complete by Yheen @ Neon-Sphäre(14) [Normal] on Arena2
+[2026-02-03 23:06:51.922] [Ability] Frostblitz damage applied: 276 to Neon-Sphäre
+[2026-02-03 23:06:51.923] [Ability] Frostblitz target died: Neon-Sphäre
+[2026-02-03 23:06:51.923] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:06:51.924] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:06:51.925] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:06:51.925] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:06:51.935] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:06:52.070] [Ability] Frostblitz cast start by Yheen @ Neon-Sphäre(14) [Normal] on Arena2
+[2026-02-03 23:06:54.110] [Ability] Frostblitz cast complete by Yheen @ Neon-Kapsel(16) [Normal] on Arena2
+[2026-02-03 23:06:54.111] [Ability] Frostblitz damage applied: 129 to Neon-Kapsel
+[2026-02-03 23:06:54.112] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:06:54.112] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:06:54.113] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:06:54.203] [Ability] Frostblitz cast start by Yheen @ Neon-Kapsel(16) [Normal] on Arena2
+[2026-02-03 23:06:56.282] [Ability] Frostblitz cast complete by Yheen @ Neon-Kapsel(16) [Normal] on Arena2
+[2026-02-03 23:06:56.283] [Ability] Frostblitz damage applied: 129 to Neon-Kapsel
+[2026-02-03 23:06:56.284] [Ability] Frostblitz target died: Neon-Kapsel
+[2026-02-03 23:06:56.285] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:06:56.286] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:06:56.287] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:06:56.287] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:06:56.302] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:06:56.404] [Ability] Frostblitz cast start by Yheen @ Neon-Kapsel(16) [Normal] on Arena2
+[2026-02-03 23:06:58.474] [Ability] Frostblitz cast complete by Yheen @ Neon-Torus(15) [Normal] on Arena2
+[2026-02-03 23:06:58.475] [Ability] Frostblitz damage applied: 189 to Neon-Torus
+[2026-02-03 23:06:58.475] [Ability] Frostblitz target died: Neon-Torus
+[2026-02-03 23:06:58.476] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:06:58.476] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:06:58.477] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:06:58.478] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:06:58.487] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:06:58.570] [Ability] Frostblitz cast start by Yheen @ Neon-Torus(15) [Normal] on Arena2
+[2026-02-03 23:07:00.664] [Ability] Frostblitz target not found or dead: 
+[2026-02-03 23:07:06.860] [WS] Ice Barrier expired for admin
+[2026-02-03 23:08:44.534] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-03 23:08:44.545] [MAP] Change success: admin
+[2026-02-03 23:09:10.116] [MAP] Player admin requesting map change: WorldMap0 -> Dungeon0
+[2026-02-03 23:09:10.131] [MAP] Change success: admin
+[2026-02-03 23:10:35.764] =========================================
+[2026-02-03 23:10:35.766] Starting The Grid WORLD SERVER...
+[2026-02-03 23:10:35.769] =========================================
+[2026-02-03 23:10:35.769] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 23:10:35.791] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 23:10:35.793] [DB] Loaded 8 mobs from database.
+[2026-02-03 23:10:35.796] [DB] Loaded 4 item templates.
+[2026-02-03 23:10:35.799] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 23:10:35.801] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 23:10:35.803] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 23:10:35.804] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 23:10:35.805] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 23:10:35.806] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 23:11:46.872] =========================================
+[2026-02-03 23:11:46.876] Starting The Grid WORLD SERVER...
+[2026-02-03 23:11:46.876] =========================================
+[2026-02-03 23:11:46.876] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-03 23:11:46.899] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-03 23:11:46.902] [DB] Loaded 8 mobs from database.
+[2026-02-03 23:11:46.905] [DB] Loaded 4 item templates.
+[2026-02-03 23:11:46.907] [DB] Loaded 1 game objects for map Arena0
+[2026-02-03 23:11:46.909] [DB] Loaded 1 game objects for map Arena1
+[2026-02-03 23:11:46.910] [DB] Loaded 1 game objects for map Arena2
+[2026-02-03 23:11:46.912] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-03 23:11:46.914] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-03 23:11:46.916] [DB] Loaded 5 game objects for map WorldMap0
+[2026-02-03 23:11:56.897] [WS] Client connected to WorldServer.
+[2026-02-03 23:11:56.916] [WS] User Authenticated & Loaded: admin on Dungeon0
+[2026-02-03 23:11:59.317] [WS] User Authenticated & Loaded: admin on Dungeon0
+[2026-02-03 23:12:02.312] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 23:12:04.400] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 23:12:04.401] [Ability] Frostblitz damage applied: 137 to Neon-Pyramide
+[2026-02-03 23:12:04.401] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:12:04.402] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:12:04.402] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:12:04.479] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 23:12:06.569] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(10) [Boss] on Dungeon0
+[2026-02-03 23:12:06.570] [Ability] Frostblitz damage applied: 145 to Neon-Pyramide
+[2026-02-03 23:12:06.570] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-03 23:12:06.571] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:12:06.572] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:12:06.572] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:12:06.573] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:12:06.592] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:12:13.495] [MAP] Player admin requesting map change: Dungeon0 -> WorldMap0
+[2026-02-03 23:12:13.505] [MAP] Change success: admin
+[2026-02-03 23:12:16.978] [DEBUG] GM Yheen using /level. Current targetId in state: None
+[2026-02-03 23:12:16.988] [GM] Yheen set own level to 1
+[2026-02-03 23:12:36.616] [MOB] Respawned: Neon-Pyramide (10)
+[2026-02-03 23:12:36.877] [MAP] Player admin requesting map change: WorldMap0 -> Arena0
+[2026-02-03 23:12:36.887] [MAP] Change success: admin
+[2026-02-03 23:12:41.244] [MAP] Player admin requesting map change: Arena0 -> WorldMap0
+[2026-02-03 23:12:41.255] [MAP] Change success: admin
+[2026-02-03 23:13:03.445] [MAP] Player admin requesting map change: WorldMap0 -> Arena2
+[2026-02-03 23:13:03.455] [MAP] Change success: admin
+[2026-02-03 23:13:04.660] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:06.730] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:06.730] [Ability] Frostblitz damage applied: 23 to Neon-Würfel
+[2026-02-03 23:13:06.731] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:06.732] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:06.732] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:06.861] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:08.898] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:08.898] [Ability] Frostblitz damage applied: 26 to Neon-Würfel
+[2026-02-03 23:13:08.899] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:08.900] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:08.900] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:09.077] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:11.162] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:11.163] [Ability] Frostblitz damage applied: 35 to Neon-Würfel
+[2026-02-03 23:13:11.163] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:11.164] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:11.164] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:11.328] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:13.333] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:13.333] [Ability] Frostblitz damage applied: 37 to Neon-Würfel
+[2026-02-03 23:13:13.334] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:13.335] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:13.335] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:13.460] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:15.498] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:15.499] [Ability] Frostblitz damage applied: 39 to Neon-Würfel
+[2026-02-03 23:13:15.500] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-03 23:13:15.500] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:15.501] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:15.502] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:13:15.502] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:13:15.513] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:15.561] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:17.570] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:13:17.570] [Ability] Frostblitz damage applied: 35 to Neon-Kegel
+[2026-02-03 23:13:17.571] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:17.572] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:17.572] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:17.594] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:13:19.634] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:13:19.636] [Ability] Frostblitz damage applied: 30 to Neon-Kegel
+[2026-02-03 23:13:19.637] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:19.638] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:19.639] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:19.710] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:13:21.800] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:13:21.800] [Ability] Frostblitz damage applied: 33 to Neon-Kegel
+[2026-02-03 23:13:21.801] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:21.801] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:21.802] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:21.877] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:13:23.965] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:13:23.966] [Ability] Frostblitz damage applied: 35 to Neon-Kegel
+[2026-02-03 23:13:23.967] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:23.968] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:23.969] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:24.143] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:13:26.249] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:13:26.250] [Ability] Frostblitz damage applied: 34 to Neon-Kegel
+[2026-02-03 23:13:26.251] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-03 23:13:26.251] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:26.252] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:26.253] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:13:26.253] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:13:26.264] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:26.511] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:28.544] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:28.544] [Ability] Frostblitz damage applied: 24 to Neon-Pyramide
+[2026-02-03 23:13:28.545] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:28.546] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:28.547] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:28.611] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:30.709] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:30.710] [Ability] Frostblitz damage applied: 21 to Neon-Pyramide
+[2026-02-03 23:13:30.711] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:30.712] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:30.712] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:30.927] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:32.986] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:32.986] [Ability] Frostblitz damage applied: 37 to Neon-Pyramide
+[2026-02-03 23:13:32.987] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:32.988] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:32.988] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:33.160] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:35.262] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:35.262] [Ability] Frostblitz damage applied: 21 to Neon-Pyramide
+[2026-02-03 23:13:35.263] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:35.264] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:35.264] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:35.327] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:37.433] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:37.434] [Ability] Frostblitz damage applied: 43 to Neon-Pyramide
+[2026-02-03 23:13:37.434] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:37.435] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:37.436] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:37.444] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:39.498] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:39.499] [Ability] Frostblitz damage applied: 20 to Neon-Pyramide
+[2026-02-03 23:13:39.499] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-03 23:13:39.500] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:39.501] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:39.501] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:13:39.502] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:13:39.512] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:39.610] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:13:41.675] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:41.676] [Ability] Frostblitz damage applied: 20 to Gigantischer Neon-Ring
+[2026-02-03 23:13:41.676] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:41.677] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:41.678] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:41.727] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:43.731] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:43.732] [Ability] Frostblitz damage applied: 38 to Gigantischer Neon-Ring
+[2026-02-03 23:13:43.732] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:43.733] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:43.734] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:43.843] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:45.570] [MOB] Respawned: Neon-Würfel (11)
+[2026-02-03 23:13:45.896] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:45.897] [Ability] Frostblitz damage applied: 23 to Gigantischer Neon-Ring
+[2026-02-03 23:13:45.898] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:45.899] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:45.899] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:46.143] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:48.176] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:48.177] [Ability] Frostblitz damage applied: 25 to Gigantischer Neon-Ring
+[2026-02-03 23:13:48.178] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:48.178] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:48.179] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:48.276] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:50.348] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:50.348] [Ability] Frostblitz damage applied: 39 to Gigantischer Neon-Ring
+[2026-02-03 23:13:50.349] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:50.350] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:50.350] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:50.459] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:52.508] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:52.509] [Ability] Frostblitz damage applied: 29 to Gigantischer Neon-Ring
+[2026-02-03 23:13:52.510] [Ability] Frostblitz target died: Gigantischer Neon-Ring
+[2026-02-03 23:13:52.510] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:52.511] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:52.512] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:13:52.512] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:13:52.523] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:52.544] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:13:54.585] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:54.586] [Ability] Frostblitz damage applied: 29 to Neon-Würfel
+[2026-02-03 23:13:54.587] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:54.587] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:54.588] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:54.609] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:56.324] [MOB] Respawned: Neon-Kegel (12)
+[2026-02-03 23:13:56.647] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:56.647] [Ability] Frostblitz damage applied: 29 to Neon-Würfel
+[2026-02-03 23:13:56.648] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:56.649] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:56.649] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:56.660] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:58.706] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:13:58.707] [Ability] Frostblitz damage applied: 72 to Neon-Würfel
+[2026-02-03 23:13:58.708] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:13:58.709] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:13:58.710] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:13:58.792] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:14:00.882] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:14:00.882] [Ability] Frostblitz damage applied: 33 to Neon-Würfel
+[2026-02-03 23:14:00.883] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-03 23:14:00.883] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:00.884] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:00.884] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:14:00.885] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:14:00.896] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:01.093] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:03.172] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:03.172] [Ability] Frostblitz damage applied: 32 to Neon-Kegel
+[2026-02-03 23:14:03.173] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:03.173] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:03.174] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:03.326] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:05.330] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:05.331] [Ability] Frostblitz damage applied: 22 to Neon-Kegel
+[2026-02-03 23:14:05.331] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:05.332] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:05.333] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:05.509] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:07.610] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:07.610] [Ability] Frostblitz damage applied: 33 to Neon-Kegel
+[2026-02-03 23:14:07.611] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:07.611] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:07.612] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:07.876] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:09.564] [MOB] Respawned: Neon-Pyramide (13)
+[2026-02-03 23:14:09.888] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:09.889] [Ability] Frostblitz damage applied: 26 to Neon-Kegel
+[2026-02-03 23:14:09.890] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:09.890] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:09.891] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:09.909] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:11.951] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:11.952] [Ability] Frostblitz damage applied: 27 to Neon-Kegel
+[2026-02-03 23:14:11.953] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:11.953] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:11.954] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:11.992] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:14.013] [Ability] Frostblitz cast complete by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:14.014] [Ability] Frostblitz damage applied: 23 to Neon-Kegel
+[2026-02-03 23:14:14.015] [Ability] Frostblitz target died: Neon-Kegel
+[2026-02-03 23:14:14.015] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:14.016] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:14.016] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:14:14.017] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:14:14.028] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:14.076] [Ability] Frostblitz cast start by Yheen @ Neon-Kegel(12) [Normal] on Arena2
+[2026-02-03 23:14:16.084] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:14:16.085] [Ability] Frostblitz damage applied: 31 to Neon-Pyramide
+[2026-02-03 23:14:16.085] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:16.086] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:16.086] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:16.259] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:14:18.347] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:14:18.348] [Ability] Frostblitz damage applied: 30 to Neon-Pyramide
+[2026-02-03 23:14:18.348] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:18.349] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:18.349] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:18.426] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:14:20.515] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:14:20.516] [Ability] Frostblitz damage applied: 38 to Neon-Pyramide
+[2026-02-03 23:14:20.516] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:20.517] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:20.518] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:20.525] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:14:22.576] [MOB] Respawned: Gigantischer Neon-Ring (17)
+[2026-02-03 23:14:22.577] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:14:22.577] [Ability] Frostblitz damage applied: 39 to Neon-Pyramide
+[2026-02-03 23:14:22.578] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:22.578] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:22.579] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:22.758] [Ability] Frostblitz cast start by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:14:24.851] [Ability] Frostblitz cast complete by Yheen @ Neon-Pyramide(13) [Normal] on Arena2
+[2026-02-03 23:14:24.852] [Ability] Frostblitz damage applied: 33 to Neon-Pyramide
+[2026-02-03 23:14:24.853] [Ability] Frostblitz target died: Neon-Pyramide
+[2026-02-03 23:14:24.853] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:24.854] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:24.855] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:14:24.856] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:14:24.867] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:25.092] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:27.147] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:27.148] [Ability] Frostblitz damage applied: 35 to Gigantischer Neon-Ring
+[2026-02-03 23:14:27.149] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:27.149] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:27.150] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:27.308] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:29.310] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:29.311] [Ability] Frostblitz damage applied: 21 to Gigantischer Neon-Ring
+[2026-02-03 23:14:29.312] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:29.312] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:29.313] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:29.408] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:30.933] [MOB] Respawned: Neon-Würfel (11)
+[2026-02-03 23:14:31.475] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:31.476] [Ability] Frostblitz damage applied: 34 to Gigantischer Neon-Ring
+[2026-02-03 23:14:31.477] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:31.478] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:31.479] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:31.658] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:33.757] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:33.758] [Ability] Frostblitz damage applied: 28 to Gigantischer Neon-Ring
+[2026-02-03 23:14:33.758] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:33.759] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:33.760] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:34.008] [Ability] Frostblitz cast start by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:36.033] [Ability] Frostblitz cast complete by Yheen @ Gigantischer Neon-Ring(17) [Normal] on Arena2
+[2026-02-03 23:14:36.034] [Ability] Frostblitz damage applied: 39 to Gigantischer Neon-Ring
+[2026-02-03 23:14:36.035] [Ability] Frostblitz target died: Gigantischer Neon-Ring
+[2026-02-03 23:14:36.035] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:36.036] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:36.037] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:14:36.037] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:14:36.038] [LEVEL] Yheen ist jetzt Level 2!
+[2026-02-03 23:14:36.048] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:36.243] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:14:38.328] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:14:38.328] [Ability] Frostblitz damage applied: 92 to Neon-Würfel
+[2026-02-03 23:14:38.329] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:38.330] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:38.330] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:39.175] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:14:41.249] [Ability] Frostblitz cast complete by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:14:41.249] [Ability] Frostblitz damage applied: 82 to Neon-Würfel
+[2026-02-03 23:14:41.250] [Ability] Frostblitz target died: Neon-Würfel
+[2026-02-03 23:14:41.250] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:41.251] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:41.251] [Ability] Frostblitz awarding XP for Yheen
+[2026-02-03 23:14:41.252] [XP] Yheen erhielt 50 Erfahrung.
+[2026-02-03 23:14:41.263] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:41.391] [Ability] Frostblitz cast start by Yheen @ Neon-Würfel(11) [Normal] on Arena2
+[2026-02-03 23:14:43.430] [Ability] Frostblitz cast complete by Yheen @ Neon-Sphäre(14) [Normal] on Arena2
+[2026-02-03 23:14:43.430] [Ability] Frostblitz damage applied: 92 to Neon-Sphäre
+[2026-02-03 23:14:43.431] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:43.432] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:43.432] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:44.081] [MOB] Respawned: Neon-Kegel (12)
+[2026-02-03 23:14:46.091] [Ability] Frostblitz cast start by Yheen @ Neon-Sphäre(14) [Normal] on Arena2
+[2026-02-03 23:14:48.091] [Ability] Frostblitz cast complete by Yheen @ Neon-Sphäre(14) [Normal] on Arena2
+[2026-02-03 23:14:48.092] [Ability] Frostblitz damage applied: 44 to Neon-Sphäre
+[2026-02-03 23:14:48.092] [Ability] Frostblitz lock released for Yheen
+[2026-02-03 23:14:48.093] [Ability] Frostblitz broadcasting combat text for Yheen
+[2026-02-03 23:14:48.094] [Ability] Frostblitz processing finished for Yheen
+[2026-02-03 23:14:51.424] [MAP] Player admin requesting map change: Arena2 -> WorldMap0
+[2026-02-03 23:14:51.437] [MAP] Change success: admin
+[2026-02-03 23:14:54.921] [MOB] Respawned: Neon-Pyramide (13)
+[2026-02-03 23:15:06.094] [MOB] Respawned: Gigantischer Neon-Ring (17)
+[2026-02-03 23:15:11.286] [MOB] Respawned: Neon-Würfel (11)
