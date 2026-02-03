@@ -232,139 +232,34 @@ void WorldServer::tick() {
     auto nowMs = currentTimeMillis();
     auto players = GameState::getInstance().getPlayersSnapshot();
 
-    // --- Collect Map Stats for Scaling ---
-    std::map<std::string, float> mapMaxLevels; 
-    std::map<std::string, int> mapMaxPartySize;
-
-    for (auto const& p : players) {
-        if (p->isDisconnected) continue;
-        
-        std::string currentMap;
-        int pLevel;
-        int pSize = 1;
-        {
-            std::lock_guard<std::recursive_mutex> pLock(p->pMtx);
-            currentMap = p->mapName;
-            pLevel = p->level;
-            if (!p->partyId.empty()) {
-                auto party = GameState::getInstance().getParty(p->partyId);
-                if (party) pSize = (int)party->members.size();
-            }
-        }
-        
-        if (mapMaxLevels.find(currentMap) == mapMaxLevels.end()) {
-            mapMaxLevels[currentMap] = (float)pLevel;
-        } else {
-            mapMaxLevels[currentMap] = std::max(mapMaxLevels[currentMap], (float)pLevel);
-        }
-        mapMaxPartySize[currentMap] = std::max(mapMaxPartySize[currentMap], pSize);
-    }
+    // --- Optimized Mob Sync (Pre-calculate per map once per tick) ---
+    static std::map<std::string, std::string> mapMobSync;
+    static long long lastMobSyncUpdate = 0;
     
-    // --- Mob Logic ---
-    {
-        std::lock_guard<std::recursive_mutex> mobLock(GameState::getInstance().getMtx());
-        auto& mobs = GameState::getInstance().getMobs();
-        for (auto& m : mobs) {
-            // Dynamic Scaling
-            GameLogic::scaleMobToMap(m, mapMaxLevels, mapMaxPartySize);
-
-            if (m.hp <= 0) {
-                if (m.respawnAt > 0 && nowMs > m.respawnAt) { 
-                    m.hp = m.maxHp; 
-                    m.respawnAt = 0; 
-                    m.target = ""; 
-                    m.transform = m.home;
+    if (nowMs - lastMobSyncUpdate > 100) { // Update frequency: 10Hz
+        lastMobSyncUpdate = nowMs;
+        mapMobSync.clear();
+        
+        auto allMobs = GameState::getInstance().getMobsSnapshot(); 
+        std::map<std::string, json> mapLists;
+        
+        for (auto const& m : allMobs) {
+            bool recentlyDied = (m.hp <= 0 && m.respawnAt > 0 && (nowMs < (m.respawnAt - (GameState::getInstance().getRespawnRate(m.mapName) - 5) * 1000)));
+            if (m.hp > 0 || recentlyDied) {
+                json dList = json::array();
+                for (auto const& db : m.debuffs) {
+                    dList.push_back({{"type", db.type}, {"remaining", (int)((db.endTime - nowMs) / 1000)}});
                 }
-                else if (m.respawnAt == 0) m.respawnAt = nowMs + 30000;
-                continue;
+                mapLists[m.mapName].push_back({
+                    {"id", m.id}, {"name", m.name}, {"hp", m.hp}, {"maxHp", m.maxHp}, 
+                    {"debuffs", dList}, 
+                    {"transform", {{"x", m.transform.x}, {"y", m.transform.y}, {"z", m.transform.z}, {"rot", m.rotation}}}
+                });
             }
-
-            // --- Aggro Logic: Search for nearby players if no target ---
-            if (m.target.empty()) {
-                float closestDistSq = 400.0f; // Aggro range: 20 units
-                std::string bestTarget = "";
-                
-                for (auto const& p : players) {
-                    if (p->isDisconnected || p->isInvisible || p->mapName != m.mapName) continue;
-                    float dSq = std::pow(m.transform.x - p->lastPos.x, 2) + std::pow(m.transform.z - p->lastPos.z, 2);
-                    if (dSq < closestDistSq) {
-                        closestDistSq = dSq;
-                        bestTarget = p->username;
-                    }
-                }
-                if (!bestTarget.empty()) {
-                    m.target = bestTarget;
-                    Logger::log("[AI] Mob " + m.id + " aggroed on " + m.target);
-                }
-            }
-
-            // --- Debuff Checks ---
-            bool isFrozen = false;
-            bool isChilled = false;
-            for (const auto& d : m.debuffs) {
-                if (d.type == "Frozen") isFrozen = true;
-                if (d.type == "Chill") isChilled = true;
-            }
-
-            // --- Chase & Attack Logic ---
-            if (!m.target.empty() && !isFrozen) {
-                auto pTarget = GameState::getInstance().getPlayer(m.target);
-                if (pTarget && !pTarget->isDisconnected && pTarget->mapName == m.mapName) {
-                    float dx = pTarget->lastPos.x - m.transform.x;
-                    float dz = pTarget->lastPos.z - m.transform.z;
-                    float distSq = dx * dx + dz * dz;
-
-                    // Leash: If too far from home, reset
-                    float distFromHomeSq = std::pow(m.transform.x - m.home.x, 2) + std::pow(m.transform.z - m.home.z, 2);
-                    if (distFromHomeSq > 2500.0f) { // 50 units leash
-                        m.target = "";
-                        Logger::log("[AI] Mob " + m.id + " leashed.");
-                    } else if (distSq < 9.0f) { // Attack range: 3 units
-                        if (nowMs - m.lastAttack > 2000) {
-                            m.lastAttack = nowMs;
-                            int dmg = GameLogic::getMobDamage(m.level);
-                            {
-                                std::lock_guard<std::recursive_mutex> pLock(pTarget->pMtx);
-                                pTarget->hp = std::max(0, pTarget->hp - dmg);
-                            }
-                            json hitMsg = {{"type", "combat_text"}, {"target_id", "player"}, {"value", dmg}, {"color", "#FF2222"}};
-                            SocketHandlers::sendToPlayer(pTarget->username, hitMsg.dump());
-                        }
-                    } else {
-                        // Chase: Move towards target (0.4 units per tick approx 4m/s)
-                        float dist = std::sqrt(distSq);
-                        float step = isChilled ? 0.15f : 0.4f; // Chill reduces speed significantly
-                        m.transform.x += (dx / dist) * step;
-                        m.transform.z += (dz / dist) * step;
-                        
-                        // Update rotation to face player
-                        m.rotation = std::atan2(dx, dz);
-                    }
-                } else {
-                    m.target = "";
-                }
-            }
-
-            // Simple AI: Return home if no target and not at home
-            if (m.target.empty() && !isFrozen) {
-                float dx = m.home.x - m.transform.x;
-                float dz = m.home.z - m.transform.z;
-                float distSq = dx * dx + dz * dz;
-                if (distSq > 1.0f) {
-                    float dist = std::sqrt(distSq);
-                    float step = isChilled ? 0.1f : 0.3f;
-                    m.transform.x += (dx / dist) * step;
-                    m.transform.z += (dz / dist) * step;
-                    m.rotation = std::atan2(dx, dz);
-                } else {
-                    m.rotation += 0.05f; // Idle spin
-                }
-            }
-
-            // --- Debuff Cleanup ---
-            m.debuffs.erase(std::remove_if(m.debuffs.begin(), m.debuffs.end(),
-                [nowMs](const Debuff& d) { return nowMs >= d.endTime; }),
-                m.debuffs.end());
+        }
+        
+        for (auto& entry : mapLists) {
+            mapMobSync[entry.first] = json{{"type", "mob_sync"}, {"mobs", entry.second}}.dump();
         }
     }
 
@@ -374,86 +269,67 @@ void WorldServer::tick() {
         
         AbilityManager::getInstance().update(*p);
 
-            // Periodic Status Sync
-            {
-                std::lock_guard<std::recursive_mutex> pLock(p->pMtx);
+        // Periodic Status Sync
+        {
+            std::lock_guard<std::recursive_mutex> pLock(p->pMtx);
+            
+            // Logout Check
+            if (p->logoutTimer > 0 && nowMs >= p->logoutTimer) {
+                p->logoutTimer = 0;
+                json lc = {{"type", "logout_complete"}};
+                SocketHandlers::sendToPlayer(p->username, lc.dump());
+                Logger::log("[WS] Logout complete for " + p->username);
                 
-                // Logout Check
-                if (p->logoutTimer > 0 && nowMs >= p->logoutTimer) {
-                    p->logoutTimer = 0;
-                    json lc = {{"type", "logout_complete"}};
-                    SocketHandlers::sendToPlayer(p->username, lc.dump());
-                    Logger::log("[WS] Logout complete for " + p->username);
-                    
-                    // CRITICAL: Save player stats to DB when logout timer completes
-                    Database::getInstance().savePlayer(*p);
-                    Database::getInstance().saveInventory(*p);
-                }
-
-                // --- Buff Cleanup ---
-                bool hadIceBarrier = false;
-                for (const auto& b : p->buffs) if (b.type == "Eisbarriere") hadIceBarrier = true;
-
-                p->buffs.erase(std::remove_if(p->buffs.begin(), p->buffs.end(),
-                    [nowMs](const Debuff& b) { return nowMs >= b.endTime; }),
-                    p->buffs.end());
-
-                bool hasIceBarrier = false;
-                for (const auto& b : p->buffs) if (b.type == "Eisbarriere") hasIceBarrier = true;
-
-                if (hadIceBarrier && !hasIceBarrier) {
-                    p->shield = 0;
-                    Logger::log("[WS] Ice Barrier expired for " + p->username);
-                }
-
-                if (nowMs - p->lastStatusSync > 1000) {
-                    p->lastStatusSync = nowMs;
-                    json buffList = json::array();
-                    for (auto const& b : p->buffs) {
-                        buffList.push_back({{"type", b.type}, {"remaining", (int)((b.endTime - nowMs) / 1000)}});
-                    }
-                    json s = {
-                        {"type", "player_status"}, 
-                        {"username", p->charName}, 
-                        {"char_class", p->characterClass}, 
-                        {"hp", p->hp}, 
-                        {"max_hp", p->maxHp}, 
-                        {"level", p->level}, 
-                        {"xp", p->xp},
-                        {"max_xp", GameLogic::getLevelData(p->level).xpToNextLevel},
-                        {"shield", p->shield}, 
-                        {"buffs", buffList},
-                        {"gravity_enabled", p->gravityEnabled},
-                        {"speed_multiplier", p->speedMultiplier},
-                        {"is_gm", p->isGMFlagged},
-                        {"inventory_size", GameLogic::getInventorySize(p->level)}
-                    };
-                    SocketHandlers::broadcastToMap(p->mapName, s.dump());
-                }
+                Database::getInstance().savePlayer(*p);
+                Database::getInstance().saveInventory(*p);
             }
 
-            // Mob Sync (within map)
-            json mobList = json::array();
-            {
-                std::lock_guard<std::recursive_mutex> mobLock(GameState::getInstance().getMtx());
-                for (auto const& m : GameState::getInstance().getMobs()) {
-                    if (m.mapName == p->mapName) {
-                        // Sync if alive OR died recently (within 5 seconds)
-                        bool recentlyDied = (m.hp <= 0 && m.respawnAt > 0 && (nowMs < (m.respawnAt - (GameState::getInstance().getRespawnRate(m.mapName) - 5) * 1000)));
-                        
-                        if (m.hp > 0 || recentlyDied) {
-                            json dList = json::array();
-                            for (auto const& db : m.debuffs) {
-                                dList.push_back({{"type", db.type}, {"remaining", (int)((db.endTime - nowMs) / 1000)}});
-                            }
-                            mobList.push_back({{"id", m.id}, {"name", m.name}, {"hp", m.hp}, {"maxHp", m.maxHp}, {"debuffs", dList}, {"transform", {{"x", m.transform.x}, {"y", m.transform.y}, {"z", m.transform.z}, {"rot", m.rotation}}}});
-                        }
-                    }
+            // Buff Cleanup
+            bool hadIceBarrier = false;
+            for (const auto& b : p->buffs) if (b.type == "Eisbarriere") hadIceBarrier = true;
+
+            p->buffs.erase(std::remove_if(p->buffs.begin(), p->buffs.end(),
+                [nowMs](const Debuff& b) { return nowMs >= b.endTime; }),
+                p->buffs.end());
+
+            bool hasIceBarrier = false;
+            for (const auto& b : p->buffs) if (b.type == "Eisbarriere") hasIceBarrier = true;
+
+            if (hadIceBarrier && !hasIceBarrier) {
+                p->shield = 0;
+                Logger::log("[WS] Ice Barrier expired for " + p->username);
+            }
+
+            if (nowMs - p->lastStatusSync > 1000) {
+                p->lastStatusSync = nowMs;
+                json buffList = json::array();
+                for (auto const& b : p->buffs) {
+                    buffList.push_back({{"type", b.type}, {"remaining", (int)((b.endTime - nowMs) / 1000)}});
                 }
+                json s = {
+                    {"type", "player_status"}, 
+                    {"username", p->charName}, 
+                    {"char_class", p->characterClass}, 
+                    {"hp", p->hp}, 
+                    {"max_hp", p->maxHp}, 
+                    {"level", p->level}, 
+                    {"xp", p->xp},
+                    {"max_xp", GameLogic::getLevelData(p->level).xpToNextLevel},
+                    {"shield", p->shield}, 
+                    {"buffs", buffList},
+                    {"gravity_enabled", p->gravityEnabled},
+                    {"speed_multiplier", p->speedMultiplier},
+                    {"is_gm", p->isGMFlagged},
+                    {"inventory_size", GameLogic::getInventorySize(p->level)}
+                };
+                SocketHandlers::broadcastToMap(p->mapName, s.dump());
             }
-            if (!mobList.empty()) {
-                SocketHandlers::sendToPlayer(p->username, json{{"type", "mob_sync"}, {"mobs", mobList}}.dump());
-            }
+        }
+
+        // Send Pre-calculated Mob Sync
+        if (mapMobSync.count(p->mapName)) {
+            SocketHandlers::sendToPlayer(p->username, mapMobSync[p->mapName]);
+        }
     }
 }
 

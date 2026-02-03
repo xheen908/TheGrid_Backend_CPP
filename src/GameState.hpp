@@ -130,6 +130,7 @@ public:
     
     // Thread-safe snapshot of active players
     std::vector<std::shared_ptr<Player>> getPlayersSnapshot();
+    std::vector<Mob> getMobsSnapshot();
     
     // Returns ref to mobs, but caller MUST handle locking if they keep the reference
     // Better: return a copy or handle locking inside.

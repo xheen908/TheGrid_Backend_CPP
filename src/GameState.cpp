@@ -55,6 +55,11 @@ std::vector<std::shared_ptr<Player>> GameState::getPlayersSnapshot() {
     return snapshot;
 }
 
+std::vector<Mob> GameState::getMobsSnapshot() {
+    std::lock_guard<std::recursive_mutex> lock(mtx);
+    return mobs;
+}
+
 std::vector<Mob>& GameState::getMobs() {
     return mobs;
 }
