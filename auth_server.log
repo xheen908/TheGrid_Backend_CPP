@@ -1086,3 +1086,41 @@
 [2026-02-04 23:12:05.971] [DB] Found 3 chars.
 [2026-02-04 23:16:12.715] [DB] Fetching chars for admin
 [2026-02-04 23:16:12.718] [DB] Found 3 chars.
+[2026-02-04 23:18:50.655] =========================================
+[2026-02-04 23:18:50.659] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-04 23:18:50.659] =========================================
+[2026-02-04 23:18:50.683] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-04 23:19:08.385] [DB] Fetching chars for admin
+[2026-02-04 23:19:08.388] [DB] Found 3 chars.
+[2026-02-04 23:25:00.209] [DB] Fetching chars for admin
+[2026-02-04 23:25:00.212] [DB] Found 3 chars.
+[2026-02-04 23:26:26.830] [DB] Fetching chars for admin
+[2026-02-04 23:26:26.832] [DB] Found 3 chars.
+[2026-02-04 23:32:52.187] [DB] Fetching chars for admin
+[2026-02-04 23:32:52.190] [DB] Found 3 chars.
+[2026-02-04 23:44:03.987] [DB] Fetching chars for admin
+[2026-02-04 23:44:03.990] [DB] Found 3 chars.
+[2026-02-04 23:47:05.131] [DB] Fetching chars for admin
+[2026-02-04 23:47:05.134] [DB] Found 3 chars.
+[2026-02-04 23:48:39.747] [DB] Fetching chars for admin
+[2026-02-04 23:48:39.749] [DB] Found 3 chars.
+[2026-02-04 23:50:44.109] [DB] Fetching chars for admin
+[2026-02-04 23:50:44.112] [DB] Found 3 chars.
+[2026-02-04 23:53:40.105] [DB] Fetching chars for admin
+[2026-02-04 23:53:40.107] [DB] Found 3 chars.
+[2026-02-04 23:57:01.932] [DB] Fetching chars for admin
+[2026-02-04 23:57:01.935] [DB] Found 3 chars.
+[2026-02-04 23:58:19.995] [DB] Fetching chars for admin
+[2026-02-04 23:58:19.998] [DB] Found 3 chars.
+[2026-02-05 00:05:16.995] [DB] Fetching chars for admin
+[2026-02-05 00:05:16.998] [DB] Found 3 chars.
+[2026-02-05 00:08:59.012] [DB] Fetching chars for admin
+[2026-02-05 00:08:59.015] [DB] Found 3 chars.
+[2026-02-05 00:10:41.294] [DB] Fetching chars for admin
+[2026-02-05 00:10:41.297] [DB] Found 3 chars.
+[2026-02-05 00:12:05.160] [DB] Fetching chars for admin
+[2026-02-05 00:12:05.163] [DB] Found 3 chars.
+[2026-02-05 00:13:24.286] [DB] Fetching chars for admin
+[2026-02-05 00:13:24.288] [DB] Found 3 chars.
+[2026-02-05 00:15:38.169] [DB] Fetching chars for admin
+[2026-02-05 00:15:38.171] [DB] Found 3 chars.
