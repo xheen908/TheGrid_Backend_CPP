@@ -53,16 +53,23 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(uwebsockets)
 
 # Executables
-add_executable(thegrid_auth src/AuthMain.cpp src/Database.cpp)
+add_executable(thegrid_auth src/AuthMain.cpp src/Database.cpp src/logic/GameLogicScaling.cpp)
 add_executable(thegrid_world 
     src/WorldMain.cpp 
     src/Server.cpp 
     src/GameState.cpp 
-    src/GameLogic.cpp 
     src/Database.cpp
     src/SocketHandlers.cpp
     src/GMCommands.cpp
     src/ChatHandlers.cpp
+    src/gm/GMUtil.cpp
+    src/gm/GMPlayerCommands.cpp
+    src/gm/GMTeleportCommands.cpp
+    src/gm/GMSystemCommands.cpp
+    src/logic/GameLogicScaling.cpp
+    src/logic/GameLogicCombat.cpp
+    src/logic/GameLogicPlayer.cpp
+    src/logic/MobAI.cpp
 )
 
 # Fetch libuv

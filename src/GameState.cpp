@@ -72,6 +72,17 @@ std::vector<GameObject> GameState::getGameObjects(const std::string& mapName) {
     return {};
 }
 
+ItemTemplate GameState::getItemTemplate(const std::string& itemId) {
+    std::lock_guard<std::recursive_mutex> lock(mtx);
+    if (itemTemplates.find(itemId) != itemTemplates.end()) {
+        return itemTemplates.at(itemId);
+    }
+    ItemTemplate t;
+    t.itemId = itemId;
+    t.name = "Unknown Item";
+    return t;
+}
+
 int GameState::getRespawnRate(const std::string& mapName) {
     if (mapSettings.find(mapName) != mapSettings.end()) {
         return mapSettings.at(mapName).value("respawnRate", 30);

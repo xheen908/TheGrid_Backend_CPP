@@ -359,7 +359,7 @@ std::map<std::string, ItemTemplate> Database::loadItemTemplates() {
     std::map<std::string, ItemTemplate> templates;
     if (!conn) return templates;
 
-    std::string query = "SELECT slug, name, description, type, rarity, component_data FROM world_db.item_templates";
+    std::string query = "SELECT item_id, name, description, type, rarity, component_data FROM world_db.item_templates";
     if (mysql_query(conn, query.c_str())) {
         Logger::log("[DB] loadItemTemplates Error: " + std::string(mysql_error(conn)));
         return templates;
@@ -371,7 +371,7 @@ std::map<std::string, ItemTemplate> Database::loadItemTemplates() {
     MYSQL_ROW row;
     while ((row = mysql_fetch_row(result))) {
         ItemTemplate t;
-        t.slug = row[0];
+        t.itemId = row[0];
         t.name = row[1];
         t.description = row[2] ? row[2] : "";
         t.type = row[3];
@@ -382,7 +382,7 @@ std::map<std::string, ItemTemplate> Database::loadItemTemplates() {
         } else {
             t.componentData = json::object();
         }
-        templates[t.slug] = t;
+        templates[t.itemId] = t;
     }
     mysql_free_result(result);
     Logger::log("[DB] Loaded " + std::to_string(templates.size()) + " item templates.");
@@ -395,7 +395,7 @@ bool Database::loadInventory(Player& player) {
     if (!conn) return false;
 
     player.inventory.clear();
-    std::string query = "SELECT item_slug, slot_index, quantity, is_equipped FROM charakter_db.character_inventory WHERE character_id = " + std::to_string(player.dbId);
+    std::string query = "SELECT item_id, slot_index, quantity, is_equipped FROM charakter_db.character_inventory WHERE character_id = " + std::to_string(player.dbId);
     
     if (mysql_query(conn, query.c_str())) {
         Logger::log("[DB] loadInventory Error: " + std::string(mysql_error(conn)));
@@ -408,7 +408,7 @@ bool Database::loadInventory(Player& player) {
     MYSQL_ROW row;
     while ((row = mysql_fetch_row(result))) {
         ItemInstance item;
-        item.itemSlug = row[0];
+        item.itemId = row[0];
         item.slotIndex = std::stoi(row[1]);
         item.quantity = std::stoi(row[2]);
         item.isEquipped = std::stoi(row[3]) != 0;
@@ -428,9 +428,9 @@ bool Database::saveInventory(Player& player) {
     mysql_query(conn, delQuery.c_str());
 
     for (const auto& item : player.inventory) {
-        std::string insQuery = "INSERT INTO charakter_db.character_inventory (character_id, item_slug, slot_index, quantity, is_equipped) VALUES (" +
+        std::string insQuery = "INSERT INTO charakter_db.character_inventory (character_id, item_id, slot_index, quantity, is_equipped) VALUES (" +
             std::to_string(player.dbId) + ", '" +
-            item.itemSlug + "', " +
+            item.itemId + "', " +
             std::to_string(item.slotIndex) + ", " +
             std::to_string(item.quantity) + ", " +
             (item.isEquipped ? "1" : "0") + ")";

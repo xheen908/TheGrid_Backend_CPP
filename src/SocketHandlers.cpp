@@ -387,14 +387,81 @@ void SocketHandlers::handleMoveItem(uWS::WebSocket<false, true, PerSocketData>* 
             // Sync inventory back
             json invMsg = {{"type", "inventory_sync"}, {"items", json::array()}};
             for (const auto& item : player->inventory) {
+                auto tmpl = GameState::getInstance().getItemTemplate(item.itemId);
                 invMsg["items"].push_back({
-                    {"slug", item.itemSlug},
+                    {"item_id", item.itemId},
                     {"slot", item.slotIndex},
                     {"quantity", item.quantity},
-                    {"equipped", item.isEquipped}
+                    {"equipped", item.isEquipped},
+                    {"name", tmpl.name},
+                    {"description", tmpl.description},
+                    {"rarity", tmpl.rarity},
+                    {"extra_data", tmpl.componentData}
                 });
             }
             ws->send(invMsg.dump(), uWS::OpCode::TEXT);
+        }
+    }
+}
+
+void SocketHandlers::handleUseItem(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    if (!data) return;
+
+    auto player = GameState::getInstance().getPlayer(data->username);
+    if (!player) return;
+
+    int slotIdx = j.value("slot_index", -1);
+    if (slotIdx < 0) return;
+
+    {
+        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+        
+        auto it = std::find_if(player->inventory.begin(), player->inventory.end(), 
+            [slotIdx](const ItemInstance& item) { return item.slotIndex == slotIdx; });
+
+        if (it != player->inventory.end()) {
+            std::string slug = it->itemId;
+            bool consumed = false;
+
+            if (slug == "2") { // Item ID 2: Health Potion (Full Heal)
+                player->hp = player->maxHp;
+                player->lastStatusSync = 0; // Trigger status update
+                Logger::log("[ITEM] " + player->charName + " used Item ID 2 (Full Heal)");
+                consumed = true;
+            }
+
+            if (consumed) {
+                it->quantity--;
+                if (it->quantity <= 0) {
+                    player->inventory.erase(it);
+                }
+                
+                // Sync inventory
+                json invMsg = {{"type", "inventory_sync"}, {"items", json::array()}};
+                for (const auto& item : player->inventory) {
+                    auto tmpl = GameState::getInstance().getItemTemplate(item.itemId);
+                    invMsg["items"].push_back({
+                        {"item_id", item.itemId},
+                        {"slot", item.slotIndex},
+                        {"quantity", item.quantity},
+                        {"equipped", item.isEquipped},
+                        {"name", tmpl.name},
+                        {"description", tmpl.description},
+                        {"rarity", tmpl.rarity},
+                        {"extra_data", tmpl.componentData}
+                    });
+                }
+                ws->send(invMsg.dump(), uWS::OpCode::TEXT);
+                
+                // Save immediately
+                Database::getInstance().savePlayer(*player);
+                Database::getInstance().saveInventory(*player);
+
+                // Feedback
+                json msg = {{"type", "chat_receive"}, {"mode", "system"}, {"message", "Du hast " + slug + " benutzt."}};
+                ws->send(msg.dump(), uWS::OpCode::TEXT);
+            }
         }
     }
 }

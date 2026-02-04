@@ -6,6 +6,7 @@
 #include "GMCommands.hpp"
 #include "Logger.hpp"
 #include "abilities/AbilityManager.hpp"
+#include "logic/MobAI.hpp"
 #include <iostream>
 #include <chrono>
 #include <cmath>
@@ -89,11 +90,16 @@ void WorldServer::start(int port) {
                     {
                         std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
                         for (const auto& item : player->inventory) {
+                            auto tmpl = GameState::getInstance().getItemTemplate(item.itemId);
                             invMsg["items"].push_back({
-                                {"slug", item.itemSlug},
+                                {"item_id", item.itemId},
                                 {"slot", item.slotIndex},
                                 {"quantity", item.quantity},
-                                {"equipped", item.isEquipped}
+                                {"equipped", item.isEquipped},
+                                {"name", tmpl.name},
+                                {"description", tmpl.description},
+                                {"rarity", tmpl.rarity},
+                                {"extra_data", tmpl.componentData}
                             });
                         }
                     }
@@ -138,15 +144,6 @@ void WorldServer::start(int port) {
                                 auto rot = j["rotation"];
                                 player->rotation = {rot.value("x", 0.0f), rot.value("y", 0.0f), rot.value("z", 0.0f)};
                             }
-                            
-                            // Interrupt casting if moved and spell doesn't allow it
-                            if (moved && player->isCasting) {
-                                auto ability = AbilityManager::getInstance().getAbility(player->currentSpell);
-                                if (ability && !ability->canCastWhileMoving()) {
-                                    // We need to interrupt, but interrupt uses pLock too.
-                                    // So we'll call a special interrupt that assumes lock is held or defer it.
-                                }
-                            }
                         }
                         
                         if (moved) {
@@ -183,6 +180,8 @@ void WorldServer::start(int port) {
                         SocketHandlers::handlePartyKick(ws, j);
                     } else if (type == "move_item") {
                         SocketHandlers::handleMoveItem(ws, j);
+                    } else if (type == "use_item") {
+                        SocketHandlers::handleUseItem(ws, j);
                     }
                 }
             } catch (const std::exception& e) {
@@ -251,21 +250,26 @@ void WorldServer::tick() {
         }
     }
 
-    // --- Mob Update (Logic & Respawn) ---
+    // --- Mob Update (Logic, AI & Respawn) ---
     {
         std::lock_guard<std::recursive_mutex> lock(GameState::getInstance().getMtx());
         auto& mobs = GameState::getInstance().getMobs();
+        
+        // Dynamic Scaling
         for (auto& m : mobs) {
-            // Apply Dynamic Level Scaling
             GameLogic::scaleMobToMap(m, mapLevelMap, mapPartySizeMap);
-
+            
             if (m.hp <= 0 && m.respawnAt > 0 && nowMs >= m.respawnAt) {
                 m.hp = m.maxHp;
                 m.respawnAt = 0;
                 m.debuffs.clear();
+                m.target = ""; // Reset target on respawn
                 Logger::log("[MOB] Respawned: " + m.name + " (" + m.id + ")");
             }
         }
+
+        // Mob AI (Movement, Combat)
+        MobAI::update(nowMs);
     }
 
     // --- Optimized Mob Sync (Pre-calculate per map once per tick) ---

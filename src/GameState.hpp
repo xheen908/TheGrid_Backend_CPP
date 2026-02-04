@@ -24,7 +24,7 @@ struct Debuff {
 };
 
 struct ItemTemplate {
-    std::string slug;
+    std::string itemId;
     std::string name;
     std::string description;
     std::string type; // Weapon, Armor, Consumable, etc.
@@ -33,7 +33,7 @@ struct ItemTemplate {
 };
 
 struct ItemInstance {
-    std::string itemSlug;
+    std::string itemId;
     int slotIndex;
     int quantity;
     bool isEquipped;
@@ -137,6 +137,7 @@ public:
     // For simplicity of porting existing logic:
     std::vector<Mob>& getMobs();
     std::vector<GameObject> getGameObjects(const std::string& mapName);
+    ItemTemplate getItemTemplate(const std::string& itemId);
     std::recursive_mutex& getMtx() { return mtx; }
 
     void addParty(std::shared_ptr<Party> party);

@@ -63,11 +63,11 @@ CREATE TABLE IF NOT EXISTS `characters` (
   UNIQUE KEY `char_name` (`char_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=126 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportiere Daten aus Tabelle charakter_db.characters: ~7 rows (ungefähr)
+-- Exportiere Daten aus Tabelle charakter_db.characters: ~5 rows (ungefähr)
 INSERT INTO `characters` (`id`, `user_id`, `char_name`, `character_class`, `map_name`, `pos_x`, `pos_y`, `pos_z`, `rotation`, `level`, `xp`, `hp`, `max_hp`, `mana`, `max_mana`, `last_login`) VALUES
-	(103, 2, 'Yheen', 'Mage', 'WorldMap0', -8.98885, 2.37, -4.81015, 2.75, 15, 5390, 336, 925, 400, 400, '2026-02-03 18:29:20'),
-	(104, 2, 'Xheen', 'Mage', 'WorldMap0', -22.3661, 0.157226, -23.3214, 0.24, 60, 0, 8800, 8800, 1300, 1300, '2026-02-03 17:23:25'),
-	(118, 3, 'Mage', 'Mage', 'WorldMap0', -0.138051, 0.000154, -7.23019, 0, 15, 4304, 0, 925, 400, 400, '2026-01-31 19:07:10'),
+	(103, 2, 'Yheen', 'Mage', 'WorldMap0', -3.97457, 2.37008, -10.0436, 2.75, 1, 0, 151, 151, 99, 99, '2026-02-04 03:53:40'),
+	(104, 2, 'Xheen', 'Mage', 'WorldMap0', -3.28767, 2.37008, -7.84112, 0.24, 1, 0, 151, 151, 99, 99, '2026-02-04 03:56:54'),
+	(118, 3, 'Mage', 'Mage', 'Arena2', 0.396924, 2.50043, 18.326, 0, 15, 4424, 0, 1401, 400, 924, '2026-02-04 03:00:03'),
 	(119, 3, 'Barbar', 'Barbarian', 'WorldMap0', 0, 0, 0, 0, 1, 0, 125, 125, 120, 120, '2026-01-31 17:04:24'),
 	(121, 3, 'Ranger', 'Ranger', 'WorldMap0', 0, 0, 0, 0, 1, 0, 125, 125, 120, 120, '2026-01-31 17:04:53'),
 	(122, 3, 'Knight', 'Knight', 'WorldMap0', 0, 0, 0, 0, 1, 0, 125, 125, 120, 120, '2026-01-31 17:05:06'),
@@ -77,18 +77,23 @@ INSERT INTO `characters` (`id`, `user_id`, `char_name`, `character_class`, `map_
 CREATE TABLE IF NOT EXISTS `character_inventory` (
   `id` int NOT NULL AUTO_INCREMENT,
   `character_id` int NOT NULL,
-  `item_slug` varchar(50) NOT NULL,
+  `item_id` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `slot_index` int NOT NULL,
   `quantity` int DEFAULT '1',
   `is_equipped` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `character_id` (`character_id`),
   CONSTRAINT `character_inventory_ibfk_1` FOREIGN KEY (`character_id`) REFERENCES `characters` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=141 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportiere Daten aus Tabelle charakter_db.character_inventory: ~1 rows (ungefähr)
-INSERT INTO `character_inventory` (`id`, `character_id`, `item_slug`, `slot_index`, `quantity`, `is_equipped`) VALUES
-	(3, 103, 'health_potion_01', 1, 1, 0);
+-- Exportiere Daten aus Tabelle charakter_db.character_inventory: ~6 rows (ungefähr)
+INSERT INTO `character_inventory` (`id`, `character_id`, `item_id`, `slot_index`, `quantity`, `is_equipped`) VALUES
+	(107, 103, '1', 0, 1, 0),
+	(108, 103, '2', 1, 20, 0),
+	(137, 104, '2', 1, 13, 0),
+	(138, 104, '1', 0, 1, 0),
+	(139, 104, '3', 2, 1, 0),
+	(140, 104, '4', 3, 1, 0);
 
 
 -- Exportiere Datenbank-Struktur für world_db
@@ -125,20 +130,21 @@ INSERT INTO `game_objects` (`id`, `map_name`, `type`, `pos_x`, `pos_y`, `pos_z`,
 
 -- Exportiere Struktur von Tabelle world_db.item_templates
 CREATE TABLE IF NOT EXISTS `item_templates` (
-  `slug` varchar(50) NOT NULL,
+  `item_id` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `name` varchar(100) NOT NULL,
   `description` text,
   `type` enum('Weapon','Armor','Consumable','Quest','Material') NOT NULL DEFAULT 'Material',
   `rarity` enum('Common','Rare','Epic','Legendary') NOT NULL DEFAULT 'Common',
   `component_data` json DEFAULT NULL,
-  PRIMARY KEY (`slug`)
+  PRIMARY KEY (`item_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportiere Daten aus Tabelle world_db.item_templates: ~3 rows (ungefähr)
-INSERT INTO `item_templates` (`slug`, `name`, `description`, `type`, `rarity`, `component_data`) VALUES
-	('health_potion_01', 'Heiltrank', 'Heilt 50 HP.', 'Consumable', 'Common', '{"value": 50, "effect": "heal"}'),
-	('iron_sword_01', 'Eisenschwert', 'Ein einfaches Schwert aus Eisen.', 'Weapon', 'Common', '{"slot": "MainHand", "stats": {"strength": 5}}'),
-	('mythic_chest_01', 'Mythische Rüstung', 'Eine legendäre Rüstung.', 'Armor', 'Legendary', '{"slot": "Chest", "stats": {"armor": 50, "stamina": 20}}');
+-- Exportiere Daten aus Tabelle world_db.item_templates: ~4 rows (ungefähr)
+INSERT INTO `item_templates` (`item_id`, `name`, `description`, `type`, `rarity`, `component_data`) VALUES
+	('1', 'GM Kodex', 'Ein heiliges Relikt für Game Master.', 'Quest', 'Legendary', '{"action": "open_gm_menu", "yellow_text": "Öffnet das GM Menü."}'),
+	('2', 'Heiltrank', 'Ein erfrischendes Gebräu.', 'Consumable', 'Common', '{"value": 50, "effect": "heal", "yellow_text": "Heilt alle HP sofort."}'),
+	('3', 'Eisenschwert', 'Ein einfaches Schwert aus Eisen.', 'Weapon', 'Common', '{"slot": "MainHand", "stats": {"strength": 5}}'),
+	('4', 'Mythische Rüstung', 'Eine legendäre Rüstung.', 'Armor', 'Legendary', '{"slot": "Chest", "stats": {"armor": 50, "stamina": 20}}');
 
 -- Exportiere Struktur von Tabelle world_db.maps
 CREATE TABLE IF NOT EXISTS `maps` (

@@ -17,6 +17,7 @@ public:
     static void handlePartyLeave(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j);
     static void handlePartyKick(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j);
     static void handleMoveItem(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j);
+    static void handleUseItem(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j);
     static void syncGameObjects(uWS::WebSocket<false, true, PerSocketData>* ws, const std::string& mapName);
     static void broadcastToMap(const std::string& mapName, const std::string& message, uWS::WebSocket<false, true, PerSocketData>* exclude = nullptr);
     static void sendSafe(uWS::WebSocket<false, true, PerSocketData>* ws, const std::string& message);
