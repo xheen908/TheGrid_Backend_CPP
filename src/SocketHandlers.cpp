@@ -198,6 +198,7 @@ void SocketHandlers::handlePartyResponse(uWS::WebSocket<false, true, PerSocketDa
             auto p = GameState::getInstance().getPlayer(mName);
             if (p) {
                 memberList.push_back({
+                    {"username", p->username},
                     {"name", p->charName}, {"hp", p->hp}, {"max_hp", p->maxHp}, 
                     {"mana", p->mana}, {"max_mana", p->maxMana},
                     {"level", p->level}, {"is_leader", p->username == party->leaderName},
@@ -242,6 +243,7 @@ void SocketHandlers::handlePartyLeave(uWS::WebSocket<false, true, PerSocketData>
                 auto p = GameState::getInstance().getPlayer(mName);
                 if (p) {
                     memberList.push_back({
+                        {"username", p->username},
                         {"name", p->charName}, {"hp", p->hp}, {"max_hp", p->maxHp}, 
                         {"mana", p->mana}, {"max_mana", p->maxMana},
                         {"level", p->level}, {"is_leader", p->username == party->leaderName},
@@ -311,6 +313,7 @@ void SocketHandlers::handlePartyKick(uWS::WebSocket<false, true, PerSocketData>*
                 auto p = GameState::getInstance().getPlayer(mName);
                 if (p) {
                     memberList.push_back({
+                        {"username", p->username},
                         {"name", p->charName}, {"hp", p->hp}, {"max_hp", p->maxHp}, 
                         {"mana", p->mana}, {"max_mana", p->maxMana},
                         {"level", p->level}, {"is_leader", p->username == party->leaderName},
@@ -459,11 +462,324 @@ void SocketHandlers::handleUseItem(uWS::WebSocket<false, true, PerSocketData>* w
                 Database::getInstance().saveInventory(*player);
 
                 // Feedback
-                json msg = {{"type", "chat_receive"}, {"mode", "system"}, {"message", "Du hast " + slug + " benutzt."}};
+                auto tmpl = GameState::getInstance().getItemTemplate(it->itemId);
+                std::string itemLink = "[color=#00FFFF][url=item:" + it->itemId + "]" + tmpl.name + "[/url][/color]";
+                json msg = {{"type", "chat_receive"}, {"mode", "system"}, {"message", "Du hast " + itemLink + " benutzt."}};
                 ws->send(msg.dump(), uWS::OpCode::TEXT);
             }
         }
     }
+}
+
+void SocketHandlers::handleDestroyItem(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    if (!data) return;
+
+    auto player = GameState::getInstance().getPlayer(data->username);
+    if (!player) return;
+
+    int slotIdx = j.value("slot_index", -1);
+    if (slotIdx < 0) return;
+
+    {
+        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+        
+        auto it = std::find_if(player->inventory.begin(), player->inventory.end(), 
+            [slotIdx](const ItemInstance& item) { return item.slotIndex == slotIdx; });
+
+        if (it != player->inventory.end()) {
+            std::string itemName = GameState::getInstance().getItemTemplate(it->itemId).name;
+            player->inventory.erase(it);
+            
+            Logger::log("[INV] player " + player->charName + " destroyed item in slot " + std::to_string(slotIdx));
+            
+            // Sync inventory
+            json invMsg = {{"type", "inventory_sync"}, {"items", json::array()}};
+            for (const auto& item : player->inventory) {
+                auto tmpl = GameState::getInstance().getItemTemplate(item.itemId);
+                invMsg["items"].push_back({
+                    {"item_id", item.itemId},
+                    {"slot", item.slotIndex},
+                    {"quantity", item.quantity},
+                    {"equipped", item.isEquipped},
+                    {"name", tmpl.name},
+                    {"description", tmpl.description},
+                    {"rarity", tmpl.rarity},
+                    {"extra_data", tmpl.componentData}
+                });
+            }
+            ws->send(invMsg.dump(), uWS::OpCode::TEXT);
+            
+            // Save immediately
+            Database::getInstance().saveInventory(*player);
+
+            // Feedback
+            std::string itemLink = "[color=#00FFFF][url=item:" + it->itemId + "]" + itemName + "[/url][/color]";
+            json msg = {{"type", "chat_receive"}, {"mode", "system"}, {"message", "Gegenstand " + itemLink + " wurde zerstört."}};
+            ws->send(msg.dump(), uWS::OpCode::TEXT);
+        }
+    }
+}
+
+// --- Trading Helpers ---
+
+static void sendTradeUpdate(std::shared_ptr<Player> p1, std::shared_ptr<Player> p2, std::shared_ptr<Trade> trade) {
+    auto formatItems = [](const std::vector<ItemInstance>& items) {
+        json arr = json::array();
+        for (const auto& item : items) {
+            auto tmpl = GameState::getInstance().getItemTemplate(item.itemId);
+            arr.push_back({
+                {"item_id", item.itemId},
+                {"quantity", item.quantity},
+                {"name", tmpl.name},
+                {"description", tmpl.description},
+                {"rarity", tmpl.rarity},
+                {"extra_data", tmpl.componentData}
+            });
+        }
+        return arr;
+    };
+
+    if (p1 && p1->ws) {
+        json j1 = {
+            {"type", "trade_update"},
+            {"my_items", formatItems(trade->items1)},
+            {"partner_items", formatItems(trade->items2)},
+            {"my_ready", trade->ready1},
+            {"partner_ready", trade->ready2}
+        };
+        ((uWS::WebSocket<false, true, PerSocketData>*)p1->ws)->send(j1.dump(), uWS::OpCode::TEXT);
+    }
+
+    if (p2 && p2->ws) {
+        json j2 = {
+            {"type", "trade_update"},
+            {"my_items", formatItems(trade->items2)},
+            {"partner_items", formatItems(trade->items1)},
+            {"my_ready", trade->ready2},
+            {"partner_ready", trade->ready1}
+        };
+        ((uWS::WebSocket<false, true, PerSocketData>*)p2->ws)->send(j2.dump(), uWS::OpCode::TEXT);
+    }
+}
+
+void SocketHandlers::handleTradeRequest(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    auto player = GameState::getInstance().getPlayer(data->username);
+    std::string targetUsername = j.value("target", ""); // Technical ID (username)
+    
+    auto target = GameState::getInstance().getPlayer(targetUsername);
+    if (!target || !target->ws || target->username == player->username) {
+        json failure = {{"type", "chat_receive"}, {"mode", "system"}, {"message", "Handel fehlgeschlagen: Spieler nicht gefunden oder ungültig."}};
+        ws->send(failure.dump(), uWS::OpCode::TEXT);
+        return;
+    }
+
+    // TODO: Check distance
+
+    json msg = {
+        {"type", "trade_invited"}, 
+        {"from_user", player->username}, 
+        {"from_char", player->charName}
+    };
+    ((uWS::WebSocket<false, true, PerSocketData>*)target->ws)->send(msg.dump(), uWS::OpCode::TEXT);
+    
+    Logger::log("[TRADE] " + player->charName + " invited " + target->charName);
+}
+
+void SocketHandlers::handleTradeResponse(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    auto player = GameState::getInstance().getPlayer(data->username);
+    std::string partnerUsername = j.value("partner", ""); // Technical ID (username)
+    bool accepted = j.value("accepted", false);
+
+    auto partner = GameState::getInstance().getPlayer(partnerUsername);
+    if (!partner || !partner->ws) return;
+
+    if (accepted) {
+        auto trade = std::make_shared<Trade>();
+        trade->id = player->username + "_" + partner->username;
+        trade->p1 = player->username;
+        trade->p2 = partner->username;
+        GameState::getInstance().addTrade(trade);
+
+        json msg1 = {{"type", "trade_started"}, {"partner", partner->charName}};
+        ws->send(msg1.dump(), uWS::OpCode::TEXT);
+
+        json msg2 = {{"type", "trade_started"}, {"partner", player->charName}};
+        ((uWS::WebSocket<false, true, PerSocketData>*)partner->ws)->send(msg2.dump(), uWS::OpCode::TEXT);
+        
+        Logger::log("[TRADE] Started between " + player->charName + " and " + partner->charName);
+        sendTradeUpdate(player, partner, trade);
+    }
+}
+
+void SocketHandlers::handleTradeAddItem(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    auto player = GameState::getInstance().getPlayer(data->username);
+    auto trade = GameState::getInstance().getTradeForPlayer(player->username);
+    if (!trade) return;
+
+    int slotIdx = j.value("slot_index", -1);
+    
+    std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+    auto it = std::find_if(player->inventory.begin(), player->inventory.end(), 
+        [slotIdx](const ItemInstance& item) { return item.slotIndex == slotIdx; });
+
+    if (it != player->inventory.end()) {
+        auto& items = (trade->p1 == player->username) ? trade->items1 : trade->items2;
+        if (items.size() < 8) {
+            items.push_back(*it);
+            trade->ready1 = trade->ready2 = false; // Reset ready on change
+            trade->confirmed1 = trade->confirmed2 = false;
+            
+            auto p2name = (trade->p1 == player->username) ? trade->p2 : trade->p1;
+            auto p2 = GameState::getInstance().getPlayer(p2name);
+            sendTradeUpdate(player, p2, trade);
+        }
+    }
+}
+
+void SocketHandlers::handleTradeRemoveItem(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    auto player = GameState::getInstance().getPlayer(data->username);
+    auto trade = GameState::getInstance().getTradeForPlayer(player->username);
+    if (!trade) return;
+
+    int tradeSlotIdx = j.value("trade_slot", -1);
+    auto& items = (trade->p1 == player->username) ? trade->items1 : trade->items2;
+    
+    if (tradeSlotIdx >= 0 && tradeSlotIdx < (int)items.size()) {
+        items.erase(items.begin() + tradeSlotIdx);
+        trade->ready1 = trade->ready2 = false; 
+        trade->confirmed1 = trade->confirmed2 = false;
+
+        auto p2name = (trade->p1 == player->username) ? trade->p2 : trade->p1;
+        auto p2 = GameState::getInstance().getPlayer(p2name);
+        sendTradeUpdate(player, p2, trade);
+    }
+}
+
+void SocketHandlers::handleTradeReady(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    auto player = GameState::getInstance().getPlayer(data->username);
+    auto trade = GameState::getInstance().getTradeForPlayer(player->username);
+    if (!trade) return;
+
+    bool ready = j.value("ready", false);
+    if (trade->p1 == player->username) trade->ready1 = ready;
+    else trade->ready2 = ready;
+
+    trade->confirmed1 = trade->confirmed2 = false;
+
+    auto p2name = (trade->p1 == player->username) ? trade->p2 : trade->p1;
+    auto p2 = GameState::getInstance().getPlayer(p2name);
+    sendTradeUpdate(player, p2, trade);
+}
+
+void SocketHandlers::handleTradeConfirm(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    auto p1 = GameState::getInstance().getPlayer(data->username);
+    auto trade = GameState::getInstance().getTradeForPlayer(p1->username);
+    if (!trade || !trade->ready1 || !trade->ready2) return;
+
+    if (trade->p1 == p1->username) trade->confirmed1 = true;
+    else trade->confirmed2 = true;
+
+    if (trade->confirmed1 && trade->confirmed2) {
+        // PERFOM TRADE
+        auto p2 = GameState::getInstance().getPlayer(trade->p1 == p1->username ? trade->p2 : trade->p1);
+        
+        {
+            std::lock_guard<std::recursive_mutex> l1(p1->pMtx);
+            std::lock_guard<std::recursive_mutex> l2(p2->pMtx);
+
+            // Verify items still exist in inventory
+            auto verify = [](std::shared_ptr<Player> p, const std::vector<ItemInstance>& items) {
+                for (const auto& ti : items) {
+                    auto it = std::find_if(p->inventory.begin(), p->inventory.end(), 
+                        [&ti](const ItemInstance& inv) { return inv.itemId == ti.itemId && inv.slotIndex == ti.slotIndex && inv.quantity >= ti.quantity; });
+                    if (it == p->inventory.end()) return false;
+                }
+                return true;
+            };
+
+            if (verify(p1, (trade->p1 == p1->username ? trade->items1 : trade->items2)) &&
+                verify(p2, (trade->p2 == p2->username ? trade->items2 : trade->items1))) 
+            {
+                // Transfer items
+                auto transfer = [](std::shared_ptr<Player> from, std::shared_ptr<Player> to, const std::vector<ItemInstance>& items) {
+                    for (const auto& ti : items) {
+                        // Remove from sender
+                        auto it = std::find_if(from->inventory.begin(), from->inventory.end(), 
+                            [&ti](const ItemInstance& inv) { return inv.itemId == ti.itemId && inv.slotIndex == ti.slotIndex; });
+                        if (it != from->inventory.end()) {
+                            it->quantity -= ti.quantity;
+                            if (it->quantity <= 0) from->inventory.erase(it);
+                        }
+
+                        // Add to receiver (find free slot)
+                        int freeSlot = -1;
+                        for (int s = 0; s < 30; ++s) { // Max 30 slots
+                            bool taken = false;
+                            for (const auto& i : to->inventory) if (i.slotIndex == s) taken = true;
+                            if (!taken) { freeSlot = s; break; }
+                        }
+                        if (freeSlot != -1) {
+                            ItemInstance ni = ti;
+                            ni.slotIndex = freeSlot;
+                            ni.isEquipped = false;
+                            to->inventory.push_back(ni);
+                        }
+                    }
+                };
+
+                transfer(p1, p2, (trade->p1 == p1->username ? trade->items1 : trade->items2));
+                transfer(p2, p1, (trade->p1 == p1->username ? trade->items2 : trade->items1));
+
+                Database::getInstance().saveInventory(*p1);
+                Database::getInstance().saveInventory(*p2);
+
+                json success = {{"type", "trade_complete"}};
+                ((uWS::WebSocket<false, true, PerSocketData>*)p1->ws)->send(success.dump(), uWS::OpCode::TEXT);
+                ((uWS::WebSocket<false, true, PerSocketData>*)p2->ws)->send(success.dump(), uWS::OpCode::TEXT);
+
+                // Trigger inventory sync
+                // (Existing handleInventorySync logic needed here, or just manual sync message)
+                auto sendInv = [](std::shared_ptr<Player> p) {
+                    json invMsg = {{"type", "inventory_sync"}, {"items", json::array()}};
+                    for (const auto& item : p->inventory) {
+                        auto tmpl = GameState::getInstance().getItemTemplate(item.itemId);
+                        invMsg["items"].push_back({
+                            {"item_id", item.itemId}, {"slot", item.slotIndex}, {"quantity", item.quantity},
+                            {"equipped", item.isEquipped}, {"name", tmpl.name}, {"description", tmpl.description},
+                            {"rarity", tmpl.rarity}, {"extra_data", tmpl.componentData}
+                        });
+                    }
+                    ((uWS::WebSocket<false, true, PerSocketData>*)p->ws)->send(invMsg.dump(), uWS::OpCode::TEXT);
+                };
+                sendInv(p1);
+                sendInv(p2);
+            }
+        }
+        GameState::getInstance().removeTrade(trade->id);
+    }
+}
+
+void SocketHandlers::handleTradeCancel(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    auto p1 = GameState::getInstance().getPlayer(data->username);
+    auto trade = GameState::getInstance().getTradeForPlayer(p1->username);
+    if (!trade) return;
+
+    auto p2name = (trade->p1 == p1->username) ? trade->p2 : trade->p1;
+    auto p2 = GameState::getInstance().getPlayer(p2name);
+
+    GameState::getInstance().removeTrade(trade->id);
+
+    json msg = {{"type", "trade_canceled"}};
+    ws->send(msg.dump(), uWS::OpCode::TEXT);
+    if (p2 && p2->ws) ((uWS::WebSocket<false, true, PerSocketData>*)p2->ws)->send(msg.dump(), uWS::OpCode::TEXT);
 }
 
 void SocketHandlers::syncGameObjects(uWS::WebSocket<false, true, PerSocketData>* ws, const std::string& mapName) {

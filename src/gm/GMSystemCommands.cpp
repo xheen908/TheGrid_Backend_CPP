@@ -51,6 +51,6 @@ namespace GMCommandsImpl {
     }
 
     void handleHelp(uWS::WebSocket<false, true, PerSocketData>* ws) {
-        GMUtil::sendSystemMessage(ws, "/w, /level, /tele, /invisible, /gm, /tp, /kick, /move, /info, /target, /pos, /gravity, /speed");
+        GMUtil::sendSystemMessage(ws, "/w, /level, /tele, /invisible, /gm, /tp, /kick, /move, /info, /target, /pos, /gravity, /speed, /additem");
     }
 }

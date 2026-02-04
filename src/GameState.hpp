@@ -40,6 +40,18 @@ struct ItemInstance {
     // Helper to get template data if needed
 };
 
+struct Trade {
+    std::string id;
+    std::string p1; // Username
+    std::string p2; // Username
+    std::vector<ItemInstance> items1;
+    std::vector<ItemInstance> items2;
+    bool ready1 = false;
+    bool ready2 = false;
+    bool confirmed1 = false;
+    bool confirmed2 = false;
+};
+
 struct Party {
     std::string id;
     std::string leaderName;
@@ -109,6 +121,7 @@ struct Mob {
     int dbLevel; // Original Level from DB
     int dbMaxHp; // Original HP from DB for scaling
     std::string mobType; // Normal, Elite, Rare, Boss
+    std::string modelId;
     std::string mapName;
     Vector3 transform;
     float rotation;
@@ -146,6 +159,12 @@ public:
     std::vector<std::shared_ptr<Party>> getPartiesSnapshot();
 
     int getRespawnRate(const std::string& mapName);
+    
+    void addTrade(std::shared_ptr<Trade> trade);
+    void removeTrade(const std::string& tradeId);
+    std::shared_ptr<Trade> getTrade(const std::string& tradeId);
+    std::shared_ptr<Trade> getTradeForPlayer(const std::string& username);
+
     std::map<std::string, json> mapSettings;
 
 private:
@@ -155,6 +174,7 @@ private:
     std::map<std::string, ItemTemplate> itemTemplates;
     std::map<std::string, std::vector<GameObject>> gameObjects; // map_name -> current objects
     std::map<std::string, std::shared_ptr<Party>> parties;
+    std::map<std::string, std::shared_ptr<Trade>> activeTrades;
     std::recursive_mutex mtx;
 };
 

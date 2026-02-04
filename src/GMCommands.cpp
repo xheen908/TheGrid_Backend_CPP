@@ -29,6 +29,8 @@ bool GMCommands::handleCommand(uWS::WebSocket<false, true, PerSocketData>* ws, c
         GMCommandsImpl::handleHeal(ws, args, player);
     } else if (cmd == "kick") {
         GMCommandsImpl::handleKick(ws, args);
+    } else if (cmd == "additem" || cmd == "item") {
+        GMCommandsImpl::handleAddItem(ws, args, player);
     } else if (cmd == "info") {
         GMCommandsImpl::handleInfo(ws, args, player);
     } else if (cmd == "pos" || cmd == "gps" || cmd == "coords") {

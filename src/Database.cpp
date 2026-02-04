@@ -279,7 +279,7 @@ std::vector<Mob> Database::loadMobs() {
     std::vector<Mob> mobList;
     if (!conn) return mobList;
 
-    std::string query = "SELECT mob_id, map_name, level, hp, name, mob_type, pos_x, pos_y, pos_z FROM world_db.mobs";
+    std::string query = "SELECT mob_id, map_name, level, hp, name, mob_type, pos_x, pos_y, pos_z, model_id FROM world_db.mobs";
     if (mysql_query(conn, query.c_str())) {
         Logger::log("[DB] LoadMobs Error: " + std::string(mysql_error(conn)));
         return mobList;
@@ -303,6 +303,7 @@ std::vector<Mob> Database::loadMobs() {
         m.hp = m.maxHp;
         m.name = row[4];
         m.mobType = row[5] ? row[5] : "Normal";
+        m.modelId = row[9] ? row[9] : "neon_sphere";
 
         m.transform = {std::stof(row[6]), std::stof(row[7]), std::stof(row[8])};
         m.home = m.transform;

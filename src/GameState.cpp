@@ -114,3 +114,28 @@ std::vector<std::shared_ptr<Party>> GameState::getPartiesSnapshot() {
     for (auto const& [id, p] : parties) snapshot.push_back(p);
     return snapshot;
 }
+
+void GameState::addTrade(std::shared_ptr<Trade> trade) {
+    std::lock_guard<std::recursive_mutex> lock(mtx);
+    activeTrades[trade->id] = trade;
+}
+
+void GameState::removeTrade(const std::string& tradeId) {
+    std::lock_guard<std::recursive_mutex> lock(mtx);
+    activeTrades.erase(tradeId);
+}
+
+std::shared_ptr<Trade> GameState::getTrade(const std::string& tradeId) {
+    std::lock_guard<std::recursive_mutex> lock(mtx);
+    auto it = activeTrades.find(tradeId);
+    if (it != activeTrades.end()) return it->second;
+    return nullptr;
+}
+
+std::shared_ptr<Trade> GameState::getTradeForPlayer(const std::string& username) {
+    std::lock_guard<std::recursive_mutex> lock(mtx);
+    for (auto const& [id, t] : activeTrades) {
+        if (t->p1 == username || t->p2 == username) return t;
+    }
+    return nullptr;
+}

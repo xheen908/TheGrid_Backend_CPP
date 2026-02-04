@@ -213,4 +213,97 @@ namespace GMCommandsImpl {
             GMUtil::sendSystemMessage(ws, "Du hast dich selbst geheilt.");
         }
     }
+
+    void handleAddItem(uWS::WebSocket<false, true, PerSocketData>* ws, const std::vector<std::string>& args, std::shared_ptr<Player> player) {
+        if (args.empty()) {
+            GMUtil::sendSystemMessage(ws, "Benutzung: /additem <item_id> [anzahl]");
+            return;
+        }
+
+        std::string itemId = args[0];
+        int quantity = 1;
+        if (args.size() > 1) {
+            try { quantity = std::stoi(args[1]); } catch (...) {}
+        }
+
+        auto templ = GameState::getInstance().getItemTemplate(itemId);
+        if (templ.name == "Unknown Item" && templ.itemId != itemId) {
+            GMUtil::sendSystemMessage(ws, "Item ID \"" + itemId + "\" nicht in der Datenbank gefunden.");
+            // We continue anyway, maybe it's just missing template data? 
+            // Better to stop if we want to be safe, but let's allow it for now if templ.itemId is at least set.
+        }
+
+        std::string targetId = player->currentTargetId;
+        std::shared_ptr<Player> target = nullptr;
+        
+        if (!targetId.empty()) {
+            target = GMUtil::findPlayer(targetId);
+        }
+
+        if (!target) {
+            target = player;
+        }
+
+        {
+            std::lock_guard<std::recursive_mutex> pLock(target->pMtx);
+            
+            // Find empty slot (max 40 slots for safety)
+            int targetSlot = -1;
+            for (int i = 0; i < 40; ++i) {
+                bool occupied = false;
+                for (auto const& item : target->inventory) {
+                    if (item.slotIndex == i) {
+                        occupied = true;
+                        break;
+                    }
+                }
+                if (!occupied) {
+                    targetSlot = i;
+                    break;
+                }
+            }
+
+            if (targetSlot == -1) {
+                GMUtil::sendSystemMessage(ws, "Inventar von " + target->charName + " ist voll!");
+                return;
+            }
+
+            ItemInstance newItem;
+            newItem.itemId = itemId;
+            newItem.quantity = quantity;
+            newItem.slotIndex = targetSlot;
+            newItem.isEquipped = false;
+            target->inventory.push_back(newItem);
+
+            // Sync inventory back to the target
+            json invMsg = {{"type", "inventory_sync"}, {"items", json::array()}};
+            for (const auto& item : target->inventory) {
+                auto t = GameState::getInstance().getItemTemplate(item.itemId);
+                invMsg["items"].push_back({
+                    {"item_id", item.itemId},
+                    {"slot", item.slotIndex},
+                    {"quantity", item.quantity},
+                    {"equipped", item.isEquipped},
+                    {"name", t.name},
+                    {"description", t.description},
+                    {"rarity", t.rarity},
+                    {"extra_data", t.componentData}
+                });
+            }
+
+            auto targetWs = (uWS::WebSocket<false, true, PerSocketData>*)target->ws;
+            if (targetWs && !target->isDisconnected) {
+                targetWs->send(invMsg.dump(), uWS::OpCode::TEXT);
+                GMUtil::sendSystemMessage(targetWs, "Du hast " + std::to_string(quantity) + "x [" + templ.name + "] erhalten.");
+            }
+
+            if (target != player) {
+                GMUtil::sendSystemMessage(ws, "Gegenstand [" + templ.name + "] an " + target->charName + " gegeben.");
+            } else {
+                GMUtil::sendSystemMessage(ws, "Gegenstand [" + templ.name + "] zu deinem Inventar hinzugefügt.");
+            }
+
+            Database::getInstance().saveInventory(*target);
+        }
+    }
 }

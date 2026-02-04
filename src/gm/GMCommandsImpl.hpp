@@ -22,6 +22,7 @@ namespace GMCommandsImpl {
     void handleGravity(uWS::WebSocket<false, true, PerSocketData>* ws, const std::vector<std::string>& args, std::shared_ptr<Player> player);
     void handleSpeed(uWS::WebSocket<false, true, PerSocketData>* ws, const std::vector<std::string>& args, std::shared_ptr<Player> player);
     void handleHeal(uWS::WebSocket<false, true, PerSocketData>* ws, const std::vector<std::string>& args, std::shared_ptr<Player> player);
+    void handleAddItem(uWS::WebSocket<false, true, PerSocketData>* ws, const std::vector<std::string>& args, std::shared_ptr<Player> player);
     void handleHelp(uWS::WebSocket<false, true, PerSocketData>* ws);
 }
 

@@ -153,7 +153,7 @@ void WorldServer::start(int port) {
                              }
                         }
 
-                        json moveMsg = {{"type", "player_moved"}, {"username", player->charName}, {"char_class", player->characterClass}, {"position", j.value("position", json::object())}, {"rotation", j.value("rotation", json::object())}};
+                        json moveMsg = {{"type", "player_moved"}, {"username", player->username}, {"char_name", player->charName}, {"char_class", player->characterClass}, {"position", j.value("position", json::object())}, {"rotation", j.value("rotation", json::object())}};
                         SocketHandlers::broadcastToMap(player->mapName, moveMsg.dump(), ws);
                     } else if (type == "cast_spell") {
                         SocketHandlers::handleSpellCast(ws, j);
@@ -182,6 +182,22 @@ void WorldServer::start(int port) {
                         SocketHandlers::handleMoveItem(ws, j);
                     } else if (type == "use_item") {
                         SocketHandlers::handleUseItem(ws, j);
+                    } else if (type == "destroy_item") {
+                        SocketHandlers::handleDestroyItem(ws, j);
+                    } else if (type == "trade_request") {
+                        SocketHandlers::handleTradeRequest(ws, j);
+                    } else if (type == "trade_response") {
+                        SocketHandlers::handleTradeResponse(ws, j);
+                    } else if (type == "trade_add_item") {
+                        SocketHandlers::handleTradeAddItem(ws, j);
+                    } else if (type == "trade_remove_item") {
+                        SocketHandlers::handleTradeRemoveItem(ws, j);
+                    } else if (type == "trade_ready") {
+                        SocketHandlers::handleTradeReady(ws, j);
+                    } else if (type == "trade_confirm") {
+                        SocketHandlers::handleTradeConfirm(ws, j);
+                    } else if (type == "trade_cancel") {
+                        SocketHandlers::handleTradeCancel(ws, j);
                     }
                 }
             } catch (const std::exception& e) {
@@ -261,10 +277,11 @@ void WorldServer::tick() {
             
             if (m.hp <= 0 && m.respawnAt > 0 && nowMs >= m.respawnAt) {
                 m.hp = m.maxHp;
+                m.transform = m.home; // Reset to spawn location
                 m.respawnAt = 0;
                 m.debuffs.clear();
                 m.target = ""; // Reset target on respawn
-                Logger::log("[MOB] Respawned: " + m.name + " (" + m.id + ")");
+                Logger::log("[MOB] Respawned: " + m.name + " (" + m.id + ") at home.");
             }
         }
 
@@ -292,7 +309,7 @@ void WorldServer::tick() {
                 }
                 mapLists[m.mapName].push_back({
                     {"id", m.id}, {"name", m.name}, {"hp", m.hp}, {"maxHp", m.maxHp}, 
-                    {"debuffs", dList}, 
+                    {"debuffs", dList}, {"model_id", m.modelId},
                     {"transform", {{"x", m.transform.x}, {"y", m.transform.y}, {"z", m.transform.z}, {"rot", m.rotation}}}
                 });
             }
@@ -348,7 +365,8 @@ void WorldServer::tick() {
                 }
                 json s = {
                     {"type", "player_status"}, 
-                    {"username", p->charName}, 
+                    {"username", p->username}, 
+                    {"char_name", p->charName}, 
                     {"char_class", p->characterClass}, 
                     {"hp", p->hp}, 
                     {"max_hp", p->maxHp}, 
