@@ -949,3 +949,28 @@ void SocketHandlers::sendToPlayer(const std::string& username, const std::string
         }
     });
 }
+
+void SocketHandlers::syncPlayerStatus(std::shared_ptr<Player> player) {
+    if (!player) return;
+    
+    LevelData ld = GameLogic::getLevelData(player->level);
+    json statusMsg;
+    std::string syncUsername;
+    
+    {
+        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+        syncUsername = player->username;
+        statusMsg = {
+            {"type", "player_status"}, {"username", player->charName},
+            {"hp", player->hp}, {"max_hp", player->maxHp},
+            {"mana", player->mana}, {"max_mana", player->maxMana},
+            {"shield", player->shield}, {"level", player->level},
+            {"xp", player->xp}, {"max_xp", ld.xpToNextLevel},
+            {"speed_multiplier", player->speedMultiplier},
+            {"gravity_enabled", player->gravityEnabled},
+            {"is_gm", player->isGMFlagged}
+        };
+    }
+    
+    sendToPlayer(syncUsername, statusMsg.dump());
+}

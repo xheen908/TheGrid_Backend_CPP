@@ -1166,3 +1166,37 @@
 [2026-02-05 05:10:44.819] [DB] Connected to MySQL successfully at 127.0.0.1
 [2026-02-05 05:10:51.624] [DB] Fetching chars for admin
 [2026-02-05 05:10:51.628] [DB] Found 3 chars.
+[2026-02-05 05:11:36.780] =========================================
+[2026-02-05 05:11:36.781] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-05 05:11:36.781] =========================================
+[2026-02-05 05:11:36.800] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 05:11:41.722] [DB] Fetching chars for admin
+[2026-02-05 05:11:41.726] [DB] Found 3 chars.
+[2026-02-05 05:13:29.050] [DB] Fetching chars for admin
+[2026-02-05 05:13:29.052] [DB] Found 3 chars.
+[2026-02-05 05:14:13.810] [DB] Fetching chars for admin
+[2026-02-05 05:14:13.813] [DB] Found 3 chars.
+[2026-02-05 05:18:13.116] [DB] Fetching chars for admin
+[2026-02-05 05:18:13.118] [DB] Found 3 chars.
+[2026-02-05 05:21:17.101] [DB] Fetching chars for admin
+[2026-02-05 05:21:17.104] [DB] Found 3 chars.
+[2026-02-05 05:21:23.470] [DB] Fetching chars for admin
+[2026-02-05 05:21:23.473] [DB] Found 4 chars.
+[2026-02-05 05:27:25.659] =========================================
+[2026-02-05 05:27:25.662] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-05 05:27:25.663] =========================================
+[2026-02-05 05:27:25.683] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 05:27:33.305] [DB] Fetching chars for admin
+[2026-02-05 05:27:33.308] [DB] Found 4 chars.
+[2026-02-05 05:30:08.524] [DB] Fetching chars for admin
+[2026-02-05 05:30:08.526] [DB] Found 4 chars.
+[2026-02-05 05:37:55.159] [DB] Fetching chars for admin
+[2026-02-05 05:37:55.168] [DB] Found 4 chars.
+[2026-02-05 05:40:02.657] =========================================
+[2026-02-05 05:40:02.659] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-05 05:40:02.659] =========================================
+[2026-02-05 05:40:02.679] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 05:40:10.450] [DB] Fetching chars for admin
+[2026-02-05 05:40:10.453] [DB] Found 4 chars.
+[2026-02-05 05:42:25.660] [DB] Fetching chars for client
+[2026-02-05 05:42:25.662] [DB] Found 5 chars.

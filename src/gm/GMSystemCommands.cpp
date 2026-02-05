@@ -37,6 +37,7 @@ namespace GMCommandsImpl {
             player->gravityEnabled = true;
             GMUtil::sendSystemMessage(ws, "Gravitation aktiviert.");
         }
+        SocketHandlers::syncPlayerStatus(player);
     }
 
     void handleSpeed(uWS::WebSocket<false, true, PerSocketData>* ws, const std::vector<std::string>& args, std::shared_ptr<Player> player) {
@@ -46,6 +47,7 @@ namespace GMCommandsImpl {
             if (val > 0) {
                 player->speedMultiplier = val;
                 GMUtil::sendSystemMessage(ws, "Geschwindigkeit auf " + std::to_string(val) + " gesetzt.");
+                SocketHandlers::syncPlayerStatus(player);
             }
         } catch (...) {}
     }

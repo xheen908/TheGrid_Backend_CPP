@@ -38,6 +38,7 @@ public:
     static void broadcastToMap(const std::string& mapName, const std::string& message, uWS::WebSocket<false, true, PerSocketData>* exclude = nullptr);
     static void sendSafe(uWS::WebSocket<false, true, PerSocketData>* ws, const std::string& message);
     static void sendToPlayer(const std::string& username, const std::string& message);
+    static void syncPlayerStatus(std::shared_ptr<Player> player);
 };
 
 #endif

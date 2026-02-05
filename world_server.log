@@ -45577,3 +45577,1155 @@
 [2026-02-05 05:11:05.007] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
 [2026-02-05 05:11:08.091] [WS] User Authenticated & Loaded: admin on WorldMap0
 [2026-02-05 05:11:29.125] [WS] Player disconnected & saved: admin
+[2026-02-05 05:11:35.078] =========================================
+[2026-02-05 05:11:35.082] Starting The Grid WORLD SERVER...
+[2026-02-05 05:11:35.082] =========================================
+[2026-02-05 05:11:35.082] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-05 05:11:35.105] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 05:11:35.109] [DB] Loaded 12 mobs from database.
+[2026-02-05 05:11:35.112] [DB] Loaded 14 item templates.
+[2026-02-05 05:11:35.114] [DB] Loaded 2 quest templates.
+[2026-02-05 05:11:35.115] [DB] Loaded 1 game objects for map Arena0
+[2026-02-05 05:11:35.117] [DB] Loaded 1 game objects for map Arena1
+[2026-02-05 05:11:35.119] [DB] Loaded 1 game objects for map Arena2
+[2026-02-05 05:11:35.120] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-05 05:11:35.122] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-05 05:11:35.123] [DB] Loaded 6 game objects for map WorldMap0
+[2026-02-05 05:11:44.587] [WS] Client connected to WorldServer.
+[2026-02-05 05:11:44.611] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:12:08.939] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:13:22.784] [WS] Player disconnected & saved: admin
+[2026-02-05 05:13:30.852] [WS] Client connected to WorldServer.
+[2026-02-05 05:13:30.872] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:13:33.722] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:14:03.633] [WS] Logout timer started for admin
+[2026-02-05 05:14:13.677] [WS] Logout complete for admin
+[2026-02-05 05:14:16.268] [WS] User Authenticated & Loaded: admin on TestMap0
+[2026-02-05 05:14:18.063] [WS] User Authenticated & Loaded: admin on TestMap0
+[2026-02-05 05:14:20.021] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:20.022] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:20.023] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:20.023] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:24.712] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:25.008] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:25.009] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:25.010] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:25.010] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:26.741] [Ability] Frostblitz cast complete by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:26.743] [Ability] Frostblitz damage applied: 28 to Zombie Rogue
+[2026-02-05 05:14:26.743] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:14:26.743] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:14:26.744] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:14:26.834] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:26.851] [MobAI] Mob Zombie Rogue (18) lost target admin
+[2026-02-05 05:14:28.915] [Ability] Frostblitz cast complete by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:28.915] [Ability] Frostblitz damage applied: 27 to Zombie Rogue
+[2026-02-05 05:14:28.916] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:14:28.917] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:14:28.917] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:14:28.964] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:29.022] [MobAI] Mob Zombie Rogue (18) lost target admin
+[2026-02-05 05:14:30.001] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:30.001] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:30.002] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:30.002] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:30.981] [Ability] Frostblitz cast complete by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:30.981] [Ability] Frostblitz damage applied: 36 to Zombie Rogue
+[2026-02-05 05:14:30.982] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:14:30.983] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:14:30.984] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:14:31.055] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:31.087] [MobAI] Mob Zombie Rogue (18) lost target admin
+[2026-02-05 05:14:33.157] [Ability] Frostblitz cast complete by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:33.157] [Ability] Frostblitz damage applied: 29 to Zombie Rogue
+[2026-02-05 05:14:33.158] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:14:33.158] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:14:33.159] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:14:33.266] [MobAI] Mob Zombie Rogue (18) lost target admin
+[2026-02-05 05:14:33.902] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:35.002] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:35.003] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:35.004] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:35.004] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:35.976] [Ability] Frostblitz cast complete by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:35.976] [Ability] Frostblitz damage applied: 26 to Zombie Rogue
+[2026-02-05 05:14:35.977] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:14:35.978] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:14:35.978] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:14:36.085] [MobAI] Mob Zombie Rogue (18) lost target admin
+[2026-02-05 05:14:40.092] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:40.093] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:40.094] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:40.094] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:14:53.357] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:55.430] [Ability] Frostblitz cast complete by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:55.431] [Ability] Frostblitz damage applied: 39 to Zombie Rogue
+[2026-02-05 05:14:55.431] [Ability] Frostblitz target died: Zombie Rogue
+[2026-02-05 05:14:55.432] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:14:55.432] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:14:55.433] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-05 05:14:55.433] [XP] Xheen erhielt 50 Erfahrung.
+[2026-02-05 05:14:55.466] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:14:55.510] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:14:57.526] [Ability] Frostblitz target not found or dead: 
+[2026-02-05 05:15:00.024] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:00.024] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:00.025] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:00.838] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:15:02.853] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:15:02.854] [Ability] Frostblitz damage applied: 54 to Zombie Magier
+[2026-02-05 05:15:02.854] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:02.855] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:02.855] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:02.962] [MobAI] Mob Zombie Magier (20) lost target admin
+[2026-02-05 05:15:03.012] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:15:05.017] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:05.017] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:05.018] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:05.020] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:15:05.020] [Ability] Frostblitz damage applied: 32 to Zombie Magier
+[2026-02-05 05:15:05.021] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:05.021] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:05.022] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:05.126] [MobAI] Mob Zombie Magier (20) lost target admin
+[2026-02-05 05:15:05.297] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:15:07.402] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:15:07.403] [Ability] Frostblitz damage applied: 29 to Zombie Magier
+[2026-02-05 05:15:07.404] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:07.404] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:07.405] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:07.456] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:15:07.509] [MobAI] Mob Zombie Magier (20) lost target admin
+[2026-02-05 05:15:09.465] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:15:09.465] [Ability] Frostblitz damage applied: 35 to Zombie Magier
+[2026-02-05 05:15:09.466] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:15:09.467] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:09.467] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:09.468] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-05 05:15:09.468] [XP] Xheen erhielt 50 Erfahrung.
+[2026-02-05 05:15:09.502] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:09.523] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:15:10.040] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:10.040] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:11.558] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:15:11.559] [Ability] Frostblitz damage applied: 32 to Zombie Magier
+[2026-02-05 05:15:11.559] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:11.560] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:11.560] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:11.666] [MobAI] Mob Zombie Magier (21) lost target admin
+[2026-02-05 05:15:11.948] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:15:14.055] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:15:14.056] [Ability] Frostblitz damage applied: 35 to Zombie Magier
+[2026-02-05 05:15:14.057] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:14.057] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:14.058] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:14.082] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:15:14.163] [MobAI] Mob Zombie Magier (21) lost target admin
+[2026-02-05 05:15:15.033] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:15.033] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:16.115] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:15:16.115] [Ability] Frostblitz damage applied: 23 to Zombie Magier
+[2026-02-05 05:15:16.116] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:16.116] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:16.117] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:16.222] [MobAI] Mob Zombie Magier (21) lost target admin
+[2026-02-05 05:15:16.424] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:15:18.502] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:15:18.502] [Ability] Frostblitz damage applied: 57 to Zombie Magier
+[2026-02-05 05:15:18.503] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:18.504] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:18.504] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:18.575] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:15:18.610] [MobAI] Mob Zombie Magier (21) lost target admin
+[2026-02-05 05:15:20.021] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:20.021] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:20.673] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:15:20.673] [Ability] Frostblitz damage applied: 37 to Zombie Magier
+[2026-02-05 05:15:20.674] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:15:20.675] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:20.675] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:20.676] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-05 05:15:20.676] [XP] Xheen erhielt 50 Erfahrung.
+[2026-02-05 05:15:20.677] [LEVEL] Xheen ist jetzt Level 2!
+[2026-02-05 05:15:20.687] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:20.796] [MobAI] Mob Zombie Minion (19) aggroed on admin (dist: 14.823841)
+[2026-02-05 05:15:20.879] [Ability] Frostblitz cast start by Xheen @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:15:23.789] [Ability] Frost Nova cast by Xheen
+[2026-02-05 05:15:25.463] [MOB] Respawned: Zombie Rogue (18) at home.
+[2026-02-05 05:15:25.464] [MobAI] Mob Zombie Rogue (18) aggroed on admin (dist: 21.777672)
+[2026-02-05 05:15:26.215] [Ability] Frostblitz cast start by Xheen @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:15:28.280] [Ability] Frostblitz cast complete by Xheen @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:15:28.281] [Ability] Frostblitz damage applied: 26 to Zombie Minion
+[2026-02-05 05:15:28.281] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:28.282] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:28.283] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:29.471] [Ability] Kältekegel cast by Xheen (Range: 25.000000)
+[2026-02-05 05:15:35.870] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:15:37.948] [Ability] Frostblitz cast complete by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:15:37.948] [Ability] Frostblitz damage applied: 28 to Zombie Rogue
+[2026-02-05 05:15:37.949] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:37.950] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:37.950] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:38.050] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:15:39.471] [MOB] Respawned: Zombie Magier (20) at home.
+[2026-02-05 05:15:40.013] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:40.121] [Ability] Frostblitz cast complete by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:15:40.122] [Ability] Frostblitz damage applied: 26 to Zombie Rogue
+[2026-02-05 05:15:40.123] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:40.123] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:40.124] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:40.151] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:15:40.674] [Ability] Kältekegel cast by Xheen (Range: 25.000000)
+[2026-02-05 05:15:43.376] [Combat] Mob Zombie Rogue (18) hit Xheen for 15
+[2026-02-05 05:15:43.937] [Ability] Frostblitz cast start by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:15:44.895] [Combat] Mob Zombie Rogue (18) hit Xheen for 15
+[2026-02-05 05:15:45.004] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:45.985] [Ability] Frostblitz cast complete by Xheen @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:15:45.985] [Ability] Frostblitz damage applied: 43 to Zombie Rogue
+[2026-02-05 05:15:45.986] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:15:45.986] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:15:45.987] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:15:46.093] [Combat] Mob Zombie Minion (19) hit Xheen for 15
+[2026-02-05 05:15:46.419] [Combat] Mob Zombie Rogue (18) hit Xheen for 15
+[2026-02-05 05:15:50.002] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:50.758] [MOB] Respawned: Zombie Magier (21) at home.
+[2026-02-05 05:15:51.129] [Ability] Frost Nova cast by Xheen
+[2026-02-05 05:15:51.130] [XP] Xheen erhielt 55 Erfahrung.
+[2026-02-05 05:15:51.162] [XP] Xheen erhielt 55 Erfahrung.
+[2026-02-05 05:15:55.099] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:15:55.100] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:00.085] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:00.086] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:05.091] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:05.092] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:10.089] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:10.090] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:15.083] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:15.083] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:20.032] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:20.033] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:21.081] [ITEM] Xheen used Item ID 2 (Full Heal)
+[2026-02-05 05:16:21.318] [MOB] Respawned: Zombie Rogue (18) at home.
+[2026-02-05 05:16:21.319] [MOB] Respawned: Zombie Minion (19) at home.
+[2026-02-05 05:16:25.018] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:25.018] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:25.019] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:25.020] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:28.407] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-05 05:16:28.419] [MAP] Change success: admin
+[2026-02-05 05:16:45.062] [MAP] Player admin requesting map change: WorldMap0 -> TestMap0
+[2026-02-05 05:16:45.073] [MAP] Change success: admin
+[2026-02-05 05:16:45.073] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:45.074] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:45.075] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:45.076] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:50.054] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:50.054] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:50.055] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:50.056] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:50.666] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:16:52.769] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:16:52.769] [Ability] Frostblitz damage applied: 31 to Zombie Magier
+[2026-02-05 05:16:52.770] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:16:52.770] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:16:52.771] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:16:53.538] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:16:55.054] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:55.054] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:55.055] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:16:55.598] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:16:55.599] [Ability] Frostblitz damage applied: 56 to Zombie Magier
+[2026-02-05 05:16:55.600] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:16:55.600] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:16:55.601] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:16:55.782] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:16:57.882] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:16:57.882] [Ability] Frostblitz damage applied: 42 to Zombie Magier
+[2026-02-05 05:16:57.883] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:16:57.884] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:16:57.885] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:16:58.085] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:17:00.048] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:17:00.049] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:17:00.049] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:17:00.158] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:17:00.158] [Ability] Frostblitz damage applied: 42 to Zombie Magier
+[2026-02-05 05:17:00.159] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:17:00.160] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:17:00.160] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:17:00.339] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:17:02.444] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:17:02.444] [Ability] Frostblitz damage applied: 30 to Zombie Magier
+[2026-02-05 05:17:02.445] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:17:02.445] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:17:02.446] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:17:02.447] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-05 05:17:02.447] [XP] Xheen erhielt 55 Erfahrung.
+[2026-02-05 05:17:02.458] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:17:02.555] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:17:04.634] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:17:04.635] [Ability] Frostblitz damage applied: 46 to Zombie Magier
+[2026-02-05 05:17:04.635] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:17:04.636] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:17:04.637] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:17:04.732] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:17:05.067] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:17:05.068] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:17:06.809] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:17:06.810] [Ability] Frostblitz damage applied: 63 to Zombie Magier
+[2026-02-05 05:17:06.810] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:17:06.811] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:17:06.812] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:17:06.832] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:17:08.876] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:17:08.876] [Ability] Frostblitz damage applied: 42 to Zombie Magier
+[2026-02-05 05:17:08.877] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:17:08.878] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:17:08.878] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:17:09.033] [Ability] Frostblitz cast start by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:17:10.070] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:17:10.071] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:17:11.047] [Ability] Frostblitz cast complete by Xheen @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:17:11.047] [Ability] Frostblitz damage applied: 73 to Zombie Magier
+[2026-02-05 05:17:11.048] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:17:11.048] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:17:11.049] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:17:11.050] [Ability] Frostblitz awarding XP for Xheen
+[2026-02-05 05:17:11.050] [XP] Xheen erhielt 55 Erfahrung.
+[2026-02-05 05:17:11.079] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:17:11.305] [Ability] Frostblitz cast start by Xheen @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:17:13.355] [Ability] Frostblitz cast complete by Xheen @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:17:13.356] [Ability] Frostblitz damage applied: 46 to Zombie Minion
+[2026-02-05 05:17:13.356] [Ability] Frostblitz lock released for Xheen
+[2026-02-05 05:17:13.357] [Ability] Frostblitz broadcasting combat text for Xheen
+[2026-02-05 05:17:13.358] [Ability] Frostblitz processing finished for Xheen
+[2026-02-05 05:17:15.095] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:17:19.940] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-05 05:17:19.950] [MAP] Change success: admin
+[2026-02-05 05:17:19.975] [MobAI] Mob Zombie Minion (19) lost target admin
+[2026-02-05 05:17:32.448] [MOB] Respawned: Zombie Magier (21) at home.
+[2026-02-05 05:17:34.544] [XP] Xheen erhielt 400 Erfahrung.
+[2026-02-05 05:17:41.116] [MOB] Respawned: Zombie Magier (20) at home.
+[2026-02-05 05:18:02.843] [WS] Logout timer started for admin
+[2026-02-05 05:18:12.902] [WS] Logout complete for admin
+[2026-02-05 05:20:25.177] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:20:26.311] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:21:06.955] [WS] Logout timer started for admin
+[2026-02-05 05:21:16.995] [WS] Logout complete for admin
+[2026-02-05 05:21:24.942] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:21:26.025] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:21:36.038] [MAP] Player admin requesting map change: WorldMap0 -> TestMap0
+[2026-02-05 05:21:36.048] [MAP] Change success: admin
+[2026-02-05 05:21:40.083] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:40.084] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:40.084] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:40.102] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:44.305] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:21:45.093] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:45.094] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:45.094] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:45.095] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:46.392] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:21:46.393] [Ability] Frostblitz damage applied: 23 to Zombie Minion
+[2026-02-05 05:21:46.393] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:21:46.394] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:21:46.395] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:21:46.482] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:21:48.564] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:21:48.564] [Ability] Frostblitz damage applied: 68 to Zombie Minion
+[2026-02-05 05:21:48.565] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:21:48.565] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:21:48.566] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:21:48.766] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:21:50.082] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:50.082] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:50.083] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:50.843] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:21:50.843] [Ability] Frostblitz damage applied: 26 to Zombie Minion
+[2026-02-05 05:21:50.844] [Ability] Frostblitz target died: Zombie Minion
+[2026-02-05 05:21:50.844] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:21:50.845] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:21:50.845] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:21:50.846] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:21:50.875] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:21:51.080] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:21:53.156] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:21:53.157] [Ability] Frostblitz damage applied: 33 to Zombie Rogue
+[2026-02-05 05:21:53.157] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:21:53.158] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:21:53.159] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:21:53.364] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:21:55.000] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:55.001] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:21:55.436] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:21:55.437] [Ability] Frostblitz damage applied: 24 to Zombie Rogue
+[2026-02-05 05:21:55.438] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:21:55.438] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:21:55.439] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:21:55.510] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:21:57.609] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:21:57.610] [Ability] Frostblitz damage applied: 36 to Zombie Rogue
+[2026-02-05 05:21:57.610] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:21:57.611] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:21:57.612] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:21:57.833] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:21:59.896] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:21:59.897] [Ability] Frostblitz damage applied: 23 to Zombie Rogue
+[2026-02-05 05:21:59.898] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:21:59.898] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:21:59.899] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:00.006] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:00.006] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:00.170] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:22:02.180] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:22:02.181] [Ability] Frostblitz damage applied: 27 to Zombie Rogue
+[2026-02-05 05:22:02.182] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:02.183] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:02.183] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:02.353] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:22:04.462] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:22:04.463] [Ability] Frostblitz damage applied: 24 to Zombie Rogue
+[2026-02-05 05:22:04.464] [Ability] Frostblitz target died: Zombie Rogue
+[2026-02-05 05:22:04.464] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:04.465] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:04.465] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:22:04.466] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:22:04.495] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:04.703] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:22:05.034] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:05.035] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:09.269] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:10.039] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:10.039] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:11.345] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:11.346] [Ability] Frostblitz damage applied: 26 to Zombie Magier
+[2026-02-05 05:22:11.346] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:11.347] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:11.348] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:11.580] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:13.622] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:13.622] [Ability] Frostblitz damage applied: 32 to Zombie Magier
+[2026-02-05 05:22:13.623] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:13.624] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:13.625] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:13.727] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:15.028] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:15.786] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:15.787] [Ability] Frostblitz damage applied: 37 to Zombie Magier
+[2026-02-05 05:22:15.788] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:15.788] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:15.789] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:15.976] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:18.066] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:18.067] [Ability] Frostblitz damage applied: 24 to Zombie Magier
+[2026-02-05 05:22:18.068] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:18.068] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:18.069] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:18.189] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:20.021] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:20.239] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:20.239] [Ability] Frostblitz damage applied: 28 to Zombie Magier
+[2026-02-05 05:22:20.240] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:20.241] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:20.241] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:20.276] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:20.894] [MOB] Respawned: Zombie Minion (19) at home.
+[2026-02-05 05:22:20.895] [MobAI] Mob Zombie Minion (19) aggroed on admin (dist: 18.355639)
+[2026-02-05 05:22:22.302] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:22.303] [Ability] Frostblitz damage applied: 26 to Zombie Magier
+[2026-02-05 05:22:22.303] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:22:22.304] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:22.304] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:22.305] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:22:22.305] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:22:22.315] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:22.419] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:22:24.496] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:22:24.497] [Ability] Frostblitz damage applied: 28 to Zombie Minion
+[2026-02-05 05:22:24.497] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:24.498] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:24.499] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:24.522] [Ability] Frost Nova cast by Test
+[2026-02-05 05:22:25.037] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:26.235] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:22:28.297] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:22:28.298] [Ability] Frostblitz damage applied: 23 to Zombie Minion
+[2026-02-05 05:22:28.299] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:28.299] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:28.300] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:28.532] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:22:30.038] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:30.583] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:22:30.583] [Ability] Frostblitz damage applied: 33 to Zombie Minion
+[2026-02-05 05:22:30.584] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:30.584] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:30.585] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:30.597] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:22:32.642] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:22:32.642] [Ability] Frostblitz damage applied: 36 to Zombie Minion
+[2026-02-05 05:22:32.643] [Ability] Frostblitz target died: Zombie Minion
+[2026-02-05 05:22:32.644] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:32.644] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:32.645] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:22:32.645] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:22:32.677] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:32.731] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:22:34.521] [MOB] Respawned: Zombie Rogue (18) at home.
+[2026-02-05 05:22:34.522] [MobAI] Mob Zombie Rogue (18) aggroed on admin (dist: 23.264053)
+[2026-02-05 05:22:34.739] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:22:34.739] [Ability] Frostblitz damage applied: 37 to Zombie Magier
+[2026-02-05 05:22:34.740] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:34.740] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:34.741] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:34.751] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:22:36.807] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:22:36.808] [Ability] Frostblitz damage applied: 21 to Zombie Magier
+[2026-02-05 05:22:36.808] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:36.809] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:36.810] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:36.822] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:22:38.874] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:22:38.875] [Ability] Frostblitz damage applied: 37 to Zombie Magier
+[2026-02-05 05:22:38.876] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:38.877] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:38.878] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:38.932] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:22:39.658] [Ability] Kältekegel cast by Test (Range: 25.000000)
+[2026-02-05 05:22:52.344] [MOB] Respawned: Zombie Magier (21) at home.
+[2026-02-05 05:22:53.129] [Ability] Kältekegel cast by Test (Range: 25.000000)
+[2026-02-05 05:22:53.129] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:22:55.043] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:22:55.690] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:22:57.652] [Combat] Mob Zombie Rogue (18) hit Test for 12
+[2026-02-05 05:22:57.762] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:22:57.763] [Ability] Frostblitz damage applied: 41 to Zombie Rogue
+[2026-02-05 05:22:57.764] [Ability] Frostblitz target died: Zombie Rogue
+[2026-02-05 05:22:57.764] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:22:57.765] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:22:57.766] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:22:57.766] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:22:57.795] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:22:57.926] [Ability] Frost Nova cast by Test
+[2026-02-05 05:23:00.073] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:23:01.181] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:23:02.680] [MOB] Respawned: Zombie Minion (19) at home.
+[2026-02-05 05:23:02.681] [MobAI] Mob Zombie Minion (19) aggroed on admin (dist: 18.094170)
+[2026-02-05 05:23:03.223] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:23:03.224] [Ability] Frostblitz damage applied: 22 to Zombie Magier
+[2026-02-05 05:23:03.224] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:23:03.225] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:23:03.226] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:23:05.404] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:23:07.461] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:23:07.462] [Ability] Frostblitz damage applied: 38 to Zombie Magier
+[2026-02-05 05:23:07.462] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:23:07.463] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:23:07.464] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:23:07.572] [Ability] Kältekegel cast by Test (Range: 25.000000)
+[2026-02-05 05:23:07.678] [Combat] Mob Zombie Minion (19) hit Test for 12
+[2026-02-05 05:23:10.720] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:23:12.791] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:23:12.792] [Ability] Frostblitz damage applied: 24 to Zombie Magier
+[2026-02-05 05:23:12.794] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:23:12.795] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:23:12.796] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:23:14.436] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:23:16.483] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:23:16.483] [Ability] Frostblitz damage applied: 22 to Zombie Magier
+[2026-02-05 05:23:16.484] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:23:16.485] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:23:16.485] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:23:19.002] [Ability] Kältekegel cast by Test (Range: 25.000000)
+[2026-02-05 05:23:19.002] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:23:23.137] [Ability] Frost Nova cast by Test
+[2026-02-05 05:23:23.224] [MOB] Respawned: Zombie Magier (20) at home.
+[2026-02-05 05:23:24.916] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:23:25.065] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:23:27.023] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:23:27.023] [Ability] Frostblitz damage applied: 40 to Zombie Minion
+[2026-02-05 05:23:27.024] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:23:27.025] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:23:27.025] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:23:27.137] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:23:27.782] [MOB] Respawned: Zombie Rogue (18) at home.
+[2026-02-05 05:23:27.783] [MobAI] Mob Zombie Rogue (18) aggroed on admin (dist: 21.467567)
+[2026-02-05 05:23:29.195] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:23:29.196] [Ability] Frostblitz damage applied: 39 to Zombie Minion
+[2026-02-05 05:23:29.196] [Ability] Frostblitz target died: Zombie Minion
+[2026-02-05 05:23:29.197] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:23:29.198] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:23:29.198] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:23:29.199] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:23:29.199] [LEVEL] Test ist jetzt Level 2!
+[2026-02-05 05:23:29.227] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:23:30.092] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:23:35.093] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:23:36.023] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-05 05:23:36.034] [MAP] Change success: admin
+[2026-02-05 05:23:36.072] [MobAI] Mob Zombie Rogue (18) lost target admin
+[2026-02-05 05:23:49.086] [MOB] Respawned: Zombie Magier (21) at home.
+[2026-02-05 05:23:51.517] [MAP] Player admin requesting map change: WorldMap0 -> TestMap0
+[2026-02-05 05:23:51.527] [MAP] Change success: admin
+[2026-02-05 05:23:55.053] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:23:55.053] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:23:55.054] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:23:57.570] [MobAI] Mob Zombie Rogue (18) aggroed on admin (dist: 24.648970)
+[2026-02-05 05:23:59.203] [MOB] Respawned: Zombie Minion (19) at home.
+[2026-02-05 05:23:59.204] [MobAI] Mob Zombie Minion (19) aggroed on admin (dist: 20.900124)
+[2026-02-05 05:23:59.341] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:24:00.072] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:00.073] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:01.378] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:24:01.378] [Ability] Frostblitz damage applied: 87 to Zombie Rogue
+[2026-02-05 05:24:01.379] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:01.380] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:01.381] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:02.002] [Ability] Kältekegel cast by Test (Range: 25.000000)
+[2026-02-05 05:24:03.677] [Ability] Frost Nova cast by Test
+[2026-02-05 05:24:05.076] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:05.077] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:05.242] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:24:07.249] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:07.249] [Ability] Frostblitz damage applied: 26 to Zombie Minion
+[2026-02-05 05:24:07.250] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:07.251] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:07.252] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:07.429] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:09.523] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:09.523] [Ability] Frostblitz damage applied: 40 to Zombie Minion
+[2026-02-05 05:24:09.524] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:09.524] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:09.525] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:09.569] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:10.068] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:10.069] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:11.592] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:11.593] [Ability] Frostblitz damage applied: 24 to Zombie Minion
+[2026-02-05 05:24:11.594] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:11.595] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:11.595] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:11.650] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:13.656] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:13.657] [Ability] Frostblitz damage applied: 39 to Zombie Minion
+[2026-02-05 05:24:13.658] [Ability] Frostblitz target died: Zombie Minion
+[2026-02-05 05:24:13.658] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:13.659] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:13.659] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:24:13.660] [XP] Test erhielt 55 Erfahrung.
+[2026-02-05 05:24:13.699] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:13.767] [Ability] Kältekegel cast by Test (Range: 25.000000)
+[2026-02-05 05:24:13.767] [XP] Test erhielt 55 Erfahrung.
+[2026-02-05 05:24:15.007] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:15.007] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:15.880] [MobAI] Mob Zombie Magier (20) aggroed on admin (dist: 24.941910)
+[2026-02-05 05:24:16.102] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:18.165] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:18.165] [Ability] Frostblitz damage applied: 32 to Zombie Magier
+[2026-02-05 05:24:18.166] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:18.166] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:18.167] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:18.220] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:20.012] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:20.232] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:20.233] [Ability] Frostblitz damage applied: 31 to Zombie Magier
+[2026-02-05 05:24:20.234] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:20.235] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:20.235] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:20.345] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:22.401] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:22.401] [Ability] Frostblitz damage applied: 43 to Zombie Magier
+[2026-02-05 05:24:22.402] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:22.403] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:22.403] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:22.622] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:24.682] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:24.682] [Ability] Frostblitz damage applied: 35 to Zombie Magier
+[2026-02-05 05:24:24.683] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:24.684] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:24.685] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:24.845] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:25.007] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:25.766] [Combat] Mob Zombie Magier (20) hit Test for 15
+[2026-02-05 05:24:26.853] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:24:26.853] [Ability] Frostblitz damage applied: 28 to Zombie Magier
+[2026-02-05 05:24:26.854] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:26.855] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:26.855] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:27.286] [Combat] Mob Zombie Magier (20) hit Test for 15
+[2026-02-05 05:24:27.410] [Ability] Kältekegel cast by Test (Range: 25.000000)
+[2026-02-05 05:24:27.410] [XP] Test erhielt 55 Erfahrung.
+[2026-02-05 05:24:29.396] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:30.000] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:31.414] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:31.415] [Ability] Frostblitz damage applied: 42 to Zombie Magier
+[2026-02-05 05:24:31.415] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:31.416] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:31.416] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:31.610] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:39.462] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:41.529] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:41.530] [Ability] Frostblitz damage applied: 48 to Zombie Magier
+[2026-02-05 05:24:41.531] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:41.531] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:41.532] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:41.581] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:43.598] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:43.599] [Ability] Frostblitz damage applied: 36 to Zombie Magier
+[2026-02-05 05:24:43.600] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:43.601] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:43.602] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:43.659] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:43.708] [MOB] Respawned: Zombie Minion (19) at home.
+[2026-02-05 05:24:43.816] [MOB] Respawned: Zombie Rogue (18) at home.
+[2026-02-05 05:24:45.007] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:45.008] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:45.660] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:45.661] [Ability] Frostblitz damage applied: 47 to Zombie Magier
+[2026-02-05 05:24:45.661] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:45.662] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:45.663] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:45.929] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:47.944] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:24:47.945] [Ability] Frostblitz damage applied: 24 to Zombie Magier
+[2026-02-05 05:24:47.946] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:24:47.948] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:47.948] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:47.949] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:24:47.950] [XP] Test erhielt 55 Erfahrung.
+[2026-02-05 05:24:47.960] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:48.165] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:50.021] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:50.022] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:50.237] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:50.238] [Ability] Frostblitz damage applied: 50 to Zombie Minion
+[2026-02-05 05:24:50.239] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:24:50.240] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:24:50.241] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:24:50.413] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:24:55.023] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:24:56.141] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-05 05:24:56.151] [MAP] Change success: admin
+[2026-02-05 05:24:56.219] [MobAI] Mob Zombie Minion (19) lost target admin
+[2026-02-05 05:24:57.517] [MOB] Respawned: Zombie Magier (20) at home.
+[2026-02-05 05:25:03.316] [XP] Test erhielt 400 Erfahrung.
+[2026-02-05 05:25:18.012] [MOB] Respawned: Zombie Magier (21) at home.
+[2026-02-05 05:27:14.635] [WS] Player disconnected & saved: admin
+[2026-02-05 05:27:26.560] =========================================
+[2026-02-05 05:27:26.562] Starting The Grid WORLD SERVER...
+[2026-02-05 05:27:26.562] =========================================
+[2026-02-05 05:27:26.562] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-05 05:27:26.579] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 05:27:26.582] [DB] Loaded 12 mobs from database.
+[2026-02-05 05:27:26.584] [DB] Loaded 14 item templates.
+[2026-02-05 05:27:26.586] [DB] Loaded 2 quest templates.
+[2026-02-05 05:27:26.588] [DB] Loaded 1 game objects for map Arena0
+[2026-02-05 05:27:26.589] [DB] Loaded 1 game objects for map Arena1
+[2026-02-05 05:27:26.590] [DB] Loaded 1 game objects for map Arena2
+[2026-02-05 05:27:26.591] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-05 05:27:26.592] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-05 05:27:26.594] [DB] Loaded 6 game objects for map WorldMap0
+[2026-02-05 05:27:36.046] [WS] Client connected to WorldServer.
+[2026-02-05 05:27:36.066] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:27:38.901] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:29:38.392] [WS] Player disconnected & saved: admin
+[2026-02-05 05:30:11.393] [WS] Client connected to WorldServer.
+[2026-02-05 05:30:11.412] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:30:14.179] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:31:10.873] [MAP] Player admin requesting map change: WorldMap0 -> TestMap0
+[2026-02-05 05:31:10.884] [MAP] Change success: admin
+[2026-02-05 05:31:15.027] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:16.020] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:16.020] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:16.021] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:16.144] [MobAI] Mob Zombie Minion (19) aggroed on admin (dist: 21.787819)
+[2026-02-05 05:31:16.252] [MobAI] Mob Zombie Rogue (18) aggroed on admin (dist: 24.854172)
+[2026-02-05 05:31:20.053] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:20.054] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:21.026] [MobAI] Mob Zombie Rogue (18) lost target admin
+[2026-02-05 05:31:21.027] [MobAI] Mob Zombie Minion (19) lost target admin
+[2026-02-05 05:31:25.048] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:25.049] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:25.051] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:25.052] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:30.042] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:30.043] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:30.044] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:30.045] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:35.034] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:35.035] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:35.035] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:35.052] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:40.045] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:40.046] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:40.047] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:40.048] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:42.874] [MobAI] Mob Zombie Rogue (18) aggroed on admin (dist: 11.706881)
+[2026-02-05 05:31:42.875] [MobAI] Mob Zombie Minion (19) aggroed on admin (dist: 9.556028)
+[2026-02-05 05:31:42.875] [MobAI] Mob Zombie Magier (20) aggroed on admin (dist: 17.993763)
+[2026-02-05 05:31:42.876] [MobAI] Mob Zombie Magier (21) aggroed on admin (dist: 19.721310)
+[2026-02-05 05:31:43.848] [MobAI] Mob Zombie Rogue (18) lost target admin
+[2026-02-05 05:31:43.848] [MobAI] Mob Zombie Minion (19) lost target admin
+[2026-02-05 05:31:43.849] [MobAI] Mob Zombie Magier (20) lost target admin
+[2026-02-05 05:31:43.850] [MobAI] Mob Zombie Magier (21) lost target admin
+[2026-02-05 05:31:45.039] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:45.040] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:45.042] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:45.042] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:50.031] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:50.032] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:50.032] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:50.033] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:55.034] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:55.034] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:55.035] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:31:55.064] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:00.063] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:00.064] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:00.065] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:00.065] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:05.045] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:05.046] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:05.047] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:05.047] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:10.096] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:10.097] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:10.098] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:10.100] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:15.015] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:15.015] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:15.016] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:15.017] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:20.037] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:20.038] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:20.039] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:20.040] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:25.040] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:25.040] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:25.041] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:25.042] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:40.023] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:40.023] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:40.024] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:40.025] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:45.015] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:45.016] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:45.016] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:45.017] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:50.055] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:50.056] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:50.056] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:50.057] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:50.472] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:32:52.548] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:32:52.551] [Ability] Frostblitz damage applied: 70 to Zombie Magier
+[2026-02-05 05:32:52.567] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:32:52.569] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:32:52.570] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:32:55.069] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:55.070] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:55.071] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:32:56.695] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:32:58.762] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:32:58.763] [Ability] Frostblitz damage applied: 32 to Zombie Magier
+[2026-02-05 05:32:58.763] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:32:58.764] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:32:58.765] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:32:58.961] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:00.076] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:00.077] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:00.078] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:01.055] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:01.055] [Ability] Frostblitz damage applied: 26 to Zombie Magier
+[2026-02-05 05:33:01.056] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:01.057] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:01.057] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:01.275] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:03.361] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:03.361] [Ability] Frostblitz damage applied: 37 to Zombie Magier
+[2026-02-05 05:33:03.362] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:33:03.363] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:03.363] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:03.364] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:33:03.365] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:33:03.377] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:03.608] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:05.028] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:05.029] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:05.029] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:05.678] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:05.679] [Ability] Frostblitz damage applied: 35 to Zombie Minion
+[2026-02-05 05:33:05.679] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:05.680] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:05.680] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:05.856] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:07.959] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:07.959] [Ability] Frostblitz damage applied: 34 to Zombie Minion
+[2026-02-05 05:33:07.960] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:07.961] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:07.961] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:08.090] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:10.107] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:10.108] [Ability] Frostblitz damage applied: 39 to Zombie Minion
+[2026-02-05 05:33:10.108] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:10.109] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:10.110] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:10.300] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:12.389] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:12.390] [Ability] Frostblitz damage applied: 36 to Zombie Minion
+[2026-02-05 05:33:12.391] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:12.391] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:12.392] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:12.544] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:14.576] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:14.577] [Ability] Frostblitz damage applied: 40 to Zombie Minion
+[2026-02-05 05:33:14.578] [Ability] Frostblitz target died: Zombie Minion
+[2026-02-05 05:33:14.579] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:14.580] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:14.580] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:33:14.581] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:33:14.624] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:14.752] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:15.061] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:15.062] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:16.793] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:16.794] [Ability] Frostblitz damage applied: 38 to Zombie Rogue
+[2026-02-05 05:33:16.794] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:16.795] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:16.795] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:16.966] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:19.045] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:19.045] [Ability] Frostblitz damage applied: 35 to Zombie Rogue
+[2026-02-05 05:33:19.046] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:19.048] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:19.048] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:19.210] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:20.020] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:21.212] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:21.212] [Ability] Frostblitz damage applied: 23 to Zombie Rogue
+[2026-02-05 05:33:21.213] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:21.214] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:21.214] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:21.443] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:23.504] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:23.504] [Ability] Frostblitz damage applied: 25 to Zombie Rogue
+[2026-02-05 05:33:23.505] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:23.506] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:23.506] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:23.759] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:25.021] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:25.796] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:25.797] [Ability] Frostblitz damage applied: 28 to Zombie Rogue
+[2026-02-05 05:33:25.797] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:25.798] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:25.799] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:25.939] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:27.963] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:33:27.963] [Ability] Frostblitz damage applied: 39 to Zombie Rogue
+[2026-02-05 05:33:27.964] [Ability] Frostblitz target died: Zombie Rogue
+[2026-02-05 05:33:27.965] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:27.965] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:27.966] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:33:27.966] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:33:27.996] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:28.208] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:33:30.058] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:30.274] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:33:30.275] [Ability] Frostblitz damage applied: 21 to Zombie Magier
+[2026-02-05 05:33:30.276] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:30.276] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:30.277] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:30.546] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:33:32.584] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:33:32.584] [Ability] Frostblitz damage applied: 66 to Zombie Magier
+[2026-02-05 05:33:32.585] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:32.586] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:32.587] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:33.094] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:33:33.451] [MOB] Respawned: Zombie Magier (21) at home.
+[2026-02-05 05:33:35.084] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:35.193] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:33:35.193] [Ability] Frostblitz damage applied: 35 to Zombie Magier
+[2026-02-05 05:33:35.194] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:35.195] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:35.195] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:35.290] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:33:37.360] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:33:37.360] [Ability] Frostblitz damage applied: 54 to Zombie Magier
+[2026-02-05 05:33:37.361] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:33:37.361] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:37.362] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:37.363] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:33:37.363] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:33:37.390] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:40.026] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:33:42.693] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:44.624] [MOB] Respawned: Zombie Minion (19) at home.
+[2026-02-05 05:33:44.625] [MobAI] Mob Zombie Minion (19) aggroed on admin (dist: 22.620415)
+[2026-02-05 05:33:44.735] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:44.736] [Ability] Frostblitz damage applied: 39 to Zombie Magier
+[2026-02-05 05:33:44.736] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:44.737] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:44.738] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:44.962] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:47.037] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:47.037] [Ability] Frostblitz damage applied: 43 to Zombie Magier
+[2026-02-05 05:33:47.038] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:47.038] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:47.039] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:47.062] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:49.098] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:49.099] [Ability] Frostblitz damage applied: 33 to Zombie Magier
+[2026-02-05 05:33:49.099] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:49.100] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:49.100] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:49.190] [Ability] Frost Nova cast by Test
+[2026-02-05 05:33:49.708] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:51.767] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:51.768] [Ability] Frostblitz damage applied: 32 to Zombie Magier
+[2026-02-05 05:33:51.768] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:51.769] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:51.769] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:51.958] [Ability] Frostblitz cast start by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:54.046] [Ability] Frostblitz cast complete by Test @ Zombie Magier(21) [Normal] on TestMap0
+[2026-02-05 05:33:54.047] [Ability] Frostblitz damage applied: 33 to Zombie Magier
+[2026-02-05 05:33:54.048] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:33:54.080] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:33:54.081] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:33:54.082] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:33:54.082] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:33:54.092] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:33:54.218] [Ability] Kältekegel cast by Test (Range: 25.000000)
+[2026-02-05 05:33:58.027] [Ability] Frostblitz cast start by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:33:58.030] [MOB] Respawned: Zombie Rogue (18) at home.
+[2026-02-05 05:34:00.094] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:34:00.095] [Ability] Frostblitz cast complete by Test @ Zombie Minion(19) [Normal] on TestMap0
+[2026-02-05 05:34:00.096] [Ability] Frostblitz damage applied: 57 to Zombie Minion
+[2026-02-05 05:34:00.097] [Ability] Frostblitz target died: Zombie Minion
+[2026-02-05 05:34:00.099] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:00.101] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:00.102] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:34:00.102] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:34:00.132] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:00.282] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:02.300] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:02.303] [Ability] Frostblitz damage applied: 31 to Zombie Rogue
+[2026-02-05 05:34:02.303] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:02.304] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:02.305] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:02.479] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:04.479] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:04.480] [Ability] Frostblitz damage applied: 27 to Zombie Rogue
+[2026-02-05 05:34:04.481] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:04.481] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:04.482] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:04.526] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:06.547] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:06.547] [Ability] Frostblitz damage applied: 37 to Zombie Rogue
+[2026-02-05 05:34:06.548] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:06.549] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:06.551] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:06.827] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:07.410] [MOB] Respawned: Zombie Magier (20) at home.
+[2026-02-05 05:34:08.935] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:08.935] [Ability] Frostblitz damage applied: 23 to Zombie Rogue
+[2026-02-05 05:34:08.936] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:08.937] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:08.937] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:09.003] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:10.025] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:34:11.005] [Ability] Frostblitz cast complete by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:11.005] [Ability] Frostblitz damage applied: 38 to Zombie Rogue
+[2026-02-05 05:34:11.006] [Ability] Frostblitz target died: Zombie Rogue
+[2026-02-05 05:34:11.007] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:11.007] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:11.008] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:34:11.009] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:34:11.043] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:11.064] [Ability] Frostblitz cast start by Test @ Zombie Rogue(18) [Normal] on TestMap0
+[2026-02-05 05:34:13.128] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:13.128] [Ability] Frostblitz damage applied: 37 to Zombie Magier
+[2026-02-05 05:34:13.129] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:13.130] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:13.131] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:13.316] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:15.415] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:15.415] [Ability] Frostblitz damage applied: 25 to Zombie Magier
+[2026-02-05 05:34:15.416] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:15.417] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:15.419] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:15.651] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:17.702] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:17.703] [Ability] Frostblitz damage applied: 24 to Zombie Magier
+[2026-02-05 05:34:17.704] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:17.705] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:17.706] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:17.839] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:19.844] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:19.845] [Ability] Frostblitz damage applied: 24 to Zombie Magier
+[2026-02-05 05:34:19.846] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:19.847] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:19.847] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:19.972] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:22.026] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:22.027] [Ability] Frostblitz damage applied: 20 to Zombie Magier
+[2026-02-05 05:34:22.027] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:22.028] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:22.030] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:22.045] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:24.134] [MOB] Respawned: Zombie Magier (21) at home.
+[2026-02-05 05:34:24.134] [Ability] Frostblitz cast complete by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:24.135] [Ability] Frostblitz damage applied: 29 to Zombie Magier
+[2026-02-05 05:34:24.135] [Ability] Frostblitz target died: Zombie Magier
+[2026-02-05 05:34:24.136] [Ability] Frostblitz lock released for Test
+[2026-02-05 05:34:24.137] [Ability] Frostblitz broadcasting combat text for Test
+[2026-02-05 05:34:24.138] [Ability] Frostblitz awarding XP for Test
+[2026-02-05 05:34:24.139] [XP] Test erhielt 50 Erfahrung.
+[2026-02-05 05:34:24.140] [LEVEL] Test ist jetzt Level 2!
+[2026-02-05 05:34:24.187] [Ability] Frostblitz processing finished for Test
+[2026-02-05 05:34:24.336] [Ability] Frostblitz cast start by Test @ Zombie Magier(20) [Normal] on TestMap0
+[2026-02-05 05:34:25.047] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:34:29.688] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-05 05:34:29.701] [MAP] Change success: admin
+[2026-02-05 05:34:30.191] [MOB] Respawned: Zombie Minion (19) at home.
+[2026-02-05 05:34:36.668] [XP] Test erhielt 750 Erfahrung.
+[2026-02-05 05:34:41.107] [MOB] Respawned: Zombie Rogue (18) at home.
+[2026-02-05 05:34:54.140] [MOB] Respawned: Zombie Magier (20) at home.
+[2026-02-05 05:39:05.138] [WS] Player disconnected & saved: admin
+[2026-02-05 05:40:03.856] =========================================
+[2026-02-05 05:40:03.859] Starting The Grid WORLD SERVER...
+[2026-02-05 05:40:03.859] =========================================
+[2026-02-05 05:40:03.859] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-05 05:40:03.879] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 05:40:03.883] [DB] Loaded 12 mobs from database.
+[2026-02-05 05:40:03.886] [DB] Loaded 14 item templates.
+[2026-02-05 05:40:03.888] [DB] Loaded 2 quest templates.
+[2026-02-05 05:40:03.890] [DB] Loaded 1 game objects for map Arena0
+[2026-02-05 05:40:03.892] [DB] Loaded 1 game objects for map Arena1
+[2026-02-05 05:40:03.894] [DB] Loaded 1 game objects for map Arena2
+[2026-02-05 05:40:03.895] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-05 05:40:03.897] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-05 05:40:03.898] [DB] Loaded 6 game objects for map WorldMap0
+[2026-02-05 05:40:12.361] [WS] Client connected to WorldServer.
+[2026-02-05 05:40:12.380] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:40:15.196] [WS] User Authenticated & Loaded: admin on WorldMap0
+[2026-02-05 05:41:11.159] [MAP] Player admin requesting map change: WorldMap0 -> TestMap0
+[2026-02-05 05:41:11.169] [MAP] Change success: admin
+[2026-02-05 05:41:15.054] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:41:15.055] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:41:15.055] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:41:15.056] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:41:18.065] [MAP] Player admin requesting map change: TestMap0 -> WorldMap0
+[2026-02-05 05:41:18.078] [MAP] Change success: admin
+[2026-02-05 05:42:30.373] [WS] Client connected to WorldServer.
+[2026-02-05 05:42:30.394] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-05 05:42:33.261] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-05 05:42:33.364] [MAP] Player client requesting map change: WorldMap0 -> TestMap0
+[2026-02-05 05:42:33.375] [MAP] Change success: client
+[2026-02-05 05:42:35.065] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:42:35.065] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:42:35.066] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:42:35.067] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:42:37.010] [MAP] Player client requesting map change: TestMap0 -> WorldMap0
+[2026-02-05 05:42:37.028] [MAP] Change success: client
+[2026-02-05 05:46:51.143] [WS] Player disconnected & saved: admin
+[2026-02-05 05:46:53.599] [WS] Player disconnected & saved: client
