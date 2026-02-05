@@ -75,3 +75,48 @@ int GameLogic::getInventorySize(int level) {
     if (level <= 40) return 80;
     return 100;
 }
+
+void GameLogic::checkQuestKill(Player& player, const std::string& mobId) {
+    std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
+    bool changed = false;
+
+    for (auto& pq : player.quests) {
+        if (pq.status != "active") continue;
+
+        QuestTemplate qt = GameState::getInstance().getQuestTemplate(pq.questId);
+        if (qt.objectives.count(mobId)) {
+            pq.progress[mobId]++;
+            changed = true;
+
+            // Check if all objectives reached
+            bool allMet = true;
+            for (auto const& [objId, requiredAmount] : qt.objectives) {
+                if (pq.progress[objId] < requiredAmount) {
+                    allMet = false;
+                    break;
+                }
+            }
+
+            if (allMet) {
+                pq.status = "completed";
+                json msg = {{"type", "chat_receive"}, {"mode", "system"}, {"message", "Quest abgeschlossen: " + qt.title + "! Kehre zum Questgeber zurück."}};
+                SocketHandlers::sendToPlayer(player.username, msg.dump());
+                
+                json completeMsg = {{"type", "quest_completed"}, {"quest_id", pq.questId}};
+                SocketHandlers::sendToPlayer(player.username, completeMsg.dump());
+            } else {
+                // Update Progress message (optional)
+                std::string msgText = qt.title + ": " + std::to_string(pq.progress[mobId]) + "/" + std::to_string(qt.objectives.at(mobId)) + " getötet.";
+                json pMsg = {{"type", "chat_receive"}, {"mode", "system"}, {"message", msgText}};
+                SocketHandlers::sendToPlayer(player.username, pMsg.dump());
+                
+                json progUpdate = {{"type", "quest_progress"}, {"quest_id", pq.questId}, {"progress", pq.progress}};
+                SocketHandlers::sendToPlayer(player.username, progUpdate.dump());
+            }
+        }
+    }
+
+    if (changed) {
+        Database::getInstance().saveQuests(player);
+    }
+}

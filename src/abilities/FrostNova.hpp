@@ -109,6 +109,7 @@ public:
 
             if (hit.died) {
                 GameLogic::awardXP(player, hit.xpReward);
+                GameLogic::checkQuestKill(player, hit.id);
             }
         }
     }

@@ -1124,3 +1124,45 @@
 [2026-02-05 00:13:24.288] [DB] Found 3 chars.
 [2026-02-05 00:15:38.169] [DB] Fetching chars for admin
 [2026-02-05 00:15:38.171] [DB] Found 3 chars.
+[2026-02-05 00:23:47.602] [DB] Fetching chars for admin
+[2026-02-05 00:23:47.605] [DB] Found 3 chars.
+[2026-02-05 00:28:43.775] [DB] Fetching chars for admin
+[2026-02-05 00:28:43.778] [DB] Found 3 chars.
+[2026-02-05 01:16:30.831] =========================================
+[2026-02-05 01:16:30.832] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-05 01:16:30.833] =========================================
+[2026-02-05 01:16:30.853] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 01:16:51.809] [DB] Fetching chars for admin
+[2026-02-05 01:16:51.812] [DB] Found 3 chars.
+[2026-02-05 01:19:14.421] [DB] Fetching chars for admin
+[2026-02-05 01:19:14.424] [DB] Found 3 chars.
+[2026-02-05 01:23:48.184] [DB] Fetching chars for admin
+[2026-02-05 01:23:48.188] [DB] Found 3 chars.
+[2026-02-05 04:45:22.774] =========================================
+[2026-02-05 04:45:22.826] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-05 04:45:22.827] =========================================
+[2026-02-05 04:45:22.949] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 04:45:34.998] [DB] Fetching chars for admin
+[2026-02-05 04:45:35.008] [DB] Found 3 chars.
+[2026-02-05 04:47:29.668] [DB] Fetching chars for admin
+[2026-02-05 04:47:29.670] [DB] Found 3 chars.
+[2026-02-05 04:49:28.271] [DB] Fetching chars for admin
+[2026-02-05 04:49:28.273] [DB] Found 3 chars.
+[2026-02-05 04:54:12.384] [DB] Fetching chars for admin
+[2026-02-05 04:54:12.387] [DB] Found 3 chars.
+[2026-02-05 04:54:48.145] [DB] Fetching chars for admin
+[2026-02-05 04:54:48.148] [DB] Found 3 chars.
+[2026-02-05 04:55:08.494] [DB] Fetching chars for admin
+[2026-02-05 04:55:08.497] [DB] Found 3 chars.
+[2026-02-05 05:01:34.111] [DB] Fetching chars for admin
+[2026-02-05 05:01:34.114] [DB] Found 3 chars.
+[2026-02-05 05:01:51.885] [DB] Fetching chars for admin
+[2026-02-05 05:01:51.888] [DB] Found 3 chars.
+[2026-02-05 05:04:16.265] [DB] Fetching chars for admin
+[2026-02-05 05:04:16.268] [DB] Found 3 chars.
+[2026-02-05 05:10:44.799] =========================================
+[2026-02-05 05:10:44.801] Starting The Grid AUTH SERVER (Embedded)...
+[2026-02-05 05:10:44.801] =========================================
+[2026-02-05 05:10:44.819] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 05:10:51.624] [DB] Fetching chars for admin
+[2026-02-05 05:10:51.628] [DB] Found 3 chars.

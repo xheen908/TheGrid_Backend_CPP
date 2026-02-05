@@ -151,6 +151,7 @@ public:
         if (mobDied) {
             Logger::log("[Ability] Frostblitz awarding XP for " + pName);
             GameLogic::awardXP(player, xpReward);
+            GameLogic::checkQuestKill(player, targetId);
         }
 
         {

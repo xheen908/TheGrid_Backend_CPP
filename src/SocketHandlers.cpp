@@ -805,6 +805,131 @@ void SocketHandlers::sendSafe(uWS::WebSocket<false, true, PerSocketData>* ws, co
         ws->send(message, uWS::OpCode::TEXT);
     });
 }
+void SocketHandlers::handleQuestInteract(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    if (!data) return;
+
+    int npcId = j.value("npc_id", -1);
+    auto player = GameState::getInstance().getPlayer(data->username);
+    if (!player) return;
+
+    auto objs = GameState::getInstance().getGameObjects(player->mapName);
+    GameObject* npc = nullptr;
+    for (auto& obj : objs) {
+        if (obj.id == npcId && obj.type == "quest_giver") {
+            npc = &obj;
+            break;
+        }
+    }
+
+    if (!npc) return;
+
+    std::string questId = npc->extraData.value("quest_id", "");
+    if (questId.empty()) return;
+
+    QuestTemplate qt = GameState::getInstance().getQuestTemplate(questId);
+    
+    // Check if player has quest or already completed it
+    PlayerQuest* pq = nullptr;
+    {
+        std::lock_guard<std::recursive_mutex> lock(player->pMtx);
+        for (auto& q : player->quests) {
+            if (q.questId == questId) {
+                pq = &q;
+                break;
+            }
+        }
+    }
+
+    json response = {
+        {"type", "quest_info"},
+        {"quest_id", questId},
+        {"title", qt.title},
+        {"description", qt.description},
+        {"objectives", qt.objectives}
+    };
+
+    if (pq) {
+        response["status"] = pq->status;
+        response["progress"] = pq->progress;
+    } else {
+        response["status"] = "available";
+    }
+
+    ws->send(response.dump(), uWS::OpCode::TEXT);
+}
+
+void SocketHandlers::handleQuestAccept(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    if (!data) return;
+
+    std::string questId = j.value("quest_id", "");
+    auto player = GameState::getInstance().getPlayer(data->username);
+    if (!player || questId.empty()) return;
+
+    {
+        std::lock_guard<std::recursive_mutex> lock(player->pMtx);
+        for (auto const& q : player->quests) {
+            if (q.questId == questId) return; // Already have it
+        }
+        
+        PlayerQuest newPq;
+        newPq.questId = questId;
+        newPq.status = "active";
+        // Progress defaults to empty/0
+        player->quests.push_back(newPq);
+    }
+
+    QuestTemplate qt = GameState::getInstance().getQuestTemplate(questId);
+    json response = {
+        {"type", "quest_accepted"},
+        {"quest_id", questId},
+        {"title", qt.title},
+        {"description", qt.description},
+        {"objectives", qt.objectives}
+    };
+    ws->send(response.dump(), uWS::OpCode::TEXT);
+    Database::getInstance().saveQuests(*player);
+}
+
+void SocketHandlers::handleQuestReward(uWS::WebSocket<false, true, PerSocketData>* ws, const json& j) {
+    auto data = ws->getUserData();
+    if (!data) return;
+
+    std::string questId = j.value("quest_id", "");
+    auto player = GameState::getInstance().getPlayer(data->username);
+    if (!player || questId.empty()) return;
+
+    PlayerQuest* pq = nullptr;
+    {
+        std::lock_guard<std::recursive_mutex> lock(player->pMtx);
+        for (auto& q : player->quests) {
+            if (q.questId == questId) {
+                pq = &q;
+                break;
+            }
+        }
+    }
+
+    if (!pq || pq->status != "completed") return;
+
+    QuestTemplate qt = GameState::getInstance().getQuestTemplate(questId);
+    
+    // XP Belohnung berechnen
+    int rewardXp = qt.rewardXpBase;
+    if (player->level >= 60) {
+        rewardXp = qt.rewardXpMax;
+    } else if (player->level > 1) {
+        // Lineare Interplolation oder einfach base
+        // rewardXp = (int)(qt.rewardXpBase + (player->level - 1) * ((qt.rewardXpMax - qt.rewardXpBase) / 59.0));
+    }
+
+    pq->status = "rewarded";
+    ws->send(json{{"type", "quest_rewarded"}, {"quest_id", questId}}.dump(), uWS::OpCode::TEXT);
+    
+    GameLogic::awardXP(*player, rewardXp);
+    Database::getInstance().saveQuests(*player);
+}
 
 void SocketHandlers::sendToPlayer(const std::string& username, const std::string& message) {
     WorldServer::defer([username, message]() {

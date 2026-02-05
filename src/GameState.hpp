@@ -40,6 +40,27 @@ struct ItemInstance {
     // Helper to get template data if needed
 };
 
+struct QuestObjective {
+    std::string type; // "kill", "collect"
+    std::string target; // Mob ID or Item ID
+    int amount;
+};
+
+struct QuestTemplate {
+    std::string id;
+    std::string title;
+    std::string description;
+    std::map<std::string, int> objectives; // target_id -> count
+    int rewardXpBase;
+    int rewardXpMax;
+};
+
+struct PlayerQuest {
+    std::string questId;
+    std::string status; // "active", "completed", "rewarded"
+    std::map<std::string, int> progress; // target_id -> current_count
+};
+
 struct Trade {
     std::string id;
     std::string p1; // Username
@@ -98,6 +119,7 @@ struct Player {
     long long disconnectTime = 0;
     
     std::vector<ItemInstance> inventory;
+    std::vector<PlayerQuest> quests;
 
     mutable std::recursive_mutex pMtx; // Protects strings and vectors in this struct
 };
@@ -151,6 +173,7 @@ public:
     std::vector<Mob>& getMobs();
     std::vector<GameObject> getGameObjects(const std::string& mapName);
     ItemTemplate getItemTemplate(const std::string& itemId);
+    QuestTemplate getQuestTemplate(const std::string& questId);
     std::recursive_mutex& getMtx() { return mtx; }
 
     void addParty(std::shared_ptr<Party> party);
@@ -172,6 +195,7 @@ private:
     std::map<std::string, std::shared_ptr<Player>> activePlayers;
     std::vector<Mob> mobs;
     std::map<std::string, ItemTemplate> itemTemplates;
+    std::map<std::string, QuestTemplate> questTemplates;
     std::map<std::string, std::vector<GameObject>> gameObjects; // map_name -> current objects
     std::map<std::string, std::shared_ptr<Party>> parties;
     std::map<std::string, std::shared_ptr<Trade>> activeTrades;

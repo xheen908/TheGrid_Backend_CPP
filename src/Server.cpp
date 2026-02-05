@@ -71,6 +71,7 @@ void WorldServer::start(int port) {
                     data->mapName = player->mapName; 
 
                     Database::getInstance().loadInventory(*player);
+                    Database::getInstance().loadQuests(*player);
 
                     ws->send(json{
                         {"type", "authenticated"}, 
@@ -82,8 +83,27 @@ void WorldServer::start(int port) {
                         {"map_name", player->mapName},
                         {"is_gm", player->isGM},
                         {"position", {{"x", player->lastPos.x}, {"y", player->lastPos.y}, {"z", player->lastPos.z}}},
-                        {"inventory_size", GameLogic::getInventorySize(player->level)}
+                        {"inventory_size", GameLogic::getInventorySize(player->level)},
+                        {"quests", json::array()} // Sent below via quest_sync to stay clean
                     }.dump(), uWS::OpCode::TEXT);
+
+                    // Sync Quests
+                    json questSync = {{"type", "quest_sync"}, {"quests", json::array()}};
+                    {
+                        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+                        for (const auto& pq : player->quests) {
+                            auto qt = GameState::getInstance().getQuestTemplate(pq.questId);
+                            questSync["quests"].push_back({
+                                {"quest_id", pq.questId},
+                                {"title", qt.title},
+                                {"description", qt.description},
+                                {"status", pq.status},
+                                {"progress", pq.progress},
+                                {"objectives", qt.objectives}
+                            });
+                        }
+                    }
+                    ws->send(questSync.dump(), uWS::OpCode::TEXT);
 
                     // Sync initial inventory
                     json invMsg = {{"type", "inventory_sync"}, {"items", json::array()}};
@@ -198,6 +218,12 @@ void WorldServer::start(int port) {
                         SocketHandlers::handleTradeConfirm(ws, j);
                     } else if (type == "trade_cancel") {
                         SocketHandlers::handleTradeCancel(ws, j);
+                    } else if (type == "quest_interact") {
+                        SocketHandlers::handleQuestInteract(ws, j);
+                    } else if (type == "quest_accept") {
+                        SocketHandlers::handleQuestAccept(ws, j);
+                    } else if (type == "quest_reward") {
+                        SocketHandlers::handleQuestReward(ws, j);
                     }
                 }
             } catch (const std::exception& e) {

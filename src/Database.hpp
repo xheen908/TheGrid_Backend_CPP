@@ -40,12 +40,17 @@ public:
     // --- World DB Operations ---
     json getWorlds();
     std::map<std::string, struct ItemTemplate> loadItemTemplates();
+    std::map<std::string, struct QuestTemplate> loadQuestTemplates();
     std::vector<struct Mob> loadMobs();
     std::vector<struct GameObject> loadGameObjects(const std::string& mapName);
 
     // --- Inventory Operations ---
     bool loadInventory(struct Player& player);
     bool saveInventory(struct Player& player);
+    
+    // --- Quest Operations ---
+    bool loadQuests(struct Player& player);
+    bool saveQuests(struct Player& player);
 
 private:
     Database();

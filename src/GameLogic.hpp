@@ -25,6 +25,7 @@ public:
     static void scaleMobToMap(Mob& mob, const std::map<std::string, float>& mapLevelMap, const std::map<std::string, int>& mapPartySizeMap);
     static void awardXP(Player& player, int amount);
     static int getInventorySize(int level);
+    static void checkQuestKill(Player& player, const std::string& mobId);
 };
 
 #endif

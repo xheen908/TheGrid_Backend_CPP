@@ -390,6 +390,39 @@ std::map<std::string, ItemTemplate> Database::loadItemTemplates() {
     return templates;
 }
 
+std::map<std::string, QuestTemplate> Database::loadQuestTemplates() {
+    std::lock_guard lock(mtx);
+    std::map<std::string, QuestTemplate> templates;
+    if (!conn) return templates;
+
+    std::string query = "SELECT id, title, description, objectives, reward_xp_base, reward_xp_max FROM world_db.quests";
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] loadQuestTemplates Error: " + std::string(mysql_error(conn)));
+        return templates;
+    }
+
+    MYSQL_RES *result = mysql_store_result(conn);
+    if (!result) return templates;
+
+    MYSQL_ROW row;
+    while ((row = mysql_fetch_row(result))) {
+        QuestTemplate t;
+        t.id = row[0];
+        t.title = row[1];
+        t.description = row[2] ? row[2] : "";
+        if (row[3]) {
+            try { t.objectives = json::parse(row[3]).get<std::map<std::string, int>>(); }
+            catch (...) { Logger::log("[DB] Quest " + t.id + " has invalid objectives JSON."); }
+        }
+        t.rewardXpBase = std::stoi(row[4]);
+        t.rewardXpMax = std::stoi(row[5]);
+        templates[t.id] = t;
+    }
+    mysql_free_result(result);
+    Logger::log("[DB] Loaded " + std::to_string(templates.size()) + " quest templates.");
+    return templates;
+}
+
 bool Database::loadInventory(Player& player) {
     std::lock_guard lock(mtx);
     std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
@@ -438,6 +471,61 @@ bool Database::saveInventory(Player& player) {
         
         if (mysql_query(conn, insQuery.c_str())) {
             Logger::log("[DB] saveInventory Item Error: " + std::string(mysql_error(conn)));
+        }
+    }
+    return true;
+}
+
+bool Database::loadQuests(Player& player) {
+    std::lock_guard lock(mtx);
+    std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
+    if (!conn) return false;
+
+    player.quests.clear();
+    std::string query = "SELECT quest_id, status, progress FROM charakter_db.player_quests WHERE character_id = " + std::to_string(player.dbId);
+    
+    if (mysql_query(conn, query.c_str())) {
+        Logger::log("[DB] loadQuests Error: " + std::string(mysql_error(conn)));
+        return false;
+    }
+
+    MYSQL_RES *result = mysql_store_result(conn);
+    if (!result) return false;
+
+    MYSQL_ROW row;
+    while ((row = mysql_fetch_row(result))) {
+        PlayerQuest pq;
+        pq.questId = row[0];
+        pq.status = row[1];
+        if (row[2]) {
+            try { pq.progress = json::parse(row[2]).get<std::map<std::string, int>>(); }
+            catch (...) { pq.progress = {}; }
+        }
+        player.quests.push_back(pq);
+    }
+    mysql_free_result(result);
+    return true;
+}
+
+bool Database::saveQuests(Player& player) {
+    std::lock_guard lock(mtx);
+    std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
+    if (!conn) return false;
+
+    // Remove old and re-insert
+    std::string delQuery = "DELETE FROM charakter_db.player_quests WHERE character_id = " + std::to_string(player.dbId);
+    mysql_query(conn, delQuery.c_str());
+
+    for (const auto& pq : player.quests) {
+        std::string progJson = json(pq.progress).dump();
+        std::string insQuery = "INSERT INTO charakter_db.player_quests (character_id, quest_id, status, progress) VALUES (" +
+            std::to_string(player.dbId) + ", '" +
+            pq.questId + "', '" +
+            pq.status + "', '" +
+            progJson + "')";
+        
+        if (mysql_query(conn, insQuery.c_str())) {
+            Logger::log("[DB] saveQuests Item Error: " + std::string(mysql_error(conn)));
         }
     }
     return true;

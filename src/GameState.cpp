@@ -16,6 +16,7 @@ void GameState::loadWorldData() {
     std::lock_guard<std::recursive_mutex> lock(mtx);
     mobs = Database::getInstance().loadMobs();
     itemTemplates = Database::getInstance().loadItemTemplates();
+    questTemplates = Database::getInstance().loadQuestTemplates();
     
     // Load objects for known maps
     for (auto const& [mapName, settings] : mapSettings) {
@@ -81,6 +82,17 @@ ItemTemplate GameState::getItemTemplate(const std::string& itemId) {
     t.itemId = itemId;
     t.name = "Unknown Item";
     return t;
+}
+
+QuestTemplate GameState::getQuestTemplate(const std::string& questId) {
+    std::lock_guard<std::recursive_mutex> lock(mtx);
+    if (questTemplates.find(questId) != questTemplates.end()) {
+        return questTemplates.at(questId);
+    }
+    QuestTemplate q;
+    q.id = questId;
+    q.title = "Unbekannte Quest";
+    return q;
 }
 
 int GameState::getRespawnRate(const std::string& mapName) {
