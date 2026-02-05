@@ -9,6 +9,9 @@
 class Frostblitz : public Ability {
 public:
     std::string getName() const override { return "Frostblitz"; }
+    std::string getCategory() const override { return "Mage"; }
+    std::string getDescription() const override { return "Schießt Frost auf das Ziel.\n[color=cyan]Verursacht Frost-Schaden.[/color]"; }
+    std::string getIcon() const override { return "res://Assets/UI/spell_frostblitz.jpg"; }
     float getCastTime() const override { return 2.0f; }
     float getCooldown() const override { return 0.0f; }
     bool isTargeted() const override { return true; }

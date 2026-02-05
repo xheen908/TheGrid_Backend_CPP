@@ -9,6 +9,9 @@
 class FrostNova : public Ability {
 public:
     std::string getName() const override { return "Frost Nova"; }
+    std::string getCategory() const override { return "Mage"; }
+    std::string getDescription() const override { return "Friert alle Gegner in der Nähe ein.\n[color=cyan]Dauer: 8 Sek.[/color]"; }
+    std::string getIcon() const override { return "res://Assets/UI/spell_frost_nova.jpg"; }
     float getCastTime() const override { return 0.0f; }
     float getCooldown() const override { return 25.0f; }
     bool isTargeted() const override { return false; }

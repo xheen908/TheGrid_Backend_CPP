@@ -139,6 +139,9 @@ void WorldServer::start(int port) {
                     }
                     ws->send(objectsMsg.dump(), uWS::OpCode::TEXT);
                     
+                    // Sync Abilities
+                    SocketHandlers::syncAbilities(ws, player);
+                    
                     Logger::log("[WS] User Authenticated & Loaded: " + data->username + " on " + player->mapName);
                 } else if (data->isAuthenticated) {
                     auto player = GameState::getInstance().getPlayer(data->username);

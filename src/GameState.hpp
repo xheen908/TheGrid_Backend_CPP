@@ -120,6 +120,7 @@ struct Player {
     
     std::vector<ItemInstance> inventory;
     std::vector<PlayerQuest> quests;
+    std::vector<std::string> knownAbilities;
 
     mutable std::recursive_mutex pMtx; // Protects strings and vectors in this struct
 };

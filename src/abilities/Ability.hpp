@@ -12,6 +12,9 @@ public:
     virtual ~Ability() = default;
 
     virtual std::string getName() const = 0;
+    virtual std::string getCategory() const { return "General"; }
+    virtual std::string getDescription() const { return ""; }
+    virtual std::string getIcon() const { return ""; }
     virtual float getCastTime() const = 0; // in seconds
     virtual float getCooldown() const = 0; // in seconds
     virtual bool isTargeted() const = 0;

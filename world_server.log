@@ -46729,3 +46729,49 @@
 [2026-02-05 05:42:37.028] [MAP] Change success: client
 [2026-02-05 05:46:51.143] [WS] Player disconnected & saved: admin
 [2026-02-05 05:46:53.599] [WS] Player disconnected & saved: client
+[2026-02-05 05:48:20.124] =========================================
+[2026-02-05 05:48:20.126] Starting The Grid WORLD SERVER...
+[2026-02-05 05:48:20.126] =========================================
+[2026-02-05 05:48:20.129] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-05 05:48:20.146] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 05:48:20.150] [DB] Loaded 12 mobs from database.
+[2026-02-05 05:48:20.152] [DB] Loaded 14 item templates.
+[2026-02-05 05:48:20.154] [DB] Loaded 2 quest templates.
+[2026-02-05 05:48:20.155] [DB] Loaded 1 game objects for map Arena0
+[2026-02-05 05:48:20.157] [DB] Loaded 1 game objects for map Arena1
+[2026-02-05 05:48:20.158] [DB] Loaded 1 game objects for map Arena2
+[2026-02-05 05:48:20.159] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-05 05:48:20.161] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-05 05:48:20.163] [DB] Loaded 6 game objects for map WorldMap0
+[2026-02-05 05:48:31.846] [WS] Client connected to WorldServer.
+[2026-02-05 05:48:31.868] [WS] User Authenticated & Loaded: client on TestMap0
+[2026-02-05 05:48:35.057] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:48:35.058] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:48:35.058] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:48:35.058] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:48:35.605] [WS] User Authenticated & Loaded: client on TestMap0
+[2026-02-05 05:48:40.056] [MobAI] Mob Zombie Rogue (18) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:48:40.057] [MobAI] Mob Zombie Minion (19) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:48:40.057] [MobAI] Mob Zombie Magier (20) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:48:40.058] [MobAI] Mob Zombie Magier (21) idle. Players on map: 1, nearest dist: 25.000000
+[2026-02-05 05:48:41.178] [MAP] Player client requesting map change: TestMap0 -> WorldMap0
+[2026-02-05 05:48:41.188] [MAP] Change success: client
+[2026-02-05 05:54:39.694] [WS] Player disconnected & saved: client
+[2026-02-05 05:59:54.940] =========================================
+[2026-02-05 05:59:54.943] Starting The Grid WORLD SERVER...
+[2026-02-05 05:59:54.943] =========================================
+[2026-02-05 05:59:54.943] [DB] Config: Host=127.0.0.1, User=user_name
+[2026-02-05 05:59:54.963] [DB] Connected to MySQL successfully at 127.0.0.1
+[2026-02-05 05:59:54.967] [DB] Loaded 12 mobs from database.
+[2026-02-05 05:59:54.971] [DB] Loaded 14 item templates.
+[2026-02-05 05:59:54.973] [DB] Loaded 2 quest templates.
+[2026-02-05 05:59:54.975] [DB] Loaded 1 game objects for map Arena0
+[2026-02-05 05:59:54.977] [DB] Loaded 1 game objects for map Arena1
+[2026-02-05 05:59:54.978] [DB] Loaded 1 game objects for map Arena2
+[2026-02-05 05:59:54.979] [DB] Loaded 1 game objects for map Dungeon0
+[2026-02-05 05:59:54.980] [DB] Loaded 1 game objects for map TestMap0
+[2026-02-05 05:59:54.982] [DB] Loaded 6 game objects for map WorldMap0
+[2026-02-05 05:59:56.447] [WS] Client connected to WorldServer.
+[2026-02-05 05:59:56.475] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-05 05:59:59.383] [WS] User Authenticated & Loaded: client on WorldMap0
+[2026-02-05 06:01:39.071] [WS] Player disconnected & saved: client

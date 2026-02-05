@@ -48,6 +48,7 @@ void SocketHandlers::handleMapChange(uWS::WebSocket<false, true, PerSocketData>*
 
         // 3b. Send game objects to player
         syncGameObjects(ws, newMap);
+        syncAbilities(ws, player);
         
         // 4. Save to DB
         Database::getInstance().savePlayer(*player);
@@ -973,4 +974,48 @@ void SocketHandlers::syncPlayerStatus(std::shared_ptr<Player> player) {
     }
     
     sendToPlayer(syncUsername, statusMsg.dump());
+}
+
+void SocketHandlers::syncAbilities(uWS::WebSocket<false, true, PerSocketData>* ws, std::shared_ptr<Player> player) {
+    if (!ws || !player) return;
+    
+    std::string pName;
+    std::vector<std::string> known;
+    {
+        std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+        pName = player->charName;
+        std::string lowerClass = player->characterClass;
+        std::transform(lowerClass.begin(), lowerClass.end(), lowerClass.begin(), ::tolower);
+        
+        if (player->knownAbilities.empty() && lowerClass == "mage") {
+            player->knownAbilities = {"Frostblitz", "Frost Nova", "Kältekegel", "Eisbarriere"};
+        }
+        known = player->knownAbilities;
+    }
+
+    Logger::log("[Ability] Syncing " + std::to_string(known.size()) + " abilities for " + pName + " (Class: " + player->characterClass + ")");
+
+    json list = json::array();
+    for (const auto& name : known) {
+        const Ability* abi = AbilityManager::getInstance().getAbility(name);
+        if (abi) {
+            list.push_back({
+                {"name", abi->getName()},
+                {"category", abi->getCategory()},
+                {"description", abi->getDescription()},
+                {"icon", abi->getIcon()},
+                {"cast_time", abi->getCastTime()},
+                {"cooldown", abi->getCooldown()},
+                {"targeted", abi->isTargeted()}
+            });
+        } else {
+            Logger::log("[Ability] ERROR: Ability not found in manager: " + name);
+        }
+    }
+
+    json msg = {
+        {"type", "spellbook_sync"},
+        {"abilities", list}
+    };
+    ws->send(msg.dump(), uWS::OpCode::TEXT);
 }

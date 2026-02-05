@@ -4,7 +4,10 @@
 #include <map>
 #include <string>
 #include <memory>
+#include <nlohmann/json.hpp>
 #include "Ability.hpp"
+
+using json = nlohmann::json;
 #include "Frostblitz.hpp"
 #include "IceBarrier.hpp"
 #include "FrostNova.hpp"
@@ -27,6 +30,22 @@ public:
             return it->second.get();
         }
         return nullptr;
+    }
+
+    json getAbilitiesJson() const {
+        json list = json::array();
+        for (auto const& [name, ability] : abilities) {
+            list.push_back({
+                {"name", ability->getName()},
+                {"category", ability->getCategory()},
+                {"description", ability->getDescription()},
+                {"icon", ability->getIcon()},
+                {"cast_time", ability->getCastTime()},
+                {"cooldown", ability->getCooldown()},
+                {"targeted", ability->isTargeted()}
+            });
+        }
+        return list;
     }
 
     void startCasting(Player& player, const std::string& spellName, const std::string& targetId) {

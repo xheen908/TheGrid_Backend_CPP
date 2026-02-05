@@ -39,6 +39,7 @@ public:
     static void sendSafe(uWS::WebSocket<false, true, PerSocketData>* ws, const std::string& message);
     static void sendToPlayer(const std::string& username, const std::string& message);
     static void syncPlayerStatus(std::shared_ptr<Player> player);
+    static void syncAbilities(uWS::WebSocket<false, true, PerSocketData>* ws, std::shared_ptr<Player> player);
 };
 
 #endif

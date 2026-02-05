@@ -10,6 +10,9 @@
 class ConeOfCold : public Ability {
 public:
     std::string getName() const override { return "Kältekegel"; }
+    std::string getCategory() const override { return "Mage"; }
+    std::string getDescription() const override { return "Schaden und Verlangsamung vor dir.\n[color=cyan]Dauer: 6 Sek.[/color]"; }
+    std::string getIcon() const override { return "res://Assets/UI/spell_cone_of_cold.jpg"; }
     float getCastTime() const override { return 0.0f; }
     float getCooldown() const override { return 10.0f; }
     bool isTargeted() const override { return false; }

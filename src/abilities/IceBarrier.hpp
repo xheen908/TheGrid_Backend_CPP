@@ -7,6 +7,9 @@
 class IceBarrier : public Ability {
 public:
     std::string getName() const override { return "Eisbarriere"; }
+    std::string getCategory() const override { return "Mage"; }
+    std::string getDescription() const override { return "Schützt dich mit einem Eisschild.\n[color=cyan]Absorbiert Schaden.[/color]"; }
+    std::string getIcon() const override { return "res://Assets/UI/spell_ice_barrier.jpg"; }
     float getCastTime() const override { return 0.0f; }
     float getCooldown() const override { return 30.0f; }
     bool isTargeted() const override { return false; }
