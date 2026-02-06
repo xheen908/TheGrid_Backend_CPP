@@ -93,13 +93,19 @@ void WorldServer::start(int port) {
                         std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
                         for (const auto& pq : player->quests) {
                             auto qt = GameState::getInstance().getQuestTemplate(pq.questId);
+                            json objNames = json::object();
+                            for (auto const& [target_id, count] : qt.objectives) {
+                                objNames[target_id] = GameState::getInstance().getMobName(target_id);
+                            }
+
                             questSync["quests"].push_back({
                                 {"quest_id", pq.questId},
                                 {"title", qt.title},
                                 {"description", qt.description},
                                 {"status", pq.status},
                                 {"progress", pq.progress},
-                                {"objectives", qt.objectives}
+                                {"objectives", qt.objectives},
+                                {"objective_names", objNames}
                             });
                         }
                     }
@@ -172,6 +178,7 @@ void WorldServer::start(int port) {
                         if (moved) {
                              auto ability = AbilityManager::getInstance().getAbility(player->currentSpell);
                              if (ability && !ability->canCastWhileMoving()) {
+                                 Logger::log("[Combat] Interrupting " + player->currentSpell + " for " + player->charName + " due to movement.");
                                  AbilityManager::getInstance().interrupt(*player);
                              }
                         }
@@ -339,7 +346,7 @@ void WorldServer::tick() {
                 mapLists[m.mapName].push_back({
                     {"id", m.id}, {"name", m.name}, {"hp", m.hp}, {"maxHp", m.maxHp}, 
                     {"debuffs", dList}, {"model_id", m.modelId},
-                    {"transform", {{"x", m.transform.x}, {"y", m.transform.y}, {"z", m.transform.z}, {"rot", m.rotation}}}
+                    {"transform", {{"x", m.transform.x}, {"y", m.transform.y}, {"z", m.transform.z}, {"rot", m.rotationY}}}
                 });
             }
         }

@@ -95,11 +95,18 @@ void SocketHandlers::handleSpellCast(uWS::WebSocket<false, true, PerSocketData>*
     
     std::string spell = j.value("spell_id", "");
     std::string targetId = j.value("target_id", "");
+    Vector3 targetPos = {0,0,0};
+    if (j.contains("target_pos")) {
+        auto p = j["target_pos"];
+        targetPos.x = p.value("x", 0.0f);
+        targetPos.y = p.value("y", 0.0f);
+        targetPos.z = p.value("z", 0.0f);
+    }
     
     auto player = GameState::getInstance().getPlayer(data->username);
     if (!player) return;
 
-    AbilityManager::getInstance().startCasting(*player, spell, targetId);
+    AbilityManager::getInstance().startCasting(*player, spell, targetId, targetPos);
 }
 
 
@@ -425,13 +432,36 @@ void SocketHandlers::handleUseItem(uWS::WebSocket<false, true, PerSocketData>* w
             [slotIdx](const ItemInstance& item) { return item.slotIndex == slotIdx; });
 
         if (it != player->inventory.end()) {
-            std::string slug = it->itemId;
+            auto tmpl = GameState::getInstance().getItemTemplate(it->itemId);
+            std::string itemId = it->itemId; // Save ID for feedback
             bool consumed = false;
+            bool statusChanged = false;
 
-            if (slug == "2") { // Item ID 2: Health Potion (Full Heal)
+            // Equipment logic
+            if (tmpl.componentData.contains("equip_slot")) {
+                std::string slot = tmpl.componentData["equip_slot"];
+                bool nowEquipped = !it->isEquipped;
+
+                if (nowEquipped) {
+                    // Unequip others in same slot
+                    for (auto& other : player->inventory) {
+                        if (other.isEquipped && other.slotIndex != it->slotIndex) {
+                            auto oTmpl = GameState::getInstance().getItemTemplate(other.itemId);
+                            if (oTmpl.componentData.contains("equip_slot") && oTmpl.componentData["equip_slot"] == slot) {
+                                other.isEquipped = false;
+                            }
+                        }
+                    }
+                }
+
+                it->isEquipped = nowEquipped;
+                statusChanged = true;
+                Logger::log("[ITEM] " + player->charName + (nowEquipped ? " ausgestattet: " : " abgelegt: ") + tmpl.name);
+            }
+            else if (itemId == "2") { // Item ID 2: Health Potion (Full Heal)
                 player->hp = player->maxHp;
-                player->lastStatusSync = 0; // Trigger status update
-                Logger::log("[ITEM] " + player->charName + " used Item ID 2 (Full Heal)");
+                statusChanged = true;
+                Logger::log("[ITEM] " + player->charName + " nutzte Heiltrank (Voll)");
                 consumed = true;
             }
 
@@ -440,34 +470,38 @@ void SocketHandlers::handleUseItem(uWS::WebSocket<false, true, PerSocketData>* w
                 if (it->quantity <= 0) {
                     player->inventory.erase(it);
                 }
-                
-                // Sync inventory
+            }
+
+            // Sync inventory if changed
+            if (statusChanged || consumed) {
                 json invMsg = {{"type", "inventory_sync"}, {"items", json::array()}};
                 for (const auto& item : player->inventory) {
-                    auto tmpl = GameState::getInstance().getItemTemplate(item.itemId);
+                    auto tmpl2 = GameState::getInstance().getItemTemplate(item.itemId);
                     invMsg["items"].push_back({
                         {"item_id", item.itemId},
                         {"slot", item.slotIndex},
                         {"quantity", item.quantity},
                         {"equipped", item.isEquipped},
-                        {"name", tmpl.name},
-                        {"description", tmpl.description},
-                        {"rarity", tmpl.rarity},
-                        {"extra_data", tmpl.componentData}
+                        {"name", tmpl2.name},
+                        {"description", tmpl2.description},
+                        {"rarity", tmpl2.rarity},
+                        {"extra_data", tmpl2.componentData}
                     });
                 }
                 ws->send(invMsg.dump(), uWS::OpCode::TEXT);
                 
+                // Recalculate stats & Sync Status
+                syncPlayerStatus(player);
+                
                 // Save immediately
                 Database::getInstance().savePlayer(*player);
                 Database::getInstance().saveInventory(*player);
-
-                // Feedback
-                auto tmpl = GameState::getInstance().getItemTemplate(it->itemId);
-                std::string itemLink = "[color=#00FFFF][url=item:" + it->itemId + "]" + tmpl.name + "[/url][/color]";
-                json msg = {{"type", "chat_receive"}, {"mode", "system"}, {"message", "Du hast " + itemLink + " benutzt."}};
-                ws->send(msg.dump(), uWS::OpCode::TEXT);
             }
+
+            // Feedback
+            std::string itemLink = "[color=#00FFFF][url=item:" + itemId + "]" + tmpl.name + "[/url][/color]";
+            json fmsg = {{"type", "chat_receive"}, {"mode", "system"}, {"message", "Du hast " + itemLink + " benutzt."}};
+            ws->send(fmsg.dump(), uWS::OpCode::TEXT);
         }
     }
 }
@@ -842,12 +876,18 @@ void SocketHandlers::handleQuestInteract(uWS::WebSocket<false, true, PerSocketDa
         }
     }
 
+    json objNames = json::object();
+    for (auto const& [target_id, count] : qt.objectives) {
+        objNames[target_id] = GameState::getInstance().getMobName(target_id);
+    }
+
     json response = {
         {"type", "quest_info"},
         {"quest_id", questId},
         {"title", qt.title},
         {"description", qt.description},
-        {"objectives", qt.objectives}
+        {"objectives", qt.objectives},
+        {"objective_names", objNames}
     };
 
     if (pq) {
@@ -882,12 +922,18 @@ void SocketHandlers::handleQuestAccept(uWS::WebSocket<false, true, PerSocketData
     }
 
     QuestTemplate qt = GameState::getInstance().getQuestTemplate(questId);
+    json objNames = json::object();
+    for (auto const& [target_id, count] : qt.objectives) {
+        objNames[target_id] = GameState::getInstance().getMobName(target_id);
+    }
+
     json response = {
         {"type", "quest_accepted"},
         {"quest_id", questId},
         {"title", qt.title},
         {"description", qt.description},
-        {"objectives", qt.objectives}
+        {"objectives", qt.objectives},
+        {"objective_names", objNames}
     };
     ws->send(response.dump(), uWS::OpCode::TEXT);
     Database::getInstance().saveQuests(*player);
@@ -955,11 +1001,48 @@ void SocketHandlers::syncPlayerStatus(std::shared_ptr<Player> player) {
     if (!player) return;
     
     LevelData ld = GameLogic::getLevelData(player->level);
+    
+    // Base Stats
+    int baseStr = 20 + (player->level * 2);
+    int baseAgi = 20 + (player->level * 2);
+    int baseInt = 20 + (player->level * 2);
+    int baseSta = 20 + (player->level * 2);
+    
+    int bonusStr = 0, bonusAgi = 0, bonusInt = 0, bonusSta = 0, bonusArmor = 0;
+    
     json statusMsg;
     std::string syncUsername;
     
     {
         std::lock_guard<std::recursive_mutex> pLock(player->pMtx);
+        
+        for (const auto& item : player->inventory) {
+            if (item.isEquipped) {
+                auto tmpl = GameState::getInstance().getItemTemplate(item.itemId);
+                if (tmpl.componentData.contains("stats")) {
+                    auto& s = tmpl.componentData["stats"];
+                    bonusStr += s.value("strength", 0);
+                    bonusAgi += s.value("agility", 0);
+                    bonusInt += s.value("intelligence", 0);
+                    bonusSta += s.value("stamina", 0);
+                    bonusArmor += s.value("armor", 0);
+                }
+            }
+        }
+
+        player->strength = baseStr + bonusStr;
+        player->agility = baseAgi + bonusAgi;
+        player->intelligence = baseInt + bonusInt;
+        player->stamina = baseSta + bonusSta;
+        player->armor = bonusArmor;
+
+        // Apply Stamina/Int bonuses
+        player->maxHp = ld.hp + (player->stamina * 10);
+        player->maxMana = ld.mana + (player->intelligence * 15);
+
+        if (player->hp > player->maxHp) player->hp = player->maxHp;
+        if (player->mana > player->maxMana) player->mana = player->maxMana;
+
         syncUsername = player->username;
         statusMsg = {
             {"type", "player_status"}, {"username", player->charName},
@@ -969,7 +1052,12 @@ void SocketHandlers::syncPlayerStatus(std::shared_ptr<Player> player) {
             {"xp", player->xp}, {"max_xp", ld.xpToNextLevel},
             {"speed_multiplier", player->speedMultiplier},
             {"gravity_enabled", player->gravityEnabled},
-            {"is_gm", player->isGMFlagged}
+            {"is_gm", player->isGMFlagged},
+            {"strength", player->strength},
+            {"agility", player->agility},
+            {"intelligence", player->intelligence},
+            {"stamina", player->stamina},
+            {"armor", player->armor}
         };
     }
     
@@ -988,7 +1076,7 @@ void SocketHandlers::syncAbilities(uWS::WebSocket<false, true, PerSocketData>* w
         std::transform(lowerClass.begin(), lowerClass.end(), lowerClass.begin(), ::tolower);
         
         if (player->knownAbilities.empty() && lowerClass == "mage") {
-            player->knownAbilities = {"Frostblitz", "Frost Nova", "Kältekegel", "Eisbarriere"};
+            player->knownAbilities = {"Frostblitz", "Frost Nova", "Kältekegel", "Eisbarriere", "Blizzard"};
         }
         known = player->knownAbilities;
     }

@@ -36,8 +36,9 @@ public:
         return true;
     }
 
-    virtual void onCastStart(Player& player, const std::string& targetId) const = 0;
-    virtual void onCastComplete(Player& player, const std::string& targetId) const = 0;
+    virtual void onCastStart(Player& player, const std::string& targetId, const Vector3& targetPos) const = 0;
+    virtual void onCastTick(Player& player, const std::string& targetId, const Vector3& targetPos) const {}
+    virtual void onCastComplete(Player& player, const std::string& targetId, const Vector3& targetPos) const = 0;
     virtual void onCastInterrupted(Player& player) const = 0;
 
 protected:

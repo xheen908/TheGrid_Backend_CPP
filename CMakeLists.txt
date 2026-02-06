@@ -6,6 +6,9 @@ set(CMAKE_CXX_STANDARD 20)
 # Set install paths to avoid MariaDB install errors
 set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install")
 set(CMAKE_SKIP_INSTALL_ALL ON CACHE BOOL "" FORCE)
+set(CMAKE_INSTALL_LIBDIR "lib")
+set(CMAKE_INSTALL_BINDIR "bin")
+set(CMAKE_INSTALL_INCLUDEDIR "include")
 
 include(FetchContent)
 

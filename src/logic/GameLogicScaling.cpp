@@ -45,8 +45,9 @@ int GameLogic::getMobDamage(int level) {
     return (int)(10 + (level * 2.0) + (std::pow((double)level, 1.8) * 0.5));
 }
 
-int GameLogic::getMobXPReward(int level) {
-    return 45 + (5 * level);
+int GameLogic::getMobXPReward(int level, int baseXP) {
+    // scale baseXP with level, current default is 45 + 5*level (which is 50 at lvl 1)
+    return (baseXP - 5) + (5 * level);
 }
 
 void GameLogic::scaleMobToMap(Mob& mob, const std::map<std::string, float>& mapLevelMap, const std::map<std::string, int>& mapPartySizeMap) {

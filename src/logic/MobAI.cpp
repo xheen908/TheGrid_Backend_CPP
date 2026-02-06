@@ -3,6 +3,7 @@
 #include "../GameLogic.hpp"
 #include "../SocketHandlers.hpp"
 #include "../Logger.hpp"
+#include "../abilities/AbilityManager.hpp"
 #include <cmath>
 #include <algorithm>
 #include <thread>
@@ -28,30 +29,31 @@ namespace MobAI {
 
         // 1. Aggro / Target Selection
         if (m.target.empty()) {
-            float aggroRange = 25.0f;
-            std::shared_ptr<Player> nearest = nullptr;
-            float minDist = aggroRange;
+            if (now < m.lastAggroCheck + 500) goto skip_aggro;
+            m.lastAggroCheck = now;
 
-            int playersOnMap = 0;
+            float aggroRange = 25.0f;
+            float aggroRangeSq = aggroRange * aggroRange;
+            std::shared_ptr<Player> nearest = nullptr;
+            float minDSq = aggroRangeSq;
+
             for (auto const& p : players) {
-                if (p->mapName == m.mapName) playersOnMap++;
                 if (p->mapName != m.mapName || p->isDisconnected || p->isInvisible || p->hp <= 0) continue;
                 
-                float dist = std::sqrt(std::pow(m.transform.x - p->lastPos.x, 2) + 
-                                      std::pow(m.transform.z - p->lastPos.z, 2));
-                if (dist < minDist) {
-                    minDist = dist;
+                float distSq = std::pow(m.transform.x - p->lastPos.x, 2) + 
+                               std::pow(m.transform.z - p->lastPos.z, 2);
+                if (distSq < minDSq) {
+                    minDSq = distSq;
                     nearest = p;
                 }
             }
 
             if (nearest) {
                 m.target = nearest->username;
-                Logger::log("[MobAI] Mob " + m.name + " (" + m.id + ") aggroed on " + m.target + " (dist: " + std::to_string(minDist) + ")");
-            } else if (now % 5000 < 100 && playersOnMap > 0) { // Log every ~5s if players are around but not aggroed
-                Logger::log("[MobAI] Mob " + m.name + " (" + m.id + ") idle. Players on map: " + std::to_string(playersOnMap) + ", nearest dist: " + std::to_string(minDist));
+                Logger::log("[MobAI] Mob " + m.name + " (" + m.id + ") aggroed on " + m.target);
             }
         }
+    skip_aggro:
 
         // 2. Chasing / Combat
         if (!m.target.empty()) {
@@ -82,11 +84,11 @@ namespace MobAI {
                     float angle = std::atan2(dx, dz);
                     m.transform.x += std::sin(angle) * speed;
                     m.transform.z += std::cos(angle) * speed;
-                    m.rotation = angle;
+                    m.rotationY = angle;
                 }
             } else { // In Attack Range
                 // Always face target when in range
-                m.rotation = std::atan2(targetP->lastPos.x - m.transform.x, targetP->lastPos.z - m.transform.z);
+                m.rotationY = std::atan2(targetP->lastPos.x - m.transform.x, targetP->lastPos.z - m.transform.z);
 
                 if (now - m.lastAttack >= 1500) { // Attack speed 1.5s
                     m.lastAttack = now;
@@ -96,6 +98,9 @@ namespace MobAI {
                         std::lock_guard<std::recursive_mutex> pLock(targetP->pMtx);
                         targetP->hp = std::max(0, targetP->hp - dmg);
                         targetP->lastStatusSync = 0; // Force immediate status sync on next tick
+                        
+                        // Interrupt cast on damage
+                        AbilityManager::getInstance().interrupt(*targetP);
 
                         // 1. Send Combat Text to hit player
                         json ctMsg = {
@@ -129,7 +134,7 @@ namespace MobAI {
                 float angle = std::atan2(dx, dz);
                 m.transform.x += std::sin(angle) * speed;
                 m.transform.z += std::cos(angle) * speed;
-                m.rotation = angle;
+                m.rotationY = angle;
             }
         }
     }

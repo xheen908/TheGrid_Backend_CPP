@@ -279,7 +279,7 @@ std::vector<Mob> Database::loadMobs() {
     std::vector<Mob> mobList;
     if (!conn) return mobList;
 
-    std::string query = "SELECT mob_id, map_name, level, hp, name, mob_type, pos_x, pos_y, pos_z, model_id FROM world_db.mobs";
+    std::string query = "SELECT id, mob_id, map_name, level, hp, name, mob_type, pos_x, pos_y, pos_z, rotation_y, model_id, xp FROM world_db.mobs";
     if (mysql_query(conn, query.c_str())) {
         Logger::log("[DB] LoadMobs Error: " + std::string(mysql_error(conn)));
         return mobList;
@@ -291,23 +291,26 @@ std::vector<Mob> Database::loadMobs() {
     MYSQL_ROW row;
     while ((row = mysql_fetch_row(result))) {
         Mob m;
-        m.id = row[0];
-        m.mapName = row[1];
-        m.dbLevel = std::stoi(row[2]);
+        m.id = row[0];       // Primary Key ID (Instance ID)
+        m.typeId = row[1];   // Mob Type ID (Old mob_id)
+        m.mapName = row[2];
+        m.dbLevel = std::stoi(row[3]);
         if (m.dbLevel < 1) m.dbLevel = 1;
-        m.dbMaxHp = std::stoi(row[3]); 
+        m.dbMaxHp = std::stoi(row[4]); 
         if (m.dbMaxHp < 1) m.dbMaxHp = 1;
 
         m.level = m.dbLevel;
         m.maxHp = m.dbMaxHp;
         m.hp = m.maxHp;
-        m.name = row[4];
-        m.mobType = row[5] ? row[5] : "Normal";
-        m.modelId = row[9] ? row[9] : "neon_sphere";
+        m.name = row[5];
+        m.mobType = row[6] ? row[6] : "Normal";
+        
+        m.transform = {std::stof(row[7]), std::stof(row[8]), std::stof(row[9])};
+        m.rotationY = row[10] ? std::stof(row[10]) : 0.0f;
+        m.modelId = row[11] ? row[11] : "neon_sphere";
+        m.dbXp = row[12] ? std::stoi(row[12]) : 50;
 
-        m.transform = {std::stof(row[6]), std::stof(row[7]), std::stof(row[8])};
         m.home = m.transform;
-        m.rotation = 0.0f;
         mobList.push_back(m);
     }
     mysql_free_result(result);

@@ -63,7 +63,7 @@ int GameLogic::getInventorySize(int level) {
     return 100;
 }
 
-void GameLogic::checkQuestKill(Player& player, const std::string& mobId) {
+void GameLogic::checkQuestKill(Player& player, const std::string& mobTypeId) {
     std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
     bool changed = false;
 
@@ -71,9 +71,12 @@ void GameLogic::checkQuestKill(Player& player, const std::string& mobId) {
         if (pq.status != "active") continue;
 
         QuestTemplate qt = GameState::getInstance().getQuestTemplate(pq.questId);
-        if (qt.objectives.count(mobId)) {
-            pq.progress[mobId]++;
-            changed = true;
+        if (qt.objectives.count(mobTypeId)) {
+            int required = qt.objectives.at(mobTypeId);
+            if (pq.progress[mobTypeId] < required) {
+                pq.progress[mobTypeId]++;
+                changed = true;
+            }
 
             // Check if all objectives reached
             bool allMet = true;
@@ -93,7 +96,7 @@ void GameLogic::checkQuestKill(Player& player, const std::string& mobId) {
                 SocketHandlers::sendToPlayer(player.username, completeMsg.dump());
             } else {
                 // Update Progress message (optional)
-                std::string msgText = qt.title + ": " + std::to_string(pq.progress[mobId]) + "/" + std::to_string(qt.objectives.at(mobId)) + " getötet.";
+                std::string msgText = qt.title + ": " + std::to_string(pq.progress[mobTypeId]) + "/" + std::to_string(qt.objectives.at(mobTypeId)) + " getötet.";
                 json pMsg = {{"type", "chat_receive"}, {"mode", "system"}, {"message", msgText}};
                 SocketHandlers::sendToPlayer(player.username, pMsg.dump());
                 

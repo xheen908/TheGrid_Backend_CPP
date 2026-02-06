@@ -17,7 +17,7 @@ public:
     bool isTargeted() const override { return true; }
     bool ignoresGCD() const override { return true; }
 
-    void onCastStart(Player& player, const std::string& targetId) const override {
+    void onCastStart(Player& player, const std::string& targetId, const Vector3& targetPos) const override {
         std::string pName, pMap;
         {
             std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
@@ -54,7 +54,7 @@ public:
         SocketHandlers::broadcastToMap(pMap, startMsg.dump());
     }
 
-    void onCastComplete(Player& player, const std::string& targetId) const override {
+    void onCastComplete(Player& player, const std::string& targetId, const Vector3& targetPos) const override {
         std::string pName, pMap, pUsername;
         int pLevel = 1;
         {
@@ -73,6 +73,7 @@ public:
         bool mobDied = false;
         int xpReward = 0;
         
+        std::string mobTypeId = "";
         {
             std::lock_guard<std::recursive_mutex> lock(GameState::getInstance().getMtx());
             auto& mobs = GameState::getInstance().getMobs();
@@ -93,6 +94,7 @@ public:
             mobName = targetMob->name;
             mobType = targetMob->mobType;
             mobLevel = targetMob->level;
+            mobTypeId = targetMob->typeId;
 
             Logger::log("[Ability] Frostblitz cast complete by " + pName + " @ " + mobName + "(" + targetId + ") [" + mobType + "] on " + pMap);
             
@@ -123,7 +125,7 @@ public:
             if (targetMob->hp <= 0) {
                 mobDied = true;
                 targetMob->respawnAt = currentTimeMillis() + (GameState::getInstance().getRespawnRate(pMap) * 1000);
-                xpReward = GameLogic::getMobXPReward(mobLevel);
+                xpReward = GameLogic::getMobXPReward(mobLevel, targetMob->dbXp);
                 Logger::log("[Ability] Frostblitz target died: " + mobName);
             }
         } // Lock released
@@ -154,7 +156,7 @@ public:
         if (mobDied) {
             Logger::log("[Ability] Frostblitz awarding XP for " + pName);
             GameLogic::awardXP(player, xpReward);
-            GameLogic::checkQuestKill(player, targetId);
+            GameLogic::checkQuestKill(player, mobTypeId);
         }
 
         {

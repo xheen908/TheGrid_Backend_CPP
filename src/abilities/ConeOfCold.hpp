@@ -18,9 +18,9 @@ public:
     bool isTargeted() const override { return false; }
     bool canCastWhileMoving() const override { return true; }
 
-    void onCastStart(Player& player, const std::string& targetId) const override {}
+    void onCastStart(Player& player, const std::string& targetId, const Vector3& targetPos) const override {}
 
-    void onCastComplete(Player& player, const std::string& targetId) const override {
+    void onCastComplete(Player& player, const std::string& targetId, const Vector3& targetPos) const override {
         float range = 25.0f; // Erhöhte Reichweite (Range-Zauber)
         float coneAngleRad = (120.0f / 2.0f) * (3.14159265359f / 180.0f);
         
@@ -55,6 +55,7 @@ public:
 
         struct MobHit {
             std::string id;
+            std::string typeId;
             int damage;
             bool isCrit;
             bool died;
@@ -103,6 +104,7 @@ public:
 
                             MobHit hit;
                             hit.id = m.id;
+                            hit.typeId = m.typeId;
                             hit.damage = result.damage;
                             hit.isCrit = result.isCrit;
                             hit.died = false;
@@ -111,7 +113,7 @@ public:
                             if (m.hp <= 0) {
                                 hit.died = true;
                                 m.respawnAt = currentTimeMillis() + (GameState::getInstance().getRespawnRate(pMap) * 1000);
-                                hit.xpReward = GameLogic::getMobXPReward(m.level);
+                                hit.xpReward = GameLogic::getMobXPReward(m.level, m.dbXp);
                             }
                             hits.push_back(hit);
                         }
@@ -132,7 +134,7 @@ public:
 
             if (hit.died) {
                 GameLogic::awardXP(player, hit.xpReward);
-                GameLogic::checkQuestKill(player, hit.id);
+                GameLogic::checkQuestKill(player, hit.typeId);
             }
         }
     }

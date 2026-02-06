@@ -103,12 +103,21 @@ struct Player {
     bool isDisconnected = false;
     void* ws = nullptr; 
 
+    // Stats
+    int strength = 10;
+    int agility = 10;
+    int intelligence = 10;
+    int stamina = 10;
+    int armor = 0;
+
     // Combat state
     bool isCasting = false;
     bool isMoving = false;
     long long castEnd = 0;
+    long long lastCastTick = 0;
     std::string currentSpell;
     std::string currentTargetId;
+    Vector3 currentTargetPos;
     long long gcdUntil = 0;
     std::map<std::string, long long> cooldowns;
     std::vector<Debuff> buffs;
@@ -136,21 +145,24 @@ struct GameObject {
 };
 
 struct Mob {
-    std::string id;
+    std::string id;       // Unique instance identifier (DB primary key)
+    std::string typeId;   // Mob type identifier (for quests, etc.)
     std::string name;
     int level;
     int hp;
     int maxHp;
-    int dbLevel; // Original Level from DB
-    int dbMaxHp; // Original HP from DB for scaling
-    std::string mobType; // Normal, Elite, Rare, Boss
+    int dbLevel; 
+    int dbMaxHp; 
+    int dbXp;
+    std::string mobType; 
     std::string modelId;
     std::string mapName;
     Vector3 transform;
-    float rotation;
+    float rotationY;      // Rotation on Y axis from DB
     Vector3 home;
     std::string target;
     long long lastAttack = 0;
+    long long lastAggroCheck = 0;
     long long respawnAt = 0;
     std::vector<Debuff> debuffs;
 };
@@ -175,6 +187,7 @@ public:
     std::vector<GameObject> getGameObjects(const std::string& mapName);
     ItemTemplate getItemTemplate(const std::string& itemId);
     QuestTemplate getQuestTemplate(const std::string& questId);
+    std::string getMobName(const std::string& mobId);
     std::recursive_mutex& getMtx() { return mtx; }
 
     void addParty(std::shared_ptr<Party> party);

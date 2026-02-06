@@ -17,9 +17,9 @@ public:
     bool isTargeted() const override { return false; }
     bool canCastWhileMoving() const override { return true; }
 
-    void onCastStart(Player& player, const std::string& targetId) const override {}
+    void onCastStart(Player& player, const std::string& targetId, const Vector3& targetPos) const override {}
 
-    void onCastComplete(Player& player, const std::string& targetId) const override {
+    void onCastComplete(Player& player, const std::string& targetId, const Vector3& targetPos) const override {
         float range = 10.0f;
         std::string pName, pMap, pUsername;
         Vector3 pPos;
@@ -49,6 +49,7 @@ public:
 
         struct MobHit {
             std::string id;
+            std::string typeId;
             int damage;
             bool isCrit;
             bool died;
@@ -63,7 +64,7 @@ public:
             for (auto& m : mobs) {
                 if (m.mapName == pMap && m.hp > 0) {
                     float dist = std::sqrt(std::pow(m.transform.x - pPos.x, 2) + 
-                                          std::pow(m.transform.z - pPos.z, 2));
+                                           std::pow(m.transform.z - pPos.z, 2));
                     if (dist <= range) {
                         auto result = GameLogic::getSpellDamage(pLevel, 15, 25);
                         m.hp = std::max(0, m.hp - result.damage);
@@ -83,6 +84,7 @@ public:
 
                         MobHit hit;
                         hit.id = m.id;
+                        hit.typeId = m.typeId;
                         hit.damage = result.damage;
                         hit.isCrit = result.isCrit;
                         hit.died = false;
@@ -91,7 +93,7 @@ public:
                         if (m.hp <= 0) {
                             hit.died = true;
                             m.respawnAt = currentTimeMillis() + (GameState::getInstance().getRespawnRate(pMap) * 1000);
-                            hit.xpReward = GameLogic::getMobXPReward(m.level);
+                            hit.xpReward = GameLogic::getMobXPReward(m.level, m.dbXp);
                         }
                         hits.push_back(hit);
                     }
@@ -112,7 +114,7 @@ public:
 
             if (hit.died) {
                 GameLogic::awardXP(player, hit.xpReward);
-                GameLogic::checkQuestKill(player, hit.id);
+                GameLogic::checkQuestKill(player, hit.typeId);
             }
         }
     }

@@ -12,6 +12,7 @@ using json = nlohmann::json;
 #include "IceBarrier.hpp"
 #include "FrostNova.hpp"
 #include "ConeOfCold.hpp"
+#include "Blizzard.hpp"
 
 class AbilityManager {
 public:
@@ -48,10 +49,30 @@ public:
         return list;
     }
 
-    void startCasting(Player& player, const std::string& spellName, const std::string& targetId) {
+    void startCasting(Player& player, const std::string& spellName, const std::string& targetId, const Vector3& targetPos) {
+        bool wasCasting = false;
+        std::string currentSpell = "";
         {
             std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
-            if (player.isCasting) return;
+            if (player.isCasting) {
+                wasCasting = true;
+                currentSpell = player.currentSpell;
+            }
+        }
+
+        if (wasCasting) {
+            // Special Case: Blizzard allows self-interruption (spamming to move reticle/refresh)
+            if (currentSpell == "Blizzard") {
+                interrupt(player);
+            } else {
+                // For other spells (Frostblitz), prevent cancelling yourself by spamming the same key
+                if (currentSpell == spellName) {
+                    return; // Ignore request
+                } else {
+                    // Changing spell? Allow interrupt.
+                    interrupt(player);
+                }
+            }
         }
 
         const Ability* ability = getAbility(spellName);
@@ -69,18 +90,22 @@ public:
             player.isCasting = true;
             player.currentSpell = spellName;
             player.currentTargetId = targetId;
-            player.castEnd = std::chrono::duration_cast<std::chrono::milliseconds>(
-                std::chrono::system_clock::now().time_since_epoch()).count() + (long long)(ability->getCastTime() * 1000);
+            player.currentTargetPos = targetPos; // MUST ADD THIS TO PLAYER STRUCT
+            long long now = std::chrono::duration_cast<std::chrono::milliseconds>(
+                std::chrono::system_clock::now().time_since_epoch()).count();
+            player.castEnd = now + (long long)(ability->getCastTime() * 1000);
+            player.lastCastTick = now;
             
-            ability->onCastStart(player, targetId);
+            ability->onCastStart(player, targetId, targetPos);
         } else {
-            ability->onCastComplete(player, targetId);
+            ability->onCastComplete(player, targetId, targetPos);
         }
     }
 
     void update(Player& player) {
         std::string spellToComplete;
         std::string targetToComplete;
+        Vector3 posToComplete;
         bool shouldComplete = false;
 
         {
@@ -90,20 +115,27 @@ public:
             long long now = std::chrono::duration_cast<std::chrono::milliseconds>(
                 std::chrono::system_clock::now().time_since_epoch()).count();
 
+            // Periodic tick every 1000ms
+            if (now >= player.lastCastTick + 1000) {
+                const Ability* ability = getAbility(player.currentSpell);
+                if (ability) {
+                    ability->onCastTick(player, player.currentTargetId, player.currentTargetPos);
+                }
+                player.lastCastTick = now;
+            }
+
             if (now >= player.castEnd) {
                 spellToComplete = player.currentSpell;
                 targetToComplete = player.currentTargetId;
+                posToComplete = player.currentTargetPos;
                 shouldComplete = true;
-                
-                // We clear state BEFORE calling onCastComplete to avoid re-entry issues
-                // but we need the ability pointer first.
             }
         }
 
         if (shouldComplete) {
             const Ability* ability = getAbility(spellToComplete);
             if (ability) {
-                ability->onCastComplete(player, targetToComplete);
+                ability->onCastComplete(player, targetToComplete, posToComplete);
             }
             std::lock_guard<std::recursive_mutex> pLock(player.pMtx);
             player.isCasting = false;
@@ -119,6 +151,7 @@ public:
             spellToInterrupt = player.currentSpell;
             player.isCasting = false;
             player.currentSpell = "";
+            Logger::log("[Ability] Player " + player.username + " cast interrupted.");
         }
 
         const Ability* ability = getAbility(spellToInterrupt);
@@ -133,6 +166,7 @@ private:
         registerAbility(std::make_unique<IceBarrier>());
         registerAbility(std::make_unique<FrostNova>());
         registerAbility(std::make_unique<ConeOfCold>());
+        registerAbility(std::make_unique<Blizzard>());
     }
 
     std::map<std::string, std::unique_ptr<Ability>> abilities;

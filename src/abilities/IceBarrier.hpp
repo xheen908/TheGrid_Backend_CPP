@@ -15,9 +15,9 @@ public:
     bool isTargeted() const override { return false; }
     bool canCastWhileMoving() const override { return true; }
 
-    void onCastStart(Player& player, const std::string& targetId) const override {}
+    void onCastStart(Player& player, const std::string& targetId, const Vector3& targetPos) const override {}
 
-    void onCastComplete(Player& player, const std::string& targetId) const override {
+    void onCastComplete(Player& player, const std::string& targetId, const Vector3& targetPos) const override {
         std::string pName, pMap, pUsername;
         {
             std::lock_guard<std::recursive_mutex> pLock(player.pMtx);

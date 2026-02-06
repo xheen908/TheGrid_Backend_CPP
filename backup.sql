@@ -62,21 +62,23 @@ CREATE TABLE IF NOT EXISTS `characters` (
   `last_login` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `char_name` (`char_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=131 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportiere Daten aus Tabelle charakter_db.characters: ~7 rows (ungefähr)
+-- Exportiere Daten aus Tabelle charakter_db.characters: ~13 rows (ungefähr)
 INSERT INTO `characters` (`id`, `user_id`, `char_name`, `character_class`, `map_name`, `pos_x`, `pos_y`, `pos_z`, `rotation`, `level`, `xp`, `hp`, `max_hp`, `mana`, `max_mana`, `last_login`) VALUES
-	(103, 2, 'Yheen', 'Mage', 'TestMap0', 29.5553, -0.597194, 29.2193, 2.75, 5, 410, 312, 341, 225, 225, '2026-02-04 21:13:41'),
-	(104, 2, 'Xheen', 'Mage', 'TestMap0', 35.5311, -0.835729, 29.065, 0.24, 1, 150, 0, 151, 99, 99, '2026-02-04 20:34:52'),
-	(118, 3, 'Mage', 'Mage', 'TestMap0', 26.8669, 0.030113, 28.6313, 0, 15, 8264, 1086, 1401, 400, 924, '2026-02-04 20:03:31'),
-	(119, 3, 'Barbar', 'Barbarian', 'TestMap0', 17.4238, 4.04682, 31.7685, 0, 1, 0, 125, 151, 99, 99, '2026-02-04 18:00:01'),
-	(121, 3, 'Ranger', 'Ranger', 'WorldMap0', 0, 0, 0, 0, 1, 0, 125, 125, 120, 120, '2026-01-31 17:04:53'),
+	(103, 2, 'Yheen', 'Mage', 'WorldMap0', -1.31072, 0.157461, -22.8112, 2.75, 80, 45340, 9744, 14250, 9405, 9405, '2026-02-05 12:05:11'),
+	(104, 2, 'Xheen', 'Mage', 'WorldMap0', -8.55399, 2.37, -0.554775, 0.24, 2, 675, 0, 190, 125, 125, '2026-02-05 05:38:16'),
+	(118, 3, 'Mage', 'Mage', 'WorldMap0', 1.61293, 2.36928, -9.32219, 0, 15, 8264, 1401, 1401, 400, 924, '2026-02-05 05:38:18'),
+	(119, 3, 'Barbar', 'Barbarian', 'WorldMap0', -5.10286, 2.37009, -9.85557, 0, 1, 0, 125, 151, 99, 99, '2026-02-05 05:23:13'),
+	(121, 3, 'Ranger', 'Ranger', 'WorldMap0', -4.21451, 2.37, -11.9187, 0, 1, 0, 125, 151, 99, 99, '2026-02-05 04:46:53'),
 	(122, 3, 'Knight', 'Knight', 'WorldMap0', 0, 0, 0, 0, 1, 0, 125, 125, 120, 120, '2026-01-31 17:05:06'),
 	(123, 3, 'Rogue', 'Rogue', 'WorldMap0', -20.0564, 0, 8.42799, 0, 3, 295, 193, 193, 160, 160, '2026-01-31 17:21:29'),
 	(127, 5, 'Vienneun', 'Mage', 'TestMap0', 21.7491, 1.90005, 31.0157, 3.11, 1, 150, 151, 151, 99, 99, '2026-02-04 20:09:44'),
 	(128, 1, 'Admin', 'Mage', 'WorldMap0', -10.2745, 2.37, -0.984131, 3.11, 1, 0, 125, 151, 99, 99, '2026-02-04 18:02:18'),
 	(129, 5, 'VierSieben', 'Rogue', 'TestMap0', 32.7233, -0.365782, 31.292, 3.11, 1, 100, 125, 151, 99, 99, '2026-02-04 20:16:35'),
-	(130, 5, 'Neuneu', 'Mage', 'TestMap0', 34.6077, -1.39216, 22.9986, 3.11, 1, 200, 0, 151, 99, 99, '2026-02-04 20:19:02');
+	(130, 5, 'Neuneu', 'Mage', 'TestMap0', 34.6077, -1.39216, 22.9986, 3.11, 1, 200, 0, 151, 99, 99, '2026-02-04 20:19:02'),
+	(133, 2, 'Fheen', 'Mage', 'WorldMap0', -1.86286, 0.15745, -23.3234, 3.11, 3, 180, 234, 234, 154, 154, '2026-02-05 12:44:05'),
+	(134, 2, 'Jheen', 'Mage', 'TestMap0', 23.8025, 0.893251, 29.9769, 3.11, 1, 300, 151, 371, 99, 429, '2026-02-05 19:32:06');
 
 -- Exportiere Struktur von Tabelle charakter_db.character_inventory
 CREATE TABLE IF NOT EXISTS `character_inventory` (
@@ -89,32 +91,53 @@ CREATE TABLE IF NOT EXISTS `character_inventory` (
   PRIMARY KEY (`id`),
   KEY `character_id` (`character_id`),
   CONSTRAINT `character_inventory_ibfk_1` FOREIGN KEY (`character_id`) REFERENCES `characters` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=977 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1351 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportiere Daten aus Tabelle charakter_db.character_inventory: ~17 rows (ungefähr)
+-- Exportiere Daten aus Tabelle charakter_db.character_inventory: ~25 rows (ungefähr)
 INSERT INTO `character_inventory` (`id`, `character_id`, `item_id`, `slot_index`, `quantity`, `is_equipped`) VALUES
 	(698, 128, '1', 0, 1, 0),
-	(913, 118, '2', 0, 20, 0),
-	(914, 118, '11', 2, 1, 0),
-	(915, 118, '4', 4, 1, 0),
-	(916, 118, '7', 3, 1, 0),
-	(917, 118, '2', 1, 1, 0),
 	(928, 127, '2', 0, 10, 0),
-	(937, 104, '1', 0, 1, 0),
-	(938, 104, '3', 25, 1, 0),
-	(939, 104, '4', 26, 1, 0),
-	(940, 104, '10', 5, 1, 0),
-	(941, 104, '11', 16, 1, 0),
-	(942, 104, '12', 17, 1, 0),
-	(943, 104, '13', 4, 1, 0),
-	(944, 104, '14', 11, 1, 0),
-	(945, 104, '6', 27, 1, 0),
-	(946, 104, '7', 24, 1, 0),
-	(972, 103, '1', 0, 1, 0),
-	(973, 103, '3', 1, 1, 0),
-	(974, 103, '6', 2, 1, 0),
-	(975, 103, '5', 3, 1, 0),
-	(976, 103, '2', 4, 16, 0);
+	(1277, 104, '1', 0, 1, 0),
+	(1278, 104, '3', 25, 1, 0),
+	(1279, 104, '4', 26, 1, 0),
+	(1280, 104, '10', 11, 1, 0),
+	(1281, 104, '11', 16, 1, 0),
+	(1282, 104, '12', 17, 1, 0),
+	(1283, 104, '13', 4, 1, 0),
+	(1284, 104, '14', 5, 1, 0),
+	(1285, 104, '6', 27, 1, 0),
+	(1286, 104, '7', 24, 1, 0),
+	(1287, 104, '2', 1, 19, 0),
+	(1288, 118, '2', 0, 19, 0),
+	(1289, 118, '11', 2, 1, 0),
+	(1290, 118, '4', 4, 1, 0),
+	(1291, 118, '7', 3, 1, 0),
+	(1292, 118, '2', 1, 1, 0),
+	(1296, 103, '1', 0, 1, 0),
+	(1297, 103, '2', 1, 12, 0),
+	(1298, 103, '7', 2, 1, 0),
+	(1316, 133, '1', 0, 1, 0),
+	(1317, 133, '2', 1, 18, 0),
+	(1349, 134, '1', 0, 1, 0),
+	(1350, 134, '2', 1, 12, 0);
+
+-- Exportiere Struktur von Tabelle charakter_db.player_quests
+CREATE TABLE IF NOT EXISTS `player_quests` (
+  `character_id` int NOT NULL,
+  `quest_id` varchar(50) NOT NULL,
+  `status` enum('active','completed','rewarded') DEFAULT NULL,
+  `progress` json DEFAULT NULL,
+  PRIMARY KEY (`character_id`,`quest_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Exportiere Daten aus Tabelle charakter_db.player_quests: ~0 rows (ungefähr)
+INSERT INTO `player_quests` (`character_id`, `quest_id`, `status`, `progress`) VALUES
+	(103, 'skeleton_slayer_1', 'active', '{"18": 0, "19": 0, "20": 0}'),
+	(104, 'skeleton_slayer_1', 'active', '{"18": 0, "19": 1, "20": 0}'),
+	(131, 'skeleton_slayer_1', 'active', '{"18": 0, "19": 0, "20": 0}'),
+	(132, 'skeleton_slayer_1', 'rewarded', '{"18": 2, "19": 2, "20": 2}'),
+	(133, 'skeleton_slayer_1', 'rewarded', '{"18": 2, "19": 2, "20": 2}'),
+	(134, 'skeleton_slayer_1', 'rewarded', '{"18": 10, "19": 1, "20": 10, "21": 1, "22": 10, "23": 1}');
 
 
 -- Exportiere Datenbank-Struktur für world_db
@@ -134,9 +157,9 @@ CREATE TABLE IF NOT EXISTS `game_objects` (
   `rot_z` float DEFAULT '0',
   `extra_data` json DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportiere Daten aus Tabelle world_db.game_objects: ~9 rows (ungefähr)
+-- Exportiere Daten aus Tabelle world_db.game_objects: ~10 rows (ungefähr)
 INSERT INTO `game_objects` (`id`, `map_name`, `type`, `pos_x`, `pos_y`, `pos_z`, `rot_x`, `rot_y`, `rot_z`, `extra_data`) VALUES
 	(1, 'WorldMap0', 'portal', -40.9, 0, -41, 0, 0.7858, 0, '{"color": "#DB00DB", "spawn_pos": {"x": -42.5, "y": 0, "z": 0.05}, "target_map": "Dungeon0", "spawn_rot_y": -1.57}'),
 	(2, 'WorldMap0', 'portal', 40.8, 0, -41.3, 0, 2.3558, 0, '{"color": "#B25405", "spawn_pos": {"x": 27.904615, "y": 0, "z": 0.036237}, "target_map": "Arena0", "spawn_rot_y": 1.593585}'),
@@ -147,7 +170,8 @@ INSERT INTO `game_objects` (`id`, `map_name`, `type`, `pos_x`, `pos_y`, `pos_z`,
 	(7, 'Arena2', 'portal', 0, 0, 45, 0, 0, 0, '{"color": "#FFFF00", "spawn_pos": {"x": -37.57, "y": 0, "z": 36.8}, "target_map": "WorldMap0", "spawn_rot_y": -0.796839}'),
 	(8, 'Dungeon0', 'portal', -46.3, 0, 0, 0, 1.57, 0, '{"color": "#FFFF00", "spawn_pos": {"x": -37.1, "y": 0, "z": -37}, "target_map": "WorldMap0", "spawn_rot_y": -2.31}'),
 	(9, 'TestMap0', 'portal', 5.06597, 6.43977, 30.7688, 0, -2.13045, 0, '{"color": "#072cfa", "spawn_pos": {"x": -6.52, "y": 2.37, "z": -1.15}, "target_map": "WorldMap0", "spawn_rot_y": 1.63}'),
-	(10, 'WorldMap0', 'portal', 0.018641, 2.37008, -0.938741, 0, -1.57429, 0, '{"color": "#072cfa", "spawn_pos": {"x": 8.19, "y": 6.52, "z": 32.61}, "target_map": "TestMap0", "spawn_rot_y": -1.47}');
+	(10, 'WorldMap0', 'portal', 0.018641, 2.37008, -0.938741, 0, -1.57429, 0, '{"color": "#072cfa", "spawn_pos": {"x": 8.19, "y": 6.52, "z": 32.61}, "target_map": "TestMap0", "spawn_rot_y": -1.47}'),
+	(11, 'WorldMap0', 'quest_giver', 0.29, 0.15, -25.73, 0, 3.11, 0, '{"name": "Skeleton Hunter", "model": "knight", "quest_id": "skeleton_slayer_1"}');
 
 -- Exportiere Struktur von Tabelle world_db.item_templates
 CREATE TABLE IF NOT EXISTS `item_templates` (
@@ -204,28 +228,59 @@ CREATE TABLE IF NOT EXISTS `mobs` (
   `mob_type` enum('Normal','Elite','Rare','Boss') DEFAULT 'Normal',
   `level` int DEFAULT '1',
   `hp` int DEFAULT '100',
+  `xp` int DEFAULT '50',
   `pos_x` float DEFAULT '0',
   `pos_y` float DEFAULT '0',
   `pos_z` float DEFAULT '0',
+  `rotation_y` float DEFAULT '0',
   `respawn_time` int DEFAULT '30',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `mob_id` (`mob_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  KEY `mob_id` (`mob_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportiere Daten aus Tabelle world_db.mobs: ~8 rows (ungefähr)
-INSERT INTO `mobs` (`id`, `mob_id`, `map_name`, `name`, `model_id`, `mob_type`, `level`, `hp`, `pos_x`, `pos_y`, `pos_z`, `respawn_time`) VALUES
-	(10, '10', 'Dungeon0', 'Neon-Pyramide', 'neon_sphere', 'Boss', 1, 150, 17.5038, 5.10011, 0.152788, 30),
-	(11, '11', 'Arena2', 'Neon-Würfel', 'neon_sphere', 'Normal', 1, 150, 0, 2, 5, 15),
-	(12, '12', 'Arena2', 'Neon-Kegel', 'neon_sphere', 'Normal', 1, 150, 5, 2, 5, 15),
-	(13, '13', 'Arena2', 'Neon-Pyramide', 'neon_sphere', 'Normal', 1, 150, -5, 2, 5, 20),
-	(14, '14', 'Arena2', 'Neon-Sphäre', 'neon_sphere', 'Normal', 1, 150, 0, 2, -5, 30),
-	(15, '15', 'Arena2', 'Neon-Torus', 'neon_sphere', 'Normal', 1, 150, 5, 2, -5, 45),
-	(16, '16', 'Arena2', 'Neon-Kapsel', 'neon_sphere', 'Normal', 1, 150, -5, 2, -5, 20),
-	(17, '17', 'Arena2', 'Gigantischer Neon-Ring', 'neon_sphere', 'Normal', 1, 150, 0, 6, 0, 60),
-	(18, '18', 'TestMap0', 'Zombie Rogue', 'skeleton_rogue', 'Normal', 1, 150, 56.3967, -0.378409, 18.9367, 60),
-	(19, '19', 'TestMap0', 'Zombie Minion', 'skeleton_minion', 'Normal', 1, 150, 52.3967, -0.178409, 18.9367, 60),
-	(20, '20', 'TestMap0', 'Zombie Magier', 'skeleton_mage', 'Normal', 1, 150, 65.4555, -1.6628, 24.6979, 60),
-	(21, '21', 'TestMap0', 'Zombie Magier', 'skeleton_mage', 'Normal', 1, 150, 67.4555, -2.6628, 26.6979, 60);
+-- Exportiere Daten aus Tabelle world_db.mobs: ~26 rows (ungefähr)
+INSERT INTO `mobs` (`id`, `mob_id`, `map_name`, `name`, `model_id`, `mob_type`, `level`, `hp`, `xp`, `pos_x`, `pos_y`, `pos_z`, `rotation_y`, `respawn_time`) VALUES
+	(10, '10', 'Dungeon0', 'Neon-Pyramide', 'neon_sphere', 'Boss', 1, 150, 50, 17.5038, 5.10011, 0.152788, 0, 30),
+	(11, '11', 'Arena2', 'Neon-Würfel', 'neon_sphere', 'Normal', 1, 150, 50, 0, 2, 5, 0, 15),
+	(12, '12', 'Arena2', 'Neon-Kegel', 'neon_sphere', 'Normal', 1, 150, 50, 5, 2, 5, 0, 15),
+	(13, '13', 'Arena2', 'Neon-Pyramide', 'neon_sphere', 'Normal', 1, 150, 50, -5, 2, 5, 0, 20),
+	(14, '14', 'Arena2', 'Neon-Sphäre', 'neon_sphere', 'Normal', 1, 150, 50, 0, 2, -5, 0, 30),
+	(15, '15', 'Arena2', 'Neon-Torus', 'neon_sphere', 'Normal', 1, 150, 50, 5, 2, -5, 0, 45),
+	(16, '16', 'Arena2', 'Neon-Kapsel', 'neon_sphere', 'Normal', 1, 150, 50, -5, 2, -5, 0, 20),
+	(17, '17', 'Arena2', 'Gigantischer Neon-Ring', 'neon_sphere', 'Normal', 1, 150, 50, 0, 6, 0, 0, 60),
+	(18, '18', 'TestMap0', 'Zombie Späher', 'skeleton_rogue', 'Normal', 1, 150, 50, 56.3967, -0.378409, 18.9367, 3.14, 60),
+	(19, '19', 'TestMap0', 'Gerfried', 'skeleton_minion', 'Normal', 1, 150, 50, 52.3967, -0.178409, 18.9367, 3.14, 60),
+	(20, '20', 'TestMap0', 'Zombie Beschwörer', 'skeleton_mage', 'Normal', 1, 150, 50, 65.4555, -1.6628, 24.6979, 3.14, 60),
+	(21, '21', 'TestMap0', 'Hartmuth', 'skeleton_rogue', 'Normal', 1, 150, 50, 67.4555, -2.6628, 26.6979, 1.57, 60),
+	(22, '23', 'TestMap0', 'Günther', 'skeleton_mage', 'Normal', 1, 150, 50, 53.7127, -0.159771, 14.4889, 3.14, 60),
+	(23, '20', 'TestMap0', 'Zombie Beschwörer', 'skeleton_mage', 'Normal', 1, 150, 50, 51.7127, -0.359771, 14.4889, 4.71, 60),
+	(24, '20', 'TestMap0', 'Zombie Beschwörer', 'skeleton_mage', 'Normal', 1, 150, 50, 60, -1, 20, 0, 60),
+	(25, '20', 'TestMap0', 'Zombie Beschwörer', 'skeleton_mage', 'Normal', 1, 150, 50, 62, -1, 22, 1, 60),
+	(26, '20', 'TestMap0', 'Zombie Beschwörer', 'skeleton_mage', 'Normal', 1, 150, 50, 64, -1, 24, 2, 60),
+	(27, '18', 'TestMap0', 'Zombie Späher', 'skeleton_rogue', 'Normal', 1, 150, 50, 58, -1, 18, 3, 60),
+	(28, '18', 'TestMap0', 'Zombie Späher', 'skeleton_rogue', 'Normal', 1, 150, 50, 55, -1, 15, 4, 60),
+	(29, '18', 'TestMap0', 'Zombie Späher', 'skeleton_rogue', 'Normal', 1, 150, 50, 50, -1, 12, 5, 60),
+	(30, '18', 'TestMap0', 'Zombie Späher', 'skeleton_rogue', 'Normal', 1, 150, 50, 48, -1, 10, 0.5, 60),
+	(31, '22', 'TestMap0', 'Zombie Minion', 'skeleton_minion', 'Normal', 1, 150, 50, 46, -1, 8, 1.5, 60),
+	(32, '22', 'TestMap0', 'Zombie Minion', 'skeleton_minion', 'Normal', 1, 150, 50, 48, -1, 8, 1.5, 60),
+	(33, '22', 'TestMap0', 'Zombie Minion', 'skeleton_minion', 'Normal', 1, 150, 50, 50, -1, 8, 1.5, 60),
+	(34, '22', 'TestMap0', 'Zombie Minion', 'skeleton_minion', 'Normal', 1, 150, 50, 52, -1, 8, 1.5, 60),
+	(35, '22', 'TestMap0', 'Zombie Minion', 'skeleton_minion', 'Normal', 1, 150, 50, 54, -1, 8, 1.5, 60);
+
+-- Exportiere Struktur von Tabelle world_db.quests
+CREATE TABLE IF NOT EXISTS `quests` (
+  `id` varchar(50) NOT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `description` text,
+  `objectives` json DEFAULT NULL,
+  `reward_xp_base` int DEFAULT NULL,
+  `reward_xp_max` int DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Exportiere Daten aus Tabelle world_db.quests: ~0 rows (ungefähr)
+INSERT INTO `quests` (`id`, `title`, `description`, `objectives`, `reward_xp_base`, `reward_xp_max`) VALUES
+	('skeleton_slayer_1', 'Die Skelett-Bedrohung', 'Töte die Skelette in TestMap0.', '{"18": 10, "19": 1, "20": 10, "21": 1, "22": 10, "23": 1}', 750, 40000);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

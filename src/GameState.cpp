@@ -151,3 +151,11 @@ std::shared_ptr<Trade> GameState::getTradeForPlayer(const std::string& username)
     }
     return nullptr;
 }
+
+std::string GameState::getMobName(const std::string& mobId) {
+    std::lock_guard<std::recursive_mutex> lock(mtx);
+    for (const auto& m : mobs) {
+        if (m.id == mobId || m.typeId == mobId) return m.name;
+    }
+    return "Unbekannter Gegner (" + mobId + ")";
+}
