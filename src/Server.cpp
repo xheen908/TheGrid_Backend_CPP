@@ -325,18 +325,23 @@ void WorldServer::tick() {
         MobAI::update(nowMs);
     }
 
-    // --- Optimized Mob Sync (Pre-calculate per map once per tick) ---
-    static std::map<std::string, std::string> mapMobSync;
+    // --- Optimized Mob Sync (Tick-offset for smoother client performance) ---
     static long long lastMobSyncUpdate = 0;
+    static int tickOffset = 0;
     
-    if (nowMs - lastMobSyncUpdate > 100) { // Update frequency: 10Hz
+    if (nowMs - lastMobSyncUpdate > 50) { // Check every 50ms, but update only half the mobs
         lastMobSyncUpdate = nowMs;
-        mapMobSync.clear();
+        tickOffset = (tickOffset + 1) % 2;
         
         auto allMobs = GameState::getInstance().getMobsSnapshot(); 
         std::map<std::string, json> mapLists;
         
-        for (auto const& m : allMobs) {
+        for (size_t i = 0; i < allMobs.size(); ++i) {
+            auto const& m = allMobs[i];
+            
+            // Interleaving: Nur Mobs aktualisieren, die in diesen Slots fallen
+            if ((i % 2) != (size_t)tickOffset && m.hp > 0) continue;
+
             bool recentlyDied = (m.hp <= 0 && m.respawnAt > 0 && (nowMs < (m.respawnAt - (GameState::getInstance().getRespawnRate(m.mapName) - 5) * 1000)));
             if (m.hp > 0 || recentlyDied) {
                 json dList = json::array();
@@ -344,15 +349,23 @@ void WorldServer::tick() {
                     dList.push_back({{"type", db.type}, {"remaining", (int)((db.endTime - nowMs) / 1000)}});
                 }
                 mapLists[m.mapName].push_back({
-                    {"id", m.id}, {"name", m.name}, {"hp", m.hp}, {"maxHp", m.maxHp}, 
-                    {"debuffs", dList}, {"model_id", m.modelId},
+                    {"id", m.id},             
+                    {"type_id", m.typeId},    
+                    {"name", m.name}, 
+                    {"hp", m.hp}, 
+                    {"maxHp", m.maxHp}, 
+                    {"debuffs", dList}, 
+                    {"model_id", m.modelId},
                     {"transform", {{"x", m.transform.x}, {"y", m.transform.y}, {"z", m.transform.z}, {"rot", m.rotationY}}}
                 });
             }
         }
         
         for (auto& entry : mapLists) {
-            mapMobSync[entry.first] = json{{"type", "mob_sync"}, {"mobs", entry.second}}.dump();
+            if (!entry.second.empty()) {
+                std::string syncMsg = json{{"type", "mob_sync"}, {"mobs", entry.second}}.dump();
+                SocketHandlers::broadcastToMap(entry.first, syncMsg);
+            }
         }
     }
 
@@ -420,10 +433,6 @@ void WorldServer::tick() {
             }
         }
 
-        // Send Pre-calculated Mob Sync
-        if (mapMobSync.count(p->mapName)) {
-            SocketHandlers::sendToPlayer(p->username, mapMobSync[p->mapName]);
-        }
     }
 }
 
